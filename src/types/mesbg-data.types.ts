@@ -1,31 +1,32 @@
-export type ArmyType = "Good" | "Good (Legacy)" | "Evil" | "Evil (Legacy)";
+export type ArmyType = "Astartes" | "Solar Auxilia";
 
 /**
- * TODO: regenerate this list after all 2024 data is loaded.
+ * TODO: regenerate this list after all data is loaded.
  */
 export type UnitType =
-  | "Warrior"
-  | "Hero of Legend"
-  | "Hero of Valour"
-  | "Hero of Fortitude"
-  | "Minor Hero"
-  | "Independent Hero"
-  | "Independent Hero*"
-  | "Siege Engine"
-  | "Siege Equipment"
+  | "High Command"
+  | "Command"
+  | "Troops"
+  | "Transports"
+  | "Retinue"
+  | "Elites"
+  | "Shock Assault"
+  | "Tactical Support"
+  | "Heavy Support"
+  | "Combat Pioneers"
+  | "First Strike"
+  | "Warlord"
+  | "Lord of War"
   | string;
 
 /**
- * TODO: regenerate this list after all 2024 data is loaded.
+ * TODO: regenerate this list after all data is loaded.
  */
 type OptionType =
+  | "extra"
+  | "one-hand"
+  | "two-hand"
   | "mount"
-  | "throw"
-  | "bow"
-  | "passenger"
-  | "mount, throw"
-  | "special_warband_upgrade"
-  | "ringwraith_amwf"
   | null;
 
 export type OptionDependency = {

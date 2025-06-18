@@ -9,14 +9,6 @@ class ModelDataConverter:
         self.__options = options
 
     @staticmethod
-    def __get_warband_size(row):
-        if row['name'] in ["The Dark Lord Sauron", "The Goblin King"]:
-            return 24
-        if row['name'] in ["Grinnah, Goblin Jailer", "The Goblin Scribe", "Goblin Captain"]:
-            return 18
-        return warband_sizes[row['unit_type']]
-
-    @staticmethod
     def __clean_nan_data_fields(data_frame, keep_empty_list: bool = False):
         return [
             {
@@ -38,13 +30,9 @@ class ModelDataConverter:
         # Make sure the MWFW becomes an actual array.
         self.__models["MWFW"] = self.__models["MWFW"].apply(eval)
         # Converter fields from 0/1 to a bool (true/false)
-        self.__models['default_throw'] = self.__models['default_throw'] == 1
-        self.__models['default_bow'] = self.__models['default_bow'] == 1
         self.__models['unique'] = self.__models['unique'] == 1
-        self.__models['bow_limit'] = self.__models['bow_limit'] == 1
         self.__models['opt_mandatory'] = self.__models['opt_mandatory'] == 1
         self.__models['no_followers'] = self.__models['no_followers'] == 1
-        self.__models['legacy'] = self.__models['legacy'] == 1
 
     def __convert_option_column_to_wanted_data_type(self):
         int_columns = ['points', 'quantity', 'passengers']

@@ -1,6 +1,7 @@
 import { ArmyListData } from "../types/army-list-data.types.ts";
 import { HeroConstraintsDataType } from "../types/hero-constraints-data.type.ts";
 import { KeywordsType } from "../types/keywords.type.ts";
+import { Unit } from "../types/hh3-data.types.ts";
 import { Profile } from "../types/profile-data.types.ts";
 import { WarningRules } from "../types/warning-rules.types.ts";
 import armyListDataRaw from "./data/army_list_data.json";

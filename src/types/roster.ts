@@ -15,7 +15,7 @@ export type FreshUnit = {
 export type Warband = {
   id: string;
   hero: SelectedUnit | null;
-  units: (FreshUnit | SelectedUnit | SiegeEquipment)[];
+  units: (FreshUnit | SelectedUnit )[];
   meta: {
     num: number;
     points: number;
@@ -26,7 +26,7 @@ export type Warband = {
 };
 
 export const isSelectedUnit = (
-  unit: FreshUnit | SelectedUnit | SiegeEquipment,
+  unit: FreshUnit | SelectedUnit,
 ): unit is SelectedUnit => !!(unit as SelectedUnit)?.model_id;
 
 export type Roster = {

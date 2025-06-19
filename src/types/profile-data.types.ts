@@ -14,8 +14,8 @@ export type Profile = {
   SAV: string; // save
   INV: string; // invun save
   wargear?: string[]; // pull from profile
-  special_rules?: string[]; // should pull from main list, but specific variants might be harder to code?
   traits?: string[]; // Renamed to traits to account for new profile layout in 3.0
+  special_rules?: string[]; // should pull from main list, but specific variants might be harder to code?
   type?: string[]; // adding unit types
   additional_stats?: AdditionalStat[]; // Optional field to account for the presence of additional stats
   additional_text?: string[]; // Optional field for additional text

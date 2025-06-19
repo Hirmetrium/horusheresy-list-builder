@@ -1,0 +1,13 @@
+# Generated files
+node_modules/
+build/
+api/vendor/
+
+# Static files
+static-resources/
+public/
+data/
+index.html
+
+# Misc
+README.md

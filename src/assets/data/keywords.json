@@ -26,27 +26,27 @@
   },
   {
     "name":"Infantry",
-    "type":"type",
+    "type":"unit_type",
     "description":null
   },
   {
     "name":"Command",
-    "type":"type",
+    "type":"unit_type",
     "description":null
   },
   {
     "name":"Heavy",
-    "type":"type",
+    "type":"unit_type",
     "description":null
   },
   {
     "name":"Sergeant",
-    "type":"type",
+    "type":"unit_type",
     "description":null
   },
   {
     "name":"Walker",
-    "type":"type",
+    "type":"unit_type",
     "description":null
   },
   {

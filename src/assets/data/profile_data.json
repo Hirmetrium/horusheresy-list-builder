@@ -27,7 +27,7 @@
         "Master of the Legion"
       ],
       "special_rules": [],
-      "type": [
+      "unit_type": [
         "Infantry",
         "Command"
       ]
@@ -62,7 +62,7 @@
         "Implacable Advance",
         "Slow and Purposeful"
       ],
-      "type": [
+      "unit_type": [
         "Infantry",
         "Command",
         "Heavy"
@@ -98,7 +98,7 @@
         "Implacable Advance",
         "Slow and Purposeful"
       ],
-      "type": [
+      "unit_type": [
         "Infantry",
         "Heavy"
       ]
@@ -130,7 +130,7 @@
         "[Legiones Astartes]"
       ],
       "special_rules": [],
-      "type": [
+      "unit_type": [
         "Infantry",
         "Command"
       ]
@@ -161,7 +161,7 @@
       "special_rules": [
         { "name": "Line (1)" }
       ],
-      "type": [
+      "unit_type": [
         "Infantry"
       ]
     }
@@ -194,7 +194,7 @@
         "Master of the Legion"
       ],
       "special_rules": [],
-      "type": [
+      "unit_type": [
         "Infantry",
         "Command"
       ]
@@ -229,7 +229,7 @@
         "Implacable Advance",
         "Slow and Purposeful"
       ],
-      "type": [
+      "unit_type": [
         "Infantry",
         "Command",
         "Heavy"
@@ -265,7 +265,7 @@
         "Implacable Advance",
         "Slow and Purposeful"
       ],
-      "type": [
+      "unit_type": [
         "Infantry",
         "Heavy"
       ]
@@ -297,7 +297,7 @@
         "[Legiones Astartes]"
       ],
       "special_rules": [],
-      "type": [
+      "unit_type": [
         "Infantry",
         "Command"
       ]
@@ -328,7 +328,7 @@
       "special_rules": [
         { "name": "Line (1)" }
       ],
-      "type": [
+      "unit_type": [
         "Infantry"
       ]
     }
@@ -360,7 +360,7 @@
     "special_rules": [
       "Sire of the Iron Warriors"
     ],
-    "type": [
+    "unit_type": [
       "Primarch",
       "Command"
     ]

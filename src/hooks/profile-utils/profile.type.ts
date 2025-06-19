@@ -1,39 +1,28 @@
-type MagicalPower = { name: string; range: string; cast: string };
-
-type CustomSpecialRule = {
-  name: string;
-  type: "Active" | "Passive";
-  description: string;
-};
-
 export type Profile = {
+  type?: string;
   name: string;
 
-  Mv: string;
-  Range?: string;
-  Fv: string;
-  Sv: string;
-  A: string;
+  M: string;
+  WS: string;
+  BS: string;
   S: string;
-  D: string;
+  T: string;
   W: string;
-  C: string;
   I: string;
-
-  HF?: string;
-  HM?: string;
-  HW?: string;
-
-  additional_stats?: Profile[];
-
-  additional_text?: string[];
-  heroic_actions?: string[];
-  special_rules?: string[];
-
-  active_or_passive_rules?: CustomSpecialRule[];
-
-  magic_powers?: MagicalPower[];
+  A: string;
+  LD: string;
+  CL: string;
+  WP: string;
+  IN: string;
+  SAV: string;
+  INV: string;
 
   wargear?: string[];
-  type?: string;
+  traits?: string[];
+  special_rules?: string[];
+  unit_type?: string[];
+
+  additional_stats?: Profile[];
+  additional_text?: string[];
+
 };

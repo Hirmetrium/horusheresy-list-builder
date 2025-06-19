@@ -1,4 +1,4 @@
-import { SiegeEquipment, Unit } from "./mesbg-data.types.ts";
+import { Unit } from "./hh3-data.types.ts";
 
 export type SelectedUnit = Unit & {
   id: string;

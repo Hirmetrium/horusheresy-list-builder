@@ -43,41 +43,8 @@ function transformUnitToListOfProfiles(
   if (!profile)
     return { missing: true, profile: `${unit.profile_origin} - ${unit.name}` };
 
-  if (unit.name.includes("&") || unit.name === "Sharkey and Worm") {
-    return profile.additional_stats.map((stats) => {
-      const MWFW = unit.MWFW.find(([hName]) => hName === stats.name);
-      if (!MWFW)
-        return {
-          ...stats,
-          HM: "-",
-          HW: "-",
-          HF: "-",
-          type: ["Snow Troll"].includes(stats.name)
-            ? "Warrior"
-            : unit.unit_type,
-        };
-      const [HM, HW, HF] = MWFW[1].split(":");
-      return { ...stats, HM, HW, HF, type: unit.unit_type };
-    });
-  }
-
-  if (
-    unit.profile_origin === "Mordor" &&
-    ["The Witch-king of Angmar", "Ringwraith"].includes(unit.name)
-  ) {
-    const regex = /^(\d+)A \/ (\d+)M \/ (\d+)W \/ (\d+)F$/;
-    const amwfOption = unit.options.find(
-      (option) => option.name.match(regex) && option.quantity > 0,
-    );
-    if (amwfOption) {
-      const matches = amwfOption.name.match(regex);
-      profile.A = matches[1];
-    }
-  }
-
   const additional_stats = getAdditionalStats(unit, profile);
   const additional_special_rules = getAdditionalSpecialRules(unit);
-  const used_active_or_passive_rules = profile.active_or_passive_rules.filter(
     (rule) => {
       if (!rule.option_dependency) return true;
       const option = unit.options.find(

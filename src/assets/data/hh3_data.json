@@ -7,6 +7,7 @@
     "name": "Perturabo",
     "unit_type": "Warlord",
     "base_points": 400,
+    "unique": true,
     "warband_size": 0,
     "options": []
   },

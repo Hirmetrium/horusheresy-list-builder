@@ -14,12 +14,6 @@ import warningRulesRaw from "./data/warning_rules.json";
 export const armyListData: ArmyListData = armyListDataRaw;
 export const heroConstraintData: HeroConstraintsDataType =  heroConstraintDataRaw;
 export const keywords: KeywordsType = keywordsRaw as KeywordsType;
-export const hh3Data: Record<string, Unit> = hh3DataRaw as Record<
-  string,
-  Unit
->;
-export const profileData: Record<
-  string,
-  Record<string, Profile>
-> = profileDataRaw as Record<string, Record<string, Profile>>;
+export const hh3Data: Record<string, Unit> = hh3DataRaw as Record<string, Unit>;
+export const profileData: Record<string, Record<string, Profile>> = profileDataRaw as Record<string, Record<string, Profile>>;
 export const warningRulesData: WarningRules = warningRulesRaw as WarningRules;

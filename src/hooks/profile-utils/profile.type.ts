@@ -24,5 +24,4 @@ export type Profile = {
 
   additional_stats?: Profile[];
   additional_text?: string[];
-
 };

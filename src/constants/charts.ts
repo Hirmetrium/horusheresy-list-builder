@@ -1,13 +1,7 @@
 export const charts: Record<string, string> = {
-  "climb-table": "Climb Table",
-  "detonation-table": "Detonation Table",
-  "jump-table": "Jump Table",
-  "leap-table": "Leap Table",
-  "missile-weapon-chart": "Missile Weapon Chart",
-  "scatter-table": "Scatter Table",
-  "sentry-chart": "Sentry Chart",
-  "siege-gates-and-doors": "Siege Gates and Doors",
-  "swim-table": "Swim Table",
-  "thrown-rider-table": "Thrown Rider Table",
-  "to-wound-chart": "To Wound Chart",
+  "vehicle-damage-table": "Vehicle Damage Table",
+  "tactical-status-table": "Tactical Status Table",
+  "bs-chart": "Ballistic Skill Chart",
+  "ws-chart": "Weapon Skill Chart",
+  "to-wound-chart": "Wound Toughness Chart"
 };

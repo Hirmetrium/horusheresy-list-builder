@@ -15,31 +15,21 @@
       "IN": "9",
       "SAV": "2+",
       "INV": "4+",
-      "active_or_passive_rules": [
-        {
-          "name": "[Allegiance]",
-          "type": null,
-          "description": "This unit can only be part of a force with the same Allegiance."
-        },
-        {
-          "name": "[Legiones Astartes]",
-          "type": null,
-          "description": "This unit can only be part of a force with the same Legiones Astartes."
-        },
-        {
-          "name": "Master of the Legion",
-          "type": null,
-          "description": "May select a rite of war. May select one Apex Detachment."
-        }
-      ],
-      "magic_powers": [],
-      "heroic_actions": [],
-      "special_rules": [],
       "wargear": [
         "Bolt pistol",
         "Chainsword",
         "Frag Grenades",
         "Krak Grenades"
+      ],
+      "traits": [
+        "[Allegiance]",
+        "[Legiones Astartes]",
+        "Master of the Legion"
+      ],
+      "special_rules": [],
+      "type": [
+        "Infantry",
+        "Command"
       ]
     },
     "Praetor in Saturnine Terminator Armour": {
@@ -57,32 +47,63 @@
       "IN": "9",
       "SAV": "2+",
       "INV": "4+",
-      "active_or_passive_rules": [
-        {
-          "name": "[Allegiance]",
-          "type": null,
-          "description": "This model can only be part of a force with the same Allegiance."
-        },
-        {
-          "name": "[Legiones Astartes]",
-          "type": null,
-          "description": "This unit can only be part of a force with the same Legiones Astartes."
-        },
-        {
-          "name": "Master of the Legion",
-          "type": null,
-          "description": "May select a rite of war. May select one Apex Detachment."
-        }
-      ],
-      "magic_powers": [],
-      "heroic_actions": [],
-      "special_rules": [],
       "wargear": [
         "Saturnine war axe",
         "Saturnine disruption fist",
         "Thermal diffraction field"
+      ],
+      "traits": [
+        "[Allegiance]",
+        "[Legiones Astartes]",
+        "Master of the Legion"
+      ],
+      "special_rules": [
+        "Bulky (4)",
+        "Implacable Advance",
+        "Slow and Purposeful"
+      ],
+      "type": [
+        "Infantry",
+        "Command",
+        "Heavy"
       ]
     },
+    "Saturnine Terminator Squad": {
+      "M": "5",
+      "WS": "4",
+      "BS": "4",
+      "S": "4",
+      "T": "6",
+      "W": "3",
+      "I": "3",
+      "A": "2",
+      "LD": "8",
+      "CL": "8",
+      "WP": "7",
+      "IN": "7",
+      "SAV": "2+",
+      "INV": "4+",
+      "wargear": [
+        "Plasma bombard",
+        "Saturnine disruption fist",
+        "Occulix targeting auspex",
+        "Thermal diffraction field"
+      ],
+      "traits": [
+        "[Allegiance]",
+        "[Legiones Astartes]"
+      ],
+      "special_rules": [
+        "Bulky (4)",
+        "Implacable Advance",
+        "Slow and Purposeful"
+      ],
+      "type": [
+        "Infantry",
+        "Heavy"
+      ]
+    },
+
     "Centurion in Artificer Armour": {
       "M": "7",
       "WS": "5",
@@ -98,31 +119,20 @@
       "IN": "8",
       "SAV": "2+",
       "INV": "5+",
-      "active_or_passive_rules": [
-        {
-          "name": "[Allegiance]",
-          "type": null,
-          "description": "This model can only be part of a force with the same Allegiance."
-        },
-        {
-          "name": "[Legiones Astartes]",
-          "type": null,
-          "description": "This unit can only be part of a force with the same Legiones Astartes."
-        },
-        {
-          "name": "Master of the Legion",
-          "type": null,
-          "description": "May select a rite of war. May select one Apex Detachment."
-        }
-      ],
-      "magic_powers": [],
-      "heroic_actions": [],
-      "special_rules": [],
       "wargear": [
         "Bolt pistol",
         "Chainsword",
         "Frag Grenades",
         "Krak Grenades"
+      ],
+      "traits": [
+        "[Allegiance]",
+        "[Legiones Astartes]"
+      ],
+      "special_rules": [],
+      "type": [
+        "Infantry",
+        "Command"
       ]
     },
     "Tactical Squad": {
@@ -140,24 +150,19 @@
       "IN": "7",
       "SAV": "3+",
       "INV": "-",
-      "active_or_passive_rules": [
-        {
-          "name": "[Allegiance]",
-          "type": null,
-          "description": "This model can only be part of a force with the same Allegiance."
-        },
-        {
-          "name": "[Legiones Astartes]",
-          "type": null,
-          "description": "This unit can only be part of a force with the same Legiones Astartes."
-        }
-      ],
-      "magic_powers": [],
-      "heroic_actions": [],
-      "special_rules": [],
       "wargear": [
         "Bolter",
         "Bolt pistol"
+      ],
+      "traits": [
+        "[Allegiance]",
+        "[Legiones Astartes]"
+      ],
+      "special_rules": [
+        { "name": "Line (1)" }
+      ],
+      "type": [
+        "Infantry"
       ]
     }
   },
@@ -177,31 +182,21 @@
       "IN": "9",
       "SAV": "2+",
       "INV": "4+",
-      "active_or_passive_rules": [
-        {
-          "name": "[Allegiance]",
-          "type": null,
-          "description": "This unit can only be part of a force with the same Allegiance."
-        },
-        {
-          "name": "[Legiones Astartes]",
-          "type": null,
-          "description": "This unit can only be part of a force with the same Legiones Astartes."
-        },
-        {
-          "name": "Master of the Legion",
-          "type": null,
-          "description": "May select a rite of war. May select one Apex Detachment."
-        }
-      ],
-      "magic_powers": [],
-      "heroic_actions": [],
-      "special_rules": [],
       "wargear": [
         "Bolt pistol",
         "Chainsword",
         "Frag Grenades",
         "Krak Grenades"
+      ],
+      "traits": [
+        "[Allegiance]",
+        "[Legiones Astartes]",
+        "Master of the Legion"
+      ],
+      "special_rules": [],
+      "type": [
+        "Infantry",
+        "Command"
       ]
     },
     "Praetor in Saturnine Terminator Armour": {
@@ -219,32 +214,63 @@
       "IN": "9",
       "SAV": "2+",
       "INV": "4+",
-      "active_or_passive_rules": [
-        {
-          "name": "[Allegiance]",
-          "type": null,
-          "description": "This model can only be part of a force with the same Allegiance."
-        },
-        {
-          "name": "[Legiones Astartes]",
-          "type": null,
-          "description": "This unit can only be part of a force with the same Legiones Astartes."
-        },
-        {
-          "name": "Master of the Legion",
-          "type": null,
-          "description": "May select a rite of war. May select one Apex Detachment."
-        }
-      ],
-      "magic_powers": [],
-      "heroic_actions": [],
-      "special_rules": [],
       "wargear": [
         "Saturnine war axe",
         "Saturnine disruption fist",
         "Thermal diffraction field"
+      ],
+      "traits": [
+        "[Allegiance]",
+        "[Legiones Astartes]",
+        "Master of the Legion"
+      ],
+      "special_rules": [
+        "Bulky (4)",
+        "Implacable Advance",
+        "Slow and Purposeful"
+      ],
+      "type": [
+        "Infantry",
+        "Command",
+        "Heavy"
       ]
     },
+    "Saturnine Terminator Squad": {
+      "M": "5",
+      "WS": "4",
+      "BS": "4",
+      "S": "4",
+      "T": "6",
+      "W": "3",
+      "I": "3",
+      "A": "2",
+      "LD": "8",
+      "CL": "8",
+      "WP": "7",
+      "IN": "7",
+      "SAV": "2+",
+      "INV": "4+",
+      "wargear": [
+        "Plasma bombard",
+        "Saturnine disruption fist",
+        "Occulix targeting auspex",
+        "Thermal diffraction field"
+      ],
+      "traits": [
+        "[Allegiance]",
+        "[Legiones Astartes]"
+      ],
+      "special_rules": [
+        "Bulky (4)",
+        "Implacable Advance",
+        "Slow and Purposeful"
+      ],
+      "type": [
+        "Infantry",
+        "Heavy"
+      ]
+    },
+
     "Centurion in Artificer Armour": {
       "M": "7",
       "WS": "5",
@@ -260,31 +286,20 @@
       "IN": "8",
       "SAV": "2+",
       "INV": "5+",
-      "active_or_passive_rules": [
-        {
-          "name": "[Allegiance]",
-          "type": null,
-          "description": "This model can only be part of a force with the same Allegiance."
-        },
-        {
-          "name": "[Legiones Astartes]",
-          "type": null,
-          "description": "This unit can only be part of a force with the same Legiones Astartes."
-        },
-        {
-          "name": "Master of the Legion",
-          "type": null,
-          "description": "May select a rite of war. May select one Apex Detachment."
-        }
-      ],
-      "magic_powers": [],
-      "heroic_actions": [],
-      "special_rules": [],
       "wargear": [
         "Bolt pistol",
         "Chainsword",
         "Frag Grenades",
         "Krak Grenades"
+      ],
+      "traits": [
+        "[Allegiance]",
+        "[Legiones Astartes]"
+      ],
+      "special_rules": [],
+      "type": [
+        "Infantry",
+        "Command"
       ]
     },
     "Tactical Squad": {
@@ -302,24 +317,19 @@
       "IN": "7",
       "SAV": "3+",
       "INV": "-",
-      "active_or_passive_rules": [
-        {
-          "name": "[Allegiance]",
-          "type": null,
-          "description": "This model can only be part of a force with the same Allegiance."
-        },
-        {
-          "name": "[Legiones Astartes]",
-          "type": null,
-          "description": "This unit can only be part of a force with the same Legiones Astartes."
-        }
-      ],
-      "magic_powers": [],
-      "heroic_actions": [],
-      "special_rules": [],
       "wargear": [
         "Bolter",
         "Bolt pistol"
+      ],
+      "traits": [
+        "[Allegiance]",
+        "[Legiones Astartes]"
+      ],
+      "special_rules": [
+        { "name": "Line (1)" }
+      ],
+      "type": [
+        "Infantry"
       ]
     }
   },
@@ -338,34 +348,21 @@
     "IN": "10",
     "SAV": "2+",
     "INV": "4+",
-    "active_or_passive_rules": [
-      {
-        "name": "[Allegiance]",
-        "type": null,
-        "description": "This model can only be part of a force with the same Allegiance."
-      },
-      {
-        "name": "[Legiones Astartes]",
-        "type": null,
-        "description": "This unit can only be part of a force with the same Legiones Astartes."
-      },
-      {
-        "name": "Master of the Legion",
-        "type": null,
-        "description": "May select a rite of war. May select one Apex Detachment."
-      },
-      {
-        "name": "Sire of the Iron Warriors",
-        "type": null,
-        "description": "He's the goddamn fucking iron warriors primarch."
-      }
-    ],
-    "magic_powers": [],
-    "heroic_actions": [],
-    "special_rules": [],
     "wargear": [
       "The Logos",
       "Cortex Controller"
+    ],
+    "traits": [
+      "[Allegiance]",
+      "[Legiones Astartes]",
+      "Master of the Legion"
+    ],
+    "special_rules": [
+      "Sire of the Iron Warriors"
+    ],
+    "type": [
+      "Primarch",
+      "Command"
     ]
   }
 }  

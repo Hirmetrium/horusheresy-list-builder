@@ -4,13 +4,16 @@ export type ArmyType = "Astartes" | "Solar Auxilia";
  * TODO: regenerate this list after all data is loaded.
  */
 export type UnitType =
+  | "Crusade"
+  | "Allied"
   | "High Command"
   | "Command"
   | "Troops"
   | "Transports"
   | "Retinue"
-  | "Elites"
+  | "Elite"
   | "Shock Assault"
+  | "Tank"
   | "Tactical Support"
   | "Heavy Support"
   | "Combat Pioneers"
@@ -58,20 +61,7 @@ export type Unit = {
   unit_type: UnitType;
   base_points: number;
   unique?: boolean;
-  siege_crew: number;
-  MWFW: string[][];
   warband_size: number;
   options: Option[];
   opt_mandatory?: boolean;
-  bow_limit?: boolean;
-  default_bow?: boolean;
-  default_throw?: boolean;
-  inc_bow_count?: boolean;
-  no_followers?: boolean;
-  legacy?: boolean;
-};
-
-export type SiegeEquipment = Pick<
-  Unit,
-  "name" | "unit_type" | "base_points" | "model_id" | "profile_origin"
-> & { id?: string; siege_role: "Attacker" | "Defender" };
+}

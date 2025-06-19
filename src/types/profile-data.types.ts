@@ -1,36 +1,25 @@
 export type Profile = {
-  Mv: string;
-  Fv: string;
-  Sv: string;
-  S: string;
-  D: string;
-  A: string;
-  W: string;
-  C: string;
-  I: string;
-  Range?: string;
-  active_or_passive_rules?: ActivePassiveRule[];
-  magic_powers?: MagicPower[];
-  heroic_actions?: string[];
-  special_rules?: string[];
-  wargear?: string[];
+  M: string; // move
+  WS: string; // weapon skill
+  BS: string; // ballistic skill
+  S: string; // strength
+  T: string; // toughness
+  W: string; // wounds
+  I: string; // initiative
+  A: string; // attacks
+  LD: string; // advanced characteristic - leadership
+  CL: string; // advanced characteristic - cool
+  WP: string; // advanced characteristic - willpower
+  IN: string; // advanced characteristic - intelligence
+  SAV: string; // save
+  INV: string; // invun save
+  wargear?: string[]; // pull from profile
+  special_rules?: string[]; // should pull from main list, but specific variants might be harder to code?
+  traits?: string[]; // Renamed to traits to account for new profile layout in 3.0
+  type?: string[]; // adding unit types
   additional_stats?: AdditionalStat[]; // Optional field to account for the presence of additional stats
   additional_text?: string[]; // Optional field for additional text
 };
-
-type ActivePassiveRule = {
-  name: string;
-  type: "Active" | "Passive"; // Restrict to either "Active" or "Passive"
-  description: string;
-  option_dependency?: string;
-};
-
-type MagicPower = {
-  name: string;
-  range: string;
-  cast: string;
-};
-
 type AdditionalStat = Profile & {
   name: string; // name is not part of the Hero, so we explicitly add it
 };

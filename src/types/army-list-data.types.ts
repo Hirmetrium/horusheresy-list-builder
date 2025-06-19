@@ -10,9 +10,5 @@ export type ArmyListData = Record<
       troll_purchase?: boolean;
     }[];
     rule_highlights: string[];
-    bow_limit: number;
-    throw_limit: number;
-    break_point?: number;
-    legacy?: boolean;
   }
 >;

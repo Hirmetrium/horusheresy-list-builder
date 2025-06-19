@@ -27,12 +27,9 @@ class ModelDataConverter:
         self.__models["warband_size"] = self.__models.apply(self.__get_warband_size, axis=1)
         # Removes any entries that have an unknown unit type.
         self.__models["unit_type"] = pandas.Categorical(self.__models.unit_type, categories=unit_type_order)
-        # Make sure the MWFW becomes an actual array.
-        self.__models["MWFW"] = self.__models["MWFW"].apply(eval)
         # Converter fields from 0/1 to a bool (true/false)
         self.__models['unique'] = self.__models['unique'] == 1
         self.__models['opt_mandatory'] = self.__models['opt_mandatory'] == 1
-        self.__models['no_followers'] = self.__models['no_followers'] == 1
 
     def __convert_option_column_to_wanted_data_type(self):
         int_columns = ['points', 'quantity', 'passengers']

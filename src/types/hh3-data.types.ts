@@ -1,25 +1,37 @@
-export type ArmyType = "Astartes" | "Solar Auxilia";
+export type ArmyType = "Astartes" | "Mechanicum";
 
 /**
  * TODO: regenerate this list after all data is loaded.
  */
 export type UnitType =
-  | "Crusade"
-  | "Allied"
+  | "Crusade Primary Detachment"
+  | "Apex Detachment: Combat Retinue"
+  | "Apex Detachment: Officer Cadre"
+  | "Apex Detachment: Army Vanguard"
+  | "Auxillary Detachment: Armoured Fist"
+  | "Auxillary Detachment: Tactical Support"
+  | "Auxillary Detachment: Armoured Support"
+  | "Auxillary Detachment: Heavy Support"
+  | "Auxillary Detachment: Combat Pioneers"
+  | "Auxillary Detachment: Shock Assault"
+  | "Auxillary Detachment: First Strike"
+  | "Warlord Detachment"
+  | "Lord of War Detachment"
+  | "Allied Detachment"
   | "High Command"
   | "Command"
-  | "Troops"
-  | "Transports"
   | "Retinue"
   | "Elite"
   | "Shock Assault"
-  | "Tank"
   | "Tactical Support"
   | "Heavy Support"
+  | "Troops"
   | "Combat Pioneers"
-  | "First Strike"
-  | "Warlord"
+  | "Transports"
   | "Lord of War"
+  | "Warlord"
+  | "Tank"
+  | "First Strike"
   | string;
 
 /**

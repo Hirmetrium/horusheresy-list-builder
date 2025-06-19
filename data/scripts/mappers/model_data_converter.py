@@ -9,6 +9,10 @@ class ModelDataConverter:
         self.__options = options
 
     @staticmethod
+    def __get_warband_size(row):
+        return warband_sizes[row['unit_type']]
+
+    @staticmethod
     def __clean_nan_data_fields(data_frame, keep_empty_list: bool = False):
         return [
             {

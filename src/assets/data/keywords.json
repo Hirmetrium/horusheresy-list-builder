@@ -1,20 +1,342 @@
 [
   {
-    "name": "Legiones Astartes (X)",
-    "type": "special_rule",
-    "active_passive": null,
-    "description": "A Detachment selected from this Army List is considered to be of a specific Legion. Note that all units selected as part of a given Detachment must have the Legiones Astartes (X) special rule, or no variant of that special rule."
+    "name":"[Allegiance]",
+    "type":"traits",
+    "description":"This unit is either a Loyalist or a Traitor, and all models in the army must be from the same Allegiance"
   },
   {
-    "name": "Legiones Astartes (Iron Warrior)",
-    "type": "special_rule",
-    "active_passive": null,
-    "description": "A Detachment selected from this Army List is considered to be of the Legiones Astartes (Iron Warrior). Note that all units selected as part of a given Detachment must have the Legiones Astartes (Iron Warrior) special rule, or no variant of that special rule."
+    "name":"[Legiones Astartes]",
+    "type":"traits",
+    "description":"This unit is considered to be of a specific Legion, and all units selected as part of a given Detachment must have the same [Legiones Astartes] Trait."
   },
   {
-    "name": "Master of the Legion",
-    "type": "special_rule",
-    "active_passive": null,
-    "description": "May select a rite of war. May select one Apex Detachment."
+    "name":"Legiones Astartes (Iron Warrior)",
+    "type":"traits",
+    "description":"This unit is considered to be of the Iron Warriors Legion, and all units selected as part of a given Detachment must have the Iron Warriors Trait."
+  },
+  {
+    "name":"Master of the Legion",
+    "type":"traits",
+    "description":"May select a Rite of War. May select one Apex Detachment."
+  },
+  {
+    "name":"Smokescreen",
+    "type":"traits",
+    "description":"This does something with smoke."
+  },
+  {
+    "name":"Infantry",
+    "type":"type",
+    "description":null
+  },
+  {
+    "name":"Command",
+    "type":"type",
+    "description":null
+  },
+  {
+    "name":"Heavy",
+    "type":"type",
+    "description":null
+  },
+  {
+    "name":"Sergeant",
+    "type":"type",
+    "description":null
+  },
+  {
+    "name":"Walker",
+    "type":"type",
+    "description":null
+  },
+  {
+    "name":"Same Faction",
+    "type":"detachment",
+    "description":"Must be the same Faction as the Primary Detachment."
+  },
+  {
+    "name":"Points Limit",
+    "type":"detachment",
+    "description":"May only be selected in a 3,000 Point+ Army."
+  },
+  {
+    "name":"Any Faction",
+    "type":"detachment",
+    "description":"May be of any Faction."
+  },
+  {
+    "name":"Must be a different Faction than Primary",
+    "type":"detachment",
+    "description":"Must be a different Faction than Primary."
+  },
+  {
+    "name":"May include Auxillary Detachments",
+    "type":"detachment",
+    "description":"May include Auxillary Detachments."
+  },
+  {
+    "name":"Armourbane",
+    "type":"special_rule",
+    "description":"A Weapon with the Armourbane Special Rule counts Glancing Hits as Penetrating Hits."
+  },
+  {
+    "name":"Assault Vehicle",
+    "type":"special_rule",
+    "description":"A Vehicle with this Special Rule allows Models to Disembark and Charge without penalty."
+  },
+  {
+    "name":"Auto-repair (X)",
+    "type":"special_rule",
+    "description":"A Model with this Special Rule has a bonus to Repair Tests to remove Statuses."
+  },
+  {
+    "name":"Barrage (X)",
+    "type":"special_rule",
+    "description":"A Weapon with this Special Rule may be used to attack Target Units out of Line of Sight."
+  },
+  {
+    "name":"Battlesmith (X)",
+    "type":"special_rule",
+    "description":"A Model with the Battlesmith (X) Special Rule can repair Vehicles, Automata and other mechanical Units."
+  },
+  {
+    "name":"Blast (X)",
+    "type":"special_rule",
+    "description":"Attacks made with the Blast (X) Special Rule use a Blast Marker to determine how many Hits are caused."
+  },
+  {
+    "name":"Breaching (X)",
+    "type":"special_rule",
+    "description":"With a Weapon that has the Breaching (X) Special Rule there is a chance that a Wound Test may result I nthe Wound ignoring Armour Saves."
+  },
+  {
+    "name":"Bulky (X)",
+    "type":"special_rule",
+    "description":"Models with the Bulky (X) Special Rule take up more space on Transport Models."
+  },
+  {
+    "name":"Critical Hit (X)",
+    "type":"special_rule",
+    "description":"Attacks made with the Critical Hit (X) Special Rule have a chance to automatically cause a wound and inflict 1 extra point of damage."
+  },
+  {
+    "name":"Deep Strike",
+    "type":"special_rule",
+    "description":"The Deep Strike Special Rule allows a Unit to enter play anywhere on the Battlefield."
+  },
+  {
+    "name":"Deflagrate (X)",
+    "type":"special_rule",
+    "description":"Unsaved Wounds inflicted by attacks with the Deflagrate (X) Special Rule can cause additional Hits."
+  },
+  {
+    "name":"Detonation",
+    "type":"special_rule",
+    "description":"Weapons with this Special Rule can only attack Vehicles and immobile Models."
+  },
+  {
+    "name":"Duellist's Edge (X)",
+    "type":"special_rule",
+    "description":"A Weapon with the Duellist's Edge (X) Special Rule grants a bonus to Focus Rolls in Challenges."
+  },
+  {
+    "name":"Eternal Warrior (X)",
+    "type":"special_rule",
+    "description":"A Model with this Special Rule takes less Damage from attacks."
+  },
+  {
+    "name":"Expendable (X)",
+    "type":"special_rule",
+    "description":"A Player scores less Victory Points when they destroy a Unit that includes only Models with this Special Rule."
+  },
+  {
+    "name":"Explodes (X)",
+    "type":"special_rule",
+    "description":"A Model with this Special Rule can explode and cause Hits to nearby Models and Units."
+  },
+  {
+    "name":"Fast (X)",
+    "type":"special_rule",
+    "description":"A Unit that only includes Mmodels with the Fast (X) Special Rule gains a bonus to Rush and Charge Moves."
+  },
+  {
+    "name":"Fear (X)",
+    "type":"special_rule",
+    "description":"Models near an enemy Model with the Fear (X) Special Rule must reduce their Advanced Characteristics."
+  },
+  {
+    "name":"Feel No Pain (X)",
+    "type":"special_rule",
+    "description":"Feel No Pain (X) is a Damage Mitigation Test that may be taken in addition to a Saving Throw."
+  },
+  {
+    "name":"Firing Protocols (X)",
+    "type":"special_rule",
+    "description":"A Model with the Firing Protocols (X) Special Rule may attack with more than one ranged weapon."
+  },
+  {
+    "name":"Force (X)",
+    "type":"special_rule",
+    "description":"A Weapon with this Special Rule may double a Characteristic with a Willpower Check, but may suffer Perils of the Warp."
+  },
+  {
+    "name":"Hatred (X)",
+    "type":"special_rule",
+    "description":"The Hatred (X) Special Rule grants bonuses against enemies of a specific Faction, Type or Trait."
+  },
+  {
+    "name":"Heavy (X)",
+    "type":"special_rule",
+    "description":"Weapons with the Heavy (X) Special Rule gain _1 to a Characteristic when Stationary."
+  },
+  {
+    "name":"Heedless",
+    "type":"special_rule",
+    "description":"A Unit that includes any Models with this Special Rule cannot claim Objectives."
+  },
+  {
+    "name":"Impact (X)",
+    "type":"special_rule",
+    "description":"On a successful Charge, a Model with the Impact (X) Special Rule temporarily increases a Characteristic by 1."
+  },
+  {
+    "name":"Infiltrate (X)",
+    "type":"special_rule",
+    "description":"Models with the Infiltrate (X) Special Rule can deploy outside of their Deployment Zone."
+  },
+  {
+    "name":"Light Transport",
+    "type":"special_rule",
+    "description":"Models with this Special Rule cannot carry models with the Bulky (X) Special Rule."
+  },
+  {
+    "name":"Limited (X)",
+    "type":"special_rule",
+    "description":"A Weapon with the Limited (X) Special Rule can only be used to attack a limited number of times per Battle."
+  },
+  {
+    "name":"Line (X)",
+    "type":"special_rule",
+    "description":"A Unit of Models with this Special Rule can control Objectives more easily and scores more Victory Points from controlling an Objective."
+  },
+  {
+    "name":"Move Through Cover",
+    "type":"special_rule",
+    "description":"The Move Through Cover Special Rule allows the penalties of terrain to be ignored."
+  },
+  {
+    "name":"Officer of the Line (X)",
+    "type":"special_rule",
+    "description":"Models with this Special Rule allow more Auxillary Detachments to be included in an Army."
+  },
+  {
+    "name":"Ordnance (X)",
+    "type":"special_rule",
+    "description":"Weapons with the Ordnance (X) Special Rule double the value of a Characteristic when Stationary."
+  },
+  {
+    "name":"Outflank",
+    "type":"special_rule",
+    "description":"A Unit of Models with the Outflank Special Rule can enter play from outside of Deployment Zones."
+  },
+  {
+    "name":"Panic (X)",
+    "type":"special_rule",
+    "description":"Weapons and other attacks that have the Panic (X) Special Rule have a chance of inflicting the Routed Status on the Target Unit."
+  },
+  {
+    "name":"Phage (X)",
+    "type":"special_rule",
+    "description":"Unsaved Wounds with the Phage (X) Special Rule reduce a Characteristic by 1."
+  },
+  {
+    "name":"Pinning (X)",
+    "type":"special_rule",
+    "description":"Weapons and other attacks that have the Pinning (X) Special Rule have a chance of inflicting the Pinned Status on the Target Unit."
+  },
+  {
+    "name":"Pistol",
+    "type":"special_rule",
+    "description":"A Model may attack with two Weapons that have the Pistol Special Rule."
+  },
+  {
+    "name":"Poisoned (X)",
+    "type":"special_rule",
+    "description":"A Weapon with the Poisoned (X) Special Rule has a chance to cause a wound regardless of the target's Toughness."
+  },
+  {
+    "name":"Precision (X)",
+    "type":"special_rule",
+    "description":"Attacks made with the Precision (X) Special Rule are allocated by the Attacking Player, not the Defender."
+  },
+  {
+    "name":"Reaping Blow (X)",
+    "type":"special_rule",
+    "description":"If a Model with this Special Rule is outnumbered, it gains extra attacks."
+  },
+  {
+    "name":"Rending (X)",
+    "type":"special_rule",
+    "description":"With a Weapon that has the Rending (X) Special Rule, there is a chance that a Hit Test may result in an automatic wound."
+  },
+  {
+    "name":"Shock (X)",
+    "type":"special_rule",
+    "description":"Weapons with the Shock (X) Special Rule have a chance of inflicting Statuses on Vehicles even if it does not penetrate their armour."
+  },
+  {
+    "name":"Shread (X)",
+    "type":"special_rule",
+    "description":"Attacks made with the Shread (X) Special Rule can sometimes inflict an extra point of damage."
+  },
+  {
+    "name":"Shrouded (X)",
+    "type":"special_rule",
+    "description":"Shrouded (X) is a Damage Migration Test that may be taken in addition to a Saving Throw."
+  },
+  {
+    "name":"Skyfire",
+    "type":"special_rule",
+    "description":"Attacks made with the Skyfire Special Rule ignore penalties when attacking Flyers."
+  },
+  {
+    "name":"Stun (X)",
+    "type":"special_rule",
+    "description":"Weapons and other attacks that have the Stun (X) Special Rule have a chance of inflicting the Stunned Status on the Target Unit."
+  },
+  {
+    "name":"Support Unit (X)",
+    "type":"special_rule",
+    "description":"A Unit that includes Models with this Special Rule scores fewer Victory Points for controlling Objective Markers."
+  },
+  {
+    "name":"Suppressive (X)",
+    "type":"special_rule",
+    "description":"Weapons and other attacks that have the Suppressive (X) Special Rule have a chance of inflicting the Suppressed Status on the Target Unit."
+  },
+  {
+    "name":"Template",
+    "type":"special_rule",
+    "description":"Weapons and attacks with the Template Special Rule use the Flame Template to determine how many Models they Hit."
+  },
+  {
+    "name":"Vanguard (X)",
+    "type":"special_rule",
+    "description":"A Unit that includes Models with this Special Rule scores fewer Victory Points for controlling Objectives, but can score Victory Points for destroying enemy Units that hold Objectives."
+  },
+  {
+    "name":"Implacable Advance",
+    "type":"special_rule",
+    "description":null
+  },
+  {
+    "name":"Overload (X)",
+    "type":"special_rule",
+    "description":"With a Weapon that has the Overload (X) Special Rule, there is a chance that a Hit Test may result in an automatic wound to the user."
+  },
+  {
+    "name":"Slow and Purposeful",
+    "type":"special_rule",
+    "description":null
   }
 ]

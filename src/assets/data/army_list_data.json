@@ -1,34 +1,26 @@
 {
   "Legiones Astartes": {
-    "additional_rules": [
-      {
-        "description": "This is a generic placeholder for the legiones astartes additional rules."
-      }
-    ],
+    "additional_rules": [],
     "special_rules": [
       {
-        "title": "\"Legiones Astartes (X)\"",
-        "description": "A Detachment selected from this Army List is considered to be of a specific Legion. Note that all units selected as part of a given Detachment must have the Legiones Astartes (X) special rule, or no variant of that special rule."
-      },
+        "title": "\"Placeholder\"",
+        "description": "And they shall know no fear."
+      }
     ],
-    "bow_limit": 0,
-    "throw_limit": 0,
     "rule_highlights": []
   },
   "Iron Warriors": {
-    "additional_rules": [
-      {
-        "description": "This is a generic placeholder for the iron warriors additional rules."
-      }
-    ],
+    "additional_rules": [],
     "special_rules": [
       {
         "title": "\"Wrack & Ruin\"",
         "description": "When a model with this special rule makes a Shooting Attack or Melee Attack targeting a model with the Dreadnought, Automata, Vehicle or Building Unit Type, it gains +1 to the Strength of that attack."
       },
+      {
+        "title": "Warsmiths",
+        "description": " A Detachment with this special rule may choose to upgrade a Legion Praetor, Legion Cataphractii Praetor or Legion Tartaros Praetor to a Warsmith (see The Armoury of the Iron Warriors section for details)."
+      }
     ],
-    "bow_limit": 0,
-    "throw_limit": 0,
     "rule_highlights": []
   }
 }

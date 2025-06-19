@@ -1,7 +1,55 @@
 {
-  "[astartes] crusade-primary-detachment": {
+  "[detachment] allied-detachment": {
+    "valid_warband_units": [
+      "[astartes] legion-centurion",
+      "[astartes] legion-cataphractii-centurion",
+      "[astartes] legion-tartaros-centurion",
+      "[astartes] legion-damocles-command-rhino"
+    ],
+    "extra_profiles": []
+  },
+  "[detachment] armoured-fist": {
+    "valid_warband_units": [
+      "[astartes] legion-rhino",
+      "[astartes] legion-drop-pod",
+      "[astartes] legion-termite-assault-drill"
+    ],
+    "extra_profiles": []
+  },
+  "[detachment] armoured-support": {
+    "valid_warband_units": [
+      "[astartes] legion-predator"
+    ],
+    "extra_profiles": []
+  },
+  "[detachment] army-vanguard": {
+    "valid_warband_units": [
+      "[astartes] legion-veteran-squad",
+      "[astartes] legion-veteran-assault-squad",
+      "[astartes] legion-destroyer-assault-squad",
+      "[astartes] legion-mortalis-destroyer-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[detachment] combat-pioneers": {
+    "valid_warband_units": [
+      "[astartes] legion-recon-squad",
+      "[astartes] legion-scout-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[detachment] combat-retinue": {
+    "valid_warband_units": [
+      "[astartes] legion-command-squad",
+      "[astartes] legion-cataphractii-command-squad",
+      "[astartes] legion-tartaros-command-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[detachment] crusade-primary-detachment": {
     "valid_warband_units": [
       "[astartes] legion-praetor",
+      "[astartes] legion-saturnine-praetor",
       "[astartes] legion-cataphractii-praetor",
       "[astartes] legion-tartaros-praetor",
       "[astartes] legion-centurion",
@@ -18,15 +66,26 @@
     ],
     "extra_profiles": []
   },
-  "[astartes] combat-retinue": {
+  "[detachment] first-strike": {
     "valid_warband_units": [
-      "[astartes] legion-command-squad",
-      "[astartes] legion-cataphractii-command-squad",
-      "[astartes] legion-tartaros-command-squad"
+      "jetbike-squad"
     ],
     "extra_profiles": []
   },
-  "[astartes] officer-cadre": {
+  "[detachment] heavy-support": {
+    "valid_warband_units": [
+      "[astartes] legion-contemptor-dreadnought",
+      "saturnine-dreadnought"
+    ],
+    "extra_profiles": []
+  },
+  "[detachment] lord-of-war": {
+    "valid_warband_units": [
+      "[astartes] legion-fellblade"
+    ],
+    "extra_profiles": []
+  },
+  "[detachment] officer-cadre": {
     "valid_warband_units": [
       "[astartes] legion-centurion",
       "[astartes] legion-cataphractii-centurion",
@@ -35,20 +94,15 @@
     ],
     "extra_profiles": []
   },
-  "[astartes] army-vanguard": {
+  "[detachment] shock-assault": {
     "valid_warband_units": [
-      "[astartes] legion-veteran-squad",
-      "[astartes] legion-veteran-assault-squad",
-      "[astartes] legion-destroyer-assault-squad",
-      "[astartes] legion-mortalis-destroyer-squad"
+      "[astartes] legion-terminator-saturnine-squad",
+      "[astartes] legion-terminator-cataphractii-squad",
+      "[astartes] legion-terminator-tartaros-squad"
     ],
     "extra_profiles": []
   },
-  "[astartes] armoured-fist": {
-    "valid_warband_units": [],
-    "extra_profiles": []
-  },
-  "[astartes] tactical-support": {
+  "[detachment] tactical-support": {
     "valid_warband_units": [
       "[astartes] legion-tactical-squad",
       "[astartes] legion-despoiler-squad",
@@ -57,48 +111,10 @@
     ],
     "extra_profiles": []
   },
-  "[astartes] armoured-support": {
-    "valid_warband_units": [],
-    "extra_profiles": []
-  },
-  "[astartes] heavy-support": {
-    "valid_warband_units": [
-      "[astartes] legion-contemptor-dreadnought"
-    ],
-    "extra_profiles": []
-  },
-  "[astartes] combat-pioneers": {
-    "valid_warband_units": [],
-    "extra_profiles": [
-      "[astartes] legion-recon-squad",
-      "[astartes] legion-scout-squad"
-    ]
-  },
-  "[astartes] shock-assault": {
-    "valid_warband_units": [
-      "[astartes] legion-terminator-cataphractii-squad",
-      "[astartes] legion-terminator-tartaros-squad"
-    ],
-    "extra_profiles": []
-  },
-  "[astartes] first-strike": {
-    "valid_warband_units": [],
-    "extra_profiles": []
-  },
-  "[astartes] warlord": {
+  "[detachment] warlord": {
     "valid_warband_units": [
       "[iron-warriors] warlord-perturabo"
     ],
-    "extra_profiles": []
-  },
-  "[astartes] lord-of-war": {
-    "valid_warband_units": [
-      "[astartes] legion-fellblade"
-    ],
-    "extra_profiles": []
-  },
-  "[astartes] allied-detachment": {
-    "valid_warband_units": [],
     "extra_profiles": []
   }
 }

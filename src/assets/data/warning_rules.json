@@ -1,60 +1,35 @@
 {
-  "Legiones Astartes": [
+  "Legiones Astartes":[
     {
-      "type": "compulsory",
-      "dependencies": [
+      "type":"compulsory",
+      "dependencies":[
         "[astartes] crusade-primary-detachment"
       ],
-      "warning": "This army's primary detachment is the Crusade Primary Detachment and must be selected."
-    },
-    {
-      "type": "requires_one",
-      "dependencies": [
-        "[astartes] legion-praetor",
-        "[astartes] legion-saturnine-praetor",
-        "[astartes] legion-cataphractii-praetor",
-        "[astartes] legion-tartaros-praetor"
-      ],
-      "warning": "A Master of the Legion is required to select an Apex Detachment."
-    },
-    {
-      "type": "requires_one",
-      "dependencies": [
-        "[astartes] legion-centurion",
-        "[astartes] legion-cataphractii-centurion",
-        "[astartes] legion-tartaros-centurion",
-        "[astartes] legion-damocles-command-rhino"
-      ],
-      "warning": "A Command sub-type model is required to select an Auxillary Detachment."
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
     }
   ],
-  "Iron Warriors": [
+  "Legiones Astartes Apex Detachment":[
     {
-      "type": "compulsory",
-      "dependencies": [
-        "[astartes] crusade-primary-detachment"
-      ],
-      "warning": "This army's primary detachment is the Crusade Primary Detachment and must be selected."
-    },
-    {
-      "type": "requires_one",
-      "dependencies": [
+      "type":"requires_one",
+      "dependencies":[
         "[astartes] legion-praetor",
         "[astartes] legion-saturnine-praetor",
         "[astartes] legion-cataphractii-praetor",
         "[astartes] legion-tartaros-praetor"
       ],
-      "warning": "A Master of the Legion is required to select an Apex Detachment."
-    },
+      "warning":"A Master of the Legion is required to select an Apex Detachment."
+    }
+  ],
+  "Legiones Astartes Auxillary Detachment":[
     {
-      "type": "requires_one",
-      "dependencies": [
+      "type":"requires_one",
+      "dependencies":[
         "[astartes] legion-centurion",
         "[astartes] legion-cataphractii-centurion",
         "[astartes] legion-tartaros-centurion",
         "[astartes] legion-damocles-command-rhino"
       ],
-      "warning": "A Command sub-type model is required to select an Auxillary Detachment."
+      "warning":"A Command sub-type model is required to select an Auxillary Detachment."
     }
   ]
 }

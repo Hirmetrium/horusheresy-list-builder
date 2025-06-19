@@ -51,8 +51,8 @@ function transformUnitToListOfProfiles(
         selectedOptionWithName(rule.option_dependency),
       );
       return !!option; // return true if the option was found with quantity >0
-    },
-  );
+    }
+  ;
 
   return [
     {
@@ -61,8 +61,7 @@ function transformUnitToListOfProfiles(
       ...profile,
       ...getMightWillAndFate(unit),
       additional_stats,
-      special_rules: [...profile.special_rules, ...additional_special_rules],
-      active_or_passive_rules: used_active_or_passive_rules,
+      special_rules: [...profile.special_rules, ...additional_special_rules]
     },
   ];
 }

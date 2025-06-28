@@ -98,11 +98,7 @@ export const useRosterInformation = (): RosterInformationFunctions => {
       roster.armyList === "Rivendell" &&
       getSetOfModelIds(roster).includes("[rivendell] elrond")
     ) {
-      const knights = roster.warbands
-        .flatMap((wb) => wb.units)
-        .filter(isSelectedUnit)
-        .filter((unit) => unit.model_id === "[rivendell] rivendell-knight")
-        .reduce((a, b) => a + b.quantity, 0);
+      
       return {
         ...roster.metadata,
       };
@@ -114,21 +110,6 @@ export const useRosterInformation = (): RosterInformationFunctions => {
         points:
           roster.metadata.points +
           (roster.metadata.tttSpecialUpgrades?.length * 50 || 0),
-      };
-    }
-
-    if (roster.armyList === "Erebor & Dale") {
-      const units = roster.warbands
-        .flatMap((w) => w.units)
-        .filter(isSelectedUnit);
-      return {
-        ...roster.metadata,
-        bowLimit: units
-          .filter((u) => u.profile_origin === "Kingdoms of Men")
-          .reduce((s, u) => s + u.quantity, 0),
-        throwLimit: units
-          .filter((u) => u.profile_origin === "Dwarven Holds")
-          .reduce((s, u) => s + u.quantity, 0),
       };
     }
 
@@ -149,7 +130,7 @@ export const useRosterInformation = (): RosterInformationFunctions => {
       return roster.warbands.length < 9;
 
     const setOfModelIds = getSetOfModelIds(roster);
-    const stillAvailableWarbandLeaders = Object.values(mesbgData)
+    const stillAvailableWarbandLeaders = Object.values(hh3Data)
       .filter(
         ({ unit_type }) =>
           unit_type.includes("Hero") || unit_type === "Siege Engine",

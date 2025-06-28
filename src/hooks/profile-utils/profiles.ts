@@ -8,10 +8,8 @@ import {
 import { selectedOptionWithName } from "../../utils/options.ts";
 import { getAdditionalStats } from "./additional-profiles.ts";
 import { combineProfiles, duplicateProfiles } from "./deduplication.ts";
-import { getMightWillAndFate } from "./might-will-fate.ts";
 import { Profile } from "./profile.type.ts";
 import { byHeroicTier } from "./sorting.ts";
-import { getAdditionalSpecialRules } from "./special-rules.ts";
 
 type ProfileList = {
   profiles: Profile[];
@@ -44,7 +42,6 @@ function transformUnitToListOfProfiles(
     return { missing: true, profile: `${unit.profile_origin} - ${unit.name}` };
 
   const additional_stats = getAdditionalStats(unit, profile);
-  const additional_special_rules = getAdditionalSpecialRules(unit);
     (rule) => {
       if (!rule.option_dependency) return true;
       const option = unit.options.find(
@@ -59,9 +56,8 @@ function transformUnitToListOfProfiles(
       name: unit.name,
       type: unit.unit_type,
       ...profile,
-      ...getMightWillAndFate(unit),
       additional_stats,
-      special_rules: [...profile.special_rules, ...additional_special_rules]
+      special_rules: [...profile.special_rules]
     },
   ];
 }

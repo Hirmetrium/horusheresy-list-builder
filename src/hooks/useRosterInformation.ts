@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import { mesbgData } from "../assets/data.ts";
+import { hh3Data } from "../assets/data.ts";
 import { handleSpecialRestriction } from "../components/common/unit-selection/special-hero-selection-rules.ts";
 import { useRosterBuildingState } from "../state/roster-building";
-import { Unit } from "../types/mesbg-data.types.ts";
+import { Unit } from "../types/hh3-data.types.ts";
 import { isSelectedUnit, Roster } from "../types/roster.ts";
 import { isNotNull } from "../utils/nulls.ts";
 import { slugify } from "../utils/string.ts";
@@ -105,8 +105,6 @@ export const useRosterInformation = (): RosterInformationFunctions => {
         .reduce((a, b) => a + b.quantity, 0);
       return {
         ...roster.metadata,
-        bows: roster.metadata.bows - knights,
-        bowLimit: roster.metadata.bowLimit - knights,
       };
     }
 

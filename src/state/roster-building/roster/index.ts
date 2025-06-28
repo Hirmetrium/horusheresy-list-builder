@@ -22,10 +22,6 @@ export const emptyWarband: Warband = {
     units: 0,
     heroes: 0,
     maxUnits: "-",
-    bows: 0,
-    bowLimit: 0,
-    throwingWeapons: 0,
-    throwLimit: 0,
   },
   units: [],
 };
@@ -38,17 +34,9 @@ export const emptyRoster: Roster = {
   warbands: [emptyWarband],
   metadata: {
     leader: "",
-    might: 0,
-    will: 0,
-    fate: 0,
     points: 0,
     units: 0,
-    bows: 0,
-    bowLimit: 0,
-    throwingWeapons: 0,
-    throwLimit: 0,
     heroes: 0,
-    siegeRoster: false,
   },
 };
 

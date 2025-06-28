@@ -1,9 +1,9 @@
 import { TextField } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import { ChangeEvent, FunctionComponent, useState } from "react";
-import { mesbgData } from "../../../assets/data.ts";
+import { hh3Data } from "../../../assets/data.ts";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
-import { Unit } from "../../../types/mesbg-data.types.ts";
+import { Unit } from "../../../types/hh3-data.types.ts";
 import { UnitSelectionButton } from "./UnitSelectionButton.tsx";
 import { WithRibbon } from "./WithRibbon.tsx";
 import { handleSpecialRestriction } from "./special-hero-selection-rules.ts";
@@ -20,7 +20,7 @@ export const HeroSelectionList: FunctionComponent<HeroSelectionListProps> = ({
   const selectedModels = useRosterInformation().getSetOfModelIds();
   const [filter, setFilter] = useState("");
 
-  const heroes: Unit[] = Object.values(mesbgData)
+  const heroes: Unit[] = Object.values(hh3Data)
     .filter(
       (unit) =>
         unit.unit_type.includes("Hero") || unit.unit_type === "Siege Engine",
@@ -50,7 +50,6 @@ export const HeroSelectionList: FunctionComponent<HeroSelectionListProps> = ({
           <WithRibbon
             key={hero.model_id}
             label="Legacy"
-            hideRibbon={!hero.legacy}
           >
             <UnitSelectionButton unit={hero} onClick={() => selectUnit(hero)} />
           </WithRibbon>

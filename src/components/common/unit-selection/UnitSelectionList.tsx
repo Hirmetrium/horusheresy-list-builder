@@ -1,10 +1,10 @@
 import { TextField } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import { ChangeEvent, FunctionComponent, useState } from "react";
-import data from "../../../assets/data/mesbg_data.json";
+import data from "../../../assets/data/hh3_data.json";
 import { heroConstraintData } from "../../../assets/data.ts";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
-import { Unit } from "../../../types/mesbg-data.types.ts";
+import { Unit } from "../../../types/hh3-data.types.ts";
 import { UnitSelectionButton } from "./UnitSelectionButton.tsx";
 import { WithRibbon } from "./WithRibbon.tsx";
 import { handleSpecialRestriction } from "./special-unit-selection-rules.ts";

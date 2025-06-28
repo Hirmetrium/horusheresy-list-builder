@@ -10,7 +10,7 @@ import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { useAppState } from "../../../state/app";
 import { useCollectionState } from "../../../state/collection";
 import { useUserPreferences } from "../../../state/preference";
-import { Unit } from "../../../types/mesbg-data.types.ts";
+import { Unit } from "../../../types/hh3-data.types.ts";
 import { isSelectedUnit } from "../../../types/roster.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
 import { UnitProfilePicture } from "../images/UnitProfilePicture.tsx";
@@ -23,7 +23,6 @@ export type UnitSelectionButtonProps = {
     | "name"
     | "profile_origin"
     | "base_points"
-    | "MWFW"
     | "unit_type"
     | "options"
   >;

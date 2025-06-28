@@ -21,5 +21,5 @@ export type Profile = {
   additional_text?: string[];
 };
 type AdditionalStat = Profile & {
-  name: string; // name is not part of the Hero, so we explicitly add it
+  name: string; // name is not part of the unit, so we explicitly add it
 };

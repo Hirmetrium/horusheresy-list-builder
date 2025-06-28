@@ -1,7 +1,7 @@
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
-import { Unit } from "../../../types/mesbg-data.types.ts";
+import { Unit } from "../../../types/hh3-data.types.ts";
 
 type MwfBadgeProps = { unit: Pick<Unit, "MWFW"> };
 

@@ -1,7 +1,7 @@
 import { FormGroup, FormHelperText } from "@mui/material";
 import Box from "@mui/material/Box";
 import { FunctionComponent } from "react";
-import { Option } from "../../../types/mesbg-data.types.ts";
+import { Option } from "../../../types/hh3-data.types.ts";
 import { slugify } from "../../../utils/string.ts";
 import { OptionItem } from "./OptionItem.tsx";
 

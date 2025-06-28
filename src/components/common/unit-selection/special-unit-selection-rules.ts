@@ -1,4 +1,4 @@
-import { Unit } from "../../../types/mesbg-data.types.ts";
+import { Unit } from "../../../types/hh3-data.types.ts";
 
 export function handleGarrisonOfIthilien(unit: Unit, selectedUnits: string[]) {
   return unit.army_list === "Garrison of Ithilien"

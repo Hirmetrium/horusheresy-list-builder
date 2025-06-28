@@ -6,7 +6,6 @@ import { heroConstraintData } from "../../../../assets/data.ts";
 import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts";
 import {
   isSelectedUnit,
-  isSiegeEquipment,
   Warband,
 } from "../../../../types/roster.ts";
 import { UnitRow } from "./UnitRow.tsx";
@@ -43,7 +42,6 @@ export const WarbandSection = ({
         quantity: unit.quantity,
         points: unit.pointsTotal,
         unique: unit.unique,
-        legacy: unit.legacy,
       }))
       .reduce(
         (acc, item) => {
@@ -79,7 +77,6 @@ export const WarbandSection = ({
     !!hero &&
     warband.units
       .filter(isSelectedUnit)
-      .filter((unit) => !isSiegeEquipment(unit))
       .some(
         (unit) =>
           !heroConstraintData[hero.model_id].valid_warband_units.includes(

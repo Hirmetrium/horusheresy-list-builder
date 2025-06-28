@@ -27,7 +27,7 @@
         "Master of the Legion"
       ],
       "special_rules": [],
-      "unit_type": [
+      "type": [
         "Infantry",
         "Command"
       ]
@@ -62,7 +62,7 @@
         "Implacable Advance",
         "Slow and Purposeful"
       ],
-      "unit_type": [
+      "type": [
         "Infantry",
         "Command",
         "Heavy"
@@ -98,8 +98,43 @@
         "Implacable Advance",
         "Slow and Purposeful"
       ],
-      "unit_type": [
+      "type": [
         "Infantry",
+        "Heavy"
+      ]
+    },
+    "Saturnine Dreadnought": {
+      "M": "6",
+      "WS": "4",
+      "BS": "4",
+      "S": "8",
+      "T": "8",
+      "W": "8",
+      "I": "3",
+      "A": "2",
+      "LD": "12",
+      "CL": "10",
+      "WP": "7",
+      "IN": "5",
+      "SAV": "2+",
+      "INV": "4+",
+      "wargear": [
+        "Disintegrator cannon",
+        "Heavy plasma bombard",
+        "Two photonic incinerators",
+        "Thermal diffraction field"
+      ],
+      "traits": [
+        "[Allegiance]",
+        "[Legiones Astartes]",
+        "Smokescreen"
+      ],
+      "special_rules": [
+        "Bulky (8)",
+        "Explodes (4+)"
+      ],
+      "type": [
+        "Walker",
         "Heavy"
       ]
     },
@@ -129,7 +164,7 @@
         "[Legiones Astartes]"
       ],
       "special_rules": [],
-      "unit_type": [
+      "type": [
         "Infantry",
         "Command"
       ]
@@ -160,7 +195,7 @@
       "special_rules": [
         { "name": "Line (1)" }
       ],
-      "unit_type": [
+      "type": [
         "Infantry"
       ]
     },
@@ -191,7 +226,7 @@
       "special_rules": [
         "Sire of the Iron Warriors"
       ],
-      "unit_type": [
+      "type": [
         "Primarch",
         "Command"
       ]

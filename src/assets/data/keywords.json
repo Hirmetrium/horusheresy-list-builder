@@ -27,27 +27,77 @@
   {
     "name":"Infantry",
     "type":"unit_type",
-    "description":null
+    "description":"Infantry is the most basic Type, and is applied to most models in the game. They use the Core Rules without modification, gaining neither benefit nor penalty. Models with the Infantry Type may Embark and Disembark on Transports."
   },
   {
-    "name":"Command",
+    "name":"Cavalry",
     "type":"unit_type",
-    "description":null
-  },
-  {
-    "name":"Heavy",
-    "type":"unit_type",
-    "description":null
-  },
-  {
-    "name":"Sergeant",
-    "type":"unit_type",
-    "description":null
+    "description":"The following rules apply to all models with the Cavalry Type:\n- When making a fall back move, they move a distance equal to their initiative plus the total of two dice rolled and added together\n- May not make use of any cover save granted by terrain features or areas of terrain"
   },
   {
     "name":"Walker",
     "type":"unit_type",
-    "description":null
+    "description":"The following rules apply to all models with the Walker Type:\n- Effects of the Poisoned (x) Special Rule only trigger on a Wound Test with a result of a '6' before modifiers.\n- May attack with all weapons they have in each shooting attack, including reactions. Does not apply to weapons without the 'Assault' trait during Volley attacks.\n- When deciding how many Models a player controls in a Combat, they count as the number of models as equal to their base wounds value."
+  },
+  {
+    "name":"Paragon",
+    "type":"unit_type",
+    "description":"The following rules apply to all models with the Paragon Type:\n- Any hits are allocated by the controlling player to the target unit\n- May join or be joined by any unit of Infantry type models\n- May Embark and disembark on Transports\n- May Issue and Accept Challenges\n- A Unit may use the characteristics of the Paragon type model to resolve Characteristic Checks\n- When deciding how many Models a player controls in a Combat, they count as the number of models as equal to their base wounds value."
+  },
+  {
+    "name":"Automata",
+    "type":"unit_type",
+    "description":"The following rules apply to all models with the Automata Type:\n- Cannot gain any Tactical Statuses and pass any Check made to avoid a Tactical Status.\n- Effects of the Poisoned (x) Special Rule only trigger on a Wound Test with a result of a '6' before modifiers.\n- A unit that includes this type may not make reactions."
+  },
+  {
+    "name":"Unique",
+    "type":"unit_type",
+    "description":"The following rules apply to all models with the Unique Sub-Type:\n- An army may not include more than a single instance.\n- May not have any options other than those included on its Army list Profile."
+  },
+  {
+    "name":"Command",
+    "type":"unit_type",
+    "description":"The following rules apply to all models with the Command Sub-Type:\n- May join and leave units\n- May Issue and Accept Challenges\n- A Unit may use the characteristics of the Command Sub-Type model to resolve Characteristic Checks"
+  },
+  {
+    "name":"Champion",
+    "type":"unit_type",
+    "description":"Models with the Champion Sub-Type may Issue and Accept Challenges"
+  },
+  {
+    "name":"Specialist",
+    "type":"unit_type",
+    "description":"Models with the Specialist Sub-Type may join and leave units"
+  },
+  {
+    "name":"Sergeant",
+    "type":"unit_type",
+    "description":"Units containing a model with the Sergeant Sub-Type may use the characteristics of the Sergeant Sub-Type model to resolve Characteristic Checks"
+  },
+  {
+    "name":"Heavy",
+    "type":"unit_type",
+    "description":"The following rules apply to all models with the Heavy Sub-Type:\n- A Unit that includes only models with this Sub-Type gain a bonus of +1 to their Cool Characteristic for Checks to avoid gaining Tactical Statuses.\n- May not Rush.\n- Only uses its Movement Characteristic to determine how far it moves as part of a Set-up Move, and does not include Initiative."
+  },
+  {
+    "name":"Light",
+    "type":"unit_type",
+    "description":"The following rules apply to all models with the Light Sub-Type:\n- A Unit that includes only models with this Sub-Type gain a bonus of +1 to their Initiative when determining how far that Unit may Rush (this stacks with other bonuses).\n- A unit that includes this type may make shooting attacks as Snap Shots. Models and weapons that cannot attack as snap shots still may not make attacks."
+  },
+  {
+    "name":"Skirmish",
+    "type":"unit_type",
+    "description":"A unit that includes only Models with the Skirmish Sub-Type has a Unit Coherency range of 3\" rather than 2\"."
+  },
+  {
+    "name":"Antigrav",
+    "type":"unit_type",
+    "description":"A unit that includes only Models with the Antigrav Sub-Type may:\n- Ignore the effects of any and all Terrain it passes over during movement\n- Ignore both friendly and enemy models and units when moving"
+  },
+  {
+    "name":"Transport",
+    "type":"unit_type",
+    "description":"Models with the transport sub-type:\n- Have a maximum transport capacity characteristic\n- May only carry Infantry or Paragon Type units\n- May only carry models of the same faction\n- May only carry one unit at a time (joined models count as part of the unit)\n- May not carry part of a unit\n- Are not considered the same unit as the unit they carry"
   },
   {
     "name":"Same Faction",

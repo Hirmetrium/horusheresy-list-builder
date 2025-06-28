@@ -9,7 +9,6 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { Fragment } from "react";
-import { armyListData } from "../../../../assets/data.ts";
 import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts";
 import { useUserPreferences } from "../../../../state/preference";
 import { useThemeContext } from "../../../../theme/ThemeContext.tsx";
@@ -67,9 +66,8 @@ export const ArmyComposition = ({ noCaption }: { noCaption?: boolean }) => {
     ...warband.units.filter(isSelectedUnit),
   ]);
 
-  const { might, units, points, bows, throwingWeapons, will, fate } =
+  const { units, points, } =
     getAdjustedMetaData();
-  const { break_point } = armyListData[roster.armyList];
 
   return (
     <Box id="pdf-army" className={removePdfPageBreak ? "" : "page-break"}>
@@ -90,12 +88,6 @@ export const ArmyComposition = ({ noCaption }: { noCaption?: boolean }) => {
             <Typography>
               Units: <b>{units}</b>
             </Typography>
-            <Typography>
-              Bows: <b>{bows}</b>
-            </Typography>{" "}
-            <Typography>
-              Throwing weapons: <b>{throwingWeapons}</b>
-            </Typography>
           </Stack>{" "}
           <Stack
             direction="row"
@@ -103,19 +95,6 @@ export const ArmyComposition = ({ noCaption }: { noCaption?: boolean }) => {
             sx={{ mb: 1 }}
             justifyContent="space-around"
           >
-            <Typography>
-              Might / Will / Fate:{" "}
-              <b>
-                {might} / {will} / {fate}
-              </b>
-            </Typography>
-            <Typography>
-              Break Point:{" "}
-              <b>
-                {units > 0 ? Math.floor(units * (break_point ?? 0.5)) + 1 : 0}{" "}
-                dead
-              </b>
-            </Typography>
             <Typography>
               Quartered: <b>{Math.floor(0.25 * units)} alive</b>
             </Typography>
@@ -139,8 +118,8 @@ export const ArmyComposition = ({ noCaption }: { noCaption?: boolean }) => {
                     Warband {index + 1}
                   </TableCell>
                 </TableRow>
-                {warband.map((unit, index) => (
-                  <UnitRow unit={unit} key={index} />
+                {warband.map((unit) => (
+                  <UnitRow unit={unit} />
                 ))}
               </Fragment>
             ))}

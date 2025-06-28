@@ -24,19 +24,20 @@ const ReferenceRow = ({
   row: Pick<
     Profile,
     | "name"
-    | "Range"
-    | "Mv"
-    | "Fv"
-    | "Sv"
+    | "M"
+    | "WS"
+    | "BS"
     | "S"
-    | "D"
-    | "A"
+    | "T"
     | "W"
-    | "C"
     | "I"
-    | "HM"
-    | "HW"
-    | "HF"
+    | "A"
+    | "LD"
+    | "CL"
+    | "WP"
+    | "IN"
+    | "SAV"
+    | "INV"
     | "type"
   >;
   indent?: boolean;
@@ -57,18 +58,21 @@ const ReferenceRow = ({
         {prefix}
         {row.name}
       </TableCell>
-      <TableCell size="small">{row.Mv}</TableCell>
-      <TableCell size="small">{row.Fv}</TableCell>
-      <TableCell size="small">{row.Sv}</TableCell>
+      <TableCell size="small">{row.M}</TableCell>
+      <TableCell size="small">{row.WS}</TableCell>
+      <TableCell size="small">{row.BS}</TableCell>
       <TableCell size="small">{row.S}</TableCell>
-      <TableCell size="small">{row.D}</TableCell>
-      <TableCell size="small">{row.A}</TableCell>
+      <TableCell size="small">{row.T}</TableCell>
       <TableCell size="small">{row.W}</TableCell>
-      <TableCell size="small">{row.C}</TableCell>
       <TableCell size="small">{row.I}</TableCell>
-      <TableCell size="small">{row.HM ?? "-"}</TableCell>
-      <TableCell size="small">{row.HW ?? "-"}</TableCell>
-      <TableCell size="small">{row.HF ?? "-"}</TableCell>
+      <TableCell size="small">{row.A}</TableCell>
+      <TableCell size="small">{row.LD}</TableCell>
+      <TableCell size="small">{row.CL}</TableCell>
+      <TableCell size="small">{row.WP}</TableCell>
+      <TableCell size="small">{row.IN}</TableCell>
+      <TableCell size="small">{row.SAV}</TableCell>
+      <TableCell size="small">{row.INV}</TableCell>
+      <TableCell size="small">{row.type}</TableCell>
     </TableRow>
   );
 };
@@ -275,10 +279,7 @@ export const QuickReferenceTable = ({
                     >
                       {row.name}
                     </TableCell>
-                    <TableCell size="small">{row.Range}</TableCell>
-
                     <TableCell size="small">{row.S}</TableCell>
-                    <TableCell size="small">{row.D}</TableCell>
                     <TableCell size="small">{row.W}</TableCell>
                   </TableRow>
                 </Fragment>

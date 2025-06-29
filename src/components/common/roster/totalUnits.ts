@@ -1,4 +1,4 @@
-import { UnitType } from "../../../types/mesbg-data.types.ts";
+import { UnitType } from "../../../types/hh3-data.types.ts";
 import { isSelectedUnit, Roster, SelectedUnit } from "../../../types/roster.ts";
 
 const defaultOptions = {
@@ -45,14 +45,35 @@ export const getSumOfUnits = (
   );
 
   const sorting: Record<UnitType, number> = {
-    "Hero of Legend": 1,
-    "Hero of Valour": 2,
-    "Hero of Fortitude": 3,
-    "Minor Hero": 4,
-    "Independent Hero": 5,
-    Warrior: 6,
-    "Siege Engine": 7,
-  };
+      "Crusade Primary Detachment": 1,
+      "Apex Detachment Combat Retinue": 2,
+      "Apex Detachment Officer Cadre": 3,
+      "Apex Detachment Army Vanguard": 4,
+      "Auxillary Detachment Armoured Fist": 5,
+      "Auxillary Detachment Tactical Support": 6,
+      "Auxillary Detachment Armoured Support": 7,
+      "Auxillary Detachment Heavy Support": 8,
+      "Auxillary Detachment Combat Pioneers": 9,
+      "Auxillary Detachment Shock Assault": 10,
+      "Auxillary Detachment First Strike": 11,
+      "Warlord Detachment": 12,
+      "Lord of War Detachment": 13,
+      "Allied Detachment": 14,
+      "High Command": 15,
+      "Command": 16,
+      "Retinue": 17,
+      "Elite": 18,
+      "Shock Assault": 19,
+      "Tactical Support": 20,
+      "Heavy Support": 21,
+      "Troops": 22,
+      "Combat Pioneers": 23,
+      "Transports": 24,
+      "Lord of War": 25,
+      "Warlord": 26,
+      "Tank": 27,
+      "First Strike": 28
+      };
 
   return totalledUnits.sort((a, b) => {
     if (a.unit_type.includes("Hero") && a.unique) {

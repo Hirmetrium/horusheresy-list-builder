@@ -94,7 +94,7 @@ function AdditionalRows({
   return (
     parentProfile.additional_stats
       // Hide mounts, which are in a separate table
-      ?.filter((stat) => stat.type !== "mount" && stat.type !== "Siege Engine")
+      ?.filter((stat) => stat.type !== "mount")
 
       // Hide additional profiles that are already displayed at top-level.
       ?.filter(

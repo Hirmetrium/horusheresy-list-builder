@@ -29,7 +29,7 @@
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Apex Detachment: Combat Retinue",
-    "unit_type": "Apex Detachment: Combat Retinue",
+    "unit_type": "Apex Detachment Combat Retinue",
     "base_points": 0,
     "warband_size": 3,
     "options": []
@@ -40,7 +40,7 @@
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Apex Detachment: Officer Cadre",
-    "unit_type": "Apex Detachment: Officer Cadre",
+    "unit_type": "Apex Detachment Officer Cadre",
     "base_points": 0,
     "warband_size": 2,
     "options": []
@@ -51,7 +51,7 @@
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Apex Detachment: Army Vanguard",
-    "unit_type": "Apex Detachment: Army Vanguard",
+    "unit_type": "Apex Detachment Army Vanguard",
     "base_points": 0,
     "warband_size": 3,
     "options": []
@@ -62,7 +62,7 @@
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Auxillary Detachment: Armoured Fist",
-    "unit_type": "Auxillary Detachment: Armoured Fist",
+    "unit_type": "Auxillary Detachment Armoured Fist",
     "base_points": 0,
     "warband_size": 8,
     "options": []
@@ -73,7 +73,7 @@
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Auxillary Detachment: Tactical Support",
-    "unit_type": "Auxillary Detachment: Tactical Support",
+    "unit_type": "Auxillary Detachment Tactical Support",
     "base_points": 0,
     "warband_size": 4,
     "options": []
@@ -84,7 +84,7 @@
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Auxillary Detachment: Armoured Support",
-    "unit_type": "Auxillary Detachment: Armoured Support",
+    "unit_type": "Auxillary Detachment Armoured Support",
     "base_points": 0,
     "warband_size": 4,
     "options": []
@@ -95,7 +95,7 @@
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Auxillary Detachment: Heavy Support",
-    "unit_type": "Auxillary Detachment: Heavy Support",
+    "unit_type": "Auxillary Detachment Heavy Support",
     "base_points": 0,
     "warband_size": 1,
     "options": []
@@ -106,7 +106,7 @@
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Auxillary Detachment: Combat Pioneers",
-    "unit_type": "Auxillary Detachment: Combat Pioneers",
+    "unit_type": "Auxillary Detachment Combat Pioneers",
     "base_points": 0,
     "warband_size": 2,
     "options": []
@@ -117,7 +117,7 @@
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Auxillary Detachment: Shock Assault",
-    "unit_type": "Auxillary Detachment: Shock Assault",
+    "unit_type": "Auxillary Detachment Shock Assault",
     "base_points": 0,
     "warband_size": 2,
     "options": []
@@ -128,7 +128,7 @@
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Auxillary Detachment: First Strike",
-    "unit_type": "Auxillary Detachment: First Strike",
+    "unit_type": "Auxillary Detachment First Strike",
     "base_points": 0,
     "warband_size": 2,
     "options": []

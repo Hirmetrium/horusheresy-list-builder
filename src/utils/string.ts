@@ -29,13 +29,6 @@ export function generateRandomHash(length: number) {
   return result;
 }
 
-export function isMovieQuote(str: string): boolean {
-  // Regular expression to check if the string starts and ends with a double quote
-  const regex = /^".*?"$/;
-
-  return regex.test(str);
-}
-
 export function withSuffix(id: string, existingIds: string[] = []) {
   const hashedId = id + "-" + generateRandomHash(6);
   if (existingIds.includes(hashedId)) {

@@ -825,5 +825,16 @@
     "base_points": 600,
     "warband_size": 0,
     "options": []
+  },
+  "castellax": {
+    "model_id": "castellax",
+    "army_type": "Mechanicum",
+    "army_list": "Mechanicum",
+    "profile_origin": "Liber Mechanicum",
+    "name": "Castellax Battle Automata",
+    "unit_type": "Troops",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
   }
 }

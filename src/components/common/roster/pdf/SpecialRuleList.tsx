@@ -7,7 +7,6 @@ import { armyListData } from "../../../../assets/data.ts";
 import { Profile } from "../../../../hooks/profile-utils/profile.type.ts";
 import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts";
 import { useUserPreferences } from "../../../../state/preference";
-import { isMovieQuote } from "../../../../utils/string.ts";
 
 interface SpecialRuleListProps {
   profiles: Profile[];
@@ -24,69 +23,29 @@ function duplicates(item: SpecialRule, index: number, self: SpecialRule[]) {
 }
 
 function mapSpecialRule(sr: string) {
-  if (
-    [
-      "Poisoned Sword",
-      "Poisoned Spear",
-      "Poisoned War Spear",
-      "Poisoned Blowpipe",
-      "Poisoned Fangs",
-    ].includes(sr)
-  ) {
     const rule = keywords.find(
-      (keyword) => keyword.name === "Poisoned Weapons",
-    );
-    return {
-      name: sr,
-      type: rule?.active_passive,
-      description: rule?.description,
-    };
-  }
-  if (sr.endsWith("bane")) {
-    const rule = keywords.find((keyword) => keyword.name === "Bane Weapons");
-    return {
-      name: sr,
-      type: rule?.active_passive,
-      description: rule?.description,
-    };
-  }
-
-  const rule = keywords.find(
     (keyword) => keyword.name === sr.replace(/\(.*?\)/g, "(X)"),
   );
   return {
     name: rule?.name || sr,
-    type: rule?.active_passive,
+    type: rule?.type,
     description: rule?.description,
-  };
-}
-
-function mapAopRule(rule: {
-  name: string;
-  type: "Active" | "Passive";
-  description: string;
-}) {
-  return {
-    ...rule,
-    type: rule.type || "Passive",
   };
 }
 
 export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
   const {
-    preferences: { removePdfPageBreak, hidePdfSpecialRules, hidePdfArmyRules },
+    preferences: { removePdfPageBreak, hidePdfSpecialRules },
   } = useUserPreferences();
   const {
-    roster: { armyList, metadata },
+    roster: { armyList },
   } = useRosterInformation();
   const armyListRules = armyListData[armyList];
 
   const specialRules: SpecialRule[] = profiles
     .flatMap((profile) => [
-      ...profile.active_or_passive_rules.map(mapAopRule),
       ...profile.special_rules.map(mapSpecialRule),
       ...(profile.additional_stats?.flatMap((additionalProfile) => [
-        ...additionalProfile.active_or_passive_rules.map(mapAopRule),
         ...additionalProfile.special_rules.map(mapSpecialRule),
       ]) || []),
     ])
@@ -97,55 +56,6 @@ export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
   return (
     <>
       <Box id="pdf-rules" className={removePdfPageBreak ? "" : "page-break"}>
-        {!hidePdfArmyRules && (
-          <Box sx={{ mb: 2 }}>
-            <Typography variant="h5" sx={{ mb: 1 }}>
-              Army special rules
-            </Typography>
-            <Stack gap={1}>
-              {armyListRules.special_rules
-                .filter((rule) => {
-                  if (armyList === "The Three Trolls") {
-                    return (
-                      rule.troll_purchase !== true ||
-                      (metadata.tttSpecialUpgrades &&
-                        metadata.tttSpecialUpgrades.includes(rule.title))
-                    );
-                  }
-                  return true;
-                })
-                .map((rule, index) => (
-                  <Box
-                    key={index}
-                    component={rule.troll_purchase === true ? "ul" : "div"}
-                    sx={{ pageBreakInside: "avoid" }}
-                  >
-                    {isMovieQuote(rule.title) ? (
-                      <Typography
-                        component={rule.troll_purchase === true ? "li" : "p"}
-                      >
-                        <b>
-                          <i>{rule.title}</i>
-                        </b>
-                      </Typography>
-                    ) : (
-                      <Typography
-                        component={rule.troll_purchase === true ? "li" : "p"}
-                      >
-                        <b>{rule.title}</b>
-                      </Typography>
-                    )}
-                    <Stack gap={0.5}>
-                      {rule.description.split("\n").map((paragraph, index) => (
-                        <Typography key={index}>{paragraph}</Typography>
-                      ))}
-                    </Stack>
-                  </Box>
-                ))}
-            </Stack>
-          </Box>
-        )}
-
         {!hidePdfSpecialRules && (
           <Box>
             <Typography variant="h5">Special rules</Typography>

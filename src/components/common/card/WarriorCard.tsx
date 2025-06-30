@@ -10,7 +10,7 @@ import { useCollectionWarnings } from "../../../hooks/useCollectionWarnings.ts";
 import { useOptionDependencies } from "../../../hooks/useOptionDependencies.ts";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
-import { Option } from "../../../types/mesbg-data.types.ts";
+import { Option } from "../../../types/hh3-data.types.ts";
 import { isSiegeEquipment, SelectedUnit } from "../../../types/roster.ts";
 import { slugify } from "../../../utils/string.ts";
 import { UnitProfilePicture } from "../images/UnitProfilePicture.tsx";

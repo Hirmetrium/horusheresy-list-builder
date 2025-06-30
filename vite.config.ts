@@ -19,7 +19,7 @@ export default defineConfig(({ command }) => ({
     RESOURCES_URL: JSON.stringify(
       command === "serve"
         ? "/static-resources"
-        : "https://resources.mesbg-list-builder.com/v2024",
+        : "https://resources.hh3-list-builder.com/v2024",
     ),
   },
   build: {

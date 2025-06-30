@@ -1,3 +1,1 @@
-I have literally no idea what I am doing.
-
-I am trying to fork a builder off the incredible MESBG builder that I love.
+This is a placeholder work in progress fork of the middle earth builder, designed for HH3.0 detachments.

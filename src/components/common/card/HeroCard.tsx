@@ -13,7 +13,7 @@ import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
 import { useUserPreferences } from "../../../state/preference";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
-import { Option } from "../../../types/mesbg-data.types.ts";
+import { Option } from "../../../types/hh3-data.types.ts";
 import { SelectedUnit } from "../../../types/roster.ts";
 import { slugify } from "../../../utils/string.ts";
 import { LeaderToggle } from "../army-leader/LeaderToggle.tsx";

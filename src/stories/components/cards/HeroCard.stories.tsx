@@ -1,11 +1,11 @@
 import { action } from "@storybook/addon-actions";
 import { Meta, StoryFn } from "@storybook/react";
-import data from "../../../assets/data/mesbg_data.json";
+import data from "../../../assets/data/hh3_data.json";
 import {
   HeroCard,
   HeroCardProps,
 } from "../../../components/common/card/HeroCard.tsx";
-import { Unit } from "../../../types/mesbg-data.types.ts";
+import { Unit } from "../../../types/hh3-data.types.ts";
 
 const units = Object.values(data).filter(({ unit_type }) =>
   unit_type.includes("Hero"),

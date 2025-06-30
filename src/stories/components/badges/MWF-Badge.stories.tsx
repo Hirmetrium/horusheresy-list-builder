@@ -1,6 +1,6 @@
 import { StoryFn } from "@storybook/react";
 import { MwfBadge } from "../../../components/common/might-will-fate/MwfBadge.tsx";
-import { Unit } from "../../../types/mesbg-data.types.ts";
+import { Unit } from "../../../types/hh3-data.types.ts";
 
 // Mock data for `unit`
 const unitData = {

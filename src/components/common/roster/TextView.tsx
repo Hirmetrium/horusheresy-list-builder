@@ -84,8 +84,8 @@ export const RosterTextView = forwardRef<
   const admission = () => {
     return `
     ----------------------------------------
-    Created with MESBG List Builder 
-    https://mesbg-list-builder.com/
+    Created with HH3 List Builder 
+    https://hh3-list-builder.com/
     `;
   };
 

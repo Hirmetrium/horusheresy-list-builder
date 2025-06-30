@@ -1,5 +1,5 @@
 import { profileData } from "../../../assets/data.ts";
-import { Unit } from "../../../types/mesbg-data.types.ts";
+import { Unit } from "../../../types/hh3-data.types.ts";
 
 export const COMPOSED_UNIT_MAP = {
   "Bain, Son of Bard": "Bard's Family",

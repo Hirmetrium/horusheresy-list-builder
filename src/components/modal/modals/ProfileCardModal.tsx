@@ -6,7 +6,7 @@ import { Fragment } from "react";
 import { heroConstraintData } from "../../../assets/data.ts";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
 import { useAppState } from "../../../state/app";
-import { Unit } from "../../../types/mesbg-data.types.ts";
+import { Unit } from "../../../types/hh3-data.types.ts";
 import { UnitProfileCard } from "../../common/images/UnitProfileCard.tsx";
 
 export const ProfileCardModal = () => {

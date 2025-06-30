@@ -4,7 +4,7 @@ import {
   OptionList,
   OptionListProps,
 } from "../../../components/common/option/OptionList.tsx";
-import { Option } from "../../../types/mesbg-data.types.ts";
+import { Option } from "../../../types/hh3-data.types.ts";
 
 // Mock Data for Options
 const mockOptions: Option[] = [

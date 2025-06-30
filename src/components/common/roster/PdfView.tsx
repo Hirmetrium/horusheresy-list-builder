@@ -91,7 +91,7 @@ const PrintablePdf = () => {
                 Some of the units selected in your roster have no registered
                 profile data. If you see this message, please let us know via{" "}
                 <a
-                  href="mailto:support@mesbg-list-builder.com?subject=MESBG List Builder (v2018) - Bug/Correction"
+                  href="mailto:support@hh3-list-builder.com?subject=HH3 List Builder - Bug/Correction"
                   style={{
                     color:
                       themeContext.mode === "dark"
@@ -99,7 +99,7 @@ const PrintablePdf = () => {
                         : theme.palette.secondary.dark,
                   }}
                 >
-                  support@mesbg-list-builder.com
+                  support@hh3-list-builder.com
                 </a>
                 .
               </Typography>

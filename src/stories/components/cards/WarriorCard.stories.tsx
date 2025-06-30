@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from "@storybook/react";
-import data from "../../../assets/data/mesbg_data.json";
+import data from "../../../assets/data/hh3_data.json";
 import {
   WarriorCard,
   WarriorCardProps,

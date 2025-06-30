@@ -4,7 +4,6 @@ import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import { armyListData } from "../../../../assets/data.ts";
 import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts";
-import { isMovieQuote } from "../../../../utils/string.ts";
 
 export const ArmyBonuses = () => {
   const { roster, getAdjustedMetaData } = useRosterInformation();
@@ -49,13 +48,6 @@ export const ArmyBonuses = () => {
                 return tttSpecialUpgrades.includes(rule.title);
               })
               .map((rule, index) => (
-                <Box component="li" key={index} sx={{ py: 1 }}>
-                  {isMovieQuote(rule.title) ? (
-                    <Typography>
-                      <b>
-                        <i>{rule.title}</i>
-                      </b>
-                    </Typography>
                   ) : (
                     <Typography>
                       <b>

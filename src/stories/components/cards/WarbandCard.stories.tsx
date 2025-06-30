@@ -1,10 +1,10 @@
 import { Meta, StoryFn } from "@storybook/react";
-import data from "../../../assets/data/mesbg_data.json";
+import data from "../../../assets/data/hh3_data.json";
 import {
   Warband,
   WarbandProps,
 } from "../../../components/common/warbands/Warband.tsx";
-import { Unit } from "../../../types/mesbg-data.types.ts";
+import { Unit } from "../../../types/hh3-data.types.ts";
 
 const theoden = data["[kingdom-of-rohan] theoden"];
 const rider = data["[kingdom-of-rohan] rider-of-rohan"];

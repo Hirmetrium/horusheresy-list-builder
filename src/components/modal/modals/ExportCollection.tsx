@@ -18,7 +18,7 @@ export const ExportCollection = () => {
   const { closeModal, triggerAlert } = useAppState();
   const { inventory } = useCollectionState();
 
-  const [filename, setFilename] = useState("mesbg-game-collection");
+  const [filename, setFilename] = useState("hh3-game-collection");
   const [filenameValid, setFilenameValid] = useState(true);
 
   const handleExport = (e) => {

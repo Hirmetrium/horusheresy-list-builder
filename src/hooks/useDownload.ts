@@ -67,7 +67,7 @@ export const useDownload = () => {
       const ts = new Date();
       saveAs(
         blob,
-        "MESBG-Army-Profiles-" + ts.toISOString().substring(0, 19) + ".zip",
+        "HH3-Army-Profiles-" + ts.toISOString().substring(0, 19) + ".zip",
       );
     });
     setDownloading(false);

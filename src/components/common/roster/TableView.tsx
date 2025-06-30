@@ -299,7 +299,7 @@ export const RosterTableView = forwardRef<
         }}
         variant="caption"
       >
-        Created with MESBG List Builder (
+        Created with HH3 List Builder (
         <a
           href="#"
           style={{
@@ -307,7 +307,7 @@ export const RosterTableView = forwardRef<
             color: mode === "dark" ? "lightblue" : "inherit",
           }}
         >
-          https://mesbg-list-builder.com/
+          https://hh3-list-builder.com/
         </a>
         )
       </Typography>

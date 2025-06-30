@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
 import armyListData from "../../../../assets/data/army_list_data.json";
-import { mesbgData } from "../../../../assets/data.ts";
+import { hh3Data } from "../../../../assets/data.ts";
 import { useRosterBuildingState } from "../../../../state/roster-building";
 import { ArmyListData } from "../../../../types/army-list-data.types.ts";
 import {
@@ -11,7 +11,6 @@ import {
   SelectedUnit,
   Warband,
 } from "../../../../types/roster.ts";
-import { isMovieQuote } from "../../../../utils/string.ts";
 import { CustomSwitch } from "../../switch/CustomSwitch.tsx";
 import { RosterInformationProps } from "../RosterInformation.tsx";
 import { RosterInformationSection } from "../RosterInformationSection.tsx";
@@ -30,7 +29,7 @@ export const SpecialRules: FunctionComponent<
     return <></>;
 
   function updateUnitMwf(hero: SelectedUnit, enabled: boolean): SelectedUnit {
-    const rawStats = mesbgData[hero.model_id];
+    const rawStats = hh3Data[hero.model_id];
     const rawMWFW = rawStats.MWFW;
     return {
       ...hero,
@@ -96,32 +95,7 @@ export const SpecialRules: FunctionComponent<
               key={index}
               sx={{ py: size === "normal" ? 1 : 0 }}
             >
-              {isMovieQuote(rule.title) ? (
-                <Typography sx={{ ml: rule.troll_purchase === true ? -1 : 0 }}>
-                  {rule.troll_purchase === true && (
-                    <CustomSwitch
-                      checked={trollUpgrades.includes(rule.title)}
-                      onChange={(_, checked) =>
-                        changeRuleState(rule.title, checked)
-                      }
-                      disabled={!editable}
-                    />
-                  )}
-                  <b>
-                    <i>{rule.title}</i>
-                  </b>
-                </Typography>
-              ) : (
-                <Typography sx={{ ml: rule.troll_purchase === true ? -1 : 0 }}>
-                  {rule.troll_purchase === true && (
-                    <CustomSwitch
-                      checked={trollUpgrades.includes(rule.title)}
-                      onChange={(_, checked) =>
-                        changeRuleState(rule.title, checked)
-                      }
-                      disabled={!editable}
-                    />
-                  )}
+                  )
                   <b>
                     {rule.title}{" "}
                     {rule.title === "A Troll's Hoard" && (

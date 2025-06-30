@@ -1,4 +1,4 @@
-import { mesbgData, siegeEquipmentData } from "../assets/data.ts";
+import { hh3Data, siegeEquipmentData } from "../assets/data.ts";
 import { isSelectedUnit, Roster } from "../types/roster.ts";
 import { useCalculator } from "./useCalculator.ts";
 import { download } from "./useDownload.ts";
@@ -113,7 +113,7 @@ export const useExport = () => {
           hero: hero
             ? calculator.recalculatePointsForUnit({
                 quantity: 1,
-                ...mesbgData[hero.model_id],
+                ...hh3Data[hero.model_id],
                 ...hero,
               })
             : null,
@@ -122,7 +122,7 @@ export const useExport = () => {
               calculator.recalculatePointsForUnit({
                 ...(unit.model_id.startsWith("[siege]")
                   ? siegeEquipmentData[unit.model_id]
-                  : mesbgData[unit.model_id]),
+                  : hh3Data[unit.model_id]),
                 ...unit,
               }),
             ),

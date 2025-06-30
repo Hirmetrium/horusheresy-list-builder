@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { mesbgData, siegeEquipmentData } from "../assets/data.ts";
+import { hh3Data, siegeEquipmentData } from "../assets/data.ts";
 import { useUserPreferences } from "../state/preference";
 import { useRosterBuildingState } from "../state/roster-building";
 import {
@@ -71,7 +71,7 @@ export const useUpdateRoster = () => {
       });
     }
 
-    const modelData = mesbgData[model_id];
+    const modelData = hh3Data[model_id];
 
     return calculator.recalculatePointsForUnit({
       ...oldUnit,

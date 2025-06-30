@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\data",
+    "\\data\\scripts"
   ],
   "PreviewInSolutionExplorer": false
 }

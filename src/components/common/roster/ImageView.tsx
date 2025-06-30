@@ -130,9 +130,9 @@ export const ImageView = forwardRef<ImageViewViewHandlers, ImageViewViewProps>(
               }}
               variant="body2"
             >
-              Created with MESBG List Builder (
+              Created with HH3 List Builder (
               <a href="#" style={{ textDecoration: "none" }}>
-                https://mesbg-list-builder.com
+                https://hh3-list-builder.com
               </a>
               )
             </Typography>

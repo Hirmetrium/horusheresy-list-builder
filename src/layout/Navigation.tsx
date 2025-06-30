@@ -426,7 +426,7 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
       label: "Report a Bug / Correction",
       action: () =>
         (window.location.href =
-          "mailto:support@mesbg-list-builder.com?subject=MESBG List Builder (v2024) - Bug/Correction"),
+          "mailto:support@hh3-list-builder.com?subject=HH3 List Builder - Bug/Correction"),
       active: false,
     },
     {
@@ -442,13 +442,6 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
       active: location.pathname === "/database",
     },
     { divider: true },
-    {
-      icon: <OpenInNew />,
-      label: "v2018 Edition",
-      action: () =>
-        window.open("https://v2018.mesbg-list-builder.com/", "_blank").focus(),
-      active: false,
-    },
     {
       icon: <Announcement />,
       label: "FAQs and Errata",
@@ -497,12 +490,12 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
           <Button
             aria-label="logo"
             sx={{ mr: 2 }}
-            href="https://mesbg-list-builder.com/"
+            href="https://hh3-list-builder.com/"
           >
             <img src={logo} alt="Logo" style={{ height: "50px" }} />
             <img
               src={title}
-              alt="MESBG List Builder"
+              alt="HH3 List Builder"
               style={{ maxHeight: "42px", margin: "0 .25rem" }}
             />
           </Button>

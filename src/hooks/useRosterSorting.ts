@@ -1,6 +1,6 @@
 import { DragStart, DropResult } from "@hello-pangea/dnd";
 import { useRosterBuildingState } from "../state/roster-building";
-import { SiegeEquipment } from "../types/mesbg-data.types.ts";
+import { SiegeEquipment } from "../types/hh3-data.types.ts";
 import { FreshUnit, SelectedUnit, Warband } from "../types/roster.ts";
 import { moveItem, moveItemBetweenLists } from "../utils/array.ts";
 import { useCalculator } from "./useCalculator.ts";

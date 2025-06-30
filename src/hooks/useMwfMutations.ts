@@ -1,4 +1,4 @@
-import { Option } from "../types/mesbg-data.types.ts";
+import { Option } from "../types/hh3-data.types.ts";
 import { SelectedUnit } from "../types/roster.ts";
 import handlers, { handledModels } from "./mwfw";
 

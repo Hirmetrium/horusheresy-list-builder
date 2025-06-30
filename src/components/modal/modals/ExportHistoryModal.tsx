@@ -23,7 +23,7 @@ export const ExportHistoryModal = () => {
   const { closeModal, triggerAlert } = useAppState();
   const { recentGames } = useRecentGamesState();
 
-  const [filename, setFilename] = useState("mesbg-game-history");
+  const [filename, setFilename] = useState("hh3-game-history");
   const [filenameValid, setFilenameValid] = useState(true);
   const [fileType, setFileType] = useState("json");
 

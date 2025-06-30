@@ -9,7 +9,7 @@ import TableRow from "@mui/material/TableRow";
 import { MouseEvent } from "react";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
-import { ArmyType, Option, UnitType } from "../../../types/mesbg-data.types.ts";
+import { ArmyType, Option, UnitType } from "../../../types/hh3-data.types.ts";
 import { Profile } from "../../../types/profile-data.types.ts";
 import { Order } from "../utils/sorting.ts";
 import { DatabaseTableRow } from "./DatabaseTableRow.tsx";

@@ -9,7 +9,7 @@ import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts"
 import { useWarbandMutations } from "../../../../hooks/useWarbandMutations.ts";
 import { useAppState } from "../../../../state/app";
 import { useRosterBuildingState } from "../../../../state/roster-building";
-import { Unit } from "../../../../types/mesbg-data.types.ts";
+import { Unit } from "../../../../types/hh3-data.types.ts";
 import { isSelectedUnit, Warband } from "../../../../types/roster.ts";
 import { isHeroWhoLeads } from "../../../../utils/hero.ts";
 import { DrawerTypes } from "../../../drawer/drawers.tsx";

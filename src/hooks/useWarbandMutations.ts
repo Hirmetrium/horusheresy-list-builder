@@ -1,11 +1,11 @@
 import { v4 as randomUuid } from "uuid";
-import { mesbgData } from "../assets/data.ts";
+import { hh3Data } from "../assets/data.ts";
 import { AlertTypes } from "../components/alerts/alert-types.tsx";
 import { DrawerTypes } from "../components/drawer/drawers.tsx";
 import { useAppState } from "../state/app";
 import { useRosterBuildingState } from "../state/roster-building";
 import { emptyWarband as newWarband } from "../state/roster-building/roster";
-import { SiegeEquipment, Unit } from "../types/mesbg-data.types.ts";
+import { SiegeEquipment, Unit } from "../types/hh3-data.types.ts";
 import {
   FreshUnit,
   isSelectedUnit,
@@ -34,7 +34,7 @@ function addWarbandWithSpecificUnit(
     .includes(otherBrotherId);
 
   if (!rosterContainsTheOtherBrother) {
-    const otherBrother = mesbgData[otherBrotherId];
+    const otherBrother = hh3Data[otherBrotherId];
     updatedRoster.warbands = [
       ...updatedRoster.warbands,
       {

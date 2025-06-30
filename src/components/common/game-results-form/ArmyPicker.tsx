@@ -3,8 +3,8 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent, useEffect, useState } from "react";
-import data from "../../../assets/data/mesbg_data.json";
-import { ArmyType } from "../../../types/mesbg-data.types.ts";
+import data from "../../../assets/data/hh3_data.json";
+import { ArmyType } from "../../../types/hh3-data.types.ts";
 import { FactionLogo } from "../images/FactionLogo.tsx";
 
 const armiesByType = Object.values(data)
@@ -24,8 +24,8 @@ const armiesByType = Object.values(data)
       return a;
     },
     {
-      Good: undefined,
-      Evil: undefined,
+      Astartes: undefined,
+      Mechanicum: undefined,
     } as Record<ArmyType, Set<{ army: string; faction: string }>>,
   );
 
@@ -53,7 +53,7 @@ export const ArmyPicker: FunctionComponent<ArmyPickerProps> = (props) => {
       type,
     }));
 
-  const allOptions = [...makeOptions("Good"), ...makeOptions("Evil")];
+  const allOptions = [...makeOptions("Astartes"), ...makeOptions("Mechanicum")];
 
   const [value, setValue] = useState<Option[]>([]);
   const [options, setOptions] = useState<Option[]>(allOptions);

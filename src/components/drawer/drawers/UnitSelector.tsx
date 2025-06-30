@@ -2,7 +2,7 @@ import Stack from "@mui/material/Stack";
 import { useWarbandMutations } from "../../../hooks/useWarbandMutations.ts";
 import { useAppState } from "../../../state/app";
 import { useRosterBuildingState } from "../../../state/roster-building";
-import { SiegeEquipment, Unit } from "../../../types/mesbg-data.types.ts";
+import { SiegeEquipment, Unit } from "../../../types/hh3-data.types.ts";
 import { HeroSelectionList } from "../../common/unit-selection/HeroSelectionList.tsx";
 import { SiegeSelectionList } from "../../common/unit-selection/SiegeSelectionList.tsx";
 import { UnitSelectionList } from "../../common/unit-selection/UnitSelectionList.tsx";

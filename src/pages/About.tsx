@@ -17,70 +17,11 @@ export const About = () => {
             About
           </Typography>
           <Typography variant="body1" sx={{ fontSize: "18px" }}>
-            The MESBG List Builder is a webapp developed by Alex Cordaro and
-            Marcel Hollink. We strive to create the best list builder out there
-            by creating an easy to navigate and simple to use application.
+            The Horus Heresy 3.0 List Builder is a webapp forked from the MESBG List Builder developed by Alex Cordaro and
+            Marcel Hollink.
           </Typography>
           <Typography variant="body1" sx={{ fontSize: "18px" }}>
-            The webapp was originally built by Alex for the Middle Earth
-            Strategy Battle game released in 2018, which was later adapted to
-            fit mobile devices by Marcel. We both have a great passion for this
-            tool and love to explore what we can achieve for the community by
-            providing new updates and features.
-          </Typography>
-          <Typography variant="body1" sx={{ fontSize: "18px" }}>
-            Both of us spend our free time maintaining and updating the webapp
-            and are not interested in making the app paid or adding adverts
-            (which would disrupt the user experience). There is no need for you
-            to pull your wallet to build your army list.
-          </Typography>
-          <Typography variant="body1" sx={{ fontSize: "18px" }}>
-            The list builder is open source (
-            <a
-              href="https://github.com/avcordaro/mesbg-list-builder-v2024"
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                color:
-                  themeContext.mode === "dark"
-                    ? theme.palette.secondary.light
-                    : theme.palette.secondary.dark,
-              }}
-            >
-              you can find it here
-            </a>
-            ). If you&apos;d like to help you can fork the repository and
-            provide your corrections via pull request. You can also inform us of
-            any errors by email:{" "}
-            <a
-              href="mailto:support@mesbg-list-builder.com?subject=MESBG List Builder (v2024) - Bug/Correction"
-              style={{
-                color:
-                  themeContext.mode === "dark"
-                    ? theme.palette.secondary.light
-                    : theme.palette.secondary.dark,
-              }}
-            >
-              support@mesbg-list-builder.com
-            </a>
-          </Typography>
-          <Typography variant="body1" sx={{ fontSize: "18px" }}>
-            A list of currently reported and open issues can be found in{" "}
-            <a
-              href="https://github.com/avcordaro/mesbg-list-builder-v2024/issues"
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                color:
-                  themeContext.mode === "dark"
-                    ? theme.palette.secondary.light
-                    : theme.palette.secondary.dark,
-              }}
-            >
-              the Github issues list
-            </a>
-            . Please refer to this list when reporting any issues to avoid
-            duplicates.
+            Special thanks to both of them, as without them, their time and dedication and making their builder open source, this would not be possible.
           </Typography>
 
           <Typography variant="h4" className="middle-earth" sx={{ mb: 2 }}>
@@ -94,13 +35,11 @@ export const About = () => {
                 go.
               </Box>
               <Box component="li">
-                <strong>Custom-made profile cards</strong> for all models across
-                The Lord of the Rings, The Hobbit and expansions.
+                <strong>Lazy copied and pasted profile cards</strong> for some models across
+                Horus Heresy.
               </Box>
               <Box component="li">
-                <strong>PDF print-out</strong> for your list, providing all
-                profile stats, special rules, magical powers,
-                Might/Will/Fate/Wounds tracking etc.
+                <strong>PDF print-out</strong> which I've probably broken.
               </Box>
               <Box component="li">
                 <strong>Game Mode</strong> which provides digital stat trackers
@@ -108,14 +47,10 @@ export const About = () => {
                 to;
                 <ul>
                   <Box component="li">
-                    Track the Might/Will/Fate/Wounds of your heroes.
+                    Track the Wounds of your heroes.
                   </Box>
                   <Box component="li">
-                    Track the casualties and break point calculation of your
-                    army.
-                  </Box>
-                  <Box component="li">
-                    Additionally displays army bonuses and profile cards all on
+                    Additionally displays army rules and profile cards all on
                     one screen.
                   </Box>
                 </ul>
@@ -163,7 +98,7 @@ export const About = () => {
             <Box component="li">
               <Typography>
                 <strong>Internationalization;</strong> We are committed to
-                support the many different MESBG communities all around the
+                support the many different  communities all around the
                 world. With accessibility being one of our top priorities, we
                 would also like to make it linguistically available for
                 everyone. Staring with Spanish as our first focus, we&apos;d
@@ -185,7 +120,7 @@ export const About = () => {
             </Box>
             <Box component="li">
               <Typography>
-                <strong>Sharing rosters;</strong> The MESBG List Builder
+                <strong>Sharing rosters;</strong> The List Builder
                 providers multiple ways of exporting your roster and sharing it
                 with the world. One way to share rosters is currently
                 impossible: Sharing the a link to the actual roster. Once we set
@@ -196,22 +131,6 @@ export const About = () => {
               </Typography>
             </Box>
           </Stack>
-          <Typography>
-            <i>
-              If you have an feature idea don&apos;t hesitate to contact us at{" "}
-              <a
-                href="mailto:support@mesbg-list-builder.com?subject=MESBG List Builder (v2024) - Feature request"
-                style={{
-                  color:
-                    themeContext.mode === "dark"
-                      ? theme.palette.secondary.light
-                      : theme.palette.secondary.dark,
-                }}
-              >
-                support@mesbg-list-builder.com
-              </a>
-            </i>
-          </Typography>
         </Stack>
       </Stack>
     </Container>

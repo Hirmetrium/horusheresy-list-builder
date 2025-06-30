@@ -1,5 +1,5 @@
-import { mesbgData, profileData } from "../../assets/data.ts";
-import { Unit } from "../../types/mesbg-data.types.ts";
+import { hh3Data, profileData } from "../../assets/data.ts";
+import { Unit } from "../../types/hh3-data.types.ts";
 import { Profile } from "../../types/profile-data.types.ts";
 import {
   convertBardsFamilyToSingleRows,
@@ -36,7 +36,7 @@ const getProfileData = ([{ profile_origin, name }]: Unit[]) => {
 };
 
 export const rows = Object.values(
-  Object.values(mesbgData).reduce((acc, currentValue) => {
+  Object.values(hh3Data).reduce((acc, currentValue) => {
     const name = `${currentValue.name}-${currentValue.profile_origin}`;
     if (!acc[name]) {
       acc[name] = [];

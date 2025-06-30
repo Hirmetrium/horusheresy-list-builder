@@ -1,5 +1,5 @@
 warband_sizes = {
-# Here, we define detachments as warbands (legacy holdover from MESBG2024)
+# Here, we define detachments as warbands (legacy holdover)
 # the number of slots in each warband that need to be filled
 # warbands/detachments sub in for heroes of legend, etc. (will see how that works)
     "Crusade Primary Detachment": 11,

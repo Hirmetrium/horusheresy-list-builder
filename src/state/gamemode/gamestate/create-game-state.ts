@@ -1,7 +1,7 @@
 import { v4 } from "uuid";
 import { getSumOfUnits } from "../../../components/common/roster/totalUnits.ts";
 import { convertRosterToProfiles } from "../../../hooks/profile-utils/profiles.ts";
-import { SiegeEquipment } from "../../../types/mesbg-data.types.ts";
+import { SiegeEquipment } from "../../../types/hh3-data.types.ts";
 import { Profile } from "../../../types/profile-data.types.ts";
 import {
   FreshUnit,

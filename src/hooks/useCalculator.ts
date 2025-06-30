@@ -1,6 +1,5 @@
 import {
   isSelectedUnit,
-  isSiegeEquipment,
   Roster,
   SelectedUnit,
   Warband,
@@ -137,7 +136,6 @@ export const useCalculator = () => {
   function recalculateWarband(warband: Warband): Warband {
     const totalUnits = warband.units
       .filter(isSelectedUnit)
-      .filter((unit) => !isSiegeEquipment(unit))
       .filter(
         // If Grima is deployed as part of Saruman's warband, he should not take up space in the warband.
         (unit) =>
@@ -159,25 +157,21 @@ export const useCalculator = () => {
 
     const totalBows = warband.units
       .filter(isSelectedUnit)
-      .filter((unit) => !isSiegeEquipment(unit))
       .map(numberOfBows)
       .reduce((a, b) => a + b, 0);
 
     const totalThrowingWeapons = warband.units
       .filter(isSelectedUnit)
-      .filter((unit) => !isSiegeEquipment(unit))
       .map(numberOfThrowingWeapons)
       .reduce((a, b) => a + b, 0);
 
     const bowLimit = warband.units
       .filter(isSelectedUnit)
-      .filter((unit) => !isSiegeEquipment(unit))
       .map(getBowLimit)
       .reduce((a, b) => a + b, warband.hero ? getBowLimit(warband.hero) : 0);
 
     const throwLimit = warband.units
       .filter(isSelectedUnit)
-      .filter((unit) => !isSiegeEquipment(unit))
       .filter(({ unit_type }) => !unit_type.includes("Hero"))
       .map(getThrowLimit)
       .reduce(
@@ -194,13 +188,8 @@ export const useCalculator = () => {
         points: totalPoints,
         units:
           totalUnits +
-          (warband.hero?.siege_crew || 0) +
           heroAdditionalUnitWarbandCount(warband),
         heroes: warband.hero ? heroAdditionalUnitRosterCount(warband) : 0,
-        bows: totalBows,
-        throwingWeapons: totalThrowingWeapons,
-        bowLimit: bowLimit,
-        throwLimit: throwLimit,
         maxUnits: warband.hero?.warband_size ?? "-",
       },
     };
@@ -212,11 +201,6 @@ export const useCalculator = () => {
         const mwfUnits = [warband.hero, ...warband.units]
           .filter(isNotNull)
           .filter(isSelectedUnit)
-          .filter((unit) => unit.unit_type !== "Siege Equipment")
-          .filter((unit) => unit.MWFW.length > 0)
-          .flatMap((unit) => unit.MWFW)
-          .map((mwfw) => mwfw[1].split(":").map(Number))
-          .map(([might, will, fate]) => ({ might, will, fate }))
           .reduce(
             (total, current) => ({
               might: current.might + total.might,

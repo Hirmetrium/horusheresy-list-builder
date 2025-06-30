@@ -3,7 +3,7 @@ import {
   OptionItem,
   OptionItemProps,
 } from "../../../components/common/option/OptionItem.tsx";
-import { Option } from "../../../types/mesbg-data.types.ts";
+import { Option } from "../../../types/hh3-data.types.ts";
 
 // Mock data for `Option` object
 const optionData: Option = {

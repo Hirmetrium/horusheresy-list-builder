@@ -17,7 +17,7 @@ import { useState } from "react";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
 import { useAppState } from "../../../state/app";
 import { useCollectionState } from "../../../state/collection";
-import { Option } from "../../../types/mesbg-data.types.ts";
+import { Option } from "../../../types/hh3-data.types.ts";
 import { CustomAlert } from "../../common/alert/CustomAlert.tsx";
 import { CustomSwitch } from "../../common/switch/CustomSwitch.tsx";
 
@@ -37,7 +37,6 @@ export const AddToCollection = () => {
         (option: Option) =>
           !isHero || !option.type || !option.type.includes("mount"),
       )
-      .filter((option: Option) => option.type !== "ringwraith_amwf")
       .map((option: Option) => option.name),
     !unit.option_mandatory ? "None" : null,
   ].filter((v) => !!v);

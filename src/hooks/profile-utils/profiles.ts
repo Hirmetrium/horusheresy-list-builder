@@ -41,6 +41,7 @@ function transformUnitToListOfProfiles(
   if (!profile)
     return { missing: true, profile: `${unit.profile_origin} - ${unit.name}` };
 
+
   const additional_stats = getAdditionalStats(unit, profile);
     (rule) => {
       if (!rule.option_dependency) return true;

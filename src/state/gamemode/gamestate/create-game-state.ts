@@ -12,13 +12,10 @@ import { CustomTracker, Trackable } from "./index.ts";
 
 const convertToStats = (
   name: string | number,
-  MWFW: string,
   unit: SelectedUnit,
   isArmyLeader: boolean,
 ): Trackable => ({
   name: String(name),
-  MWFW: MWFW,
-  xMWFW: MWFW,
   profile_origin: unit.profile_origin,
   leader: isArmyLeader,
 });
@@ -29,18 +26,8 @@ const mapHeroToStats = (
 ): Trackable[] => {
   // check if a unit is selected (and not an empty selector box)
   if (!isSelectedUnit(unit)) return null;
-  // check if unit is a hero
-  if (unit.MWFW.length === 0) return null;
 
-  // check if unit is composed of multiple hero's (such as Alladan & Elrohir)
-  if (unit.MWFW.length > 1) {
-    return unit.MWFW.map(([name, MWFW]) =>
-      convertToStats(name, MWFW, unit, isArmyLeader),
-    );
-  }
-
-  const [[name, MWFW]] = unit.MWFW;
-  return [convertToStats(name || unit.name, MWFW, unit, isArmyLeader)];
+  return [convertToStats(name || unit.name, unit, isArmyLeader)];
 };
 
 const getHeroes = (roster: Roster): Trackable[] => {
@@ -55,7 +42,6 @@ const getHeroes = (roster: Roster): Trackable[] => {
 const mapListToTrackers = (
   list: {
     additional_stats: Profile["additional_stats"];
-    W?: number;
     name?: string;
   }[],
   units: { amount: number; name: string }[],
@@ -74,29 +60,13 @@ const mapListToTrackers = (
     )
     .flatMap((tracker) => {
       if (!tracker.additional_stats)
-        return includeSelf ? [{ name: tracker.name, W: tracker.W }] : [];
+        return includeSelf ? [{ name: tracker.name}] : [];
       return includeSelf
-        ? [
-            { name: tracker.name, W: tracker.W },
-            ...tracker.additional_stats
-              .filter((additionalTracker) => Number(additionalTracker.W) >= 2)
-              .map(({ name, W }) => ({
-                name: name,
-                W: Number(W),
-              })),
-          ]
-        : tracker.additional_stats
-            .filter((additionalTracker) => Number(additionalTracker.W) >= 2)
-            .map(({ name, W }) => ({
-              name: name,
-              W: Number(W),
-            }));
-    })
+            });
+    }
     .map((tracker) => ({
       id: v4(),
       name: tracker.name,
-      value: tracker.W,
-      maxValue: tracker.W,
       permanent: true,
     }));
 };
@@ -111,10 +81,8 @@ const getListOfMultiWoundModels = (roster: Roster): CustomTracker[] => {
 
   const trackers = mapListToTrackers(
     profiles
-      .filter(({ type, W }) => !type?.includes("Hero") && Number(W) >= 2)
-      .map(({ name, W, additional_stats }) => ({
+      .map(({ name, additional_stats }) => ({
         name,
-        W: Number(W),
         additional_stats,
       })),
     units,

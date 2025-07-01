@@ -6,8 +6,6 @@ import { createGameState } from "./create-game-state.ts";
 export type Trackable = {
   name: string;
   profile_origin: string;
-  MWFW: string;
-  xMWFW: string;
   leader: boolean;
 };
 

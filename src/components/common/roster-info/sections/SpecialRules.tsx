@@ -11,7 +11,6 @@ import {
   SelectedUnit,
   Warband,
 } from "../../../../types/roster.ts";
-import { CustomSwitch } from "../../switch/CustomSwitch.tsx";
 import { RosterInformationProps } from "../RosterInformation.tsx";
 import { RosterInformationSection } from "../RosterInformationSection.tsx";
 
@@ -23,17 +22,13 @@ export const SpecialRules: FunctionComponent<
   const armyListMetadata = (armyListData as ArmyListData)[roster.armyList];
   const { updateRoster } = useRosterBuildingState();
 
-  const trollUpgrades = roster.metadata.tttSpecialUpgrades || [];
-
   if (!armyListMetadata || armyListMetadata.special_rules.length === 0)
     return <></>;
 
   function updateUnitMwf(hero: SelectedUnit, enabled: boolean): SelectedUnit {
     const rawStats = hh3Data[hero.model_id];
-    const rawMWFW = rawStats.MWFW;
     return {
-      ...hero,
-      MWFW: [[hero.name, enabled ? "3:3:3:3" : rawMWFW[0][1]]],
+      ...hero
     };
   }
 
@@ -51,67 +46,26 @@ export const SpecialRules: FunctionComponent<
     };
   }
 
-  function changeRuleState(rule: string, enabled: boolean) {
-    const currentUpgrades = [...trollUpgrades];
-    let warbands = [...roster.warbands];
-    if (enabled) {
-      // Add the rule to the array if it's not already present
-      if (!currentUpgrades.includes(rule)) {
-        currentUpgrades.push(rule);
-      }
-    } else {
-      // Remove the rule from the array if it's present
-      const index = currentUpgrades.indexOf(rule);
-      if (index !== -1) {
-        currentUpgrades.splice(index, 1);
-      }
-    }
-
-    if (rule === "Full Bellies") {
-      warbands = warbands.map(updateMwf(enabled));
-    }
-
-    updateRoster({
-      ...roster,
-      warbands: warbands,
-      metadata: {
-        ...roster.metadata,
-        tttSpecialUpgrades: currentUpgrades,
-      },
-    });
-  }
-
-  return (
-    <RosterInformationSection title="Special rules">
-      <Box component="ul" sx={{ listStyle: "none", pl: 2 }}>
-        {armyListMetadata.special_rules
-          .filter((rule) => {
-            if (!rule.troll_purchase) return true;
-            return editable || trollUpgrades.includes(rule.title);
-          })
-          .map((rule, index) => (
-            <Box
-              component="li"
-              key={index}
-              sx={{ py: size === "normal" ? 1 : 0 }}
-            >
-                  )
-                  <b>
-                    {rule.title}{" "}
-                    {rule.title === "A Troll's Hoard" && (
-                      <i>({trollUpgrades.length * 50} points)</i>
-                    )}
-                  </b>
-                </Typography>
-              )}
-              <Stack gap={1}>
-                {rule.description.split("\n").map((line, index) => (
-                  <Typography key={index}>{line}</Typography>
-                ))}
-              </Stack>
+    return (
+        <RosterInformationSection title="Special rules">
+            <Box component="ul" sx={{ listStyle: "none", pl: 2 }}>
+                {armyListMetadata.special_rules
+                    .map((rule, index) => (
+                        <Box
+                            component="li"
+                            key={index}
+                            sx={{ py: size === "normal" ? 1 : 0 }}
+                        >
+                            )
+                            <Stack gap={1}>
+                                {rule.description.split("\n").map((line, index) => (
+                                    <Typography key={index}>{line}</Typography>
+                                ))}
+                            </Stack>
+                        </Box>
+                    ))}
             </Box>
-          ))}
-      </Box>
-    </RosterInformationSection>
-  );
+        </RosterInformationSection>
+    );
+
 };

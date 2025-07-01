@@ -131,22 +131,8 @@ export const QuickReferenceTable = ({
     })
     .sort((a, b) => a.name.localeCompare(b.name));
 
-  const siegeEngines = [
-    ...profiles.filter((row) => row.type === "Siege Engine"),
-    ...profiles.flatMap(
-      (profile) =>
-        profile.additional_stats?.filter(
-          (stat) => stat.type === "Siege Engine",
-        ) || [],
-    ),
-  ];
-  const additionProfilesFormSiegeEngines = siegeEngines
-    .flatMap((profile) => profile?.additional_stats || [])
-    .filter((p, i, s) => s.findIndex((o) => o.name === p.name) === i);
-
   const units = profiles
     .filter((row) => row.type !== "Siege Engine")
-    .concat(additionProfilesFormSiegeEngines);
 
   return (
     <>
@@ -243,50 +229,6 @@ export const QuickReferenceTable = ({
           </Table>
         )}
 
-        {siegeEngines.length > 0 && (
-          <Table sx={{ mt: 2 }}>
-            <Typography
-              component="caption"
-              style={{
-                captionSide: "top",
-                textAlign: "center",
-                padding: "0px",
-              }}
-            >
-              Siege engines
-            </Typography>
-            <TableHead>
-              <TableRow>
-                <TableCell />
-                <TableCell>Range</TableCell>
-                <TableCell>S</TableCell>
-                <TableCell>D</TableCell>
-                <TableCell>W</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {siegeEngines.map((row, aIndex) => (
-                <Fragment key={aIndex}>
-                  <TableRow>
-                    <TableCell
-                      sx={{
-                        whiteSpace: "nowrap",
-                        overflow: "hidden",
-                        maxWidth: "24ch",
-                        textOverflow: "ellipsis",
-                      }}
-                      size="small"
-                    >
-                      {row.name}
-                    </TableCell>
-                    <TableCell size="small">{row.S}</TableCell>
-                    <TableCell size="small">{row.W}</TableCell>
-                  </TableRow>
-                </Fragment>
-              ))}
-            </TableBody>
-          </Table>
-        )}
       </TableContainer>
     </>
   );

@@ -36,7 +36,6 @@ export const DownloadProfileCardModal = () => {
           [warband.hero.profile_origin, warband.hero.name].join("|"),
         );
         if (
-          warband.hero.unit_type !== "Siege Engine" &&
           hero_constraint_data[warband.hero.model_id]["extra_profiles"].length >
             0
         ) {

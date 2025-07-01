@@ -3,7 +3,7 @@ import { RosterBuildingState } from "../index.ts";
 
 type BuilderSelectionState = {
   armyList: string;
-  selectionType: "hero" | "unit" | "siege";
+  selectionType: "hero" | "unit" ;
   selectionFocus: [string, string];
 };
 

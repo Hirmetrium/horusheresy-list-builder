@@ -11,7 +11,7 @@ import { useOptionDependencies } from "../../../hooks/useOptionDependencies.ts";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
 import { Option } from "../../../types/hh3-data.types.ts";
-import { isSiegeEquipment, SelectedUnit } from "../../../types/roster.ts";
+import { SelectedUnit } from "../../../types/roster.ts";
 import { slugify } from "../../../utils/string.ts";
 import { UnitProfilePicture } from "../images/UnitProfilePicture.tsx";
 import { OptionList } from "../option/OptionList.tsx";
@@ -59,7 +59,7 @@ export const WarriorCard: FunctionComponent<WarriorCardProps> = ({
     heroConstraintData[followerOf].valid_warband_units.includes(
       unit.model_id,
     ) ||
-    isSiegeEquipment(unit);
+    (unit);
 
   function updateQuantity(value: number) {
     console.debug("Update warrior quantity.", { value });
@@ -209,10 +209,10 @@ export const WarriorCard: FunctionComponent<WarriorCardProps> = ({
           collapsed={collapsed}
         />
         <CardActionButtons
-          duplicate={!isSiegeEquipment(unit) ? duplicate : null}
+          duplicate={!(unit) ? duplicate : null}
           remove={remove}
-          reselect={!isSiegeEquipment(unit) ? reselect : null}
-          openProfileCard={!isSiegeEquipment(unit) ? openProfileCard : null}
+          reselect={!(unit) ? reselect : null}
+          openProfileCard={!(unit) ? openProfileCard : null}
           warbandNum={warbandNum}
           index={index}
           unitName={unit.name}
@@ -365,10 +365,10 @@ export const WarriorCard: FunctionComponent<WarriorCardProps> = ({
             </Collapse>
 
             <CardActionButtons
-              duplicate={!isSiegeEquipment(unit) ? duplicate : null}
+              duplicate={!(unit) ? duplicate : null}
               remove={remove}
-              reselect={!isSiegeEquipment(unit) ? reselect : null}
-              openProfileCard={!isSiegeEquipment(unit) ? openProfileCard : null}
+              reselect={!(unit) ? reselect : null}
+              openProfileCard={!(unit) ? openProfileCard : null}
               warbandNum={warbandNum}
               index={index}
               unitName={unit.name}

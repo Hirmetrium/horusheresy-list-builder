@@ -1,7 +1,6 @@
 import { v4 } from "uuid";
 import { getSumOfUnits } from "../../../components/common/roster/totalUnits.ts";
 import { convertRosterToProfiles } from "../../../hooks/profile-utils/profiles.ts";
-import { SiegeEquipment } from "../../../types/hh3-data.types.ts";
 import { Profile } from "../../../types/profile-data.types.ts";
 import {
   FreshUnit,
@@ -25,7 +24,7 @@ const convertToStats = (
 });
 
 const mapHeroToStats = (
-  unit: SelectedUnit | FreshUnit | SiegeEquipment,
+  unit: SelectedUnit | FreshUnit ,
   isArmyLeader?: boolean,
 ): Trackable[] => {
   // check if a unit is selected (and not an empty selector box)
@@ -122,19 +121,6 @@ const getListOfMultiWoundModels = (roster: Roster): CustomTracker[] => {
     units,
   );
 
-  const specialCases = [
-    "Iron Hills Captain",
-    "War Mumak of Harad", // Howdah
-    "Mumak War Leader", // Howdah
-    "Gandalf the Grey", // His Cart
-    "Radagast the Brown", // Sleigh or Eagle
-    "Girion, Lord of Dale", // Windlance
-    "Bard the Bowman", // Windlance
-  ];
-  const excludedCases = [
-    "Haradrim Commander",
-    "Mahud Beastmaster Chieftain",
-    "Royal War Mumak",
   ];
   const additionalTrackers = mapListToTrackers(
     profiles

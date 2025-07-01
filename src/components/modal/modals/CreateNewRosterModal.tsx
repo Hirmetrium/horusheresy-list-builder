@@ -34,10 +34,8 @@ import { FactionLogo } from "../../common/images/FactionLogo.tsx";
 import { CustomSwitch } from "../../common/switch/CustomSwitch.tsx";
 
 const armyTypeOrder: Record<ArmyType, number> = {
-  "Evil (Legacy)": 4,
-  "Good (Legacy)": 2,
-  Evil: 3,
-  Good: 1,
+  Astartes: 1,
+  Mechanicum: 21,
 };
 
 const armyLists = Object.values(data)
@@ -76,11 +74,6 @@ export const CreateNewRosterModal = () => {
 
   const [rosterName, setRosterName] = useState("");
   const [maxRosterPoints, setMaxRosterPoints] = useState("");
-  const [enableSiege, setEnableSiege] = useState(false);
-  const [rosterSiegeRole, setRosterSiegeRole] = useState<
-    "Attacker" | "Defender"
-  >("Attacker");
-
   const [JSONImport, setJSONImport] = useState("");
   const [JSONImportError, setJSONImportError] = useState("");
 
@@ -177,8 +170,6 @@ export const CreateNewRosterModal = () => {
         metadata: {
           ...emptyRoster.metadata,
           maxPoints: maxRosterPoints ? Number(maxRosterPoints) : undefined,
-          siegeRoster: enableSiege,
-          siegeRole: enableSiege ? rosterSiegeRole : undefined,
         },
       });
 
@@ -339,55 +330,11 @@ export const CreateNewRosterModal = () => {
                 textDecoration: "underline",
               },
             }}
-            control={
-              <CustomSwitch
-                checked={enableSiege}
-                onChange={(_, checked) => setEnableSiege(checked)}
-                name="enable siege"
-              />
-            }
-            label="Enable siege equipment options"
           />
         </Stack>
 
-        <Collapse in={enableSiege}>
-          <Stack
-            direction="row"
-            spacing={1}
-            sx={{ alignItems: "center", justifyContent: "center" }}
-          >
-            <Typography
-              sx={
-                rosterSiegeRole === "Defender"
-                  ? { textDecoration: "underline", fontWeight: "bold" }
-                  : { cursor: "pointer" }
-              }
-              onClick={() => setRosterSiegeRole("Defender")}
-            >
-              Defender
-            </Typography>
-            <CustomSwitch
-              checked={rosterSiegeRole === "Attacker"}
-              onChange={(_, checked) =>
-                setRosterSiegeRole(checked ? "Attacker" : "Defender")
-              }
-              name="siege role"
-            />
-            <Typography
-              sx={
-                rosterSiegeRole === "Attacker"
-                  ? { textDecoration: "underline", fontWeight: "bold" }
-                  : { cursor: "pointer" }
-              }
-              onClick={() => setRosterSiegeRole("Attacker")}
-            >
-              Attacker
-            </Typography>
-          </Stack>
-        </Collapse>
-
         <Divider>
-          <Typography className="middle-earth">
+          <Typography className="hh3">
             Or import an existing roster
           </Typography>
         </Divider>

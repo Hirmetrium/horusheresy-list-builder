@@ -4,8 +4,14 @@
       "Placeholder"
     ]
   },
+  "0.2": {
+    "added": [ "Updated or removed legacy references from old builder" ],
+    "changed": [
+      "proof of concept"
+    ]
+  },
   "0.1": {
-    "added": ["Imported the v2024 MESBG builder and reconfigured for HH 3rd Ed"],
+    "added": [ "Imported the v2024 MESBG builder and reconfigured for HH 3rd Ed" ],
     "changed": [
       "New data file and updated format",
       "Magic powers removed, Active passive removed, traits and types added",

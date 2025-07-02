@@ -41,6 +41,12 @@ function transformUnitToListOfProfiles(
   if (!profile)
     return { missing: true, profile: `${unit.profile_origin} - ${unit.name}` };
 
+    if (unit.name ) {
+        return profile.additional_stats.map((stats) => {
+            return { ...stats, type: unit.unit_type };
+        });
+    }
+
 
   const additional_stats = getAdditionalStats(unit, profile);
     (rule) => {

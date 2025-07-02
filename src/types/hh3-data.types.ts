@@ -42,6 +42,7 @@ type OptionType =
   | "one-hand"
   | "two-hand"
   | "mount"
+  | "passenger"
   | null;
 
 export type OptionDependency = {

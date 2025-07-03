@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import html2canvas from "html2canvas";
 import { forwardRef, useImperativeHandle, useState } from "react";
 import { armyListData } from "../../../assets/data.ts";
-import backgroundCover from "../../../assets/images/roster-summary/background.jpg";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { useAppState } from "../../../state/app";
 import { isSelectedUnit } from "../../../types/roster.ts";
@@ -81,8 +80,6 @@ export const ImageView = forwardRef<ImageViewViewHandlers, ImageViewViewProps>(
               px: 4,
               py: 3,
               border: "2px solid #800000",
-              backgroundImage: `url(${backgroundCover})`,
-              backgroundSize: "cover",
               color: "#363636",
             }}
           >

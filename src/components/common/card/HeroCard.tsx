@@ -7,7 +7,6 @@ import { FunctionComponent } from "react";
 import { heroConstraintData } from "../../../assets/data.ts";
 import { useCalculator } from "../../../hooks/useCalculator.ts";
 import { useCollectionWarnings } from "../../../hooks/useCollectionWarnings.ts";
-import { useMwfMutations } from "../../../hooks/useMwfMutations.ts";
 import { useOptionDependencies } from "../../../hooks/useOptionDependencies.ts";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
@@ -59,7 +58,6 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
   const { checkDependency } = useOptionDependencies(warbandId);
   const { roster, getSetOfModelIds } = useRosterInformation();
   const screen = useScreenSize();
-  const mwf = useMwfMutations();
   const { warnings, available, selected, overExceededCollection } =
     useCollectionWarnings(unit);
   const { preferences } = useUserPreferences();
@@ -80,9 +78,6 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
     updateUnit(
       calculator.recalculatePointsForUnit({
         ...unit,
-        MWFW: mwf.hasSpecialMwfRules(unit)
-          ? mwf.handleSpecialMwfForUnit(unit, options)
-          : unit.MWFW,
         options: options,
       }),
     );

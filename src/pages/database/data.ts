@@ -91,10 +91,7 @@ export const rows = Object.values(
         row.profile_origin,
         row.army_list.join(","),
         row.profile.special_rules.join(","),
-        row.profile.heroic_actions.join(","),
         row.profile.wargear.join(","),
-        row.profile.active_or_passive_rules.map(({ name }) => name).join(","),
-        row.profile.magic_powers.map(({ name }) => name).join(","),
       ]
         .join(",")
         .toLowerCase(),

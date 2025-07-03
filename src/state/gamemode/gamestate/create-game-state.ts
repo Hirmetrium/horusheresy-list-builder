@@ -59,11 +59,8 @@ const mapListToTrackers = (
       })),
     )
     .flatMap((tracker) => {
-      if (!tracker.additional_stats)
         return includeSelf ? [{ name: tracker.name}] : [];
-      return includeSelf
-            });
-    }
+    })
     .map((tracker) => ({
       id: v4(),
       name: tracker.name,

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { hh3Data, siegeEquipmentData } from "../assets/data.ts";
+import { hh3Data } from "../assets/data.ts";
 import { useUserPreferences } from "../state/preference";
 import { useRosterBuildingState } from "../state/roster-building";
 import {

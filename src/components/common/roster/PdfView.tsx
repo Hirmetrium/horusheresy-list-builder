@@ -11,8 +11,6 @@ import { useThemeContext } from "../../../theme/ThemeContext.tsx";
 import { CustomAlert } from "../alert/CustomAlert.tsx";
 import { Link } from "../link/Link.tsx";
 import { ArmyComposition } from "./pdf/ArmyComposition.tsx";
-import { HeroicActionList } from "./pdf/HeroicActionList.tsx";
-import { MagicalPowerList } from "./pdf/MagicalPowers.tsx";
 import { QuickReferenceTable } from "./pdf/QuickReferenceTable.tsx";
 import { SpecialRuleList } from "./pdf/SpecialRuleList.tsx";
 import { StatTrackers } from "./pdf/StatTrackers.tsx";
@@ -146,14 +144,6 @@ const PrintablePdf = () => {
               !preferences.hidePdfSpecialRules ||
               !preferences.hidePdfArmyRules) && (
               <SpecialRuleList profiles={profiles} />
-            )}
-            {(!preferences.enableHidePdfSections ||
-              !preferences.hidePdfHeroicActions) && (
-              <HeroicActionList profiles={profiles} />
-            )}
-            {(!preferences.enableHidePdfSections ||
-              !preferences.hidePdfMagicPowers) && (
-              <MagicalPowerList profiles={profiles} />
             )}
             {(!preferences.enableHidePdfSections ||
               !preferences.hidePdfStatTrackers) && <StatTrackers />}

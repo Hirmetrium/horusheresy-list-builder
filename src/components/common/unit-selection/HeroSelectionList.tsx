@@ -1,7 +1,7 @@
 import { TextField } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import { ChangeEvent, FunctionComponent, useState } from "react";
-import { hh3Data } from "../../../assets/data.ts";
+import {heroConstraintData, hh3Data} from "../../../assets/data.ts";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { Unit } from "../../../types/hh3-data.types.ts";
 import { UnitSelectionButton } from "./UnitSelectionButton.tsx";
@@ -22,8 +22,7 @@ export const HeroSelectionList: FunctionComponent<HeroSelectionListProps> = ({
 
   const heroes: Unit[] = Object.values(hh3Data)
     .filter(
-      (unit) =>
-        unit.unit_type.includes("Hero") || unit.unit_type === "Siege Engine",
+      (unit) => (heroConstraintData[unit.model_id]?.valid_warband_units || []).length > 0
     )
     .filter((unit) => unit.army_list === armyList)
     .filter(handleSpecialRestriction)

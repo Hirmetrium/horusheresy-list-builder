@@ -50,6 +50,7 @@ const armyLists = Object.values(data)
   )
   .sort((a, b) => armyTypeOrder[a.type] - armyTypeOrder[b.type]);
 
+
 export const CreateNewRosterModal = () => {
   const { closeModal } = useAppState();
   const { createRoster, rosters, groups } = useRosterBuildingState();
@@ -315,23 +316,6 @@ export const CreateNewRosterModal = () => {
             input: { type: "number" },
           }}
         />
-
-        <Stack
-          direction="row"
-          spacing={1}
-          sx={{ justifyContent: "center", mb: -2 }}
-        >
-          <FormControlLabel
-            sx={{
-              display: "flex",
-              py: 0.2,
-              "& .MuiFormControlLabel-asterisk": { display: "none" },
-              "&:hover": {
-                textDecoration: "underline",
-              },
-            }}
-          />
-        </Stack>
 
         <Divider>
           <Typography className="hh3">

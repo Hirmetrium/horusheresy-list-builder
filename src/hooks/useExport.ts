@@ -1,4 +1,4 @@
-import { hh3Data, siegeEquipmentData } from "../assets/data.ts";
+import { hh3Data } from "../assets/data.ts";
 import { isSelectedUnit, Roster } from "../types/roster.ts";
 import { useCalculator } from "./useCalculator.ts";
 import { download } from "./useDownload.ts";

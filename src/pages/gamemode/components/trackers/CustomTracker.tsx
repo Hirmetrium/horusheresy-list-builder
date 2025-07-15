@@ -99,7 +99,7 @@ export const CustomTracker: FunctionComponent<CustomTrackerProps> = ({
         gap={1}
       >
         {tracker.permanent ? (
-          <Typography sx={{ fontSize: "1.1rem" }} className="middle-earth">
+          <Typography sx={{ fontSize: "1.1rem" }} className="sabon">
             {tracker.name}
           </Typography>
         ) : editMode ? (
@@ -183,7 +183,7 @@ export const EditableTrackerLabel = ({
 
   return (
     <Stack direction="row" gap={1} alignItems="center">
-      <Typography sx={{ fontSize: "1.1rem" }} className="middle-earth">
+      <Typography sx={{ fontSize: "1.1rem" }} className="sabon">
         {label}
       </Typography>
       <SquareIconButton

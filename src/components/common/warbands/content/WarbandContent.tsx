@@ -92,7 +92,7 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
         </WithRibbon>
       ) : (
         <SelectUnitCardButton
-          title="Select a hero"
+          title="Select a detachment"
           onClick={openHeroPicker}
           warbandNum={warbandNum}
           index={0}

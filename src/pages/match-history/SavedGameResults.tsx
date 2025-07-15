@@ -109,7 +109,7 @@ export const SavedGameResults = () => {
 
   return (
     <Container sx={{ mt: 2 }}>
-      <Typography variant="h4" className="middle-earth" sx={{ mb: 2 }}>
+      <Typography variant="h4" className="sabon" sx={{ mb: 2 }}>
         Match History
       </Typography>
       <Stack sx={{ py: 1 }} gap={3}>

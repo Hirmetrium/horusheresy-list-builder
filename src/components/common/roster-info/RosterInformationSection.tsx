@@ -14,7 +14,7 @@ export const RosterInformationSection: FunctionComponent<
   return (
     <Box data-test-id={`roster-information--${slugify(props.title)}`}>
       <Divider textAlign="center">
-        <Typography variant="h6" className="middle-earth">
+        <Typography variant="h6" className="sabon">
           {props.title}
         </Typography>
       </Divider>

@@ -1,119 +1,207 @@
 {
   "[detachment] allied-detachment": {
     "valid_warband_units": [
-      "[astartes] legion-centurion",
-      "[astartes] legion-cataphractii-centurion",
-      "[astartes] legion-tartaros-centurion",
-      "[astartes] legion-damocles-command-rhino"
+      "[mechanicum] castellax-battle-maniple",
+      "[mechanicum] castellax-destructor-maniple"
     ],
     "extra_profiles": []
   },
   "[detachment] armoured-fist": {
     "valid_warband_units": [
-      "[astartes] legion-rhino",
-      "[astartes] legion-drop-pod",
-      "[astartes] legion-termite-assault-drill"
+      "[astartes] rhino",
+      "[astartes] drop-pod",
+      "[astartes] termite",
+      "[astartes] land-raider",
+      "[astartes] spartan",
+      "[astartes] dreadnought-drop-pod",
+      "[astartes] dreadclaw-drop-pod",
+      "[astartes] kharybdis-assault-claw"
     ],
     "extra_profiles": []
   },
   "[detachment] armoured-support": {
     "valid_warband_units": [
-      "[astartes] legion-predator"
+      "[astartes] predator-tank",
+      "[astartes] sicaran-tank",
+      "[astartes] sicaran-venator",
+      "[astartes] kratos-tank",
+      "[astartes] vindicator-tank",
+      "[astartes] scorpius-tank",
+      "[astartes] arquitor-bombard",
+      "[astartes] hyperios-tank"
     ],
     "extra_profiles": []
   },
   "[detachment] army-vanguard": {
     "valid_warband_units": [
-      "[astartes] legion-veteran-squad",
-      "[astartes] legion-veteran-assault-squad",
-      "[astartes] legion-destroyer-assault-squad",
-      "[astartes] legion-mortalis-destroyer-squad"
+      "[astartes] veteran-tactical-squad",
+      "[astartes] veteran-assault-squad",
+      "[astartes] seeker-squad"
     ],
     "extra_profiles": []
   },
   "[detachment] combat-pioneers": {
     "valid_warband_units": [
-      "[astartes] legion-recon-squad",
-      "[astartes] legion-scout-squad"
+      "[astartes] recon-squad",
+      "[astartes] sabre",
+      "[astartes] outrider-squad",
+      "[astartes] land-raider-explorator",
+      "[astartes] tarantula-battery"
     ],
     "extra_profiles": []
   },
   "[detachment] combat-retinue": {
     "valid_warband_units": [
-      "[astartes] legion-command-squad",
-      "[astartes] legion-cataphractii-command-squad",
-      "[astartes] legion-tartaros-command-squad"
+      "[astartes] praetorian-command-squad",
+      "[astartes] praetorian-command-squad-jump-packs",
+      "[astartes] centurion-command-squad",
+      "[astartes] tartaros-command-squad",
+      "[astartes] cataphractii-command-squad"
     ],
     "extra_profiles": []
   },
   "[detachment] crusade-primary-detachment": {
     "valid_warband_units": [
-      "[astartes] legion-praetor",
-      "[astartes] legion-saturnine-praetor",
-      "[astartes] legion-cataphractii-praetor",
-      "[astartes] legion-tartaros-praetor",
-      "[astartes] legion-centurion",
-      "[astartes] legion-cataphractii-centurion",
-      "[astartes] legion-tartaros-centurion",
-      "[astartes] legion-damocles-command-rhino",
-      "[astartes] legion-tactical-squad",
-      "[astartes] legion-despoiler-squad",
-      "[astartes] legion-assault-squad",
-      "[astartes] legion-breacher-squad",
-      "[astartes] legion-rhino",
-      "[astartes] legion-drop-pod",
-      "[astartes] legion-termite-assault-drill"
+      "[astartes] praetor",
+      "[astartes] praetor-jump-pack",
+      "[astartes] praetor-cataphractii",
+      "[astartes] praetor-tartaros",
+      "[astartes] praetor-saturnine",
+      "[astartes] centurion",
+      "[astartes] centurion-cataphractii",
+      "[astartes] centurion-jump-pack",
+      "[astartes] centurion-tartaros",
+      "[astartes] optae",
+      "[astartes] damocles-command-rhino",
+      "[astartes] librarian",
+      "[astartes] legion-champion",
+      "[astartes] vigilator",
+      "[astartes] esoterist",
+      "[astartes] master-of-signals",
+      "[astartes] praevian",
+      "[astartes] moritat",
+      "[astartes] siege-breaker",
+      "[astartes] overseer",
+      "[astartes] herald",
+      "[astartes] chaplain",
+      "[astartes] master-of-descent",
+      "[astartes] tactical-squad",
+      "[astartes] despoiler-squad",
+      "[astartes] assault-squad",
+      "[astartes] breacher-squad",
+      "[astartes] rhino",
+      "[astartes] drop-pod",
+      "[astartes] termite"
     ],
     "extra_profiles": []
   },
   "[detachment] first-strike": {
     "valid_warband_units": [
-      "jetbike-squad"
+      "[astartes] xiphon-interceptor",
+      "[astartes] storm-eagle",
+      "[astartes] fire-raptor",
+      "[astartes] scimitar-jetbike-squad",
+      "[astartes] javelin-squad",
+      "[astartes] land-speeder-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[detachment] hammer-of-olympia": {
+    "valid_warband_units": [
+      "[astartes] cataphractii-terminator-squad",
+      "[astartes] tartaros-terminator-squad",
+      "[astartes] saturnine-terminator-squad"
     ],
     "extra_profiles": []
   },
   "[detachment] heavy-support": {
     "valid_warband_units": [
-      "[astartes] legion-contemptor-dreadnought",
-      "saturnine-dreadnought"
+      "[astartes] contemptor-dreadnought",
+      "[astartes] deredeo-dreadnought",
+      "[astartes] leviathan-dreadnought",
+      "[astartes] saturnine-dreadnought"
+    ],
+    "extra_profiles": []
+  },
+  "[detachment] ironfire-cohort": {
+    "valid_warband_units": [
+      "[astartes] arquitor-bombard"
     ],
     "extra_profiles": []
   },
   "[detachment] lord-of-war": {
     "valid_warband_units": [
-      "[astartes] legion-fellblade"
+      "[astartes] cerberus-tank",
+      "[astartes] typhon-tank",
+      "[astartes] glaive-tank",
+      "[astartes] fellblade-tank",
+      "[astartes] falchion-tank",
+      "[astartes] thunderhawk",
+      "[astartes] stormbird",
+      "[astartes] mastodon"
     ],
     "extra_profiles": []
   },
   "[detachment] officer-cadre": {
     "valid_warband_units": [
-      "[astartes] legion-centurion",
-      "[astartes] legion-cataphractii-centurion",
-      "[astartes] legion-tartaros-centurion",
-      "[astartes] legion-damocles-command-rhino"
+      "[astartes] centurion",
+      "[astartes] centurion-cataphractii",
+      "[astartes] centurion-jump-pack",
+      "[astartes] centurion-tartaros",
+      "[astartes] optae",
+      "[astartes] damocles-command-rhino",
+      "[astartes] librarian",
+      "[astartes] legion-champion",
+      "[astartes] vigilator",
+      "[astartes] esoterist",
+      "[astartes] master-of-signals",
+      "[astartes] praevian",
+      "[astartes] moritat",
+      "[astartes] siege-breaker",
+      "[astartes] overseer",
+      "[astartes] herald",
+      "[astartes] chaplain",
+      "[astartes] master-of-descent"
     ],
     "extra_profiles": []
   },
   "[detachment] shock-assault": {
     "valid_warband_units": [
-      "[astartes] legion-terminator-saturnine-squad",
-      "[astartes] legion-terminator-cataphractii-squad",
-      "[astartes] legion-terminator-tartaros-squad"
+      "[astartes] cataphractii-terminator-squad",
+      "[astartes] tartaros-terminator-squad",
+      "[astartes] saturnine-terminator-squad"
     ],
     "extra_profiles": []
   },
   "[detachment] tactical-support": {
     "valid_warband_units": [
-      "[astartes] legion-tactical-squad",
-      "[astartes] legion-despoiler-squad",
-      "[astartes] legion-assault-squad",
-      "[astartes] legion-breacher-squad"
+      "[astartes] tactical-squad",
+      "[astartes] despoiler-squad",
+      "[astartes] assault-squad",
+      "[astartes] breacher-squad",
+      "[astartes] tactical-support-squad",
+      "[astartes] heavy-support-squad",
+      "[astartes] rapier-battery",
+      "[astartes] apothecary",
+      "[astartes] techmarine",
+      "[astartes] deathstorm-drop-pod",
+      "[astartes] araknae-quad-accelerator-platform"
     ],
     "extra_profiles": []
   },
   "[detachment] warlord": {
     "valid_warband_units": [
-      "[iron-warriors] warlord-perturabo"
+      "[iron-warriors] perturabo",
+      "[astartes] praetorian-command-squad",
+      "[astartes] praetorian-command-squad-jump-packs",
+      "[astartes] centurion-command-squad",
+      "[astartes] tartaros-command-squad",
+      "[astartes] cataphractii-command-squad",
+      "[astartes] land-raider",
+      "[astartes] spartan",
+      "[astartes] dreadnought-drop-pod",
+      "[astartes] dreadclaw-drop-pod",
+      "[astartes] kharybdis-assault-claw"
     ],
     "extra_profiles": []
   }

@@ -506,7 +506,7 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
         <DrawerHeader>
           <Typography
             variant="h6"
-            className="middle-earth"
+            className="sabon"
             sx={{ textAlign: "start" }}
           >
             Menu

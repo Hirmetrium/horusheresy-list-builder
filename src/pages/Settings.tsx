@@ -125,7 +125,7 @@ export const Settings = () => {
 
   return (
     <Container maxWidth="md" sx={{ mt: 2, mb: 5 }}>
-      <Typography variant="h4" className="middle-earth">
+      <Typography variant="h4" className="sabon">
         Application Settings
       </Typography>
 

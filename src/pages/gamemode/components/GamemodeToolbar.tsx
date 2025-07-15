@@ -120,7 +120,7 @@ export const GamemodeToolbar = () => {
         </Typography>
       </Stack>
       <Stack direction="row" gap={2} justifyContent="center">
-        <Typography variant="h6" className="middle-earth">
+        <Typography variant="h6" className="sabon">
           Casualties:
         </Typography>
         <SquareIconButton
@@ -172,7 +172,7 @@ export const GamemodeToolbar = () => {
         </ButtonGroup>
       </Box>
       <Stack direction="row" gap={2}>
-        <Typography variant="h6" className="middle-earth">
+        <Typography variant="h6" className="sabon">
           Casualties:
         </Typography>
         <SquareIconButton

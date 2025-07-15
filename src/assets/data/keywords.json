@@ -17,12 +17,12 @@
   {
     "name":"Master of the Legion",
     "type":"traits",
-    "description":"May select a Rite of War. May select one Apex Detachment."
+    "description":"I think this gives an Apex detachment."
   },
   {
     "name":"Smokescreen",
     "type":"traits",
-    "description":"This does something with smoke."
+    "description":"Grants the Smokescreen reaction."
   },
   {
     "name":"Infantry",
@@ -157,7 +157,7 @@
   {
     "name":"Breaching (X)",
     "type":"special_rule",
-    "description":"With a Weapon that has the Breaching (X) Special Rule there is a chance that a Wound Test may result I nthe Wound ignoring Armour Saves."
+    "description":"With a Weapon that has the Breaching (X) Special Rule there is a chance that a Wound Test may result in the Wound ignoring Armour Saves."
   },
   {
     "name":"Bulky (X)",
@@ -335,9 +335,9 @@
     "description":"Weapons with the Shock (X) Special Rule have a chance of inflicting Statuses on Vehicles even if it does not penetrate their armour."
   },
   {
-    "name":"Shread (X)",
+    "name":"Shred (X)",
     "type":"special_rule",
-    "description":"Attacks made with the Shread (X) Special Rule can sometimes inflict an extra point of damage."
+    "description":"Attacks made with the Shred (X) Special Rule can sometimes inflict an extra point of damage."
   },
   {
     "name":"Shrouded (X)",
@@ -377,12 +377,12 @@
   {
     "name":"Implacable Advance",
     "type":"special_rule",
-    "description":null
+    "description":"May fire Heavy Weapons without a penality."
   },
   {
     "name":"Overload (X)",
     "type":"special_rule",
-    "description":"With a Weapon that has the Overload (X) Special Rule, there is a chance that a Hit Test may result in an automatic wound to the user."
+    "description":"With a Weapon that has the Overload (X) Special Rule, there is a chance that a Hit Test may result in a wound to the user."
   },
   {
     "name":"Slow and Purposeful",

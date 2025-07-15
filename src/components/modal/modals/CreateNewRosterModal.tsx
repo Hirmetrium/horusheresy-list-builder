@@ -262,7 +262,7 @@ export const CreateNewRosterModal = () => {
         </CustomAlert>
 
         <Divider>
-          <Typography className="middle-earth">Create a Roster</Typography>
+          <Typography className="sabon">Create a Roster</Typography>
         </Divider>
 
         <Autocomplete

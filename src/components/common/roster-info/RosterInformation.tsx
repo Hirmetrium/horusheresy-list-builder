@@ -45,14 +45,14 @@ export const RosterInformation: FunctionComponent<RosterInformationProps> = (
             </IconButton>
           )}
           <Box sx={{ textWrap: "wrap" }}>
-            <Typography variant="h5" className="middle-earth">
+            <Typography variant="h5" className="sabon">
               {props.roster.name}
             </Typography>
           </Box>
         </Stack>
         <Typography
           variant="subtitle1"
-          className="middle-earth"
+          className="sabon"
           sx={{
             color: ({ palette }) => palette.text.secondary,
           }}
@@ -60,7 +60,7 @@ export const RosterInformation: FunctionComponent<RosterInformationProps> = (
           <small>{props.roster.armyList}</small>{" "}
           {!!armyListData[props.roster.armyList]?.legacy && (
             <Typography
-              className="middle-earth"
+              className="sabon"
               variant="subtitle2"
               component="small"
               sx={{

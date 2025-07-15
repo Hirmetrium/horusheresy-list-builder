@@ -97,7 +97,7 @@ export const Rosters: FunctionComponent = () => {
   return (
     <Container maxWidth={false} sx={{ my: 2 }}>
       <Stack>
-        <Typography variant="h4" className="middle-earth">
+        <Typography variant="h4" className="sabon">
           My Rosters
         </Typography>
         <Typography variant="body2" color="textSecondary" sx={{ mt: 1 }}>

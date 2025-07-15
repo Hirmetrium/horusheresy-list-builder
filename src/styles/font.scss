@@ -1,18 +1,16 @@
 @font-face {
-  font-family: "MiddleEarth";
-  src: url("fonts/MiddleEarth.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+    font-family: "Sabon";
+    src: url("fonts/Sabon.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 
-.middle-earth {
-  font-family: "MiddleEarth", sans-serif !important;
-}
+    .sabon {
+        font-family: "Sabon", serif !important;
+    }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 }

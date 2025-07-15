@@ -46,7 +46,7 @@ export const CreateRosterCardButton: FunctionComponent = () => {
         />
         <Typography
           variant="h6"
-          className="middle-earth"
+          className="sabon"
           sx={{
             whiteSpace: "nowrap", // Prevent text from wrapping
             overflow: "hidden", // Hide the overflowing text

@@ -98,7 +98,7 @@ export const HeroStatTracker: FunctionComponent<HeroStatTrackerProps> = ({
                 >
                   <Typography
                     sx={{ fontSize: "1.1rem", mt: 0.5 }}
-                    className="middle-earth"
+                    className="sabon"
                   >
                     {TRACKABLE[statIndex]}
                   </Typography>

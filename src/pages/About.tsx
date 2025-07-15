@@ -13,7 +13,7 @@ export const About = () => {
     <Container maxWidth="md" sx={{ mt: 2, mb: 5 }}>
       <Stack direction="row" gap={5} flexWrap="wrap">
         <Stack gap={2}>
-          <Typography variant="h4" className="middle-earth">
+          <Typography variant="h4" className="sabon">
             About
           </Typography>
           <Typography variant="body1" sx={{ fontSize: "18px" }}>
@@ -24,7 +24,7 @@ export const About = () => {
             Special thanks to both of them, as without them, their time and dedication and making their builder open source, this would not be possible.
           </Typography>
 
-          <Typography variant="h4" className="middle-earth" sx={{ mb: 2 }}>
+          <Typography variant="h4" className="sabon" sx={{ mb: 2 }}>
             Features
           </Typography>
           <Typography variant="body1" sx={{ fontSize: "16px" }}>
@@ -84,7 +84,7 @@ export const About = () => {
               </Box>
             </Stack>
           </Typography>
-          <Typography variant="h4" className="middle-earth">
+          <Typography variant="h4" className="sabon">
             Roadmap
           </Typography>
           <Typography variant="body1" sx={{ fontSize: "18px" }}>

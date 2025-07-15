@@ -30,7 +30,7 @@ export const DrawerContainer = () => {
           alignItems="center"
         >
           <Box flexGrow={1}>
-            <Typography variant="h5" className="middle-earth">
+            <Typography variant="h5" className="sabon">
               {props.title}
             </Typography>
           </Box>

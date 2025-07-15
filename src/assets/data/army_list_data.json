@@ -4,7 +4,7 @@
     "special_rules": [
       {
         "title": "\"Placeholder\"",
-        "description": "And they shall know no fear."
+        "description": "This is the default army list used to build others from."
       }
     ],
     "rule_highlights": []
@@ -13,12 +13,24 @@
     "additional_rules": [],
     "special_rules": [
       {
-        "title": "\"Wrack & Ruin\"",
-        "description": "When a model with this special rule makes a Shooting Attack or Melee Attack targeting a model with the Dreadnought, Automata, Vehicle or Building Unit Type, it gains +1 to the Strength of that attack."
+        "title": "Tactica: The Bitter End",
+        "description": "If the Controlling Player is making a Leadership Check or Cool Check for a Unit that includes a majority of Models with this Special Rule, they may ignore negative modifiers applied by the Panic (X), Pinning (X), Stun (X) or Suppressive (X) Special Rules."
       },
       {
-        "title": "Warsmiths",
-        "description": " A Detachment with this special rule may choose to upgrade a Legion Praetor, Legion Cataphractii Praetor or Legion Tartaros Praetor to a Warsmith (see The Armoury of the Iron Warriors section for details)."
+        "title": "Gambit: Spiteful Demise",
+        "description": "When this Gambit is selected, if this Model loses its last Wound during the following Strike Step, the Controlling Player may choose to immediately inflict a single automatic Hit on the opposing Model, resolved as if it was made with the following Weapon: IM:I, AM:1, SM:6, AP4, D2, Breaching (5+)."
+      },
+      {
+        "title": "Advanced Reaction: Bitter Fury",
+        "description": "This advanced reaction may be declared in the shooting phase. The reacting unit attacked with Firepower +1 but gain the Overload (1) Special Rule."
+      },
+      {
+        "title": "Additional Detachment: The Ironfire Cohort [Auxillary Detachment]",
+        "description": "This Auxillary Detachment contains 2 Armour, 2 Support. Armour slots must be filled with Arquitor Bombard Units."
+      },
+      {
+        "title": "Additional Detachment: The Hammer of Olympia [Apex Detachment]",
+        "description": "This Apex Detachment contains 2 Heavy Assault, 1 Heavy Transport, 2 Troops. This detachment may only be selected if your Army also contains a Warsmith or Perturabo Unit."
       }
     ],
     "rule_highlights": []

@@ -12,10 +12,11 @@
     {
       "type":"requires_one",
       "dependencies":[
-        "[astartes] legion-praetor",
-        "[astartes] legion-saturnine-praetor",
-        "[astartes] legion-cataphractii-praetor",
-        "[astartes] legion-tartaros-praetor"
+        "[astartes] praetor",
+        "[astartes] praetor-jump-pack",
+        "[astartes] praetor-cataphractii",
+        "[astartes] praetor-tartaros",
+        "[astartes] praetor-saturnine"
       ],
       "warning":"A Master of the Legion is required to select an Apex Detachment."
     }
@@ -24,10 +25,24 @@
     {
       "type":"requires_one",
       "dependencies":[
-        "[astartes] legion-centurion",
-        "[astartes] legion-cataphractii-centurion",
-        "[astartes] legion-tartaros-centurion",
-        "[astartes] legion-damocles-command-rhino"
+        "[astartes] centurion",
+        "[astartes] centurion-cataphractii",
+        "[astartes] centurion-jump-pack",
+        "[astartes] centurion-tartaros",
+        "[astartes] optae",
+        "[astartes] damocles-command-rhino",
+        "[astartes] librarian",
+        "[astartes] legion-champion",
+        "[astartes] vigilator",
+        "[astartes] esoterist",
+        "[astartes] master-of-signals",
+        "[astartes] praevian",
+        "[astartes] moritat",
+        "[astartes] siege-breaker",
+        "[astartes] overseer",
+        "[astartes] herald",
+        "[astartes] chaplain",
+        "[astartes] master-of-descent"
       ],
       "warning":"A Command sub-type model is required to select an Auxillary Detachment."
     }

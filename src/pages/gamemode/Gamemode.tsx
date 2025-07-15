@@ -29,7 +29,7 @@ export const Gamemode = () => {
   if (!roster) {
     return (
       <Box sx={{ m: 2 }}>
-        <Typography variant="h4" className="middle-earth">
+        <Typography variant="h4" className="sabon">
           Roster not found!
         </Typography>
         <Typography sx={{ mb: 2 }}>

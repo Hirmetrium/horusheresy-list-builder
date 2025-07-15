@@ -60,7 +60,7 @@ export const Database = () => {
 
   return (
     <Container maxWidth={false} sx={{ p: 2 }}>
-      <Typography variant="h4" className="middle-earth" sx={{ mb: 2, mt: 1 }}>
+      <Typography variant="h4" className="sabon" sx={{ mb: 2, mt: 1 }}>
         Profile Database
       </Typography>
       <Stack direction="row" gap={0.5} sx={{ mb: 2 }}>

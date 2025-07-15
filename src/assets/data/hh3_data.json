@@ -1,14 +1,1062 @@
 {
-  "[iron-warriors] warlord-perturabo": {
-    "model_id": "[iron-warriors] warlord-perturabo",
+  "[iron warriors] praetor-saturnine": {
+    "model_id": "[iron warriors] praetor-saturnine",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praetor in Saturnine Terminator Armour",
+    "unit_type": "High Command",
+    "base_points": 200,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron-warriors] warsmith": {
+    "model_id": "[iron-warriors] warsmith",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Warsmith",
+    "unit_type": "High Command",
+    "base_points": 165,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0263",
+        "name": "Cyber Familiar",
+        "points": 10,
+        "type": "extra"
+      }
+    ]
+  },
+  "[iron warriors] praetor-tartaros": {
+    "model_id": "[iron warriors] praetor-tartaros",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praetor in Tartaros Terminator Armour",
+    "unit_type": "High Command",
+    "base_points": 155,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] praetor-cataphractii": {
+    "model_id": "[iron warriors] praetor-cataphractii",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praetor in Cataphractii Terminator Armour",
+    "unit_type": "High Command",
+    "base_points": 145,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] praetor-jump-pack": {
+    "model_id": "[iron warriors] praetor-jump-pack",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praetor with Jump Pack",
+    "unit_type": "High Command",
+    "base_points": 140,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] praetor": {
+    "model_id": "[iron warriors] praetor",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praetor",
+    "unit_type": "High Command",
+    "base_points": 120,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] damocles-command-rhino": {
+    "model_id": "[iron warriors] damocles-command-rhino",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Damocles Command Rhino",
+    "unit_type": "Command",
+    "base_points": 120,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] master-of-descent": {
+    "model_id": "[iron warriors] master-of-descent",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Master of Descent",
+    "unit_type": "Command",
+    "base_points": 115,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] master-of-signals": {
+    "model_id": "[iron warriors] master-of-signals",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Master of Signals",
+    "unit_type": "Command",
+    "base_points": 115,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] siege-breaker": {
+    "model_id": "[iron warriors] siege-breaker",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Siege Breaker",
+    "unit_type": "Command",
+    "base_points": 115,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] legion-champion": {
+    "model_id": "[iron warriors] legion-champion",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Legion Champion",
+    "unit_type": "Command",
+    "base_points": 105,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] centurion-cataphractii": {
+    "model_id": "[iron warriors] centurion-cataphractii",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Centurion in Cataphractii Terminator Armour",
+    "unit_type": "Command",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] centurion-tartaros": {
+    "model_id": "[iron warriors] centurion-tartaros",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Centurion in Tartaros Terminator Armour",
+    "unit_type": "Command",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] centurion-jump-pack": {
+    "model_id": "[iron warriors] centurion-jump-pack",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Centurion with Jump pack",
+    "unit_type": "Command",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] herald": {
+    "model_id": "[iron warriors] herald",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Herald",
+    "unit_type": "Command",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] esoterist": {
+    "model_id": "[iron warriors] esoterist",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Esoterist",
+    "unit_type": "Command",
+    "base_points": 95,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] moritat": {
+    "model_id": "[iron warriors] moritat",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Moritat",
+    "unit_type": "Command",
+    "base_points": 95,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] praevian": {
+    "model_id": "[iron warriors] praevian",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praevian",
+    "unit_type": "Command",
+    "base_points": 95,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] vigilator": {
+    "model_id": "[iron warriors] vigilator",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Vigilator",
+    "unit_type": "Command",
+    "base_points": 95,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] librarian": {
+    "model_id": "[iron warriors] librarian",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Librarian",
+    "unit_type": "Command",
+    "base_points": 85,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] overseer": {
+    "model_id": "[iron warriors] overseer",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Overseer",
+    "unit_type": "Command",
+    "base_points": 85,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] centurion": {
+    "model_id": "[iron warriors] centurion",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Centurion",
+    "unit_type": "Command",
+    "base_points": 80,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] chaplain": {
+    "model_id": "[iron warriors] chaplain",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Chaplain",
+    "unit_type": "Command",
+    "base_points": 80,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] optae": {
+    "model_id": "[iron warriors] optae",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Optae",
+    "unit_type": "Command",
+    "base_points": 50,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] praetorian-command-squad-jump-packs": {
+    "model_id": "[iron warriors] praetorian-command-squad-jump-packs",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praetorian Command Squad with Jump Packs",
+    "unit_type": "Retinues",
+    "base_points": 160,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron-warriors] iron-circle": {
+    "model_id": "[iron-warriors] iron-circle",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Iron Circle Maniple",
+    "unit_type": "Retinues",
+    "base_points": 150,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] cataphractii-command-squad": {
+    "model_id": "[iron warriors] cataphractii-command-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Cataphractii Terminator Command Squad",
+    "unit_type": "Retinues",
+    "base_points": 140,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] tartaros-command-squad": {
+    "model_id": "[iron warriors] tartaros-command-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Tartaros Terminator Command Squad",
+    "unit_type": "Retinues",
+    "base_points": 140,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] praetorian-command-squad": {
+    "model_id": "[iron warriors] praetorian-command-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praetorian Command Squad",
+    "unit_type": "Retinues",
+    "base_points": 130,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] centurion-command-squad": {
+    "model_id": "[iron warriors] centurion-command-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Centurion Command Squad",
+    "unit_type": "Retinues",
+    "base_points": 85,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] veteran-assault-squad": {
+    "model_id": "[iron warriors] veteran-assault-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Veteran Assault Squad",
+    "unit_type": "Elites",
+    "base_points": 120,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] seeker-squad": {
+    "model_id": "[iron warriors] seeker-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Seeker Squad",
+    "unit_type": "Elites",
+    "base_points": 105,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] veteran-tactical-squad": {
+    "model_id": "[iron warriors] veteran-tactical-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Veteran Tactical Squad",
+    "unit_type": "Elites",
+    "base_points": 85,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron-warriors] tyrant-siege-terminator-squad": {
+    "model_id": "[iron-warriors] tyrant-siege-terminator-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Tyrant Siege Terminator Squad",
+    "unit_type": "Heavy Assault",
+    "base_points": 300,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0254",
+        "name": "Omni-scope",
+        "points": 10,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0256",
+        "name": "Combi-flamer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0257",
+        "name": "Combi-melta",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0258",
+        "name": "Combi-plasma",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0259",
+        "name": "Combi-volkite",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0260",
+        "name": "Combi-grenade",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0261",
+        "name": "Combi-disintegrator",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0262",
+        "name": "Combi-grav",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0255",
+        "name": "Combi-bolter",
+        "points": 0,
+        "type": "one-hand"
+      }
+    ]
+  },
+  "[iron warriors] saturnine-terminator-squad": {
+    "model_id": "[iron warriors] saturnine-terminator-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Saturnine Terminator Squad",
+    "unit_type": "Heavy Assault",
+    "base_points": 200,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] cataphractii-terminator-squad": {
+    "model_id": "[iron warriors] cataphractii-terminator-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Cataphractii Terminator Squad",
+    "unit_type": "Heavy Assault",
+    "base_points": 150,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] tartaros-terminator-squad": {
+    "model_id": "[iron warriors] tartaros-terminator-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Tartaros Terminator Squad",
+    "unit_type": "Heavy Assault",
+    "base_points": 150,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] assault-squad": {
+    "model_id": "[iron warriors] assault-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Assault Squad",
+    "unit_type": "Troops",
+    "base_points": 140,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] breacher-squad": {
+    "model_id": "[iron warriors] breacher-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Breacher Squad",
+    "unit_type": "Troops",
+    "base_points": 140,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] despoiler-squad": {
+    "model_id": "[iron warriors] despoiler-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Despoiler Squad",
+    "unit_type": "Troops",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] tactical-squad": {
+    "model_id": "[iron warriors] tactical-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Tactical Squad",
+    "unit_type": "Troops",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] araknae-quad-accelerator-platform": {
+    "model_id": "[iron warriors] araknae-quad-accelerator-platform",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Araknae Quad Accelerator Platform",
+    "unit_type": "Support",
+    "base_points": 125,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] deathstorm-drop-pod": {
+    "model_id": "[iron warriors] deathstorm-drop-pod",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Deathstorm Drop Pod",
+    "unit_type": "Support",
+    "base_points": 90,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] heavy-support-squad": {
+    "model_id": "[iron warriors] heavy-support-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Heavy Support Squad",
+    "unit_type": "Support",
+    "base_points": 50,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] techmarine": {
+    "model_id": "[iron warriors] techmarine",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Techmarine",
+    "unit_type": "Support",
+    "base_points": 50,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] rapier-battery": {
+    "model_id": "[iron warriors] rapier-battery",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Rapier Battery",
+    "unit_type": "Support",
+    "base_points": 40,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] tactical-support-squad": {
+    "model_id": "[iron warriors] tactical-support-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Tactical Support Squad",
+    "unit_type": "Support",
+    "base_points": 40,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] apothecary": {
+    "model_id": "[iron warriors] apothecary",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Apothecary",
+    "unit_type": "Support",
+    "base_points": 30,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] saturnine-dreadnought": {
+    "model_id": "[iron warriors] saturnine-dreadnought",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Saturnine Dreadnought",
+    "unit_type": "War-Engines",
+    "base_points": 340,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] leviathan-dreadnought": {
+    "model_id": "[iron warriors] leviathan-dreadnought",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Leviathan Dreadnought",
+    "unit_type": "War-Engines",
+    "base_points": 220,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] deredeo-dreadnought": {
+    "model_id": "[iron warriors] deredeo-dreadnought",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Deredeo Dreadnought",
+    "unit_type": "War-Engines",
+    "base_points": 190,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] contemptor-dreadnought": {
+    "model_id": "[iron warriors] contemptor-dreadnought",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Contemptor Dreadnought",
+    "unit_type": "War-Engines",
+    "base_points": 150,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] termite": {
+    "model_id": "[iron warriors] termite",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Termite",
+    "unit_type": "Transports",
+    "base_points": 80,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] rhino": {
+    "model_id": "[iron warriors] rhino",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Rhino",
+    "unit_type": "Transports",
+    "base_points": 60,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] drop-pod": {
+    "model_id": "[iron warriors] drop-pod",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Drop Pod",
+    "unit_type": "Transports",
+    "base_points": 50,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] spartan": {
+    "model_id": "[iron warriors] spartan",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Spartan",
+    "unit_type": "Heavy Transports",
+    "base_points": 400,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] land-raider": {
+    "model_id": "[iron warriors] land-raider",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Land Raider Carrier",
+    "unit_type": "Heavy Transports",
+    "base_points": 265,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] kharybdis-assault-claw": {
+    "model_id": "[iron warriors] kharybdis-assault-claw",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Kharybdis Assault Claw",
+    "unit_type": "Heavy Transports",
+    "base_points": 235,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] dreadclaw-drop-pod": {
+    "model_id": "[iron warriors] dreadclaw-drop-pod",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Dreadclaw Drop Pod",
+    "unit_type": "Heavy Transports",
+    "base_points": 115,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] dreadnought-drop-pod": {
+    "model_id": "[iron warriors] dreadnought-drop-pod",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Dreadnought Drop Pod",
+    "unit_type": "Heavy Transports",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] land-raider-explorator": {
+    "model_id": "[iron warriors] land-raider-explorator",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Land Raider Explorator",
+    "unit_type": "Recon",
+    "base_points": 220,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] recon-squad": {
+    "model_id": "[iron warriors] recon-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Reconnaissance Squad",
+    "unit_type": "Recon",
+    "base_points": 110,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] outrider-squad": {
+    "model_id": "[iron warriors] outrider-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Outrider Squadron",
+    "unit_type": "Recon",
+    "base_points": 85,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] sabre": {
+    "model_id": "[iron warriors] sabre",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Sabre",
+    "unit_type": "Recon",
+    "base_points": 80,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] tarantula-battery": {
+    "model_id": "[iron warriors] tarantula-battery",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Tarantula Battery",
+    "unit_type": "Recon",
+    "base_points": 45,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] kratos-tank": {
+    "model_id": "[iron warriors] kratos-tank",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Kratos Assault Tank",
+    "unit_type": "Armour",
+    "base_points": 280,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] sicaran-venator": {
+    "model_id": "[iron warriors] sicaran-venator",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Sicaran Venator",
+    "unit_type": "Armour",
+    "base_points": 170,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] sicaran-tank": {
+    "model_id": "[iron warriors] sicaran-tank",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Sicaran",
+    "unit_type": "Armour",
+    "base_points": 160,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] arquitor-bombard": {
+    "model_id": "[iron warriors] arquitor-bombard",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Arquitor Bombard",
+    "unit_type": "Armour",
+    "base_points": 150,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] hyperios-tank": {
+    "model_id": "[iron warriors] hyperios-tank",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Hyperios Missile Tank",
+    "unit_type": "Armour",
+    "base_points": 150,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] vindicator-tank": {
+    "model_id": "[iron warriors] vindicator-tank",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Vindicator Siege Tank",
+    "unit_type": "Armour",
+    "base_points": 140,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] scorpius-tank": {
+    "model_id": "[iron warriors] scorpius-tank",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Scorpius Missile Tank",
+    "unit_type": "Armour",
+    "base_points": 120,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] predator-tank": {
+    "model_id": "[iron warriors] predator-tank",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Predator",
+    "unit_type": "Armour",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] fire-raptor": {
+    "model_id": "[iron warriors] fire-raptor",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Fire Raptor",
+    "unit_type": "Fast Attack",
+    "base_points": 220,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] storm-eagle": {
+    "model_id": "[iron warriors] storm-eagle",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Storm Eagle",
+    "unit_type": "Fast Attack",
+    "base_points": 200,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] xiphon-interceptor": {
+    "model_id": "[iron warriors] xiphon-interceptor",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Xiphon Interceptor",
+    "unit_type": "Fast Attack",
+    "base_points": 120,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] scimitar-jetbike-squad": {
+    "model_id": "[iron warriors] scimitar-jetbike-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Scimitar Jetbike Squad",
+    "unit_type": "Fast Attack",
+    "base_points": 95,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] javelin-squad": {
+    "model_id": "[iron warriors] javelin-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Javelin Squadron",
+    "unit_type": "Fast Attack",
+    "base_points": 75,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] land-speeder-squad": {
+    "model_id": "[iron warriors] land-speeder-squad",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Land Speeder Squadron",
+    "unit_type": "Fast Attack",
+    "base_points": 50,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] stormbird": {
+    "model_id": "[iron warriors] stormbird",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Sokar Stormbird",
+    "unit_type": "Lords of War",
+    "base_points": 850,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] thunderhawk": {
+    "model_id": "[iron warriors] thunderhawk",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Thunderhawk Gunship",
+    "unit_type": "Lords of War",
+    "base_points": 685,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] falchion-tank": {
+    "model_id": "[iron warriors] falchion-tank",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Falchion Super-Heavy Tank Destroyer",
+    "unit_type": "Lords of War",
+    "base_points": 650,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] fellblade-tank": {
+    "model_id": "[iron warriors] fellblade-tank",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Fellblade Super-Heavy Battle Tank",
+    "unit_type": "Lords of War",
+    "base_points": 650,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] glaive-tank": {
+    "model_id": "[iron warriors] glaive-tank",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Glaive Super-Heavy Special Weapons Tank",
+    "unit_type": "Lords of War",
+    "base_points": 650,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] mastodon": {
+    "model_id": "[iron warriors] mastodon",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Mastodon Super-Heavy Assault Transport",
+    "unit_type": "Lords of War",
+    "base_points": 600,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] cerberus-tank": {
+    "model_id": "[iron warriors] cerberus-tank",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Cerberus Heavy Tank Destroyer",
+    "unit_type": "Lords of War",
+    "base_points": 400,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron warriors] typhon-tank": {
+    "model_id": "[iron warriors] typhon-tank",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Typhon Heavy Siege Tank",
+    "unit_type": "Lords of War",
+    "base_points": 400,
+    "warband_size": 0,
+    "options": []
+  },
+  "[iron-warriors] perturabo": {
+    "model_id": "[iron-warriors] perturabo",
     "army_type": "Astartes",
     "army_list": "Iron Warriors",
     "profile_origin": "Liber Hereticus",
     "name": "Perturabo",
     "unit_type": "Warlord",
-    "base_points": 400,
+    "base_points": 425,
     "unique": true,
     "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0253",
+        "name": "Forgebreaker Desecrated",
+        "points": 35,
+        "type": "two-hand"
+      }
+    ]
+  },
+  "[detachment] hammer-of-olympia": {
+    "model_id": "[detachment] hammer-of-olympia",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Apex Detachment: The Hammer of Olympia",
+    "unit_type": "Apex Detachment Hammer of Olympia",
+    "base_points": 0,
+    "warband_size": 5,
+    "options": []
+  },
+  "[detachment] ironfire-cohort": {
+    "model_id": "[detachment] ironfire-cohort",
+    "army_type": "Astartes",
+    "army_list": "Iron Warriors",
+    "profile_origin": "Liber Hereticus",
+    "name": "Auxillary Detachment: The Ironfire Cohort",
+    "unit_type": "Auxillary Detachment Ironfire Cohort",
+    "base_points": 0,
+    "warband_size": 4,
     "options": []
   },
   "[detachment] crusade-primary-detachment": {
@@ -166,8 +1214,19 @@
     "warband_size": 6,
     "options": []
   },
-  "[astartes] legion-saturnine-praetor": {
-    "model_id": "[astartes] legion-saturnine-praetor",
+  "[detachment] logistical-benefit": {
+    "model_id": "[detachment] logistical-benefit",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Logistical Benefit",
+    "unit_type": "Logistical Benefit",
+    "base_points": 0,
+    "warband_size": 1,
+    "options": []
+  },
+  "[astartes] praetor-saturnine": {
+    "model_id": "[astartes] praetor-saturnine",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
@@ -177,536 +1236,1900 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT0030",
+        "id": "OPT0065",
         "name": "Saturnine teleportation transponder",
         "points": 60,
         "type": "extra"
       },
       {
-        "id": "OPT0028",
+        "id": "OPT0063",
         "name": "Saturnine concussion hammer",
         "points": 10,
         "type": "one-hand"
       },
       {
-        "id": "OPT0029",
+        "id": "OPT0064",
         "name": "Plasma Blaster",
         "points": 10,
         "type": "extra"
       }
     ]
   },
-  "[astartes] legion-cataphractii-praetor": {
-    "model_id": "[astartes] legion-cataphractii-praetor",
-    "army_type": "Astartes",
-    "army_list": "Legiones Astartes",
-    "profile_origin": "Liber Hereticus",
-    "name": "Praetor in Cataphractii Terminator Armour",
-    "unit_type": "High Command",
-    "base_points": 135,
-    "warband_size": 0,
-    "options": []
-  },
-  "[astartes] legion-praetor": {
-    "model_id": "[astartes] legion-praetor",
-    "army_type": "Astartes",
-    "army_list": "Legiones Astartes",
-    "profile_origin": "Liber Hereticus",
-    "name": "Praetor in Artificer Armour",
-    "unit_type": "High Command",
-    "base_points": 120,
-    "warband_size": 0,
-    "options": [
-      {
-        "id": "OPT0018",
-        "name": "Thunder hammer",
-        "points": 30,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0019",
-        "name": "Paragon blade",
-        "points": 30,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0027",
-        "name": "Scimitar jetbike",
-        "points": 30,
-        "type": "mount",
-        "mount_name": "Scimitar jetbike"
-      },
-      {
-        "id": "OPT0015",
-        "name": "Power fist",
-        "points": 25,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0011",
-        "name": "Disintegrator pistol",
-        "points": 20,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0021",
-        "name": "Two lightning claws",
-        "points": 20,
-        "type": "two-hand"
-      },
-      {
-        "id": "OPT0025",
-        "name": "Warhawk jump pack",
-        "points": 20,
-        "type": "mount",
-        "mount_name": "Warhawk jump pack"
-      },
-      {
-        "id": "OPT0026",
-        "name": "Spatha combat bike",
-        "points": 20,
-        "type": "mount",
-        "mount_name": "Spatha combat bike"
-      },
-      {
-        "id": "OPT0010",
-        "name": "Archaeotech pistol",
-        "points": 15,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0014",
-        "name": "Power weapon",
-        "points": 15,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0002",
-        "name": "Magna combi-weapon",
-        "points": 10,
-        "type": "extra"
-      },
-      {
-        "id": "OPT0006",
-        "name": "Nemesis bolter",
-        "points": 10,
-        "type": "extra"
-      },
-      {
-        "id": "OPT0009",
-        "name": "Plasma pistol",
-        "points": 10,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0013",
-        "name": "Charnabal weapon",
-        "points": 10,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0017",
-        "name": "Lightning claw",
-        "points": 10,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0023",
-        "name": "Melta bombs",
-        "points": 10,
-        "type": "extra"
-      },
-      {
-        "id": "OPT0024",
-        "name": "Master-crafted weapon",
-        "points": 10,
-        "type": "extra"
-      },
-      {
-        "id": "OPT0003",
-        "name": "Minor combi-weapon",
-        "points": 5,
-        "type": "extra"
-      },
-      {
-        "id": "OPT0012",
-        "name": "Chainaxe",
-        "points": 5,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0001",
-        "name": "Bolter",
-        "points": 2,
-        "type": "extra"
-      },
-      {
-        "id": "OPT0004",
-        "name": "Volkite charger",
-        "points": 2,
-        "type": "extra"
-      },
-      {
-        "id": "OPT0005",
-        "name": "Astartes shotgun",
-        "points": 2,
-        "type": "extra"
-      },
-      {
-        "id": "OPT0007",
-        "name": "Volkite serpenta",
-        "points": 2,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0008",
-        "name": "Hand flamer",
-        "points": 2,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0020",
-        "name": "Boarding shield",
-        "points": 0,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0022",
-        "name": "Combat shield",
-        "points": 0,
-        "type": "extra"
-      }
-    ]
-  },
-  "[astartes] legion-tartaros-praetor": {
-    "model_id": "[astartes] legion-tartaros-praetor",
+  "[astartes] praetor-tartaros": {
+    "model_id": "[astartes] praetor-tartaros",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Praetor in Tartaros Terminator Armour",
     "unit_type": "High Command",
-    "base_points": 110,
+    "base_points": 155,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0057",
+        "name": "Paragon blade",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0050",
+        "name": "Combi-flamer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0051",
+        "name": "Combi-melta",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0052",
+        "name": "Combi-plasma",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0053",
+        "name": "Combi-volkite",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0054",
+        "name": "Combi-grenade",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0055",
+        "name": "Combi-disintegrator",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0056",
+        "name": "Combi-grav",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0059",
+        "name": "Power fist",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0060",
+        "name": "Chainfist",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0061",
+        "name": "Thunder hammer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0058",
+        "name": "Lightning claw",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0062",
+        "name": "Pair of lightning claws",
+        "points": 5,
+        "type": "two-hand"
+      },
+      {
+        "id": "OPT0048",
+        "name": "Volkite charger",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0049",
+        "name": "Combi-bolter",
+        "points": 0,
+        "type": "one-hand"
+      }
+    ]
+  },
+  "[astartes] praetor-cataphractii": {
+    "model_id": "[astartes] praetor-cataphractii",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praetor in Cataphractii Terminator Armour",
+    "unit_type": "High Command",
+    "base_points": 145,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0042",
+        "name": "Paragon blade",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0035",
+        "name": "Combi-flamer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0036",
+        "name": "Combi-melta",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0037",
+        "name": "Combi-plasma",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0038",
+        "name": "Combi-volkite",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0039",
+        "name": "Combi-grenade",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0040",
+        "name": "Combi-disintegrator",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0041",
+        "name": "Combi-grav",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0044",
+        "name": "Power fist",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0045",
+        "name": "Chainfist",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0046",
+        "name": "Thunder hammer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0043",
+        "name": "Lightning claw",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0047",
+        "name": "Pair of lightning claws",
+        "points": 5,
+        "type": "two-hand"
+      },
+      {
+        "id": "OPT0033",
+        "name": "Volkite charger",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0034",
+        "name": "Combi-bolter",
+        "points": 0,
+        "type": "one-hand"
+      }
+    ]
+  },
+  "[astartes] praetor-jump-pack": {
+    "model_id": "[astartes] praetor-jump-pack",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praetor with Jump Pack",
+    "unit_type": "High Command",
+    "base_points": 140,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-damocles-command-rhino": {
-    "model_id": "[astartes] legion-damocles-command-rhino",
+  "[astartes] praetor": {
+    "model_id": "[astartes] praetor",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praetor",
+    "unit_type": "High Command",
+    "base_points": 120,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0028",
+        "name": "Pair of lightning claws",
+        "points": 20,
+        "type": "two-hand"
+      },
+      {
+        "id": "OPT0001",
+        "name": "Paragon blade",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0002",
+        "name": "Archaeotech pistol",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0013",
+        "name": "Power fist",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0015",
+        "name": "Thunder hammer",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0012",
+        "name": "Power weapon",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0014",
+        "name": "Lightning claw",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0021",
+        "name": "Combi-flamer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0022",
+        "name": "Combi-melta",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0023",
+        "name": "Combi-plasma",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0024",
+        "name": "Combi-volkite",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0025",
+        "name": "Combi-grenade",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0026",
+        "name": "Combi-disintegrator",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0027",
+        "name": "Combi-grav",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0032",
+        "name": "Cyber Familiar",
+        "points": 10,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0005",
+        "name": "Bolter",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0006",
+        "name": "Volkite serpenta",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0007",
+        "name": "Hand flamer",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0008",
+        "name": "Plasma pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0009",
+        "name": "Disintegrator pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0011",
+        "name": "Charnabal sabre",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0017",
+        "name": "Boarding shield",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0020",
+        "name": "Combi-bolter",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0029",
+        "name": "Melta bombs",
+        "points": 5,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0018",
+        "name": "Astartes shotgun",
+        "points": 2,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0019",
+        "name": "Volkite charger",
+        "points": 2,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0031",
+        "name": "Chain bayonet",
+        "points": 2,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0030",
+        "name": "Bayonet",
+        "points": 1,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0003",
+        "name": "Bolt pistol",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0004",
+        "name": "Chainsword",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0010",
+        "name": "Chainaxe",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0016",
+        "name": "Combat shield",
+        "points": 0,
+        "type": "one-hand"
+      }
+    ]
+  },
+  "[astartes] damocles-command-rhino": {
+    "model_id": "[astartes] damocles-command-rhino",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Damocles Command Rhino",
     "unit_type": "Command",
-    "base_points": 150,
+    "base_points": 120,
     "warband_size": 0,
-    "options": []
+    "options": [
+      {
+        "id": "OPT0200",
+        "name": "Pintle Mounted multi-melta",
+        "points": 25,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0193",
+        "name": "Pintle Mounted combi-flamer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0194",
+        "name": "Pintle Mounted combi-plasma",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0195",
+        "name": "Pintle Mounted combi-melta",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0196",
+        "name": "Pintle Mounted combi-volkite",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0198",
+        "name": "Pintle Mounted heavy bolter",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0199",
+        "name": "Pintle Mounted heavy flamer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0202",
+        "name": "Hunter-killer missile",
+        "points": 10,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0191",
+        "name": "Pintle Mounted combi-bolter",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0192",
+        "name": "Pintle Mounted combi-bolter",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0197",
+        "name": "Pintle Mounted havoc launcher",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0201",
+        "name": "Searchlight",
+        "points": 5,
+        "type": "extra"
+      }
+    ]
   },
-  "[astartes] legion-cataphractii-centurion": {
-    "model_id": "[astartes] legion-cataphractii-centurion",
+  "[astartes] master-of-descent": {
+    "model_id": "[astartes] master-of-descent",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Master of Descent",
+    "unit_type": "Command",
+    "base_points": 115,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0247",
+        "name": "Power fist",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0249",
+        "name": "Thunder hammer",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0246",
+        "name": "Power weapon",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0248",
+        "name": "Lightning claw",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0239",
+        "name": "Bolter",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0240",
+        "name": "Volkite serpenta",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0241",
+        "name": "Hand flamer",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0242",
+        "name": "Plasma pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0243",
+        "name": "Disintegrator pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0245",
+        "name": "Charnabal sabre",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0251",
+        "name": "Boarding shield",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0252",
+        "name": "Melta bombs",
+        "points": 5,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0237",
+        "name": "Bolt pistol",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0238",
+        "name": "Chainsword",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0244",
+        "name": "Chainaxe",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0250",
+        "name": "Combat shield",
+        "points": 0,
+        "type": "one-hand"
+      }
+    ]
+  },
+  "[astartes] master-of-signals": {
+    "model_id": "[astartes] master-of-signals",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Master of Signals",
+    "unit_type": "Command",
+    "base_points": 115,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0214",
+        "name": "Plasma pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0215",
+        "name": "Hand flamer",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0216",
+        "name": "Volkite serpenta",
+        "points": 5,
+        "type": "one-hand"
+      }
+    ]
+  },
+  "[astartes] siege-breaker": {
+    "model_id": "[astartes] siege-breaker",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Siege Breaker",
+    "unit_type": "Command",
+    "base_points": 115,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0223",
+        "name": "Disintegrator pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0224",
+        "name": "Melta bombs",
+        "points": 5,
+        "type": "extra"
+      }
+    ]
+  },
+  "[astartes] legion-champion": {
+    "model_id": "[astartes] legion-champion",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Legion Champion",
+    "unit_type": "Command",
+    "base_points": 105,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0212",
+        "name": "Combi-melta",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0213",
+        "name": "Melta bombs",
+        "points": 5,
+        "type": "extra"
+      }
+    ]
+  },
+  "[astartes] centurion-cataphractii": {
+    "model_id": "[astartes] centurion-cataphractii",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Centurion in Cataphractii Terminator Armour",
     "unit_type": "Command",
-    "base_points": 85,
+    "base_points": 100,
     "warband_size": 0,
-    "options": []
+    "options": [
+      {
+        "id": "OPT0140",
+        "name": "Combi-flamer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0141",
+        "name": "Combi-melta",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0142",
+        "name": "Combi-plasma",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0143",
+        "name": "Combi-volkite",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0144",
+        "name": "Combi-grenade",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0145",
+        "name": "Combi-disintegrator",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0146",
+        "name": "Combi-grav",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0148",
+        "name": "Power fist",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0149",
+        "name": "Chainfist",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0150",
+        "name": "Thunder hammer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0147",
+        "name": "Lightning claw",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0151",
+        "name": "Pair of lightning claws",
+        "points": 5,
+        "type": "two-hand"
+      },
+      {
+        "id": "OPT0138",
+        "name": "Volkite charger",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0139",
+        "name": "Combi-bolter",
+        "points": 0,
+        "type": "one-hand"
+      }
+    ]
   },
-  "[astartes] legion-tartaros-centurion": {
-    "model_id": "[astartes] legion-tartaros-centurion",
+  "[astartes] centurion-tartaros": {
+    "model_id": "[astartes] centurion-tartaros",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Centurion in Tartaros Terminator Armour",
     "unit_type": "Command",
-    "base_points": 75,
+    "base_points": 100,
     "warband_size": 0,
-    "options": []
+    "options": [
+      {
+        "id": "OPT0154",
+        "name": "Combi-flamer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0155",
+        "name": "Combi-melta",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0156",
+        "name": "Combi-plasma",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0157",
+        "name": "Combi-volkite",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0158",
+        "name": "Combi-grenade",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0159",
+        "name": "Combi-disintegrator",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0160",
+        "name": "Combi-grav",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0162",
+        "name": "Power fist",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0163",
+        "name": "Chainfist",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0164",
+        "name": "Thunder hammer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0161",
+        "name": "Lightning claw",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0165",
+        "name": "Pair of lightning claws",
+        "points": 5,
+        "type": "two-hand"
+      },
+      {
+        "id": "OPT0152",
+        "name": "Volkite charger",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0153",
+        "name": "Combi-bolter",
+        "points": 0,
+        "type": "one-hand"
+      }
+    ]
   },
-  "[astartes] legion-centurion": {
-    "model_id": "[astartes] legion-centurion",
+  "[astartes] centurion-jump-pack": {
+    "model_id": "[astartes] centurion-jump-pack",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Centurion in Artificer Armour",
+    "name": "Centurion with Jump pack",
     "unit_type": "Command",
-    "base_points": 60,
+    "base_points": 100,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0134",
+        "name": "Pair of lightning claws",
+        "points": 20,
+        "type": "two-hand"
+      },
+      {
+        "id": "OPT0119",
+        "name": "Power fist",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0121",
+        "name": "Thunder hammer",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0118",
+        "name": "Power weapon",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0120",
+        "name": "Lightning claw",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0127",
+        "name": "Combi-flamer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0128",
+        "name": "Combi-melta",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0129",
+        "name": "Combi-plasma",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0130",
+        "name": "Combi-volkite",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0131",
+        "name": "Combi-grenade",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0132",
+        "name": "Combi-disintegrator",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0133",
+        "name": "Combi-grav",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0111",
+        "name": "Bolter",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0112",
+        "name": "Volkite serpenta",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0113",
+        "name": "Hand flamer",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0114",
+        "name": "Plasma pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0115",
+        "name": "Disintegrator pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0117",
+        "name": "Charnabal sabre",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0123",
+        "name": "Boarding shield",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0126",
+        "name": "Combi-bolter",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0135",
+        "name": "Melta bombs",
+        "points": 5,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0124",
+        "name": "Astartes shotgun",
+        "points": 2,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0125",
+        "name": "Volkite charger",
+        "points": 2,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0137",
+        "name": "Chain bayonet",
+        "points": 2,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0136",
+        "name": "Bayonet",
+        "points": 1,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0109",
+        "name": "Bolt pistol",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0110",
+        "name": "Chainsword",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0116",
+        "name": "Chainaxe",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0122",
+        "name": "Combat shield",
+        "points": 0,
+        "type": "one-hand"
+      }
+    ]
+  },
+  "[astartes] herald": {
+    "model_id": "[astartes] herald",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Herald",
+    "unit_type": "Command",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0231",
+        "name": "Power fist",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0232",
+        "name": "Melta bombs",
+        "points": 5,
+        "type": "extra"
+      }
+    ]
+  },
+  "[astartes] esoterist": {
+    "model_id": "[astartes] esoterist",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Esoterist",
+    "unit_type": "Command",
+    "base_points": 95,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-cataphractii-command-squad": {
-    "model_id": "[astartes] legion-cataphractii-command-squad",
+  "[astartes] moritat": {
+    "model_id": "[astartes] moritat",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Moritat",
+    "unit_type": "Command",
+    "base_points": 95,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0221",
+        "name": "Two overcharged plasma pistols",
+        "points": 10,
+        "type": "two-hand"
+      },
+      {
+        "id": "OPT0222",
+        "name": "Melta bombs",
+        "points": 5,
+        "type": "extra"
+      }
+    ]
+  },
+  "[astartes] praevian": {
+    "model_id": "[astartes] praevian",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praevian",
+    "unit_type": "Command",
+    "base_points": 95,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0217",
+        "name": "Plasma pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0218",
+        "name": "Hand flamer",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0219",
+        "name": "Volkite serpenta",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0220",
+        "name": "Melta bombs",
+        "points": 5,
+        "type": "extra"
+      }
+    ]
+  },
+  "[astartes] vigilator": {
+    "model_id": "[astartes] vigilator",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Vigilator",
+    "unit_type": "Command",
+    "base_points": 95,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] librarian": {
+    "model_id": "[astartes] librarian",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Librarian",
+    "unit_type": "Command",
+    "base_points": 85,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0206",
+        "name": "Biomancy",
+        "points": 20,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0208",
+        "name": "Telekinesis",
+        "points": 20,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0209",
+        "name": "Divination",
+        "points": 20,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0207",
+        "name": "Pyromancy",
+        "points": 10,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0211",
+        "name": "Telepathy",
+        "points": 10,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0203",
+        "name": "Plasma pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0204",
+        "name": "Hand flamer",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0205",
+        "name": "Volkite serpenta",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0210",
+        "name": "Thaumaturgy",
+        "points": 0,
+        "type": "extra"
+      }
+    ]
+  },
+  "[astartes] overseer": {
+    "model_id": "[astartes] overseer",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Overseer",
+    "unit_type": "Command",
+    "base_points": 85,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0229",
+        "name": "Vexilla",
+        "points": 10,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0226",
+        "name": "Plasma pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0227",
+        "name": "Hand flamer",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0228",
+        "name": "Volkite serpenta",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0230",
+        "name": "Melta bombs",
+        "points": 5,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0225",
+        "name": "Power Maul",
+        "points": 0,
+        "type": "one-hand"
+      }
+    ]
+  },
+  "[astartes] centurion": {
+    "model_id": "[astartes] centurion",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Centurion",
+    "unit_type": "Command",
+    "base_points": 80,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0103",
+        "name": "Pair of lightning claws",
+        "points": 20,
+        "type": "two-hand"
+      },
+      {
+        "id": "OPT0088",
+        "name": "Power fist",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0090",
+        "name": "Thunder hammer",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0087",
+        "name": "Power weapon",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0089",
+        "name": "Lightning claw",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0096",
+        "name": "Combi-flamer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0097",
+        "name": "Combi-melta",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0098",
+        "name": "Combi-plasma",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0099",
+        "name": "Combi-volkite",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0100",
+        "name": "Combi-grenade",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0101",
+        "name": "Combi-disintegrator",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0102",
+        "name": "Combi-grav",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0107",
+        "name": "Vexilla",
+        "points": 10,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0108",
+        "name": "Cyber Familiar",
+        "points": 10,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0080",
+        "name": "Bolter",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0081",
+        "name": "Volkite serpenta",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0082",
+        "name": "Hand flamer",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0083",
+        "name": "Plasma pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0084",
+        "name": "Disintegrator pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0086",
+        "name": "Charnabal sabre",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0092",
+        "name": "Boarding shield",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0095",
+        "name": "Combi-bolter",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0104",
+        "name": "Melta bombs",
+        "points": 5,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0093",
+        "name": "Astartes shotgun",
+        "points": 2,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0094",
+        "name": "Volkite charger",
+        "points": 2,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0106",
+        "name": "Chain bayonet",
+        "points": 2,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0105",
+        "name": "Bayonet",
+        "points": 1,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0078",
+        "name": "Bolt pistol",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0079",
+        "name": "Chainsword",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0085",
+        "name": "Chainaxe",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0091",
+        "name": "Combat shield",
+        "points": 0,
+        "type": "one-hand"
+      }
+    ]
+  },
+  "[astartes] chaplain": {
+    "model_id": "[astartes] chaplain",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Chaplain",
+    "unit_type": "Command",
+    "base_points": 80,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0233",
+        "name": "Plasma pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0234",
+        "name": "Hand flamer",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0235",
+        "name": "Volkite serpenta",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0236",
+        "name": "Melta bombs",
+        "points": 5,
+        "type": "extra"
+      }
+    ]
+  },
+  "[astartes] optae": {
+    "model_id": "[astartes] optae",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Optae",
+    "unit_type": "Command",
+    "base_points": 50,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0187",
+        "name": "Pair of lightning claws",
+        "points": 20,
+        "type": "two-hand"
+      },
+      {
+        "id": "OPT0170",
+        "name": "Thunder hammer",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0171",
+        "name": "Power fist",
+        "points": 15,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0169",
+        "name": "Power weapon",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0172",
+        "name": "Lightning claw",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0174",
+        "name": "Combi-flamer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0175",
+        "name": "Combi-melta",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0176",
+        "name": "Combi-plasma",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0177",
+        "name": "Combi-volkite",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0178",
+        "name": "Combi-grenade",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0179",
+        "name": "Combi-disintegrator",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0180",
+        "name": "Combi-grav",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0168",
+        "name": "Charnabal sabre",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0173",
+        "name": "Combi-bolter",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0183",
+        "name": "Disintegrator pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0184",
+        "name": "Plasma pistol",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0185",
+        "name": "Hand flamer",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0186",
+        "name": "Volkite serpenta",
+        "points": 5,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0188",
+        "name": "Melta bombs",
+        "points": 5,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0181",
+        "name": "Astartes shotgun",
+        "points": 2,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0182",
+        "name": "Volkite charger",
+        "points": 2,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0190",
+        "name": "Chain bayonet",
+        "points": 2,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0189",
+        "name": "Bayonet",
+        "points": 1,
+        "type": "extra"
+      },
+      {
+        "id": "OPT0166",
+        "name": "Chainsword",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0167",
+        "name": "Chainaxe",
+        "points": 0,
+        "type": "one-hand"
+      }
+    ]
+  },
+  "[astartes] praetorian-command-squad-jump-packs": {
+    "model_id": "[astartes] praetorian-command-squad-jump-packs",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Praetorian Command Squad with Jump Packs",
+    "unit_type": "Retinues",
+    "base_points": 160,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] cataphractii-command-squad": {
+    "model_id": "[astartes] cataphractii-command-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Cataphractii Terminator Command Squad",
-    "unit_type": "Retinue",
-    "base_points": 125,
+    "unit_type": "Retinues",
+    "base_points": 140,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-tartaros-command-squad": {
-    "model_id": "[astartes] legion-tartaros-command-squad",
+  "[astartes] tartaros-command-squad": {
+    "model_id": "[astartes] tartaros-command-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Tartaros Terminator Command Squad",
-    "unit_type": "Retinue",
-    "base_points": 110,
+    "unit_type": "Retinues",
+    "base_points": 140,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-command-squad": {
-    "model_id": "[astartes] legion-command-squad",
+  "[astartes] praetorian-command-squad": {
+    "model_id": "[astartes] praetorian-command-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Command Squad",
-    "unit_type": "Retinue",
-    "base_points": 85,
-    "warband_size": 0,
-    "options": []
-  },
-  "[astartes] legion-destroyer-assault-squad": {
-    "model_id": "[astartes] legion-destroyer-assault-squad",
-    "army_type": "Astartes",
-    "army_list": "Legiones Astartes",
-    "profile_origin": "Liber Hereticus",
-    "name": "Destroyer Assault Squad",
-    "unit_type": "Elite",
+    "name": "Praetorian Command Squad",
+    "unit_type": "Retinues",
     "base_points": 130,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-veteran-assault-squad": {
-    "model_id": "[astartes] legion-veteran-assault-squad",
+  "[astartes] centurion-command-squad": {
+    "model_id": "[astartes] centurion-command-squad",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Centurion Command Squad",
+    "unit_type": "Retinues",
+    "base_points": 85,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] veteran-assault-squad": {
+    "model_id": "[astartes] veteran-assault-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Veteran Assault Squad",
-    "unit_type": "Elite",
-    "base_points": 115,
+    "unit_type": "Elites",
+    "base_points": 120,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-veteran-squad": {
-    "model_id": "[astartes] legion-veteran-squad",
+  "[astartes] seeker-squad": {
+    "model_id": "[astartes] seeker-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Veteran Tactical Squad",
-    "unit_type": "Elite",
-    "base_points": 115,
-    "warband_size": 0,
-    "options": []
-  },
-  "[astartes] legion-mortalis-destroyer-squad": {
-    "model_id": "[astartes] legion-mortalis-destroyer-squad",
-    "army_type": "Astartes",
-    "army_list": "Legiones Astartes",
-    "profile_origin": "Liber Hereticus",
-    "name": "Destroyer Mortalis Squad",
-    "unit_type": "Elite",
+    "name": "Seeker Squad",
+    "unit_type": "Elites",
     "base_points": 105,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-terminator-cataphractii-squad": {
-    "model_id": "[astartes] legion-terminator-cataphractii-squad",
+  "[astartes] destroyer-assault-squad": {
+    "model_id": "[astartes] destroyer-assault-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Cataphractii Terminator Squad",
-    "unit_type": "Shock Assault",
-    "base_points": 175,
+    "name": "Destroyer Assault Squad",
+    "unit_type": "Elites",
+    "base_points": 100,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-terminator-saturnine-squad": {
-    "model_id": "[astartes] legion-terminator-saturnine-squad",
+  "[astartes] mortalis-destroyer-squad": {
+    "model_id": "[astartes] mortalis-destroyer-squad",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Destroyer Mortalis Squad",
+    "unit_type": "Elites",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] veteran-tactical-squad": {
+    "model_id": "[astartes] veteran-tactical-squad",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Veteran Tactical Squad",
+    "unit_type": "Elites",
+    "base_points": 85,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] saturnine-terminator-squad": {
+    "model_id": "[astartes] saturnine-terminator-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Saturnine Terminator Squad",
-    "unit_type": "Shock Assault",
-    "base_points": 175,
+    "unit_type": "Heavy Assault",
+    "base_points": 200,
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT0032",
+        "id": "OPT0067",
         "name": "Twin heavy disintegrator",
         "points": 10,
         "type": "one-hand"
       },
       {
-        "id": "OPT0033",
+        "id": "OPT0068",
         "name": "Twin heavy disintegrator",
         "points": 10,
         "type": "one-hand"
       },
       {
-        "id": "OPT0034",
+        "id": "OPT0069",
         "name": "Particle Shredder",
         "points": 5,
         "type": "extra"
       },
       {
-        "id": "OPT0031",
+        "id": "OPT0066",
         "name": "Plasma Bombard",
         "points": 0,
         "type": "one-hand"
       }
     ]
   },
-  "[astartes] legion-terminator-tartaros-squad": {
-    "model_id": "[astartes] legion-terminator-tartaros-squad",
+  "[astartes] cataphractii-terminator-squad": {
+    "model_id": "[astartes] cataphractii-terminator-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Tartaros Terminator Squad",
-    "unit_type": "Shock Assault",
+    "name": "Cataphractii Terminator Squad",
+    "unit_type": "Heavy Assault",
     "base_points": 150,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-tac-support-squad": {
-    "model_id": "[astartes] legion-tac-support-squad",
+  "[astartes] tartaros-terminator-squad": {
+    "model_id": "[astartes] tartaros-terminator-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Tactical Support Squad",
-    "unit_type": "Tactical Support",
-    "base_points": 85,
+    "name": "Tartaros Terminator Squad",
+    "unit_type": "Heavy Assault",
+    "base_points": 150,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-techmarine-covenant": {
-    "model_id": "[astartes] legion-techmarine-covenant",
-    "army_type": "Astartes",
-    "army_list": "Legiones Astartes",
-    "profile_origin": "Liber Hereticus",
-    "name": "Techmarine",
-    "unit_type": "Tactical Support",
-    "base_points": 55,
-    "warband_size": 0,
-    "options": []
-  },
-  "[astartes] legion-apothecarion-detachment": {
-    "model_id": "[astartes] legion-apothecarion-detachment",
-    "army_type": "Astartes",
-    "army_list": "Legiones Astartes",
-    "profile_origin": "Liber Hereticus",
-    "name": "Apothecary",
-    "unit_type": "Tactical Support",
-    "base_points": 45,
-    "warband_size": 0,
-    "options": []
-  },
-  "[astartes] legion-rapier-battery": {
-    "model_id": "[astartes] legion-rapier-battery",
-    "army_type": "Astartes",
-    "army_list": "Legiones Astartes",
-    "profile_origin": "Liber Hereticus",
-    "name": "Rapier Battery",
-    "unit_type": "Tactical Support",
-    "base_points": 40,
-    "warband_size": 0,
-    "options": []
-  },
-  "saturnine-dreadnought": {
-    "model_id": "saturnine-dreadnought",
-    "army_type": "Astartes",
-    "army_list": "Legiones Astartes",
-    "profile_origin": "Liber Hereticus",
-    "name": "Saturnine Dreadnought",
-    "unit_type": "Heavy Support",
-    "base_points": 340,
-    "warband_size": 0,
-    "options": [
-      {
-        "id": "OPT0035",
-        "name": "Disintegrator cannon",
-        "points": 10,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0036",
-        "name": "Inversion beamer",
-        "points": 10,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0037",
-        "name": "Graviton pulveriser",
-        "points": 10,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0041",
-        "name": "Two concussive resonators",
-        "points": 10,
-        "type": "two-hand"
-      },
-      {
-        "id": "OPT0042",
-        "name": "Two heavy particle shredders",
-        "points": 10,
-        "type": "two-hand"
-      },
-      {
-        "id": "OPT0038",
-        "name": "Heavy plasma bombard",
-        "points": 0,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0039",
-        "name": "Inversion beamer",
-        "points": 0,
-        "type": "one-hand"
-      },
-      {
-        "id": "OPT0040",
-        "name": "Graviton pulveriser",
-        "points": 0,
-        "type": "one-hand"
-      }
-    ]
-  },
-  "[astartes] legion-contemptor-dreadnought": {
-    "model_id": "[astartes] legion-contemptor-dreadnought",
-    "army_type": "Astartes",
-    "army_list": "Legiones Astartes",
-    "profile_origin": "Liber Hereticus",
-    "name": "Contemptor Dreadnought",
-    "unit_type": "Heavy Support",
-    "base_points": 175,
-    "warband_size": 0,
-    "options": []
-  },
-  "[astartes] legion-breacher-squad": {
-    "model_id": "[astartes] legion-breacher-squad",
-    "army_type": "Astartes",
-    "army_list": "Legiones Astartes",
-    "profile_origin": "Liber Hereticus",
-    "name": "Breacher Squad",
-    "unit_type": "Troops",
-    "base_points": 155,
-    "warband_size": 0,
-    "options": []
-  },
-  "[astartes] legion-assault-squad": {
-    "model_id": "[astartes] legion-assault-squad",
+  "[astartes] assault-squad": {
+    "model_id": "[astartes] assault-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Assault Squad",
     "unit_type": "Troops",
-    "base_points": 145,
+    "base_points": 140,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-despoiler-squad": {
-    "model_id": "[astartes] legion-despoiler-squad",
+  "[astartes] breacher-squad": {
+    "model_id": "[astartes] breacher-squad",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Breacher Squad",
+    "unit_type": "Troops",
+    "base_points": 140,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] despoiler-squad": {
+    "model_id": "[astartes] despoiler-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
@@ -716,8 +3139,8 @@
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-tactical-squad": {
-    "model_id": "[astartes] legion-tactical-squad",
+  "[astartes] tactical-squad": {
+    "model_id": "[astartes] tactical-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
@@ -727,112 +3150,579 @@
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-recon-squad": {
-    "model_id": "[astartes] legion-recon-squad",
+  "[astartes] araknae-quad-accelerator-platform": {
+    "model_id": "[astartes] araknae-quad-accelerator-platform",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Reconnaissance Squad",
-    "unit_type": "Combat Pioneers",
-    "base_points": 85,
+    "name": "Araknae Quad Accelerator Platform",
+    "unit_type": "Support",
+    "base_points": 125,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-scout-squad": {
-    "model_id": "[astartes] legion-scout-squad",
+  "[astartes] deathstorm-drop-pod": {
+    "model_id": "[astartes] deathstorm-drop-pod",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Scout Squad",
-    "unit_type": "Combat Pioneers",
-    "base_points": 65,
+    "name": "Deathstorm Drop Pod",
+    "unit_type": "Support",
+    "base_points": 90,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-dreadnought-drop-pod": {
-    "model_id": "[astartes] legion-dreadnought-drop-pod",
+  "[astartes] heavy-support-squad": {
+    "model_id": "[astartes] heavy-support-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Dreadnought Drop Pod",
-    "unit_type": "Transports",
-    "base_points": 100,
+    "name": "Heavy Support Squad",
+    "unit_type": "Support",
+    "base_points": 50,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-termite-assault-drill": {
-    "model_id": "[astartes] legion-termite-assault-drill",
+  "[astartes] techmarine": {
+    "model_id": "[astartes] techmarine",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Termite Assault Drill",
+    "name": "Techmarine",
+    "unit_type": "Support",
+    "base_points": 50,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] rapier-battery": {
+    "model_id": "[astartes] rapier-battery",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Rapier Battery",
+    "unit_type": "Support",
+    "base_points": 40,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] tactical-support-squad": {
+    "model_id": "[astartes] tactical-support-squad",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Tactical Support Squad",
+    "unit_type": "Support",
+    "base_points": 40,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] apothecary": {
+    "model_id": "[astartes] apothecary",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Apothecary",
+    "unit_type": "Support",
+    "base_points": 30,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] saturnine-dreadnought": {
+    "model_id": "[astartes] saturnine-dreadnought",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Saturnine Dreadnought",
+    "unit_type": "War-Engines",
+    "base_points": 340,
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0070",
+        "name": "Disintegrator cannon",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0071",
+        "name": "Inversion beamer",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0072",
+        "name": "Graviton pulveriser",
+        "points": 10,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0076",
+        "name": "Two concussive resonators",
+        "points": 10,
+        "type": "two-hand"
+      },
+      {
+        "id": "OPT0077",
+        "name": "Two heavy particle shredders",
+        "points": 10,
+        "type": "two-hand"
+      },
+      {
+        "id": "OPT0073",
+        "name": "Heavy plasma bombard",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0074",
+        "name": "Inversion beamer",
+        "points": 0,
+        "type": "one-hand"
+      },
+      {
+        "id": "OPT0075",
+        "name": "Graviton pulveriser",
+        "points": 0,
+        "type": "one-hand"
+      }
+    ]
+  },
+  "[astartes] leviathan-dreadnought": {
+    "model_id": "[astartes] leviathan-dreadnought",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Leviathan Dreadnought",
+    "unit_type": "War-Engines",
+    "base_points": 220,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] deredeo-dreadnought": {
+    "model_id": "[astartes] deredeo-dreadnought",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Deredeo Dreadnought",
+    "unit_type": "War-Engines",
+    "base_points": 190,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] contemptor-dreadnought": {
+    "model_id": "[astartes] contemptor-dreadnought",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Contemptor Dreadnought",
+    "unit_type": "War-Engines",
+    "base_points": 150,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] termite": {
+    "model_id": "[astartes] termite",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Termite",
     "unit_type": "Transports",
     "base_points": 80,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-drop-pod": {
-    "model_id": "[astartes] legion-drop-pod",
-    "army_type": "Astartes",
-    "army_list": "Legiones Astartes",
-    "profile_origin": "Liber Hereticus",
-    "name": "Drop Pod",
-    "unit_type": "Transports",
-    "base_points": 35,
-    "warband_size": 0,
-    "options": []
-  },
-  "[astartes] legion-rhino": {
-    "model_id": "[astartes] legion-rhino",
+  "[astartes] rhino": {
+    "model_id": "[astartes] rhino",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
     "name": "Rhino",
     "unit_type": "Transports",
-    "base_points": 35,
+    "base_points": 60,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-predator": {
-    "model_id": "[astartes] legion-predator",
+  "[astartes] drop-pod": {
+    "model_id": "[astartes] drop-pod",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Predator Tank",
-    "unit_type": "Tank",
+    "name": "Drop Pod",
+    "unit_type": "Transports",
+    "base_points": 50,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] spartan": {
+    "model_id": "[astartes] spartan",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Spartan",
+    "unit_type": "Heavy Transports",
+    "base_points": 400,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] land-raider": {
+    "model_id": "[astartes] land-raider",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Land Raider Carrier",
+    "unit_type": "Heavy Transports",
+    "base_points": 265,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] kharybdis-assault-claw": {
+    "model_id": "[astartes] kharybdis-assault-claw",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Kharybdis Assault Claw",
+    "unit_type": "Heavy Transports",
+    "base_points": 235,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] dreadclaw-drop-pod": {
+    "model_id": "[astartes] dreadclaw-drop-pod",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Dreadclaw Drop Pod",
+    "unit_type": "Heavy Transports",
+    "base_points": 115,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] dreadnought-drop-pod": {
+    "model_id": "[astartes] dreadnought-drop-pod",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Dreadnought Drop Pod",
+    "unit_type": "Heavy Transports",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] land-raider-explorator": {
+    "model_id": "[astartes] land-raider-explorator",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Land Raider Explorator",
+    "unit_type": "Recon",
+    "base_points": 220,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] recon-squad": {
+    "model_id": "[astartes] recon-squad",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Reconnaissance Squad",
+    "unit_type": "Recon",
+    "base_points": 110,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] outrider-squad": {
+    "model_id": "[astartes] outrider-squad",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Outrider Squadron",
+    "unit_type": "Recon",
+    "base_points": 85,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] sabre": {
+    "model_id": "[astartes] sabre",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Sabre",
+    "unit_type": "Recon",
     "base_points": 80,
     "warband_size": 0,
     "options": []
   },
-  "jetbike-squad": {
-    "model_id": "jetbike-squad",
+  "[astartes] tarantula-battery": {
+    "model_id": "[astartes] tarantula-battery",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Jetbike Squad",
-    "unit_type": "First Strike",
+    "name": "Tarantula Battery",
+    "unit_type": "Recon",
+    "base_points": 45,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] kratos-tank": {
+    "model_id": "[astartes] kratos-tank",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Kratos Assault Tank",
+    "unit_type": "Armour",
+    "base_points": 280,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] sicaran-venator": {
+    "model_id": "[astartes] sicaran-venator",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Sicaran Venator",
+    "unit_type": "Armour",
+    "base_points": 170,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] sicaran-tank": {
+    "model_id": "[astartes] sicaran-tank",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Sicaran",
+    "unit_type": "Armour",
+    "base_points": 160,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] arquitor-bombard": {
+    "model_id": "[astartes] arquitor-bombard",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Arquitor Bombard",
+    "unit_type": "Armour",
+    "base_points": 150,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] hyperios-tank": {
+    "model_id": "[astartes] hyperios-tank",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Hyperios Missile Tank",
+    "unit_type": "Armour",
+    "base_points": 150,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] vindicator-tank": {
+    "model_id": "[astartes] vindicator-tank",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Vindicator Siege Tank",
+    "unit_type": "Armour",
+    "base_points": 140,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] scorpius-tank": {
+    "model_id": "[astartes] scorpius-tank",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Scorpius Missile Tank",
+    "unit_type": "Armour",
+    "base_points": 120,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] predator-tank": {
+    "model_id": "[astartes] predator-tank",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Predator",
+    "unit_type": "Armour",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] fire-raptor": {
+    "model_id": "[astartes] fire-raptor",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Fire Raptor",
+    "unit_type": "Fast Attack",
+    "base_points": 220,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] storm-eagle": {
+    "model_id": "[astartes] storm-eagle",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Storm Eagle",
+    "unit_type": "Fast Attack",
+    "base_points": 200,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] xiphon-interceptor": {
+    "model_id": "[astartes] xiphon-interceptor",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Xiphon Interceptor",
+    "unit_type": "Fast Attack",
+    "base_points": 120,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] scimitar-jetbike-squad": {
+    "model_id": "[astartes] scimitar-jetbike-squad",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Scimitar Jetbike Squad",
+    "unit_type": "Fast Attack",
+    "base_points": 95,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] javelin-squad": {
+    "model_id": "[astartes] javelin-squad",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Javelin Squadron",
+    "unit_type": "Fast Attack",
     "base_points": 75,
     "warband_size": 0,
     "options": []
   },
-  "[astartes] legion-fellblade": {
-    "model_id": "[astartes] legion-fellblade",
+  "[astartes] land-speeder-squad": {
+    "model_id": "[astartes] land-speeder-squad",
     "army_type": "Astartes",
     "army_list": "Legiones Astartes",
     "profile_origin": "Liber Hereticus",
-    "name": "Fellblade",
-    "unit_type": "Lord of War",
+    "name": "Land Speeder Squadron",
+    "unit_type": "Fast Attack",
+    "base_points": 50,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] stormbird": {
+    "model_id": "[astartes] stormbird",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Sokar Stormbird",
+    "unit_type": "Lords of War",
+    "base_points": 850,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] thunderhawk": {
+    "model_id": "[astartes] thunderhawk",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Thunderhawk Gunship",
+    "unit_type": "Lords of War",
+    "base_points": 685,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] falchion-tank": {
+    "model_id": "[astartes] falchion-tank",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Falchion Super-Heavy Tank Destroyer",
+    "unit_type": "Lords of War",
+    "base_points": 650,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] fellblade-tank": {
+    "model_id": "[astartes] fellblade-tank",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Fellblade Super-Heavy Battle Tank",
+    "unit_type": "Lords of War",
+    "base_points": 650,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] glaive-tank": {
+    "model_id": "[astartes] glaive-tank",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Glaive Super-Heavy Special Weapons Tank",
+    "unit_type": "Lords of War",
+    "base_points": 650,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] mastodon": {
+    "model_id": "[astartes] mastodon",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Mastodon Super-Heavy Assault Transport",
+    "unit_type": "Lords of War",
     "base_points": 600,
     "warband_size": 0,
     "options": []
   },
-  "castellax": {
-    "model_id": "castellax",
+  "[astartes] cerberus-tank": {
+    "model_id": "[astartes] cerberus-tank",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Cerberus Heavy Tank Destroyer",
+    "unit_type": "Lords of War",
+    "base_points": 400,
+    "warband_size": 0,
+    "options": []
+  },
+  "[astartes] typhon-tank": {
+    "model_id": "[astartes] typhon-tank",
+    "army_type": "Astartes",
+    "army_list": "Legiones Astartes",
+    "profile_origin": "Liber Hereticus",
+    "name": "Typhon Heavy Siege Tank",
+    "unit_type": "Lords of War",
+    "base_points": 400,
+    "warband_size": 0,
+    "options": []
+  },
+  "[mechanicum] castellax-destructor-maniple": {
+    "model_id": "[mechanicum] castellax-destructor-maniple",
     "army_type": "Mechanicum",
     "army_list": "Mechanicum",
     "profile_origin": "Liber Mechanicum",
-    "name": "Castellax Battle Automata",
-    "unit_type": "Troops",
+    "name": "Castellax Destructor Maniple",
+    "unit_type": "Heavy Assault",
+    "base_points": 100,
+    "warband_size": 0,
+    "options": []
+  },
+  "[mechanicum] castellax-battle-maniple": {
+    "model_id": "[mechanicum] castellax-battle-maniple",
+    "army_type": "Mechanicum",
+    "army_list": "Mechanicum",
+    "profile_origin": "Liber Mechanicum",
+    "name": "Castellax Battle Maniple",
+    "unit_type": "Support",
     "base_points": 100,
     "warband_size": 0,
     "options": []

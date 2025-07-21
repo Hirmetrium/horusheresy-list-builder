@@ -58,18 +58,7 @@ export const RosterInformation: FunctionComponent<RosterInformationProps> = (
           }}
         >
           <small>{props.roster.armyList}</small>{" "}
-          {!!armyListData[props.roster.armyList]?.legacy && (
-            <Typography
-              className="sabon"
-              variant="subtitle2"
-              component="small"
-              sx={{
-                fontStyle: "italic",
-              }}
-            >
-              (Legacy)
-            </Typography>
-          )}
+          )
         </Typography>
         <Typography
           variant="subtitle2"

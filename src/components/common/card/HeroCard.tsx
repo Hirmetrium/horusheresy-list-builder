@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
 import { heroConstraintData } from "../../../assets/data.ts";
 import { useCalculator } from "../../../hooks/useCalculator.ts";
-import { useCollectionWarnings } from "../../../hooks/useCollectionWarnings.ts";
 import { useOptionDependencies } from "../../../hooks/useOptionDependencies.ts";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
@@ -17,7 +16,6 @@ import { SelectedUnit } from "../../../types/roster.ts";
 import { slugify } from "../../../utils/string.ts";
 import { LeaderToggle } from "../army-leader/LeaderToggle.tsx";
 import { UnitProfilePicture } from "../images/UnitProfilePicture.tsx";
-import { MwfBadge } from "../might-will-fate/MwfBadge.tsx";
 import { OptionList } from "../option/OptionList.tsx";
 import { UnitTypeLabel } from "../unit-type/UnitTypeLabel.tsx";
 import { CardActionButtons } from "./CardActionButtons.tsx";
@@ -58,8 +56,6 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
   const { checkDependency } = useOptionDependencies(warbandId);
   const { roster, getSetOfModelIds } = useRosterInformation();
   const screen = useScreenSize();
-  const { warnings, available, selected, overExceededCollection } =
-    useCollectionWarnings(unit);
   const { preferences } = useUserPreferences();
 
   const valid =
@@ -206,19 +202,6 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
           </Stack>
 
           <Stack direction="column" justifyContent="center" flexGrow={1}>
-            <Typography
-              variant="h6"
-              fontWeight="bold"
-              color={
-                warnings === "on" && overExceededCollection
-                  ? "warning.dark"
-                  : "inherit"
-              }
-            >
-              {!unit.unique && followerOf
-                ? `${unit.quantity}x ${unit.name}`
-                : unit.name}
-            </Typography>
             <Typography
               data-test-id={`unit-card--points--w${warbandNum}-i${index}`}
               data-test-unit-name={`unit-card--points--${slugify(unit.name)}`}
@@ -465,21 +448,7 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
               >
                 Points: <b>{unit.pointsTotal}</b>
               </Typography>
-              {warnings === "on" && (
-                <Typography
-                  color={
-                    overExceededCollection
-                      ? mode === "dark"
-                        ? "error.light"
-                        : "error.dark"
-                      : "inherit"
-                  }
-                >
-                  {available === 0
-                    ? "Not in collection"
-                    : `Left in collection: ${available - selected}`}
-                </Typography>
-              )}
+                            )
             </Collapse>
             <CardActionButtons
               remove={

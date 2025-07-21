@@ -5,7 +5,6 @@ import { DrawerContainer } from "../components/drawer/DrawerContainer.tsx";
 import { ModalContainer } from "../components/modal/ModalContainer.tsx";
 import { useGameModeState } from "../state/gamemode";
 import { useUserPreferences } from "../state/preference";
-import { useRecentGamesState } from "../state/recent-games";
 import { useRosterBuildingState } from "../state/roster-building";
 import { Navigation } from "./Navigation.tsx";
 
@@ -17,7 +16,6 @@ export const App = () => {
 
       localStorage.setItem(e.key, e.newValue);
       useRosterBuildingState.persist.rehydrate();
-      useRecentGamesState.persist.rehydrate();
       useGameModeState.persist.rehydrate();
       useUserPreferences.persist.rehydrate();
     }

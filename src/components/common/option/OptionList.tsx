@@ -41,10 +41,7 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
       else if (!!o.type && o.type === type && selected) {
         return { ...o, quantity: o.included ? 1 : 0 };
       }
-      // deselect Pippin if shadowfax is removed
-      else if (name === "Shadowfax" && !selected && o.name === "Pippin") {
-        return { ...o, quantity: 0 };
-      }
+      
       // return any other option unchanged
       else {
         return o;
@@ -62,15 +59,8 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
         return { ...o, quantity: selected ? 1 : 0 };
       }
 
-      // leave special warband upgrades untouched.
-      else if (o.type === "special_warband_upgrade") {
-        return o;
-      }
-
       // deselect any other option
       else {
-        // unless the toggled option was a special warband upgrade.
-        if (type === "special_warband_upgrade") return o;
         // or the option was automatically included.
         if (o.included) return o;
 

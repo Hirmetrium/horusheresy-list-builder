@@ -1,4 +1,3 @@
-import { BookmarkAdd, Edit } from "@mui/icons-material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { Collapse, Stack } from "@mui/material";
@@ -19,28 +18,18 @@ import { DrawerTypes } from "../../../components/drawer/drawers.tsx";
 import { ModalTypes } from "../../../components/modal/modals.tsx";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
 import { useAppState } from "../../../state/app";
-import { useCollectionState } from "../../../state/collection";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
-import { COMPOSED_UNIT_MAP } from "../utils/special-rows.ts";
 import { DatabaseRowData } from "./DatabaseTable.tsx";
 import { ExtraInfoRow } from "./ExtraInformationSection.tsx";
 
 export const DatabaseTableRow = ({ row }: { row: DatabaseRowData }) => {
   const { palette } = useTheme();
-  const { inventory } = useCollectionState();
   const { mode } = useThemeContext();
 
   const screen = useScreenSize();
   const { setCurrentModal, openSidebar } = useAppState();
   const [open, setOpen] = useState(false);
 
-  const existsInInv =
-    !!inventory[row.profile_origin] &&
-    !!inventory[row.profile_origin][
-      COMPOSED_UNIT_MAP[row.name] || row.name.replaceAll(" (General)", "")
-    ];
-
-  const [might, will, fate] = [row.M, row.W, row.F];
 
   return (
     <>
@@ -79,55 +68,20 @@ export const DatabaseTableRow = ({ row }: { row: DatabaseRowData }) => {
         </TableCell>
         {screen.isDesktop && (
           <>
-            <TableCell align="center">
-              {row.profile.Mv !== "-" ? row.profile.Mv : row.profile.Range}
-            </TableCell>
-            <TableCell align="center">{row.profile.Fv}</TableCell>
-            <TableCell align="center">{row.profile.Sv}</TableCell>
+            <TableCell align="center">{row.profile.M}</TableCell>
+            <TableCell align="center">{row.profile.WS}</TableCell>
+            <TableCell align="center">{row.profile.BS}</TableCell>
             <TableCell align="center">{row.profile.S}</TableCell>
-            <TableCell align="center">{row.profile.D}</TableCell>
-            <TableCell align="center">{row.profile.A}</TableCell>
+            <TableCell align="center">{row.profile.T}</TableCell>
             <TableCell align="center">{row.profile.W}</TableCell>
-            <TableCell align="center">{row.profile.C}</TableCell>
             <TableCell align="center">{row.profile.I}</TableCell>
-            <TableCell align="center">{might}</TableCell>
-            <TableCell align="center">{will}</TableCell>
-            <TableCell align="center">{fate}</TableCell>
-          </>
+            <TableCell align="center">{row.profile.A}</TableCell>
+            <TableCell align="center">{row.profile.LD}</TableCell>
+            <TableCell align="center">{row.profile.CL}</TableCell>
+            <TableCell align="center">{row.profile.WP}</TableCell>
+            <TableCell align="center">{row.profile.IN}</TableCell>
+            </>
         )}
-        <TableCell align="center">
-          <SquareIconButton
-            icon={existsInInv ? <Edit /> : <BookmarkAdd />}
-            iconColor={palette.primary.contrastText}
-            backgroundColor={
-              existsInInv
-                ? palette.primary.dark
-                : mode === "dark"
-                  ? palette.grey.A400
-                  : palette.grey.A700
-            }
-            backgroundColorHover={
-              mode === "dark" ? palette.grey.A700 : palette.grey["900"]
-            }
-            iconPadding="0.5rem"
-            onClick={() => {
-              setCurrentModal(ModalTypes.ADD_TO_COLLECTION, {
-                unit: {
-                  name:
-                    COMPOSED_UNIT_MAP[row.name] ||
-                    row.name.replaceAll(" (General)", ""),
-                  profile_origin: row.profile_origin,
-                  options: row.options,
-                  option_mandatory: row.option_mandatory,
-                  unit_type: row.unit_type,
-                },
-                title: existsInInv
-                  ? `Edit collection`
-                  : `Add to your collection`,
-              });
-            }}
-          />
-        </TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={16}>
@@ -139,38 +93,34 @@ export const DatabaseTableRow = ({ row }: { row: DatabaseRowData }) => {
                     <Table size="small">
                       <TableHead>
                         <TableRow>
-                          <TableCell align="center">Mv / Range</TableCell>
-                          <TableCell align="center">Fv</TableCell>
-                          <TableCell align="center">Sv</TableCell>
+                          <TableCell align="center">Mv</TableCell>
+                          <TableCell align="center">WS</TableCell>
+                          <TableCell align="center">BS</TableCell>
                           <TableCell align="center">S</TableCell>
-                          <TableCell align="center">D</TableCell>
-                          <TableCell align="center">A</TableCell>
+                          <TableCell align="center">T</TableCell>
                           <TableCell align="center">W</TableCell>
-                          <TableCell align="center">C</TableCell>
                           <TableCell align="center">I</TableCell>
-                          <TableCell align="center">M</TableCell>
-                          <TableCell align="center">W</TableCell>
-                          <TableCell align="center">F</TableCell>
+                          <TableCell align="center">A</TableCell>
+                          <TableCell align="center">LD</TableCell>
+                          <TableCell align="center">CL</TableCell>
+                          <TableCell align="center">WP</TableCell>
+                          <TableCell align="center">IN</TableCell>
                         </TableRow>
                       </TableHead>
                       <TableBody>
                         <TableRow>
-                          <TableCell align="center">
-                            {row.profile.Mv !== "-"
-                              ? row.profile.Mv
-                              : row.profile.Range}
-                          </TableCell>
-                          <TableCell align="center">{row.profile.Fv}</TableCell>
-                          <TableCell align="center">{row.profile.Sv}</TableCell>
+                          <TableCell align="center">{row.profile.M}</TableCell>
+                          <TableCell align="center">{row.profile.WS}</TableCell>
+                          <TableCell align="center">{row.profile.BS}</TableCell>
                           <TableCell align="center">{row.profile.S}</TableCell>
-                          <TableCell align="center">{row.profile.D}</TableCell>
-                          <TableCell align="center">{row.profile.A}</TableCell>
+                          <TableCell align="center">{row.profile.T}</TableCell>
                           <TableCell align="center">{row.profile.W}</TableCell>
-                          <TableCell align="center">{row.profile.C}</TableCell>
                           <TableCell align="center">{row.profile.I}</TableCell>
-                          <TableCell align="center">{might}</TableCell>
-                          <TableCell align="center">{will}</TableCell>
-                          <TableCell align="center">{fate}</TableCell>
+                          <TableCell align="center">{row.profile.A}</TableCell>
+                          <TableCell align="center">{row.profile.LD}</TableCell>
+                          <TableCell align="center">{row.profile.CL}</TableCell>
+                          <TableCell align="center">{row.profile.WP}</TableCell>
+                          <TableCell align="center">{row.profile.IN}</TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>
@@ -242,62 +192,6 @@ export const DatabaseTableRow = ({ row }: { row: DatabaseRowData }) => {
                         </Fragment>
                       ),
                     )}
-                  </Typography>
-                </ExtraInfoRow>
-              )}
-              {row.profile.magic_powers.length > 0 && (
-                <ExtraInfoRow title="Magical Powers">
-                  <Typography>
-                    {row.profile.magic_powers.map((power, index, self) => (
-                      <Fragment key={power.name}>
-                        <Box
-                          component="span"
-                          sx={{
-                            textDecoration: "underline",
-                            cursor: "pointer",
-                            "&:hover": {
-                              color: (theme) => theme.palette.primary.main,
-                            },
-                          }}
-                          onClick={() => {
-                            openSidebar(DrawerTypes.MAGICAL_POWER_SEARCH, {
-                              searchKeyword: power.name,
-                            });
-                          }}
-                        >
-                          {power.name}
-                        </Box>
-                        {index < self.length - 1 && ","}{" "}
-                      </Fragment>
-                    ))}
-                  </Typography>
-                </ExtraInfoRow>
-              )}
-              {row.profile.heroic_actions.length > 0 && (
-                <ExtraInfoRow title="Heroic Actions">
-                  <Typography>
-                    {row.profile.heroic_actions.map((action, index, self) => (
-                      <Fragment key={action}>
-                        <Box
-                          component="span"
-                          sx={{
-                            textDecoration: "underline",
-                            cursor: "pointer",
-                            "&:hover": {
-                              color: (theme) => theme.palette.primary.main,
-                            },
-                          }}
-                          onClick={() => {
-                            openSidebar(DrawerTypes.HEROIC_ACTION_SEARCH, {
-                              searchKeyword: action,
-                            });
-                          }}
-                        >
-                          {action}
-                        </Box>
-                        {index < self.length - 1 && ","}{" "}
-                      </Fragment>
-                    ))}
                   </Typography>
                 </ExtraInfoRow>
               )}

@@ -17,15 +17,22 @@ import { BsFillPersonVcardFill } from "react-icons/bs";
 import { FaFileImport } from "react-icons/fa";
 import { FaImage } from "react-icons/fa6";
 import { GiSwordsEmblem } from "react-icons/gi";
+import { AddToCollection } from "./modals/AddToCollection.tsx";
 import { ChartsModal } from "./modals/ChartsModal.tsx";
 import { ConfirmDeleteGroupModal } from "./modals/ConfirmDeleteGroupModal.tsx";
 import { ConfirmDeleteRosterModal } from "./modals/ConfirmDeleteRosterModal.tsx";
 import { ConfirmDisbandGroupModal } from "./modals/ConfirmDisbandGroupModal.tsx";
+import { CreateGameResultModal } from "./modals/CreateGameResultModal.tsx";
 import { CreateNewRosterGroupModal } from "./modals/CreateNewRosterGroupModal.tsx";
 import { CreateNewRosterModal } from "./modals/CreateNewRosterModal.tsx";
 import { DownloadProfileCardModal } from "./modals/DownloadProfileCardModal.tsx";
 import { EditRosterModal } from "./modals/EditRosterModal.tsx";
+import { EndGameStepperDialog } from "./modals/EndGameStepperDialog.tsx";
+import { ExportCollection } from "./modals/ExportCollection.tsx";
+import { ExportHistoryModal } from "./modals/ExportHistoryModal.tsx";
 import { ExportRosterModal } from "./modals/ExportRosterModal.tsx";
+import { ImportCollection } from "./modals/ImportCollection.tsx";
+import { ImportGameHistoryModal } from "./modals/ImportHistoryModal.tsx";
 import { ProfileCardModal } from "./modals/ProfileCardModal.tsx";
 import { RosterSummaryModal } from "./modals/RosterSummaryModal.tsx";
 import { RosterSummaryScreenshotModal } from "./modals/RosterSummaryScreenshotModal.tsx";
@@ -70,6 +77,42 @@ export type ModalProps = {
 };
 
 export const modals = new Map<ModalTypes, ModalProps>([
+  [
+    ModalTypes.IMPORT_GAMES,
+    {
+      icon: <FaFileImport />,
+      title: "Import game history",
+      children: <ImportGameHistoryModal />,
+      overflow: "none",
+      maxWidth: "sm",
+    },
+  ],
+  [
+    ModalTypes.EXPORT_GAMES,
+    {
+      icon: <SaveIcon />,
+      title: "Export history",
+      children: <ExportHistoryModal />,
+      overflow: "none",
+      maxWidth: "md",
+    },
+  ],
+  [
+    ModalTypes.CREATE_GAME_RESULT,
+    {
+      icon: <EmojiEventsIcon />,
+      title: "Game results",
+      children: <CreateGameResultModal />,
+    },
+  ],
+  [
+    ModalTypes.END_GAME_DIALOG,
+    {
+      icon: <EmojiEventsIcon />,
+      title: "End game",
+      children: <EndGameStepperDialog />,
+    },
+  ],
   [
     ModalTypes.CREATE_NEW_ROSTER,
     {
@@ -186,6 +229,32 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <DeleteForever />,
       title: "Delete Group",
       children: <ConfirmDeleteGroupModal />,
+      maxWidth: "md",
+    },
+  ],
+  [
+    ModalTypes.ADD_TO_COLLECTION,
+    {
+      icon: <BookmarkAdd />,
+      children: <AddToCollection />,
+      maxWidth: "lg",
+    },
+  ],
+  [
+    ModalTypes.EXPORT_COLLECTION,
+    {
+      icon: <SaveIcon />,
+      title: "Export Collection",
+      children: <ExportCollection />,
+      maxWidth: "sm",
+    },
+  ],
+  [
+    ModalTypes.IMPORT_COLLECTION,
+    {
+      icon: <UploadFile />,
+      title: "Import Collection",
+      children: <ImportCollection />,
       maxWidth: "md",
     },
   ],

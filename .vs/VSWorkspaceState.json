@@ -1,15 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\data",
+    "\\public",
     "\\src",
-    "\\src\\components",
-    "\\src\\components\\common",
-    "\\src\\components\\common\\undo",
-    "\\src\\components\\common\\unit-selection",
-    "\\src\\components\\common\\unit-type",
-    "\\src\\components\\common\\warbands",
-    "\\src\\components\\common\\warbands\\content",
-    "\\src\\components\\common\\warbands\\header"
+    "\\src\\assets",
+    "\\src\\assets\\data",
+    "\\static-resources",
+    "\\static-resources\\images"
   ],
   "PreviewInSolutionExplorer": false
 }

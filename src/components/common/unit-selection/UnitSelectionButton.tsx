@@ -8,11 +8,13 @@ import { useTheme } from "@mui/material/styles";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { useAppState } from "../../../state/app";
+import { useCollectionState } from "../../../state/collection";
 import { useUserPreferences } from "../../../state/preference";
 import { Unit } from "../../../types/hh3-data.types.ts";
 import { isSelectedUnit } from "../../../types/roster.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
 import { UnitProfilePicture } from "../images/UnitProfilePicture.tsx";
+import { MwfBadge } from "../might-will-fate/MwfBadge.tsx";
 
 export type UnitSelectionButtonProps = {
   unit: Pick<
@@ -33,9 +35,17 @@ export function UnitSelectionButton({
 }: UnitSelectionButtonProps) {
   const { palette } = useTheme();
   const { setCurrentModal } = useAppState();
+  const { inventory } = useCollectionState();
   const { preferences } = useUserPreferences();
   const { roster } = useRosterInformation();
 
+  const totalCollection =
+    inventory[unit.profile_origin] &&
+    inventory[unit.profile_origin][unit.name.replace(" (General)", "")]
+      ? inventory[unit.profile_origin][
+          unit.name.replace(" (General)", "")
+        ].collection.reduce((a, b) => a + Number(b.amount), 0)
+      : 0;
   const totalSelected = roster.warbands
     .flatMap((wb) => [wb.hero, ...wb.units])
     .filter(isSelectedUnit)
@@ -95,7 +105,53 @@ export function UnitSelectionButton({
                     />
                   )}
                 </Box>
+                <MwfBadge unit={unit} />
               </Stack>
+              {!!preferences.collectionWarnings && (
+                <Stack
+                  component="span"
+                  gap={0.5}
+                  sx={{ pt: unit.unit_type !== "Warrior" ? 0.5 : 0 }}
+                  direction="row"
+                  alignItems="center"
+                >
+                  {totalCollection - totalSelected <= 0 ? (
+                    <Category
+                      sx={{ fontSize: "1rem" }}
+                      color={
+                        totalCollection - totalSelected < 0
+                          ? "error"
+                          : "warning"
+                      }
+                    />
+                  ) : (
+                    <CategoryOutlined
+                      sx={{ fontSize: "1rem" }}
+                      color={
+                        totalCollection - totalSelected < 0
+                          ? "error"
+                          : totalCollection - totalSelected === 0
+                            ? "warning"
+                            : "inherit"
+                      }
+                    />
+                  )}
+                  <Typography
+                    variant="body2"
+                    color={
+                      totalCollection - totalSelected < 0
+                        ? "error"
+                        : totalCollection - totalSelected === 0
+                          ? "warning"
+                          : "inherit"
+                    }
+                  >
+                    {totalCollection === 0
+                      ? "Not in collection"
+                      : `Collection: ${totalCollection - totalSelected} left`}
+                  </Typography>
+                </Stack>
+              )}
             </Box>
             <Box sx={{ minWidth: "50px" }}>
               <IconButton

@@ -43,6 +43,7 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
     ),
   );
   const { getAdjustedMetaData } = useRosterInformation();
+  const { siegeRoster } = getAdjustedMetaData();
 
   function openHeroPicker() {
     console.debug("Open Hero Picker");
@@ -162,7 +163,7 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
                             collapsed={collapsed}
                           />
                         ) : (
-                          <WithRibbon>
+                          <WithRibbon label="Legacy" hideRibbon={!unit.legacy}>
                             {unit.unit_type.includes("Hero") ? (
                               <HeroCard
                                 unit={unit}

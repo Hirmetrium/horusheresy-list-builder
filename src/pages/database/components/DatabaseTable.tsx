@@ -16,14 +16,19 @@ import { DatabaseTableRow } from "./DatabaseTableRow.tsx";
 
 export type DatabaseRowData = {
   army_list: string[];
+  F: string;
   profile: Profile;
+  Mv: number;
   unit_type: UnitType[];
+  M: string;
   profile_origin: string;
   searchString: string;
+  W: string;
   name: string;
   option_mandatory: boolean;
   options: Option[];
   army_type: ArmyType;
+  MWFW: string[][];
 };
 
 interface DatabaseTableProps {
@@ -80,27 +85,27 @@ export const DatabaseTable = ({
               <>
                 <TableCell align="center">
                   <TableSortLabel
-                    active={orderBy === "M"}
-                    direction={orderBy === "M" ? order : "asc"}
-                    onClick={createSortHandler("M")}
+                    active={orderBy === "Mv"}
+                    direction={orderBy === "Mv" ? order : "asc"}
+                    onClick={createSortHandler("Mv")}
                   >
                     Mv / Range
                   </TableSortLabel>
                 </TableCell>
                 <TableCell align="center">
                   <TableSortLabel
-                    active={orderBy === "profile.WS"}
-                    direction={orderBy === "profile.WS" ? order : "asc"}
-                    onClick={createSortHandler("profile.WS")}
+                    active={orderBy === "profile.Fv"}
+                    direction={orderBy === "profile.Fv" ? order : "asc"}
+                    onClick={createSortHandler("profile.Fv")}
                   >
                     Fv
                   </TableSortLabel>
                 </TableCell>
                 <TableCell align="center">
                   <TableSortLabel
-                    active={orderBy === "profile.BS"}
-                    direction={orderBy === "profile.BS" ? order : "asc"}
-                    onClick={createSortHandler("profile.BS")}
+                    active={orderBy === "profile.Sv"}
+                    direction={orderBy === "profile.Sv" ? order : "asc"}
+                    onClick={createSortHandler("profile.Sv")}
                   >
                     Sv
                   </TableSortLabel>
@@ -116,29 +121,11 @@ export const DatabaseTable = ({
                 </TableCell>
                 <TableCell align="center">
                   <TableSortLabel
-                    active={orderBy === "profile.T"}
-                    direction={orderBy === "profile.T" ? order : "asc"}
-                    onClick={createSortHandler("profile.T")}
+                    active={orderBy === "profile.D"}
+                    direction={orderBy === "profile.D" ? order : "asc"}
+                    onClick={createSortHandler("profile.D")}
                   >
                     D
-                  </TableSortLabel>
-                </TableCell>
-                <TableCell align="center">
-                  <TableSortLabel
-                    active={orderBy === "profile.W"}
-                    direction={orderBy === "profile.W" ? order : "asc"}
-                    onClick={createSortHandler("profile.W")}
-                  >
-                    A
-                  </TableSortLabel>
-                </TableCell>
-                <TableCell align="center">
-                  <TableSortLabel
-                    active={orderBy === "profile.I"}
-                    direction={orderBy === "profile.I" ? order : "asc"}
-                    onClick={createSortHandler("profile.I")}
-                  >
-                    W
                   </TableSortLabel>
                 </TableCell>
                 <TableCell align="center">
@@ -147,41 +134,59 @@ export const DatabaseTable = ({
                     direction={orderBy === "profile.A" ? order : "asc"}
                     onClick={createSortHandler("profile.A")}
                   >
-                    C
+                    A
                   </TableSortLabel>
                 </TableCell>
                 <TableCell align="center">
                   <TableSortLabel
-                    active={orderBy === "profile.LD"}
-                    direction={orderBy === "profile.LD" ? order : "asc"}
-                    onClick={createSortHandler("profile.LD")}
-                  >
-                    I
-                  </TableSortLabel>
-                </TableCell>
-                <TableCell align="center">
-                  <TableSortLabel
-                    active={orderBy === "CL"}
-                    direction={orderBy === "CL" ? order : "asc"}
-                    onClick={createSortHandler("CL")}
-                  >
-                    M
-                  </TableSortLabel>
-                </TableCell>
-                <TableCell align="center">
-                  <TableSortLabel
-                    active={orderBy === "WP"}
-                    direction={orderBy === "WP" ? order : "asc"}
-                    onClick={createSortHandler("WP")}
+                    active={orderBy === "profile.W"}
+                    direction={orderBy === "profile.W" ? order : "asc"}
+                    onClick={createSortHandler("profile.W")}
                   >
                     W
                   </TableSortLabel>
                 </TableCell>
                 <TableCell align="center">
                   <TableSortLabel
-                    active={orderBy === "IN"}
-                    direction={orderBy === "IN" ? order : "asc"}
-                    onClick={createSortHandler("IN")}
+                    active={orderBy === "profile.C"}
+                    direction={orderBy === "profile.C" ? order : "asc"}
+                    onClick={createSortHandler("profile.C")}
+                  >
+                    C
+                  </TableSortLabel>
+                </TableCell>
+                <TableCell align="center">
+                  <TableSortLabel
+                    active={orderBy === "profile.I"}
+                    direction={orderBy === "profile.I" ? order : "asc"}
+                    onClick={createSortHandler("profile.I")}
+                  >
+                    I
+                  </TableSortLabel>
+                </TableCell>
+                <TableCell align="center">
+                  <TableSortLabel
+                    active={orderBy === "M"}
+                    direction={orderBy === "M" ? order : "asc"}
+                    onClick={createSortHandler("M")}
+                  >
+                    M
+                  </TableSortLabel>
+                </TableCell>
+                <TableCell align="center">
+                  <TableSortLabel
+                    active={orderBy === "W"}
+                    direction={orderBy === "W" ? order : "asc"}
+                    onClick={createSortHandler("W")}
+                  >
+                    W
+                  </TableSortLabel>
+                </TableCell>
+                <TableCell align="center">
+                  <TableSortLabel
+                    active={orderBy === "F"}
+                    direction={orderBy === "F" ? order : "asc"}
+                    onClick={createSortHandler("F")}
                   >
                     F
                   </TableSortLabel>

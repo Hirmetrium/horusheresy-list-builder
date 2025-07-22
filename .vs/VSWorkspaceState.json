@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.github",
+    "\\.github\\workflows",
     "\\src",
-    "\\src\\components",
-    "\\src\\components\\common",
-    "\\src\\components\\common\\warbands",
-    "\\src\\components\\common\\warbands\\content",
     "\\src\\pages",
     "\\src\\pages\\gamemode",
     "\\src\\pages\\gamemode\\components",
@@ -13,6 +11,6 @@
     "\\src\\pages\\rosters",
     "\\src\\pages\\rosters\\components"
   ],
-  "SelectedNode": "\\src\\components\\common\\option",
+  "SelectedNode": "\\src\\components\\common\\warbands\\Warband.tsx",
   "PreviewInSolutionExplorer": false
 }

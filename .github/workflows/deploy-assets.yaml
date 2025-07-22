@@ -2,24 +2,30 @@ name: Deploy Assets
 
 on:
   push:
-    tags:
-      - "v*" # Matches tags starting with "v", e.g., "v1.0.0"
-  workflow_dispatch: # Allows manual trigger of the workflow
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Deploy
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          protocol: ftps
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: static-resources/
-          server-dir: /public_html/resources/v2024/
+          node-version: '~22'
+
+      # If you have an asset build step, add it here, e.g.:
+      # - name: Build assets
+      #   run: npm run build-assets
+
+      # If your assets are already in static-resources/, you can skip the build step
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./static-resources

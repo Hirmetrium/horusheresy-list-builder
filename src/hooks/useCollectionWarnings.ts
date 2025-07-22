@@ -1,4 +1,5 @@
 import { useCollectionState } from "../state/collection";
+import { useUserPreferences } from "../state/preference";
 import { SelectedUnit } from "../types/roster.ts";
 import { arraysMatch } from "../utils/array.ts";
 import { findBestMatch } from "../utils/string.ts";
@@ -20,6 +21,7 @@ export const useCollectionWarnings = (
   available?: number;
   selected?: number;
 } => {
+  const { preferences } = useUserPreferences();
   const { inventory } = useCollectionState();
   const { roster } = useRosterInformation();
 

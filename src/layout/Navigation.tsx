@@ -5,6 +5,7 @@ import {
   ChevronLeftOutlined,
   FolderOutlined,
   Info,
+  OpenInNew,
   Segment,
   Settings,
 } from "@mui/icons-material";
@@ -412,7 +413,7 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
       label: "Report a Bug / Correction",
       action: () =>
         (window.location.href =
-          "mailto:support@hh3-list-builder.com?subject=HH3 List Builder - Bug/Correction"),
+          "mailto:hirmetrium@gmail.com?subject=HH3 List Builder - Bug/Correction"),
       active: false,
     },
     {
@@ -434,7 +435,7 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
       action: () =>
         window
           .open(
-            "https://www.warhammer-community.com/en-gb/downloads/middle-earth-strategy-battle-game/",
+            "https://www.warhammer-community.com/en-gb/downloads/warhammer-the-horus-heresy/",
             "_blank",
           )
           .focus(),
@@ -476,7 +477,7 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
           <Button
             aria-label="logo"
             sx={{ mr: 2 }}
-            href="https://hh3-list-builder.com/"
+            href="https://hirmetrium.github.io/"
           >
             <img src={logo} alt="Logo" style={{ height: "50px" }} />
             <img

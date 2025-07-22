@@ -17,7 +17,6 @@ import { SelectedUnit } from "../../../types/roster.ts";
 import { slugify } from "../../../utils/string.ts";
 import { LeaderToggle } from "../army-leader/LeaderToggle.tsx";
 import { UnitProfilePicture } from "../images/UnitProfilePicture.tsx";
-import { MwfBadge } from "../might-will-fate/MwfBadge.tsx";
 import { OptionList } from "../option/OptionList.tsx";
 import { UnitTypeLabel } from "../unit-type/UnitTypeLabel.tsx";
 import { CardActionButtons } from "./CardActionButtons.tsx";
@@ -235,7 +234,6 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
                 <Box>
                   <UnitTypeLabel unitType={unit.unit_type} />
                 </Box>
-                <MwfBadge unit={unit} />
                 {warnings === "on" && (
                   <Typography
                     color={
@@ -429,7 +427,6 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
                 data-test-unit-name={`unit-card--info--${slugify(unit.name)}`}
               >
                 <UnitTypeLabel unitType={unit.unit_type} />
-                <MwfBadge unit={unit} />
               </Stack>
               {!!unit.options.length && (
                 <Box sx={{ pt: 1 }}>

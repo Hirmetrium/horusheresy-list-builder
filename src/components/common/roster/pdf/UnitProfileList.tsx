@@ -200,7 +200,6 @@ export const UnitProfileList = ({ units }: UnitListProps) => {
     <Box id="pdf-profiles" className={removePdfPageBreak ? "" : "page-break"}>
       <Typography variant="h5">Profiles</Typography>
       {units
-        .filter((unit) => unit.type !== "Siege Equipment")
         .map((unit, index) => (
           <Fragment key={index}>
             <ListItem profile={unit} />

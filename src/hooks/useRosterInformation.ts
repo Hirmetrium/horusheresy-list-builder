@@ -119,21 +119,12 @@ export const useRosterInformation = (): RosterInformationFunctions => {
   function canSupportMoreWarbands(roster: Roster = currentRoster): boolean {
     if (!roster) return false;
 
-    if (roster.armyList === "The Fellowship")
-      // The Fellowship is always deployed as a single Warband. You cannot add more warbands!
-      return roster.warbands.length < 1;
-    if (roster.armyList === "The White Council")
-      // The white council is always deployed as a single Warband. You cannot add more warbands!
-      return roster.warbands.length < 1;
-    if (roster.armyList === "Wraiths on Wings")
-      // The Wraiths on Wings any only ever be 9 wraiths big. You cannot add more warbands!
-      return roster.warbands.length < 9;
 
     const setOfModelIds = getSetOfModelIds(roster);
     const stillAvailableWarbandLeaders = Object.values(hh3Data)
       .filter(
         ({ unit_type }) =>
-          unit_type.includes("Hero") || unit_type === "Siege Engine",
+          unit_type.includes("Hero") 
       )
       .filter(
         (unit) =>

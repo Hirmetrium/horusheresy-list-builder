@@ -5,7 +5,6 @@ import {
   ChevronLeftOutlined,
   FolderOutlined,
   Info,
-  OpenInNew,
   Segment,
   Settings,
 } from "@mui/icons-material";
@@ -38,8 +37,7 @@ import {
 } from "react";
 import { AiFillTrophy } from "react-icons/ai";
 import { FaChessRook, FaDatabase } from "react-icons/fa";
-import { GiMightyForce, GiSwordsEmblem } from "react-icons/gi";
-import { HiFire } from "react-icons/hi";
+import { GiSwordsEmblem } from "react-icons/gi";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import title from "../assets/images/title-v2024.png";
@@ -377,18 +375,6 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
       icon: <AutoAwesome />,
       label: "Special Rules",
       action: () => openSidebar(DrawerTypes.SPECIAL_RULE_SEARCH),
-      active: false,
-    },
-    {
-      icon: <HiFire style={{ fontSize: "1.5rem" }} />,
-      label: "Magical Powers",
-      action: () => openSidebar(DrawerTypes.MAGICAL_POWER_SEARCH),
-      active: false,
-    },
-    {
-      icon: <GiMightyForce style={{ fontSize: "1.5rem" }} />,
-      label: "Heroic Actions",
-      action: () => openSidebar(DrawerTypes.HEROIC_ACTION_SEARCH),
       active: false,
     },
     {

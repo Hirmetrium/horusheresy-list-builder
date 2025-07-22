@@ -109,7 +109,6 @@ export const ImageView = forwardRef<ImageViewViewHandlers, ImageViewViewProps>(
                       quantity={unit.quantity}
                       points={unit.pointsTotal}
                       unique={unit.unique}
-                      legacy={unit.legacy}
                     />
                   ))}
                   <Divider sx={{ mt: 2, height: 2, bgcolor: "#800000" }} />

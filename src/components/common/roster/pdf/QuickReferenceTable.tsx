@@ -132,7 +132,6 @@ export const QuickReferenceTable = ({
     .sort((a, b) => a.name.localeCompare(b.name));
 
   const units = profiles
-    .filter((row) => row.type !== "Siege Engine")
 
   return (
     <>
@@ -147,19 +146,21 @@ export const QuickReferenceTable = ({
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell />
-              <TableCell>Mv</TableCell>
-              <TableCell>Fv</TableCell>
-              <TableCell>Sv</TableCell>
-              <TableCell>S</TableCell>
-              <TableCell>D</TableCell>
-              <TableCell>A</TableCell>
-              <TableCell>W</TableCell>
-              <TableCell>C</TableCell>
-              <TableCell>I</TableCell>
+                <TableCell />
               <TableCell>M</TableCell>
+              <TableCell>WS</TableCell>
+              <TableCell>BS</TableCell>
+              <TableCell>S</TableCell>
+              <TableCell>T</TableCell>
               <TableCell>W</TableCell>
-              <TableCell>F</TableCell>
+              <TableCell>I</TableCell>
+              <TableCell>A</TableCell>
+              <TableCell>LD</TableCell>
+              <TableCell>CL</TableCell>
+              <TableCell>WP</TableCell>
+              <TableCell>IN</TableCell>
+              <TableCell>SAV</TableCell>
+              <TableCell>INV</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -207,18 +208,20 @@ export const QuickReferenceTable = ({
             <TableHead>
               <TableRow>
                 <TableCell />
-                <TableCell>Mv</TableCell>
-                <TableCell>Fv</TableCell>
-                <TableCell>Sv</TableCell>
-                <TableCell>S</TableCell>
-                <TableCell>D</TableCell>
-                <TableCell>A</TableCell>
-                <TableCell>W</TableCell>
-                <TableCell>C</TableCell>
-                <TableCell>I</TableCell>
-                <TableCell>M</TableCell>
-                <TableCell>W</TableCell>
-                <TableCell>F</TableCell>
+              <TableCell>M</TableCell>
+              <TableCell>WS</TableCell>
+              <TableCell>BS</TableCell>
+              <TableCell>S</TableCell>
+              <TableCell>T</TableCell>
+              <TableCell>W</TableCell>
+              <TableCell>I</TableCell>
+              <TableCell>A</TableCell>
+              <TableCell>LD</TableCell>
+              <TableCell>CL</TableCell>
+              <TableCell>WP</TableCell>
+              <TableCell>IN</TableCell>
+              <TableCell>SAV</TableCell>
+              <TableCell>INV</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>

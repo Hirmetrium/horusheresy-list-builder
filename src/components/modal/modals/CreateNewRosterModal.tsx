@@ -2,15 +2,12 @@ import { AttachFileOutlined } from "@mui/icons-material";
 import {
   Autocomplete,
   Button,
-  Collapse,
   DialogActions,
   DialogContent,
   ListItemIcon,
-  Stack,
   TextField,
 } from "@mui/material";
 import Divider from "@mui/material/Divider";
-import FormControlLabel from "@mui/material/FormControlLabel";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
@@ -31,7 +28,6 @@ import { WarningRules } from "../../../types/warning-rules.types.ts";
 import { slugify, withSuffix } from "../../../utils/string.ts";
 import { CustomAlert } from "../../common/alert/CustomAlert.tsx";
 import { FactionLogo } from "../../common/images/FactionLogo.tsx";
-import { CustomSwitch } from "../../common/switch/CustomSwitch.tsx";
 
 const armyTypeOrder: Record<ArmyType, number> = {
   Astartes: 1,

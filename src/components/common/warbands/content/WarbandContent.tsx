@@ -223,16 +223,6 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
               >
                 Add Unit
               </Button>
-              <Button
-                onClick={() => mutations.addSiegeEquipment()}
-                variant="contained"
-                color="inherit"
-                fullWidth
-                endIcon={<AddIcon />}
-                data-test-id={`warband-${warbandNum}--add-siege-equipment`}
-              >
-                Add Siege Equipment
-              </Button>
             </ButtonGroup>
           ) : (
             <Button

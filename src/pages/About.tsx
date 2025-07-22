@@ -24,6 +24,26 @@ export const About = () => {
             Special thanks to both of them, as without them, their time and dedication and making their builder open source, this would not be possible.
           </Typography>
 
+                  <Typography variant="body1" sx={{ fontSize: "18px" }}>
+                      The list builder is open source (
+                      <a
+                          href="https://github.com/Hirmetrium/horusheresy-list-builder"
+                          target="_blank"
+                          rel="noreferrer"
+                          style={{
+                              color:
+                                  themeContext.mode === "dark"
+                                      ? theme.palette.secondary.light
+                                      : theme.palette.secondary.dark,
+                          }}
+                      >
+                          you can find it here
+                      </a>
+                      ). If you&apos;d like to help you can fork the repository and
+                      provide your corrections via pull request.
+                                      </Typography>
+
+
           <Typography variant="h4" className="sabon" sx={{ mb: 2 }}>
             Features
           </Typography>

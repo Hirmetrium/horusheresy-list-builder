@@ -12,7 +12,6 @@ export type Trackable = {
 export type CustomTracker = {
   id: string;
   name: string;
-  value: number;
   maxValue?: number;
   permanent?: boolean;
 };

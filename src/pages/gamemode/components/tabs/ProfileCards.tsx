@@ -18,9 +18,6 @@ export const ProfileCards = () => {
   const getExtraProfilesForHero = (hero: SelectedUnit) => {
     if (!isSelectedUnit(hero)) return [];
 
-    if (hero.unit_type === "Siege Engine") {
-      return [];
-    }
     const extraProfiles = hero_constraint_data[hero.model_id]["extra_profiles"];
 
     if (hero.name === "Azog") {

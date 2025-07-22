@@ -58,25 +58,13 @@ export const useUpdateRoster = () => {
       return unit;
     }
 
-    const { model_id, options, quantity, MWFW, ...oldUnit } = unit;
-
-    if (model_id.startsWith("[siege]")) {
-      const equipmentData = siegeEquipmentData[model_id];
-      return calculator.recalculatePointsForUnit({
-        ...oldUnit,
-        ...equipmentData,
-        MWFW,
-        options,
-        quantity,
-      });
-    }
+    const { model_id, options, quantity,  ...oldUnit } = unit;
 
     const modelData = hh3Data[model_id];
 
     return calculator.recalculatePointsForUnit({
       ...oldUnit,
       ...modelData,
-      MWFW,
       options: modelData.options.map((option) => {
         const quantity = options.find(
           (oldOption) =>

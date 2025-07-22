@@ -17,7 +17,7 @@ export const UnitSelector = () => {
     rosters.find(({ id }) => id === armyList),
   );
 
-  const { handleHeroSelection, handleUnitSelection, handleSiegeSelection } =
+  const { handleHeroSelection, handleUnitSelection } =
     useWarbandMutations(roster.id, warbandId);
 
   function selectUnit(unit: Unit) {
@@ -36,15 +36,6 @@ export const UnitSelector = () => {
     closeSidebar();
   }
 
-  function selectEquipment(equipment: SiegeEquipment) {
-    console.debug(
-      `select ${selectionType} for wb ${warbandId} in ${roster.name}; ${equipment.name}`,
-    );
-
-    handleSiegeSelection(equipment);
-
-    closeSidebar();
-  }
 
   return (
     <Stack
@@ -65,9 +56,6 @@ export const UnitSelector = () => {
           }
           selectUnit={selectUnit}
         />
-      )}
-      {selectionType === "siege" && (
-        <SiegeSelectionList selectEquipment={selectEquipment} />
       )}
     </Stack>
   );

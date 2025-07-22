@@ -14,7 +14,6 @@ import { Unit } from "../../../types/hh3-data.types.ts";
 import { isSelectedUnit } from "../../../types/roster.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
 import { UnitProfilePicture } from "../images/UnitProfilePicture.tsx";
-import { MwfBadge } from "../might-will-fate/MwfBadge.tsx";
 
 export type UnitSelectionButtonProps = {
   unit: Pick<
@@ -105,7 +104,6 @@ export function UnitSelectionButton({
                     />
                   )}
                 </Box>
-                <MwfBadge unit={unit} />
               </Stack>
               {!!preferences.collectionWarnings && (
                 <Stack

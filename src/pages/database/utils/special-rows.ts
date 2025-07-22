@@ -76,7 +76,6 @@ export function convertShankAndWrotToSingleRows(dataPoint: Unit[]) {
     {
       ...base,
       name: `Snow Troll`,
-      MWFW: [],
       profile: profileData[dataPoint[0].profile_origin][
         dataPoint[0].name
       ].additional_stats.find((stat) => stat.name === "Snow Troll"),

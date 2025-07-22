@@ -1,7 +1,6 @@
 import ReportProblemRoundedIcon from "@mui/icons-material/ReportProblemRounded";
 import { Grid2, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import { armyListData } from "../../../../assets/data.ts";
 import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts";
 import { useRosterWarnings } from "../../../../hooks/useRosterWarnings.ts";
 

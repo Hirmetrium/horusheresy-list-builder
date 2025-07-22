@@ -4,15 +4,15 @@
     "\\src",
     "\\src\\components",
     "\\src\\components\\common",
-    "\\src\\components\\common\\option",
+    "\\src\\components\\common\\warbands",
+    "\\src\\components\\common\\warbands\\content",
     "\\src\\pages",
-    "\\src\\pages\\database",
     "\\src\\pages\\gamemode",
     "\\src\\pages\\gamemode\\components",
     "\\src\\pages\\gamemode\\components\\trackers",
     "\\src\\pages\\rosters",
     "\\src\\pages\\rosters\\components"
   ],
-  "SelectedNode": "\\src\\pages\\gamemode\\components\\trackers\\HeroStatTrackers.tsx",
+  "SelectedNode": "\\src\\components\\common\\option",
   "PreviewInSolutionExplorer": false
 }

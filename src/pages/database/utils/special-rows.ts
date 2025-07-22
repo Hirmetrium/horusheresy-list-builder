@@ -25,7 +25,6 @@ export function convertBardsFamilyToSingleRows(dataPoint: Unit[]) {
     {
       ...base,
       name: `Bain, Son of Bard`,
-      MWFW: dataPoint.flatMap((p) => p.MWFW),
       profile: profileData[dataPoint[0].profile_origin][
         dataPoint[0].name
       ].additional_stats.find((stat) => stat.name === "Bain, Son of Bard"),
@@ -33,7 +32,6 @@ export function convertBardsFamilyToSingleRows(dataPoint: Unit[]) {
     {
       ...base,
       name: `Sigrid`,
-      MWFW: dataPoint.flatMap((p) => p.MWFW),
       profile: profileData[dataPoint[0].profile_origin][
         dataPoint[0].name
       ].additional_stats.find((stat) => stat.name === "Sigrid"),
@@ -41,7 +39,6 @@ export function convertBardsFamilyToSingleRows(dataPoint: Unit[]) {
     {
       ...base,
       name: `Tilda`,
-      MWFW: dataPoint.flatMap((p) => p.MWFW),
       profile: profileData[dataPoint[0].profile_origin][
         dataPoint[0].name
       ].additional_stats.find((stat) => stat.name === "Tilda"),
@@ -65,7 +62,6 @@ export function convertShankAndWrotToSingleRows(dataPoint: Unit[]) {
     {
       ...base,
       name: `Shank`,
-      MWFW: [dataPoint.flatMap((p) => p.MWFW)[0]],
       profile: profileData[dataPoint[0].profile_origin][
         dataPoint[0].name
       ].additional_stats.find((stat) => stat.name === "Shank"),
@@ -73,7 +69,6 @@ export function convertShankAndWrotToSingleRows(dataPoint: Unit[]) {
     {
       ...base,
       name: `Wrot`,
-      MWFW: [dataPoint.flatMap((p) => p.MWFW)[1]],
       profile: profileData[dataPoint[0].profile_origin][
         dataPoint[0].name
       ].additional_stats.find((stat) => stat.name === "Wrot"),
@@ -105,7 +100,6 @@ export function convertSharkeyAndWormToSingleRows(dataPoint: Unit[]) {
     {
       ...base,
       name: `Sharkey`,
-      MWFW: [dataPoint.flatMap((p) => p.MWFW)[0]],
       profile: profileData[dataPoint[0].profile_origin][
         dataPoint[0].name
       ].additional_stats.find((stat) => stat.name === "Sharkey"),
@@ -113,7 +107,6 @@ export function convertSharkeyAndWormToSingleRows(dataPoint: Unit[]) {
     {
       ...base,
       name: `Worm`,
-      MWFW: [dataPoint.flatMap((p) => p.MWFW)[1]],
       profile: profileData[dataPoint[0].profile_origin][
         dataPoint[0].name
       ].additional_stats.find((stat) => stat.name === "Worm"),

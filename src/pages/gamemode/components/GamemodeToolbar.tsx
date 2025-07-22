@@ -3,10 +3,7 @@ import { Button, ButtonGroup, Stack } from "@mui/material";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { FaSkullCrossbones } from "react-icons/fa";
-import { GiCrackedShield } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
-import { armyListData } from "../../../assets/data.ts";
 import { SquareIconButton } from "../../../components/common/icon-button/SquareIconButton.tsx";
 import { ModalTypes } from "../../../components/modal/modals.tsx";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
@@ -19,10 +16,9 @@ export const GamemodeToolbar = () => {
   const screen = useScreenSize();
   const { setCurrentModal, closeModal } = useAppState();
   const { gameState, updateGameState } = useGameModeState();
-  const { roster, getAdjustedMetaData } = useRosterInformation();
+  const { roster } = useRosterInformation();
 
   const game = gameState[roster.id];
-  const metadata = game.rosterMetadata || getAdjustedMetaData(roster);
 
   const openEndGameDialog = () => {
     const gameStartTime = new Date(game.started);
@@ -39,8 +35,6 @@ export const GamemodeToolbar = () => {
         scenarioPlayed: null,
         tags: [],
         armies: roster.armyList,
-        bows: metadata.bows as unknown as number,
-        throwingWeapons: metadata.throwingWeapons as unknown as number,
         victoryPoints: "" as unknown as number,
         opponentArmies: "",
         opponentName: "",
@@ -60,17 +54,8 @@ export const GamemodeToolbar = () => {
     });
   };
 
-  const armyListMetadata = armyListData[roster.armyList];
-  const breakPointDead =
-    metadata.units > 0
-      ? Math.floor(metadata.units * (armyListMetadata.break_point ?? 0.5)) + 1
-      : 0;
-  const quarter = metadata.units - Math.floor(metadata.units * 0.25);
   const casualties = game.casualties + game.heroCasualties;
 
-  const totalMight = game.trackables
-    .map((t) => Number(t.xMWFW.split(":")[0]))
-    .reduce((a, b) => a + b, 0);
   return screen.isMobile ? (
     <>
       <Stack direction="row" justifyContent="space-between" sx={{ my: 2 }}>
@@ -93,36 +78,8 @@ export const GamemodeToolbar = () => {
         </Button>
       </Stack>
       <Stack direction="row" justifyContent="space-around" sx={{ m: 2 }}>
-        <Typography
-          color={breakPointDead - casualties <= 0 ? "error" : "inherit"}
-        >
-          Until Broken:{" "}
-          <b>
-            {breakPointDead - casualties > 0 ? (
-              breakPointDead - casualties
-            ) : (
-              <GiCrackedShield />
-            )}
-          </b>
-        </Typography>
-        <Typography color={quarter - casualties <= 0 ? "error" : "inherit"}>
-          Until Quartered:{" "}
-          <b>
-            {quarter - casualties > 0 ? (
-              quarter - casualties
-            ) : (
-              <FaSkullCrossbones />
-            )}
-          </b>
-        </Typography>
-        <Typography color={totalMight <= 0 ? "error" : "inherit"}>
-          Might: <b>{totalMight}</b>
-        </Typography>
       </Stack>
       <Stack direction="row" gap={2} justifyContent="center">
-        <Typography variant="h6" className="sabon">
-          Casualties:
-        </Typography>
         <SquareIconButton
           onClick={() => updateCasualties(-1)}
           icon={<ChevronLeft />}
@@ -197,40 +154,6 @@ export const GamemodeToolbar = () => {
           iconPadding=".3rem"
         />
       </Stack>
-      <Box sx={{ py: 1 }}>
-        <Typography
-          sx={{ display: "flex", justifyContent: "space-between", gap: 2 }}
-          color={breakPointDead - casualties <= 0 ? "error" : "inherit"}
-        >
-          Until Broken:{" "}
-          <b>
-            {breakPointDead - casualties > 0 ? (
-              breakPointDead - casualties
-            ) : (
-              <GiCrackedShield />
-            )}
-          </b>
-        </Typography>
-        <Typography
-          sx={{ display: "flex", justifyContent: "space-between", gap: 2 }}
-          color={quarter - casualties <= 0 ? "error" : "inherit"}
-        >
-          Until Quartered:{" "}
-          <b>
-            {quarter - casualties > 0 ? (
-              quarter - casualties
-            ) : (
-              <FaSkullCrossbones />
-            )}
-          </b>
-        </Typography>
-        <Typography
-          sx={{ display: "flex", justifyContent: "space-between", gap: 2 }}
-          color={totalMight <= 0 ? "error" : "inherit"}
-        >
-          Total Might Left: <b>{totalMight}</b>
-        </Typography>
-      </Box>
     </Toolbar>
   );
 };

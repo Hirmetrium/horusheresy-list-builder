@@ -1,30 +1,26 @@
 import { hh3Data, profileData } from "../../assets/data.ts";
 import { Unit } from "../../types/hh3-data.types.ts";
 import { Profile } from "../../types/profile-data.types.ts";
-import {
-  convertBardsFamilyToSingleRows,
-  convertShankAndWrotToSingleRows,
-  convertSharkeyAndWormToSingleRows,
-} from "./utils/special-rows.ts";
 
 const emptyProfile: Profile = {
-  Mv: "",
-  Fv: "",
-  Sv: "",
+  M: "",
+  WS: "",
+  BS: "",
   S: "",
-  D: "",
-  A: "",
+  T: "",
   W: "",
-  C: "",
   I: "",
-  Range: "",
+  A: "",
+  LD: "",
+  CL: "",
+  WP: "",
+  IN: "",
+  SAV: "",
+  INV: "",
+  wargear: [],
   special_rules: [],
-  active_or_passive_rules: [],
   additional_stats: [],
   additional_text: [],
-  heroic_actions: [],
-  magic_powers: [],
-  wargear: [],
 };
 
 const getProfileData = ([{ profile_origin, name }]: Unit[]) => {
@@ -47,15 +43,6 @@ export const rows = Object.values(
   }, {}),
 )
   .flatMap((dataPoint: Unit[]) => {
-    if (dataPoint[0].name === "Bard's Family") {
-      return convertBardsFamilyToSingleRows(dataPoint);
-    }
-    if (dataPoint[0].name === "Shank & Wrot") {
-      return convertShankAndWrotToSingleRows(dataPoint);
-    }
-    if (dataPoint[0].name === "Sharkey & Worm") {
-      return convertSharkeyAndWormToSingleRows(dataPoint);
-    }
     const profile = getProfileData(dataPoint);
     return {
       name: dataPoint[0].name,
@@ -67,25 +54,15 @@ export const rows = Object.values(
       options: dataPoint
         .flatMap((p) => p.options)
         .filter((o, i, s) => s.findIndex((ot) => ot.name === o.name) === i),
-      MWFW: dataPoint.flatMap((p) => p.MWFW),
       profile: profile,
     };
   })
   .map((row) => {
-    const [M, W, F] =
-      row.name === "The Witch-king of Angmar" || row.name === "Ringwraith"
-        ? ["*", "*", "*"]
-        : row.MWFW[0]
-          ? row.MWFW[0][1].split(":")
-          : ["-", "-", "-"];
     return {
       ...row,
-      Mv: !Number.isNaN(parseInt(row.profile.Mv))
-        ? parseInt(row.profile.Mv)
+      M: !Number.isNaN(parseInt(row.profile.M))
+        ? parseInt(row.profile.M)
         : -1,
-      M,
-      W,
-      F,
       searchString: [
         row.name,
         row.profile_origin,

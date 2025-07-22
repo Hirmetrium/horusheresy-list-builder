@@ -30,22 +30,20 @@ const Stats = ({ profile }: { profile: Profile }) => {
         <TableHead>
           <TableRow>
             {profile.additional_stats && <TableCell />}
-            <TableCell>Mv</TableCell>
-            <TableCell>Fv</TableCell>
-            <TableCell>Sv</TableCell>
+            <TableCell>M</TableCell>
+            <TableCell>WS</TableCell>
+            <TableCell>BS</TableCell>
             <TableCell>S</TableCell>
-            <TableCell>D</TableCell>
-            <TableCell>A</TableCell>
+            <TableCell>T</TableCell>
             <TableCell>W</TableCell>
-            <TableCell>C</TableCell>
             <TableCell>I</TableCell>
-            {(profile.HM || profile.HW || profile.HF) && (
-              <>
-                <TableCell>M</TableCell>
-                <TableCell>W</TableCell>
-                <TableCell>F</TableCell>
-              </>
-            )}
+            <TableCell>A</TableCell>
+            <TableCell>LD</TableCell>
+            <TableCell>CL</TableCell>
+            <TableCell>WP</TableCell>
+            <TableCell>IN</TableCell>
+            <TableCell>SAV</TableCell>
+            <TableCell>INV</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -54,48 +52,39 @@ const Stats = ({ profile }: { profile: Profile }) => {
               {profile.additional_stats && (
                 <TableCell>{profile.name}</TableCell>
               )}
-              <TableCell>{profile.Mv}</TableCell>
-              <TableCell>{profile.Fv}</TableCell>
-              <TableCell>{profile.Sv}</TableCell>
+              <TableCell>{profile.M}</TableCell>
+              <TableCell>{profile.WS}</TableCell>
+              <TableCell>{profile.BS}</TableCell>
               <TableCell>{profile.S}</TableCell>
-              <TableCell>{profile.D}</TableCell>
-              <TableCell>{profile.A}</TableCell>
+              <TableCell>{profile.T}</TableCell>
               <TableCell>{profile.W}</TableCell>
-              <TableCell>{profile.C}</TableCell>
               <TableCell>{profile.I}</TableCell>
-              {(profile.HM || profile.HW || profile.HF) && (
-                <>
-                  <TableCell>{profile.HM ?? "-"}</TableCell>
-                  <TableCell>{profile.HW ?? "-"}</TableCell>
-                  <TableCell>{profile.HF ?? "-"}</TableCell>
-                </>
-              )}
+              <TableCell>{profile.A}</TableCell>
+              <TableCell>{profile.LD}</TableCell>
+              <TableCell>{profile.CL}</TableCell>
+              <TableCell>{profile.WP}</TableCell>
+              <TableCell>{profile.IN}</TableCell>
+              <TableCell>{profile.SAV}</TableCell>
+              <TableCell>{profile.INV}</TableCell>
             </TableRow>
           )}
           {profile.additional_stats?.map((stats, index) => (
             <TableRow key={index}>
               <TableCell>{stats.name}</TableCell>
-              <TableCell>{stats.Mv}</TableCell>
-              <TableCell>{stats.Fv}</TableCell>
-              <TableCell>{stats.Sv}</TableCell>
+              <TableCell>{stats.M}</TableCell>
+              <TableCell>{stats.WS}</TableCell>
+              <TableCell>{stats.BS}</TableCell>
               <TableCell>{stats.S}</TableCell>
-              <TableCell>{stats.D}</TableCell>
-              <TableCell>{stats.A}</TableCell>
+              <TableCell>{stats.T}</TableCell>
               <TableCell>{stats.W}</TableCell>
-              <TableCell>{stats.C}</TableCell>
               <TableCell>{stats.I}</TableCell>
-              {(stats.HM ||
-                stats.HW ||
-                stats.HF ||
-                profile.HM ||
-                profile.HW ||
-                profile.HF) && (
-                <>
-                  <TableCell>{stats.HM ?? "-"}</TableCell>
-                  <TableCell>{stats.HW ?? "-"}</TableCell>
-                  <TableCell>{stats.HF ?? "-"}</TableCell>
-                </>
-              )}
+              <TableCell>{stats.A}</TableCell>
+              <TableCell>{stats.LD}</TableCell>
+              <TableCell>{stats.CL}</TableCell>
+              <TableCell>{stats.WP}</TableCell>
+              <TableCell>{stats.IN}</TableCell>
+              <TableCell>{stats.SAV}</TableCell>
+              <TableCell>{stats.INV}</TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -125,7 +114,6 @@ const SpecialRules = ({ profile }: { profile: Profile }) => {
     preferences: { includePdfSpecialRuleDescriptions },
   } = useUserPreferences();
   const specialRules: { name: string; description: string }[] = [
-    ...profile.active_or_passive_rules,
     ...profile.special_rules.map((rule) => ({
       ...keywords.find((kw) =>
         rule.endsWith("bane")
@@ -163,87 +151,6 @@ const SpecialRules = ({ profile }: { profile: Profile }) => {
   );
 };
 
-const MagicalPowers = ({ profile }: { profile: Profile }) => {
-  return (
-    <>
-      {profile.magic_powers && profile.magic_powers.length > 0 && (
-        <>
-          <Typography sx={{ mt: 0.5 }}>
-            <b>Magical powers:</b>
-          </Typography>
-          <TableContainer
-            component="div"
-            sx={{ width: "42ch", borderBottom: "none" }}
-          >
-            <Table size="small">
-              <TableHead>
-                <TableRow>
-                  <TableCell>Name</TableCell>
-                  <TableCell align="center">Range</TableCell>
-                  <TableCell />
-                </TableRow>
-              </TableHead>
-              <TableBody
-                sx={{ "& > *:last-child > *": { borderBottom: "none" } }}
-              >
-                {profile.magic_powers.map((power, index) => (
-                  <TableRow key={index}>
-                    <TableCell>{power.name}</TableCell>
-                    <TableCell align="center">{power.range}</TableCell>
-                    <TableCell align="center">{power.cast}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </>
-      )}
-    </>
-  );
-};
-
-const HeroicActions = ({ profile }: { profile: Profile }) => {
-  const {
-    preferences: { includePdfHeroicActionDescriptions },
-  } = useUserPreferences();
-
-  if (!profile.heroic_actions || profile.heroic_actions.length === 0) {
-    return <></>;
-  }
-
-  if (includePdfHeroicActionDescriptions) {
-    const heroicActions = profile.heroic_actions.map((action) =>
-      keywords.find((kw) => kw.name === action),
-    );
-
-    return (
-      <>
-        <Typography sx={{ mt: 0.5 }}>
-          <b>Heroic actions:</b>
-        </Typography>
-        {heroicActions.map((rule, index) => (
-          <Box key={index} sx={{ my: 1, ml: 2 }}>
-            <Typography>
-              <b>{rule.name}</b>
-              <br />
-              {rule.description}
-            </Typography>
-          </Box>
-        ))}
-      </>
-    );
-  }
-
-  return (
-    <>
-      {profile.heroic_actions && profile.heroic_actions.length > 0 && (
-        <Typography sx={{ mt: 0.5 }}>
-          <b>Heroic actions:</b> {profile.heroic_actions.join(", ")}{" "}
-        </Typography>
-      )}
-    </>
-  );
-};
 
 const AdditionalProfiles = ({
   additionalProfiles,
@@ -259,9 +166,7 @@ const AdditionalProfiles = ({
           </Typography>
           <Box sx={{ pl: 2 }}>
             <AdditionalText profile={profile} />
-            <HeroicActions profile={profile} />
             <SpecialRules profile={profile} />
-            <MagicalPowers profile={profile} />
           </Box>
         </Box>
       ))}
@@ -278,9 +183,7 @@ const ListItem = ({ profile }: { profile: Profile }) => {
         </Typography>
         <AdditionalText profile={profile} />
         <Stats profile={profile} />
-        <HeroicActions profile={profile} />
         <SpecialRules profile={profile} />
-        <MagicalPowers profile={profile} />
         <AdditionalProfiles
           additionalProfiles={profile?.additional_stats || []}
         />

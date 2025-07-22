@@ -29,7 +29,7 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
   const mandatory = variant === "single-mandatory";
 
   function updatedMultiSelection(
-    { id, type, name }: Pick<Option, "id" | "name" | "type">,
+    { id, type }: Pick<Option, "id" | "name" | "type">,
     selected: boolean,
   ): Option[] {
     return options.map((o) => {
@@ -41,10 +41,6 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
       else if (!!o.type && o.type === type && selected) {
         return { ...o, quantity: o.included ? 1 : 0 };
       }
-      // deselect Pippin if shadowfax is removed
-      else if (name === "Shadowfax" && !selected && o.name === "Pippin") {
-        return { ...o, quantity: 0 };
-      }
       // return any other option unchanged
       else {
         return o;
@@ -53,7 +49,7 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
   }
 
   function updatedSingularSelection(
-    { id, type }: Pick<Option, "id" | "type">,
+    { id }: Pick<Option, "id" | "type">,
     selected: boolean,
   ): Option[] {
     return options.map((o) => {
@@ -62,15 +58,8 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
         return { ...o, quantity: selected ? 1 : 0 };
       }
 
-      // leave special warband upgrades untouched.
-      else if (o.type === "special_warband_upgrade") {
-        return o;
-      }
-
       // deselect any other option
       else {
-        // unless the toggled option was a special warband upgrade.
-        if (type === "special_warband_upgrade") return o;
         // or the option was automatically included.
         if (o.included) return o;
 
@@ -86,10 +75,10 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
   }
 
   const wargearOptions = options.filter(
-    (option) => option.type !== "special_warband_upgrade",
+    (option) => option,
   );
   const specialUpgrades = options.filter(
-    (option) => option.type === "special_warband_upgrade",
+    (option) => option,
   );
   return (
     <FormGroup
@@ -130,7 +119,7 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
       {mandatory &&
         !options.find(
           (option) =>
-            option.quantity === 1 && option.type !== "special_warband_upgrade",
+            option.quantity === 1 && option,
         ) && (
           <FormHelperText
             sx={{

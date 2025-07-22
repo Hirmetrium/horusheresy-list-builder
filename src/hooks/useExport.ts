@@ -22,8 +22,6 @@ export const useExport = () => {
         metadata: {
           leader: roster.metadata.leader,
           tttSpecialUpgrades: roster.metadata.tttSpecialUpgrades,
-          siegeRoster: roster.metadata.siegeRoster,
-          siegeRole: roster.metadata.siegeRole,
           maxPoints: roster.metadata.maxPoints,
         },
         warbands: roster.warbands.map((warband) => ({
@@ -32,7 +30,6 @@ export const useExport = () => {
             ? {
                 id: warband.hero.id,
                 model_id: warband.hero.model_id,
-                MWFW: warband.hero.MWFW,
                 options: warband.hero.options,
                 compulsory: warband.hero.compulsory,
               }
@@ -40,7 +37,6 @@ export const useExport = () => {
           units: warband.units.filter(isSelectedUnit).map((unit) => ({
             id: unit.id,
             model_id: unit.model_id,
-            MWFW: unit.MWFW,
             options: unit.options,
             quantity: unit.quantity,
           })),
@@ -50,7 +46,7 @@ export const useExport = () => {
         version: roster.version,
         name: roster.name,
         armyList: roster.armyList,
-        edition: "v2024",
+        edition: "hh-3",
       },
       null,
       1,
@@ -78,7 +74,6 @@ export const useExport = () => {
         "warbands[].units",
         "warbands[].units[].id",
         "warbands[].units[].model_id",
-        "warbands[].units[].MWFW",
         "warbands[].units[].options",
         "warbands[].units[].quantity",
         "metadata.leader",
@@ -121,7 +116,7 @@ export const useExport = () => {
             ...units.filter(isSelectedUnit).map((unit) =>
               calculator.recalculatePointsForUnit({
                 ...(unit.model_id.startsWith("[siege]")
-                  ? siegeEquipmentData[unit.model_id]
+                  ? [unit.model_id]
                   : hh3Data[unit.model_id]),
                 ...unit,
               }),

@@ -4,12 +4,10 @@ import Card from "@mui/material/Card";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
-import { armyListData } from "../../../assets/data.ts";
 import { FactionLogo } from "../../../components/common/images/FactionLogo.tsx";
 import { Link } from "../../../components/common/link/Link.tsx";
-import { WithRibbon } from "../../../components/common/unit-selection/WithRibbon.tsx";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
-import { isSelectedUnit, Roster } from "../../../types/roster.ts";
+import { Roster } from "../../../types/roster.ts";
 import { RosterPopoverMenu } from "./RosterPopoverMenu.tsx";
 
 export type RosterSummaryCardProps = {
@@ -29,12 +27,6 @@ export const RosterSummaryCard: FunctionComponent<RosterSummaryCardProps> = ({
   roster,
 }) => {
   const { mode } = useThemeContext();
-  const isLegacy =
-    armyListData[roster.armyList]?.legacy ||
-    !!roster.warbands
-      .flatMap((wb) => [wb.hero, ...wb.units])
-      .filter(isSelectedUnit)
-      .find((unit) => unit.legacy);
 
   return (
     <Link
@@ -46,7 +38,6 @@ export const RosterSummaryCard: FunctionComponent<RosterSummaryCardProps> = ({
         sx={{ width: "40ch", height: "350px", position: "relative" }}
         elevation={4}
       >
-        <WithRibbon label="Legacy" hideRibbon={!isLegacy}>
           <Stack sx={{ p: 2 }}>
             <center>
               <Typography
@@ -78,12 +69,6 @@ export const RosterSummaryCard: FunctionComponent<RosterSummaryCardProps> = ({
               <KeyValue label="Points" value={roster.metadata.points} />
               <KeyValue label="Units" value={roster.metadata.units} />
               <KeyValue label="Warbands" value={roster.warbands.length} />
-              <KeyValue label="Bows" value={roster.metadata.bows} />
-              <KeyValue
-                label="Throwing Weapons"
-                value={roster.metadata.throwingWeapons}
-              />
-              <KeyValue label="Might" value={roster.metadata.might} />
             </Stack>
           </Stack>
           <Box
@@ -95,7 +80,6 @@ export const RosterSummaryCard: FunctionComponent<RosterSummaryCardProps> = ({
           >
             <RosterPopoverMenu roster={roster} />
           </Box>
-        </WithRibbon>
       </Card>
     </Link>
   );

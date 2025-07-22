@@ -65,7 +65,6 @@ export const WarbandSection = ({
             quantity: number;
             points: number;
             unique: boolean;
-            legacy: boolean;
           };
         },
       ),
@@ -108,7 +107,6 @@ export const WarbandSection = ({
           <Typography>
             <strong>
               {hero?.name?.replaceAll("(General)", "")}
-              {hero?.legacy ? <sup>&#10013;</sup> : ""}{" "}
               {leader === warband.id && <i>(General)</i>}
             </strong>{" "}
             <span style={{ whiteSpace: "nowrap" }}>
@@ -121,7 +119,7 @@ export const WarbandSection = ({
         </Stack>
 
         {units.map(
-          ({ name, options, quantity, points, unique, legacy }, index) => (
+          ({ name, options, quantity, points, unique }, index) => (
             <UnitRow
               key={index}
               name={name}
@@ -129,7 +127,6 @@ export const WarbandSection = ({
               quantity={quantity}
               points={points}
               unique={unique}
-              legacy={legacy}
             />
           ),
         )}

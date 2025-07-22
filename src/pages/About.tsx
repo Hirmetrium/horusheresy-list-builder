@@ -39,7 +39,7 @@ export const About = () => {
                 Horus Heresy.
               </Box>
               <Box component="li">
-                <strong>PDF print-out</strong> which I've probably broken.
+                <strong>PDF print-out</strong> which is probably broken.
               </Box>
               <Box component="li">
                 <strong>Game Mode</strong> which provides digital stat trackers

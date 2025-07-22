@@ -16,7 +16,6 @@ import html2canvas from "html2canvas";
 import { forwardRef, useImperativeHandle, useState } from "react";
 import { GiQueenCrown } from "react-icons/gi";
 
-import { armyListData } from "../../../assets/data.ts";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { useAppState } from "../../../state/app";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
@@ -140,9 +139,8 @@ export const RosterTableView = forwardRef<
   const { mode } = useThemeContext();
   const { setCurrentModal } = useAppState();
   const { roster, getAdjustedMetaData } = useRosterInformation();
-  const { break_point } = armyListData[roster.armyList];
 
-  const { might, will, fate, units, points, bows, throwingWeapons } =
+  const { units, points } =
     getAdjustedMetaData();
 
   const [screenshotting, setScreenshotting] = useState(false);
@@ -218,15 +216,6 @@ export const RosterTableView = forwardRef<
           {
             Points: points,
             Units: units,
-            Bows: bows,
-            "Throwing weapons": throwingWeapons,
-          },
-          {
-            "Break point":
-              (units > 0 ? Math.floor(units * (break_point ?? 0.5)) + 1 : 0) +
-              " dead",
-            Quartered: Math.floor(0.25 * units) + " alive",
-            "Might / Will / Fate": `${might} / ${will} / ${fate}`,
           },
         ].map((row, index) => (
           <Stack

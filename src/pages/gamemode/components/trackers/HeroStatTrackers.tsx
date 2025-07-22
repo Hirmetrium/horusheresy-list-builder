@@ -5,35 +5,9 @@ import { HeroStatTracker } from "./HeroStatTracker.tsx";
 
 export const HeroStatTrackers = () => {
   const { rosterId } = useParams();
-  const { gameState, updateGameState } = useGameModeState();
+  const { gameState, } = useGameModeState();
 
   const trackers = gameState[rosterId]?.trackables || [];
-
-  function getTrackableDeaths() {
-    const excludedTrackables = ["Shadowfax", "The White Warg"];
-    return trackers
-      .filter((tracker) => !excludedTrackables.includes(tracker.name))
-      .filter((tracker) => tracker.xMWFW.split(":")[3] === "0").length;
-  }
-
-  function updateMwfw(
-    newValue: number,
-    trackerIndex: number,
-    statIndex: number,
-  ) {
-    const tracker = trackers[trackerIndex];
-    const trackables = tracker.xMWFW.split(":");
-    trackables[statIndex] = String(newValue);
-    const updatedTrackables = trackables.join(":");
-
-    tracker.xMWFW = updatedTrackables;
-    trackers[trackerIndex] = tracker;
-
-    updateGameState(rosterId, {
-      trackables: trackers,
-      heroCasualties: getTrackableDeaths(),
-    });
-  }
 
   return (
     <>
@@ -50,7 +24,6 @@ export const HeroStatTrackers = () => {
       {trackers.map((tracker, index) => (
         <HeroStatTracker
           tracker={tracker}
-          updateMwfw={updateMwfw}
           index={index}
           key={index}
         />

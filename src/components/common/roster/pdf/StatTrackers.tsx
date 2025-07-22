@@ -37,18 +37,7 @@ const CheckboxList = ({ amount }: { amount: string }) => {
 
 export const StatTrackers = () => {
   const { roster } = useRosterInformation();
-  const { trackables, customTrackers } = createGameState(roster);
-
-  const rows = trackables.map((hero) => {
-    const [might, will, fate, wounds] = hero.MWFW.split(":");
-    return {
-      name: hero.name,
-      might,
-      will,
-      fate,
-      wounds,
-    };
-  });
+  const { customTrackers } = createGameState(roster);
 
   const additionalWoundTrackers = customTrackers.map((extraTracker) => {
     return {
@@ -88,23 +77,6 @@ export const StatTrackers = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row, index) => (
-              <TableRow key={index}>
-                <TableCell sx={cellStyling}>{row.name}</TableCell>
-                <TableCell sx={cellStyling}>
-                  <CheckboxList amount={row.might} />
-                </TableCell>
-                <TableCell sx={cellStyling}>
-                  <CheckboxList amount={row.will} />
-                </TableCell>
-                <TableCell sx={cellStyling}>
-                  <CheckboxList amount={row.fate} />
-                </TableCell>
-                <TableCell sx={cellStyling}>
-                  <CheckboxList amount={row.wounds} />
-                </TableCell>
-              </TableRow>
-            ))}
             {additionalWoundTrackers.map((row, index) => (
               <TableRow key={index}>
                 <TableCell sx={cellStyling}>{row.name}</TableCell>

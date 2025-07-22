@@ -40,8 +40,6 @@ export const DatabaseTableRow = ({ row }: { row: DatabaseRowData }) => {
       COMPOSED_UNIT_MAP[row.name] || row.name.replaceAll(" (General)", "")
     ];
 
-  const [might, will, fate] = [row.M, row.W, row.F];
-
   return (
     <>
       <TableRow sx={{ "& > *": { borderBottom: "unset !important" } }}>
@@ -79,20 +77,20 @@ export const DatabaseTableRow = ({ row }: { row: DatabaseRowData }) => {
         </TableCell>
         {screen.isDesktop && (
           <>
-            <TableCell align="center">
-              {row.profile.Mv !== "-" ? row.profile.Mv : row.profile.Range}
-            </TableCell>
-            <TableCell align="center">{row.profile.Fv}</TableCell>
-            <TableCell align="center">{row.profile.Sv}</TableCell>
+            <TableCell align="center">{row.profile.M}</TableCell>
+            <TableCell align="center">{row.profile.WS}</TableCell>
+            <TableCell align="center">{row.profile.BS}</TableCell>
             <TableCell align="center">{row.profile.S}</TableCell>
-            <TableCell align="center">{row.profile.D}</TableCell>
-            <TableCell align="center">{row.profile.A}</TableCell>
+            <TableCell align="center">{row.profile.T}</TableCell>
             <TableCell align="center">{row.profile.W}</TableCell>
-            <TableCell align="center">{row.profile.C}</TableCell>
             <TableCell align="center">{row.profile.I}</TableCell>
-            <TableCell align="center">{might}</TableCell>
-            <TableCell align="center">{will}</TableCell>
-            <TableCell align="center">{fate}</TableCell>
+            <TableCell align="center">{row.profile.A}</TableCell>
+            <TableCell align="center">{row.profile.LD}</TableCell>
+            <TableCell align="center">{row.profile.CL}</TableCell>
+            <TableCell align="center">{row.profile.WP}</TableCell>
+            <TableCell align="center">{row.profile.IN}</TableCell>
+            <TableCell align="center">{row.profile.SAV}</TableCell>
+            <TableCell align="center">{row.profile.INV}</TableCell>
           </>
         )}
         <TableCell align="center">
@@ -139,38 +137,38 @@ export const DatabaseTableRow = ({ row }: { row: DatabaseRowData }) => {
                     <Table size="small">
                       <TableHead>
                         <TableRow>
-                          <TableCell align="center">Mv / Range</TableCell>
-                          <TableCell align="center">Fv</TableCell>
-                          <TableCell align="center">Sv</TableCell>
-                          <TableCell align="center">S</TableCell>
-                          <TableCell align="center">D</TableCell>
-                          <TableCell align="center">A</TableCell>
-                          <TableCell align="center">W</TableCell>
-                          <TableCell align="center">C</TableCell>
-                          <TableCell align="center">I</TableCell>
                           <TableCell align="center">M</TableCell>
+                          <TableCell align="center">WS</TableCell>
+                          <TableCell align="center">BS</TableCell>
+                          <TableCell align="center">S</TableCell>
+                          <TableCell align="center">T</TableCell>
                           <TableCell align="center">W</TableCell>
-                          <TableCell align="center">F</TableCell>
+                          <TableCell align="center">I</TableCell>
+                          <TableCell align="center">A</TableCell>
+                          <TableCell align="center">LD</TableCell>
+                          <TableCell align="center">CL</TableCell>
+                          <TableCell align="center">WP</TableCell>
+                          <TableCell align="center">IN</TableCell>
+                          <TableCell align="center">SAV</TableCell>
+                          <TableCell align="center">INV</TableCell>
                         </TableRow>
                       </TableHead>
                       <TableBody>
                         <TableRow>
-                          <TableCell align="center">
-                            {row.profile.Mv !== "-"
-                              ? row.profile.Mv
-                              : row.profile.Range}
-                          </TableCell>
-                          <TableCell align="center">{row.profile.Fv}</TableCell>
-                          <TableCell align="center">{row.profile.Sv}</TableCell>
+                          <TableCell align="center">{row.profile.M}</TableCell>
+                          <TableCell align="center">{row.profile.WS}</TableCell>
+                          <TableCell align="center">{row.profile.BS}</TableCell>
                           <TableCell align="center">{row.profile.S}</TableCell>
-                          <TableCell align="center">{row.profile.D}</TableCell>
-                          <TableCell align="center">{row.profile.A}</TableCell>
+                          <TableCell align="center">{row.profile.T}</TableCell>
                           <TableCell align="center">{row.profile.W}</TableCell>
-                          <TableCell align="center">{row.profile.C}</TableCell>
                           <TableCell align="center">{row.profile.I}</TableCell>
-                          <TableCell align="center">{might}</TableCell>
-                          <TableCell align="center">{will}</TableCell>
-                          <TableCell align="center">{fate}</TableCell>
+                          <TableCell align="center">{row.profile.A}</TableCell>
+                          <TableCell align="center">{row.profile.LD}</TableCell>
+                          <TableCell align="center">{row.profile.CL}</TableCell>
+                          <TableCell align="center">{row.profile.WP}</TableCell>
+                          <TableCell align="center">{row.profile.IN}</TableCell>
+                          <TableCell align="center">{row.profile.SAV}</TableCell>
+                          <TableCell align="center">{row.profile.INV}</TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>
@@ -186,11 +184,10 @@ export const DatabaseTableRow = ({ row }: { row: DatabaseRowData }) => {
                 </ExtraInfoRow>
               )}
 
-              {(row.profile.special_rules.length > 0 ||
-                row.profile.active_or_passive_rules.length > 0) && (
+              {(row.profile.special_rules.length > 0 ) && (
                 <ExtraInfoRow title="Special Rules">
                   <Typography>
-                    {row.profile.special_rules.map((rule, index, self) => (
+                    {row.profile.special_rules.map((rule) => (
                       <Fragment key={rule}>
                         <Box
                           component="span"
@@ -209,93 +206,6 @@ export const DatabaseTableRow = ({ row }: { row: DatabaseRowData }) => {
                         >
                           {rule}
                         </Box>
-                        {index < self.length - 1 ||
-                          (row.profile.active_or_passive_rules.length > 0 &&
-                            ",")}{" "}
-                      </Fragment>
-                    ))}
-                    {row.profile.active_or_passive_rules.map(
-                      (rule, index, self) => (
-                        <Fragment key={rule.name}>
-                          <Box
-                            component="span"
-                            sx={{
-                              textDecoration: "underline",
-                              cursor: "pointer",
-                              "&:hover": {
-                                color: (theme) => theme.palette.primary.main,
-                              },
-                            }}
-                            onClick={() => {
-                              setCurrentModal(ModalTypes.PROFILE_CARD, {
-                                unit: {
-                                  name: row.name,
-                                  profile_origin: row.profile_origin,
-                                },
-                                title: row.name,
-                              });
-                            }}
-                          >
-                            {rule.name}
-                          </Box>
-                          {index < self.length - 1 && ","}{" "}
-                        </Fragment>
-                      ),
-                    )}
-                  </Typography>
-                </ExtraInfoRow>
-              )}
-              {row.profile.magic_powers.length > 0 && (
-                <ExtraInfoRow title="Magical Powers">
-                  <Typography>
-                    {row.profile.magic_powers.map((power, index, self) => (
-                      <Fragment key={power.name}>
-                        <Box
-                          component="span"
-                          sx={{
-                            textDecoration: "underline",
-                            cursor: "pointer",
-                            "&:hover": {
-                              color: (theme) => theme.palette.primary.main,
-                            },
-                          }}
-                          onClick={() => {
-                            openSidebar(DrawerTypes.MAGICAL_POWER_SEARCH, {
-                              searchKeyword: power.name,
-                            });
-                          }}
-                        >
-                          {power.name}
-                        </Box>
-                        {index < self.length - 1 && ","}{" "}
-                      </Fragment>
-                    ))}
-                  </Typography>
-                </ExtraInfoRow>
-              )}
-              {row.profile.heroic_actions.length > 0 && (
-                <ExtraInfoRow title="Heroic Actions">
-                  <Typography>
-                    {row.profile.heroic_actions.map((action, index, self) => (
-                      <Fragment key={action}>
-                        <Box
-                          component="span"
-                          sx={{
-                            textDecoration: "underline",
-                            cursor: "pointer",
-                            "&:hover": {
-                              color: (theme) => theme.palette.primary.main,
-                            },
-                          }}
-                          onClick={() => {
-                            openSidebar(DrawerTypes.HEROIC_ACTION_SEARCH, {
-                              searchKeyword: action,
-                            });
-                          }}
-                        >
-                          {action}
-                        </Box>
-                        {index < self.length - 1 && ","}{" "}
                       </Fragment>
                     ))}
                   </Typography>

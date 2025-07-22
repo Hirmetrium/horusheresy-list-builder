@@ -21,7 +21,7 @@ export const RosterTextView = forwardRef<
   RosterTextViewProps
 >(({ showArmyBonus, showUnitTotals }, ref) => {
   const { roster, getAdjustedMetaData } = useRosterInformation();
-  const { additional_rules, special_rules, break_point } =
+  const { additional_rules, special_rules } =
     armyListData[roster.armyList];
 
   const heroToText = (hero: FreshUnit | SelectedUnit, isLeader: boolean) => {
@@ -90,7 +90,7 @@ export const RosterTextView = forwardRef<
   };
 
   const createTextView = () => {
-    const { might, will, fate, units, points, leader, bows, throwingWeapons } =
+    const { units, points, leader } =
       getAdjustedMetaData();
 
     const unitSections = showUnitTotals
@@ -111,8 +111,7 @@ export const RosterTextView = forwardRef<
     return `
     ${roster.armyList}
     ----------------------------------------
-    | Points: ${points} | Units: ${units} | Broken: ${units > 0 ? Math.floor(units * (break_point ?? 0.5)) + 1 : 0} dead | Quartered: ${Math.floor(0.25 * units)} left |  
-    | Bows: ${bows} | Throwing weapons: ${throwingWeapons} | Might/Will/Fate: ${might} / ${will} / ${fate} |
+    | Points: ${points} | Units: ${units}  |
     ${unitSections}${armyBonus()}${admission()}
     `;
   };

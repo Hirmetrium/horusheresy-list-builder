@@ -2,7 +2,6 @@ import { Stack } from "@mui/material";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { useEffect, useState } from "react";
-import { armyListData } from "../../assets/data.ts";
 import { OpenNavigationDrawerEvent } from "../../events/OpenNavigationDrawerEvent.ts";
 import { useRosterInformation } from "../../hooks/useRosterInformation.ts";
 import { useScreenSize } from "../../hooks/useScreenSize.ts";
@@ -11,15 +10,10 @@ export const ROSTER_INFO_BAR_HEIGHT = 40;
 
 export const MobileRosterInfoToolbar = () => {
   const screen = useScreenSize();
-  const { roster, getAdjustedMetaData } = useRosterInformation();
+  const { getAdjustedMetaData } = useRosterInformation();
   const metadata = getAdjustedMetaData();
   const [navDrawerOpen, setNavDrawerOpen] = useState(false);
 
-  const armyListMetadata = armyListData[roster.armyList];
-  const bowLimit = Math.ceil(metadata.bowLimit * armyListMetadata.bow_limit);
-  const throwLimit = Math.ceil(
-    metadata.throwLimit * armyListMetadata.throw_limit,
-  );
 
   useEffect(() => {
     function openMenuDrawer(event: OpenNavigationDrawerEvent) {
@@ -60,25 +54,6 @@ export const MobileRosterInfoToolbar = () => {
             </Typography>
             <Typography>
               Units: <b>{metadata.units}</b>
-            </Typography>
-            <Typography
-              color={metadata.bows > bowLimit ? "warning" : "inherit"}
-            >
-              Bows:{" "}
-              <b style={{ display: "inline-flex", gap: "2px" }}>
-                <span>{metadata.bows}</span>/<span>{bowLimit}</span>{" "}
-              </b>
-            </Typography>
-            <Typography
-              color={
-                metadata.throwingWeapons > throwLimit ? "warning" : "inherit"
-              }
-            >
-              Throw.:{" "}
-              <b style={{ display: "inline-flex", gap: "2px" }}>
-                <span>{metadata.throwingWeapons}</span>/
-                <span>{throwLimit}</span>
-              </b>
             </Typography>
           </Stack>
         </Toolbar>

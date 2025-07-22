@@ -31,7 +31,7 @@ import { WarningRules } from "../../../types/warning-rules.types.ts";
 import { slugify, withSuffix } from "../../../utils/string.ts";
 import { CustomAlert } from "../../common/alert/CustomAlert.tsx";
 import { FactionLogo } from "../../common/images/FactionLogo.tsx";
-import { CustomSwitch } from "../../common/switch/CustomSwitch.tsx"; }
+import { CustomSwitch } from "../../common/switch/CustomSwitch.tsx";
 
 const armyTypeOrder: Record<ArmyType, number> = {
   Astartes: 1,

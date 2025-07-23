@@ -2,6 +2,7 @@
 node_modules/
 build/
 api/vendor/
+.vs/
 
 # Static files
 static-resources/

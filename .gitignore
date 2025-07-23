@@ -9,6 +9,7 @@
 /.pnp
 .pnp.js
 /api/vendor/
+/.vs
 
 # testing
 /coverage

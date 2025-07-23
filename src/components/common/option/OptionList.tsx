@@ -29,7 +29,7 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
   const mandatory = variant === "single-mandatory";
 
   function updatedMultiSelection(
-    { id, type , name}: Pick<Option, "id" | "name" | "type">,
+    { id, type }: Pick<Option, "id" | "type">,
     selected: boolean,
   ): Option[] {
     return options.map((o) => {
@@ -49,7 +49,7 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
   }
 
   function updatedSingularSelection(
-    { id, type }: Pick<Option, "id" | "type">,
+    { id }: Pick<Option, "id" >,
     selected: boolean,
   ): Option[] {
     return options.map((o) => {

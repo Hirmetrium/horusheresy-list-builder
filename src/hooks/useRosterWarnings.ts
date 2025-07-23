@@ -38,38 +38,7 @@ function extraScriptedRosterWarnings(
 ): WarningRule[] {
   const warnings = [];
 
-  if (
-    roster.armyList === "The Eagles" ||
-    roster.armyList === "Radagast's Alliance"
-  ) {
-    const units = roster.warbands
-      .flatMap((wb) => [wb.hero, ...wb.units])
-      .filter(isSelectedUnit)
-      .filter((unit) => unit.name.includes("Great Eagle"))
-      .reduce(
-        (a, b) => {
-          if (!a[b.name]) {
-            a[b.name] = 0;
-          }
-          a[b.name] += b.quantity;
-          return a;
-        },
-        {
-          "Great Eagle": roster.armyList === "Radagast's Alliance" ? 1 : 0,
-          "Fledgeling Great Eagle": 0,
-        },
-      );
-    const diff = units["Fledgeling Great Eagle"] - units["Great Eagle"];
-    if (diff > 0) {
-      warnings.push({
-        warning: `${roster.armyList} may not include more Fledgeling Great Eagles than Great Eagles. There are currently ${diff} Fledgeling Great Eagle too many.`,
-        type: undefined,
-        dependencies: [],
-      });
-    }
-  }
-
-
+  
   if (!roster.metadata.leader) {
     warnings.push({
       warning: `An army list should always have an army general.`,

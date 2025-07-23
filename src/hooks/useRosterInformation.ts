@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { hh3Data } from "../assets/data.ts";
-import { handleSpecialRestriction } from "../components/common/unit-selection/special-hero-selection-rules.ts";
 import { useRosterBuildingState } from "../state/roster-building";
 import { Unit } from "../types/hh3-data.types.ts";
 import { isSelectedUnit, Roster } from "../types/roster.ts";
@@ -122,14 +121,6 @@ export const useRosterInformation = (): RosterInformationFunctions => {
 
     const setOfModelIds = getSetOfModelIds(roster);
     const stillAvailableWarbandLeaders = Object.values(hh3Data)
-      .filter(
-        ({ unit_type }) =>
-          unit_type.includes("Hero") 
-      )
-      .filter(
-        (unit) =>
-          unit.army_list === roster.armyList && handleSpecialRestriction(unit),
-      )
       .filter(
         (unit: Unit) => !unit.unique || !setOfModelIds.includes(unit.model_id),
       );

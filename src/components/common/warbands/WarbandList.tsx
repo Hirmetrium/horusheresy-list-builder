@@ -119,7 +119,7 @@ export const WarbandList: FunctionComponent<WarbandListProps> = ({
           variant="contained"
           data-test-id="add-warband"
         >
-          Add Warband
+          Add Detachment
         </Button>
       )}
     </Stack>

@@ -21,7 +21,7 @@ export const WarbandMetadata: FunctionComponent<WarbandMetadataProps> = ({
     >
       {!screen.isMobile && (
         <Typography color="white">
-          Warband: <b>{num}</b>
+          Detachment: <b>{num}</b>
         </Typography>
       )}
       <Typography color="white">
@@ -30,7 +30,7 @@ export const WarbandMetadata: FunctionComponent<WarbandMetadataProps> = ({
       <Typography
         color={maxUnits !== "-" && units > maxUnits ? "warning" : "white"}
       >
-        Units:{" "}
+        Slots:{" "}
         <b>
           {units} / {maxUnits}
         </b>

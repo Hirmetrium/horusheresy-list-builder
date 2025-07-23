@@ -17,6 +17,8 @@ warband_sizes = {
     "Lord of War Detachment": 2,
     "Allied Detachment": 6,
     "Logistical Benefit": 1,
+    "Apex Detachment": 5,
+    "Auxillary Detachment": 6,
     "High Command": 0,
     "Command": 0,
     "Retinues": 0,

@@ -68,7 +68,7 @@ export const RosterSummaryCard: FunctionComponent<RosterSummaryCardProps> = ({
             <Stack sx={{ my: 2 }}>
               <KeyValue label="Points" value={roster.metadata.points} />
               <KeyValue label="Units" value={roster.metadata.units} />
-              <KeyValue label="Warbands" value={roster.warbands.length} />
+              <KeyValue label="Detachments" value={roster.warbands.length} />
             </Stack>
           </Stack>
           <Box

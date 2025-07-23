@@ -6,15 +6,49 @@ import {
 } from "../types/roster.ts";
 import { isNotNull } from "../utils/nulls.ts";
 
+const heroesThatAreIncludedInTheWarbandCount = [
+    "Praetor",
+    "Praetor with Jump Pack",
+    "Praetor in Cataphractii Terminator Armour",
+    "Praetor in Tartaros Terminator Armour",
+    "Praetor in Saturnine Terminator Armour",
+];
+
+function heroAdditionalUnitRosterCount(warband: Warband) {
+    if (!warband.hero) return 0;
+
+    if (heroesThatAreIncludedInTheWarbandCount.includes(warband.hero?.model_id)) {
+        return 0;
+    }
+
+    return 1;
+}
+
+function heroAdditionalUnitWarbandCount(warband: Warband) {
+    if (!warband.hero) return 0;
+    if (warband.units
+            .filter(isSelectedUnit)
+            .find((unit) => unit.name === "Centurion")
+    ) { return 2; }
+
+    if (warband.units
+            .filter(isSelectedUnit)
+            .find((unit) => unit.name === "Legion Champion")
+    ) { return 1; }
+
+    return 0;
+}
+
 export const useCalculator = () => {
   function recalculatePointsForUnit(unit: SelectedUnit): SelectedUnit {
     const base = unit.base_points;
+    const extra_points = unit.extra_points;
     const optionCost = unit.options
       .map((option) => option.points * option.quantity || 0)
       .reduce((a, b) => a + b, 0);
 
     const pointsPerUnit = base + optionCost;
-    const pointsTotal = pointsPerUnit * unit.quantity;
+    const pointsTotal = (pointsPerUnit * unit.quantity) + extra_points ;
 
     return {
       ...unit,
@@ -27,9 +61,8 @@ export const useCalculator = () => {
     const totalUnits = warband.units
       .filter(isSelectedUnit)
       .map((unit) => unit.quantity )
-      .reduce(
-        (a, b) => a + b,
-      );
+      .reduce((a, b) => a + b,  0);
+
 
     const totalPoints = [warband.hero, ...warband.units]
       .filter(isNotNull)
@@ -42,7 +75,7 @@ export const useCalculator = () => {
       meta: {
         num: warband.meta.num,
         points: totalPoints,
-        units:  totalUnits,
+        units: totalUnits + heroAdditionalUnitWarbandCount(warband),
         heroes: warband.hero ? heroAdditionalUnitRosterCount(warband) : 0,
         maxUnits: warband.hero?.warband_size ?? "-",
       },

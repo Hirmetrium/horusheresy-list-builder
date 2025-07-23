@@ -17,21 +17,26 @@ export type UnitType =
   | "Auxillary Detachment First Strike"
   | "Warlord Detachment"
   | "Lord of War Detachment"
-  | "Allied Detachment"
+  | "Logistical Benefit"
+  | "Apex Detachment"
+  | "Auxillary Detachment"
+  | "Apex Detachment Hammer of Olympia"
+  | "Auxillary Detachment Ironfire Cohort"
   | "High Command"
   | "Command"
-  | "Retinue"
-  | "Elite"
-  | "Shock Assault"
-  | "Tactical Support"
-  | "Heavy Support"
+  | "Retinues"
+  | "Elites"
+  | "Heavy Assault"
   | "Troops"
-  | "Combat Pioneers"
+  | "Support"
+  | "War-Engines"
   | "Transports"
-  | "Lord of War"
-  | "Warlord"
-  | "Tank"
-  | "First Strike"
+  | "Heavy Transports"
+  | "Recon"
+  | "Fast Attack"
+  | "Armour"
+  | "Lords of War"
+  | "Warlord"  
   | string;
 
 /**
@@ -41,8 +46,6 @@ type OptionType =
   | "extra"
   | "one-hand"
   | "two-hand"
-  | "mount"
-  | "passenger"
   | null;
 
 export type OptionDependency = {
@@ -73,6 +76,9 @@ export type Unit = {
   name: string;
   unit_type: UnitType;
   base_points: number;
+  extra_points: number;
+  min_unit: number;
+  max_unit: number;
   unique?: boolean;
   warband_size: number;
   options: Option[];

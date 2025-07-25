@@ -76,7 +76,6 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
   return (
     <Stack sx={{ p: 1 }} gap={1}>
       {isSelectedUnit(hero) ? (
-        <WithRibbon label="Legacy" hideRibbon={!hero.legacy}>
           <HeroCard
             unit={hero}
             warbandId={warbandId}
@@ -89,7 +88,6 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
             toggleLeader={mutations.toggleArmyGeneral}
             collapsed={collapsed}
           />
-        </WithRibbon>
       ) : (
         <SelectUnitCardButton
           title="Select a detachment"

@@ -19,7 +19,7 @@ export const CustomTrackers = () => {
         ...trackers,
         {
           id: v4(),
-          name: `Custom Tracker (${trackers.filter((t) => !t.permanent).length + 1})`,
+          name: `Custom Tracker (${trackers.filter((t) => !t).length + 1})`,
           value: 0,
         },
       ],

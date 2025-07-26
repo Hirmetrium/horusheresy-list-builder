@@ -98,7 +98,7 @@ export const CustomTracker: FunctionComponent<CustomTrackerProps> = ({
         alignItems="center"
         gap={1}
       >
-        {tracker.permanent ? (
+        {tracker ? (
           <Typography sx={{ fontSize: "1.1rem" }} className="sabon">
             {tracker.name}
           </Typography>

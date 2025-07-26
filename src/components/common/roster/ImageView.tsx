@@ -4,12 +4,10 @@ import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import html2canvas from "html2canvas";
 import { forwardRef, useImperativeHandle, useState } from "react";
-import { armyListData } from "../../../assets/data.ts";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { useAppState } from "../../../state/app";
 import { isSelectedUnit } from "../../../types/roster.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
-import { WithRibbon } from "../unit-selection/WithRibbon.tsx";
 import { ArmyBonuses } from "./image-view/ArmyBonuses.tsx";
 import { HeaderBlock } from "./image-view/HeaderBlock.tsx";
 import { UnitRow } from "./image-view/UnitRow.tsx";
@@ -29,13 +27,6 @@ export const ImageView = forwardRef<ImageViewViewHandlers, ImageViewViewProps>(
     const { setCurrentModal } = useAppState();
     const unitTotals = getSumOfUnits(roster);
     const [screenshotting, setScreenshotting] = useState(false);
-
-    const hasLegacyUnits =
-      roster.warbands
-        .flatMap((wb) => [wb.hero, ...wb.units])
-        .filter(isSelectedUnit)
-        .filter((unit) => unit.legacy).length > 0;
-    const isLegacyArmy = armyListData[roster.armyList].legacy;
 
     const createScreenshot = () => {
       const rosterList = document.getElementById("rosterImageView");
@@ -70,11 +61,6 @@ export const ImageView = forwardRef<ImageViewViewHandlers, ImageViewViewProps>(
         id="rosterImageView"
         sx={screenshotting ? { width: "700px", p: 0.2 } : { p: 0.2 }}
       >
-        <WithRibbon
-          label={isLegacyArmy ? "Legacy Army" : "Includes Legacy"}
-          hideRibbon={!isLegacyArmy && !hasLegacyUnits}
-          type="share-image"
-        >
           <Stack
             sx={{
               px: 4,
@@ -133,7 +119,6 @@ export const ImageView = forwardRef<ImageViewViewHandlers, ImageViewViewProps>(
               )
             </Typography>
           </Stack>
-        </WithRibbon>
       </Box>
     );
   },

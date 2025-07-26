@@ -193,7 +193,7 @@
         "[Legiones Astartes]"
       ],
       "special_rules": [
-        { "name": "Line (1)" }
+        "Line (1)"
       ],
       "type": [
         "Infantry"

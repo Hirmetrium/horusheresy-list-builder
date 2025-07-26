@@ -93,8 +93,6 @@ function AdditionalRows({
 
   return (
     parentProfile.additional_stats
-      // Hide mounts, which are in a separate table
-      ?.filter((stat) => stat.type !== "mount")
 
       // Hide additional profiles that are already displayed at top-level.
       ?.filter(
@@ -124,7 +122,7 @@ export const QuickReferenceTable = ({
   const mounts = profiles
     .flatMap(
       (profile) =>
-        profile.additional_stats?.filter((stat) => stat.type === "mount") || [],
+        profile.additional_stats || [],
     )
     .filter(function (item: Profile, index: number, self: Profile[]) {
       return index === self.findIndex((other) => other.name === item.name);

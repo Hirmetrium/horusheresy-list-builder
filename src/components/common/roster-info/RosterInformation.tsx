@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import { FunctionComponent } from "react";
 import { BiPencil } from "react-icons/bi";
-import { armyListData } from "../../../assets/data.ts";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
 import { useUpdateRoster } from "../../../hooks/useUpdateRoster.ts";
 import { useAppState } from "../../../state/app";
@@ -57,19 +56,7 @@ export const RosterInformation: FunctionComponent<RosterInformationProps> = (
             color: ({ palette }) => palette.text.secondary,
           }}
         >
-          <small>{props.roster.armyList}</small>{" "}
-          {!!armyListData[props.roster.armyList]?.legacy && (
-            <Typography
-              className="sabon"
-              variant="subtitle2"
-              component="small"
-              sx={{
-                fontStyle: "italic",
-              }}
-            >
-              (Legacy)
-            </Typography>
-          )}
+          <small>{props.roster.armyList}</small>
         </Typography>
         <Typography
           variant="subtitle2"

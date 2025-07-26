@@ -1,5 +1,5 @@
 export type Profile = {
-  unit_type?: string[];
+  unit_type?: string;
   name: string;
 
   M: string;
@@ -20,7 +20,7 @@ export type Profile = {
   wargear?: string[];
   traits?: string[];
   special_rules?: string[];
-  type?: string;
+  type?: string[];
 
   additional_stats?: Profile[];
   additional_text?: string[];

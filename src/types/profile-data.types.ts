@@ -22,4 +22,5 @@ export type Profile = {
 };
 type AdditionalStat = Profile & {
   name: string; // name is not part of the unit, so we explicitly add it
+  unit_type?: string;
 };

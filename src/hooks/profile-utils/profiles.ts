@@ -43,7 +43,7 @@ function transformUnitToListOfProfiles(
 
     if (unit.name ) {
         return profile.additional_stats.map((stats) => {
-            return { ...stats, type: unit.unit_type };
+            return { ...stats, unit_type: unit.unit_type };
         });
     }
 
@@ -61,7 +61,7 @@ function transformUnitToListOfProfiles(
   return [
     {
       name: unit.name,
-      type: unit.unit_type,
+      unit_type: unit.unit_type,
       ...profile,
       additional_stats,
       special_rules: [...profile.special_rules]

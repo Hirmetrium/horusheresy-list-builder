@@ -1,11 +1,10 @@
 import { Draggable, Droppable } from "@hello-pangea/dnd";
 import AddIcon from "@mui/icons-material/Add";
-import { Button, ButtonGroup } from "@mui/material";
+import { Button } from "@mui/material";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import { FunctionComponent } from "react";
 import { useParams } from "react-router-dom";
-import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts";
 import { useWarbandMutations } from "../../../../hooks/useWarbandMutations.ts";
 import { useAppState } from "../../../../state/app";
 import { useRosterBuildingState } from "../../../../state/roster-building";
@@ -17,7 +16,6 @@ import { ModalTypes } from "../../../modal/modals.tsx";
 import { HeroCard } from "../../card/HeroCard.tsx";
 import { SelectUnitCardButton } from "../../card/SelectUnitCardButton.tsx";
 import { WarriorCard } from "../../card/WarriorCard.tsx";
-import { WithRibbon } from "../../unit-selection/WithRibbon.tsx";
 
 export type WarbandContentProps = {
   warband: Pick<Warband, "id" | "hero" | "units" | "meta">;
@@ -42,8 +40,6 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
       ({ id, metadata: { leader } }) => id === armyId && leader === warbandId,
     ),
   );
-  const { getAdjustedMetaData } = useRosterInformation();
-  const { siegeRoster } = getAdjustedMetaData();
 
   function openHeroPicker() {
     console.debug("Open Hero Picker");
@@ -161,8 +157,7 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
                             collapsed={collapsed}
                           />
                         ) : (
-                          <WithRibbon label="Legacy" hideRibbon={!unit.legacy}>
-                            {unit.unit_type.includes("Hero") ? (
+                            unit.unit_type.includes("Hero") ? (
                               <HeroCard
                                 unit={unit}
                                 followerOf={hero?.model_id}
@@ -193,8 +188,7 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
                                 reselect={() => openUnitPicker(unit.id)}
                                 collapsed={collapsed}
                               />
-                            )}
-                          </WithRibbon>
+                            )
                         )}
                       </Box>
                     </Box>
@@ -208,33 +202,16 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
       </Droppable>
 
       {hero && isHeroWhoLeads(hero) && (
-        <>
-          {siegeRoster ? (
-            <ButtonGroup>
-              <Button
-                onClick={() => mutations.addEmptyUnit()}
-                variant="contained"
-                color="primary"
-                fullWidth
-                endIcon={<AddIcon />}
-                data-test-id={`warband-${warbandNum}--add-unit`}
-              >
-                Add Unit
-              </Button>
-            </ButtonGroup>
-          ) : (
-            <Button
-              onClick={() => mutations.addEmptyUnit()}
-              variant="contained"
-              color="primary"
-              fullWidth
-              endIcon={<AddIcon />}
-              data-test-id={`warband-${warbandNum}--add-unit`}
-            >
-              Add Unit
-            </Button>
-          )}
-        </>
+        <Button
+          onClick={() => mutations.addEmptyUnit()}
+          variant="contained"
+          color="primary"
+          fullWidth
+          endIcon={<AddIcon />}
+          data-test-id={`warband-${warbandNum}--add-unit`}
+        >
+          Add Unit
+        </Button>
       )}
     </Stack>
   );

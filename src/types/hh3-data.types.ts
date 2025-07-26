@@ -76,9 +76,9 @@ export type Unit = {
   name: string;
   unit_type: UnitType;
   base_points: number;
-  extra_points: number;
-  min_unit: number;
-  max_unit: number;
+  extra_points?: number;
+  min_unit?: number;
+  max_unit?: number;
   unique?: boolean;
   warband_size: number;
   options: Option[];

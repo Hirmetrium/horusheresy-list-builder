@@ -14,7 +14,6 @@ export type CustomTracker = {
   name: string;
   value: number;
   maxValue?: number;
-  permanent?: boolean;
 };
 
 export type Game = {

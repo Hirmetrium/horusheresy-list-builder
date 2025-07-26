@@ -5,7 +5,6 @@ import {
   ChevronLeftOutlined,
   FolderOutlined,
   Info,
-  OpenInNew,
   Segment,
   Settings,
 } from "@mui/icons-material";

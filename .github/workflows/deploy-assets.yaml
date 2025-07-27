@@ -17,4 +17,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./resources/hh3
+          publish_dir: ./resources/horusheresy-list-builder

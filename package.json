@@ -20,7 +20,8 @@
     "version:unix": "./changelog-version-update.sh $npm_package_version",
     "postversion": "git push && git push --tags",
     "build:data": "python3 data/scripts/main.py",
-    "watch:data": "find ./data -name '*.xlsx' | entr npm run build:data                                                                                                                                                                   todo-app\n"
+    "watch:data": "find ./data -name '*.xlsx' | entr npm run build:data                                                                                                                                                                   todo-app\n",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",

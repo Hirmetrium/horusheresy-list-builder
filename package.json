@@ -21,6 +21,7 @@
     "postversion": "git push && git push --tags",
     "build:data": "python3 data/scripts/main.py",
     "watch:data": "find ./data -name '*.xlsx' | entr npm run build:data                                                                                                                                                                   todo-app\n",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {

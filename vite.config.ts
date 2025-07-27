@@ -11,7 +11,7 @@ const currentDate = new Date()
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
-  base: "/",
+  base: "/horusheresy-list-builder/",
   plugins: [react()],
   define: {
     BUILD_VERSION: JSON.stringify(process.env.npm_package_version),

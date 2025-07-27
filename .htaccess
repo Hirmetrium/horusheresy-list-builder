@@ -1,0 +1,30 @@
+RewriteEngine On
+RewriteBase /
+
+# Force redirect from HTTP to HTTPS
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+SetEnvIf X-Forwarded-Proto "https" HTTPS=on
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Avoid redirecting if already accessing index.html directly
+RewriteRule ^index\.html$ - [L]
+
+# Only redirect to index.html if not an existing file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect all other routes to index.html (for SPA)
+RewriteRule ^ /index.html [L]
+
+# Deny access to .env files
+<FilesMatch "\.env$">
+    Require all denied
+</FilesMatch>
+
+# Set some PHP env vars
+php_value upload_max_filesize 64M
+php_value post_max_size 64M
+php_value max_execution_time 300
+php_value max_input_time 300

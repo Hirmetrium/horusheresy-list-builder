@@ -1,0 +1,18 @@
+{
+  "name": "Horus Heresy: Age of Darkness - Unofficial 3rd Edition List Builder",
+  "short_name": "HH 3rd Ed List Builder",
+  "description": "(Unofficial) A simple and intuitive tool for building your army lists in to comply with the new detachments in Horus Heresy: Age of Darkness 3rd Edition.",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/icons/icon-225x225.png",
+      "type": "image/png",
+      "sizes": "225x225"
+    }
+  ],
+  "screenshots": [
+  ]
+}W

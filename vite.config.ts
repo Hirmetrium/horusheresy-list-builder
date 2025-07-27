@@ -19,7 +19,7 @@ export default defineConfig(({ command }) => ({
     RESOURCES_URL: JSON.stringify(
       command === "serve"
         ? "/static-resources"
-        : "https://resources.hh3-list-builder.com/v2024",
+        : "https://hirmetrium.github.io/resources/horusheresy-list-builder",
     ),
   },
   build: {

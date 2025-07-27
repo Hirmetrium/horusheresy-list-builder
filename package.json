@@ -1,6 +1,7 @@
 {
   "name": "hh3",
   "version": "0.1.0",
+  "homepage": "https://hirmetrium.github.io/horusheresy-list-builder/",
   "private": true,
   "type": "module",
   "scripts": {

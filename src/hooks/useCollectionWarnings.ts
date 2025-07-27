@@ -25,12 +25,11 @@ export const useCollectionWarnings = (
   const { inventory } = useCollectionState();
   const { roster } = useRosterInformation();
 
-    {
+    if (!preferences.collectionWarnings) {
         return {
             warnings: "off",
         };
     }
-
 
   // The full collection for a given miniature
   const { collection } = (inventory[unit.profile_origin] &&

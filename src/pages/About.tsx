@@ -55,11 +55,11 @@ export const About = () => {
                 go.
               </Box>
               <Box component="li">
-                <strong>Lazy copied and pasted profile cards</strong> for some models across
-                Horus Heresy.
+                <strong>Profile cards</strong> for some models across
+                Horus Heresy. (WIP)
               </Box>
               <Box component="li">
-                <strong>PDF print-out</strong> which is probably broken.
+                <strong>PDF print-outs</strong> which are work in progress.
               </Box>
               <Box component="li">
                 <strong>Game Mode</strong> which provides digital stat trackers
@@ -67,7 +67,7 @@ export const About = () => {
                 to;
                 <ul>
                   <Box component="li">
-                    Track the Wounds of your heroes.
+                    Track the Wounds of your heroes. (currently broken)
                   </Box>
                   <Box component="li">
                     Additionally displays army rules and profile cards all on
@@ -108,50 +108,10 @@ export const About = () => {
             Roadmap
           </Typography>
           <Typography variant="body1" sx={{ fontSize: "18px" }}>
-            Even though the app should already include everything you would need
-            to build your army lists, there is always work to be done. Think of
-            FAQ&apos;s and errata that need to be implemented or bugs on our
-            side that need be be squashed. Aside from those few things we have
-            our own list of things we still want to include.
+            The app is a work in progress, and you can find the current list
+            of to do items on the github respository above.
           </Typography>
-          <Stack component="ul" sx={{ listStyle: "none", pl: 0 }} gap={1}>
-            <Box component="li">
-              <Typography>
-                <strong>Internationalization;</strong> We are committed to
-                support the many different  communities all around the
-                world. With accessibility being one of our top priorities, we
-                would also like to make it linguistically available for
-                everyone. Staring with Spanish as our first focus, we&apos;d
-                like to open our gates for those willing to help translate the
-                many rules and profiles.
-              </Typography>
-            </Box>
-            <Box component="li">
-              <Typography>
-                <strong>Accounts;</strong> Allowing users to login using their
-                favorite authentication provider, like Facebook, Google and
-                maybe others platform. Or let them create an custom
-                email/password account. This will allow users with an account to
-                save their rosters and match history on our servers and allows
-                them to sync more easily between their computer and mobile
-                device while also reducing the risk of losing their browser
-                storage.
-              </Typography>
-            </Box>
-            <Box component="li">
-              <Typography>
-                <strong>Sharing rosters;</strong> The List Builder
-                providers multiple ways of exporting your roster and sharing it
-                with the world. One way to share rosters is currently
-                impossible: Sharing the a link to the actual roster. Once we set
-                up our database for creating and managing rosters based on an
-                authenticated account we can provide more fancy stuff like that.
-                Such as creating a link to a readonly roster and allowing users
-                to import it into their own accounts.
-              </Typography>
-            </Box>
-          </Stack>
-        </Stack>
+         </Stack>
       </Stack>
     </Container>
   );

@@ -1,6 +1,6 @@
 # Horus Heresy 3rd Edition List Builder
 
-*https://hirmetrium.github.io*
+*https://hirmetrium.github.io/horusheresy-list-builder*
 
 Currently a work in progress with several challenges to overcome. Forked from the incredible MESBG-v2024 list builder, and with no small help from Marcel to get this operational.
 
@@ -68,10 +68,10 @@ A temporarily incomplete build is hosted for feedback and design on the githubpa
  - Import/Export functionality for your army lists and match history to keep your data safe.
 
 <small>_[1]_; These features are not enabled by default. You can enable them
-in [the site/app settings](https://hirmetrium.github.io/#/settings).</small>
+in [the site/app settings](https://hirmetrium.github.io/horusheresy-list-builder/#/settings).</small>
 
 ## Usage
-If you want to use the list builder you can head over to \*https://v2024.mesbg-list-builder.com\* and start by creating
+If you want to use the list builder you can head over to \*https://hirmetrium.github.io/horusheresy-list-builder\* and start by creating
 your first army list.
 
 ## Contact information

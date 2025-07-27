@@ -83,19 +83,19 @@ export const routes: RouteObject[] = [
       },
       {
         path: "*",
-        element: <RedirectTo path="#/rosters" />,
+        element: <RedirectTo path="/rosters" />,
         errorElement: <AppFallback />,
       },
       {
         path: "",
-        element: <RedirectTo path="#/rosters" />,
+        element: <RedirectTo path="/rosters" />,
         errorElement: <AppFallback />,
       },
     ],
   },
   {
     path: "/*",
-    element: <RedirectTo path="#/rosters" />,
+    element: <RedirectTo path="/rosters" />,
     errorElement: <AppFallback />,
   },
 ];

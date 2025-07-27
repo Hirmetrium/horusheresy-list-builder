@@ -20,28 +20,29 @@ A temporarily incomplete build is hosted for feedback and design on the githubpa
 <!-- TOC -->
 
 ## To Do:
-- Finish clean-up of original code-base to resolve build errors:
+- Finish clean-up of original code-base to make specific to HH:
   - Leader functionality
-  - SiegeEquipment references
-  - Legacy ribbons
   - Adapting of heroes/warbands into detachments
   - Fix unit/model/slot calculator function for metadata
+  - Fix Warnings
   - Fix special rules displays
-  - Fix upversioning/changelog.
+  - Fix upversioning/changelog
   - Fix Options lists to be multi-selection
-  - Fix options display to not take up so much space (two columns?)
+  - Fix Options display to not take up so much space (two columns?)
 - Builder:
   - Redesign Unit Cards to use minimum and maximum squad quantities when adding units by default
   - Prevent adding multiple units per slot
+  - Fix metadata calculations on units / slots
+  - Add profile data and profile cards (significant work, may need parsing with AI, or collaboration with Data guys)
+  - Add Validation for detachments
 - Detachments:
   - Design, create and build new data functionality for detachment data object to manage slots across detachments
+  - Potentially can update army-list-restrictions on heroes into detachment restrictions (will be necessary for each individual faction/army)
   - Associated UI / icons (have placeholders)
 	- Prevent additional units being added
 	- Add pipeline scripts to convert detachment data into .json
 	- Restriction data for army lists currently works to a degree
-- Identify improvements to data structure to share generic units across legions to save repeating data entries/multiple entry updates
-- Add profile data and profile cards (significant work, may need parsing with AI, or collaboration with Data guys)
-- Add Validation and warnings for detachments
+- Identify potential improvements to data structure to share generic units across legions to save repeating data entries/multiple entry updates (may not be possible with detachment restriction/data or current model)
 - Add / Design new prime benefit functionality and associated UI
 - Add data for:
   - Legions

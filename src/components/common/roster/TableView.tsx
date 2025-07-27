@@ -296,7 +296,7 @@ export const RosterTableView = forwardRef<
             color: mode === "dark" ? "lightblue" : "inherit",
           }}
         >
-          https://hh3-list-builder.com/
+          https://hirmetrium.github.io/horusheresy-list-builder/
         </a>
         )
       </Typography>

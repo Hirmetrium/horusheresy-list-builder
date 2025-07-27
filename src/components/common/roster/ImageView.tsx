@@ -114,7 +114,7 @@ export const ImageView = forwardRef<ImageViewViewHandlers, ImageViewViewProps>(
             >
               Created with HH3 List Builder (
               <a href="#" style={{ textDecoration: "none" }}>
-                https://hh3-list-builder.com
+                https://hirmetrium.github.io/horusheresy-list-builder/
               </a>
               )
             </Typography>

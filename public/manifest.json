@@ -1,7 +1,7 @@
 {
-  "name": "Horus Heresy - Unofficial 3rd Edition List Builder",
+  "name": "Horus Heresy - 3rd Edition List Builder",
   "short_name": "HH3 List Builder",
-  "description": "(Unofficial) A simple and intuitive tool for building your army lists in to comply with the new detachments in Horus Heresy: Age of Darkness 3rd Edition.",
+  "description": "An unofficial tool for building your army lists for Horus Heresy: Age of Darkness 3rd Edition.",
   "start_url": "https://hirmetrium.github.io/horusheresy-list-builder/",
   "display": "fullscreen",
   "background_color": "#ffffff",
@@ -12,7 +12,5 @@
       "type": "image/png",
       "sizes": "225x225"
     }
-  ],
-  "screenshots": [
   ]
 }

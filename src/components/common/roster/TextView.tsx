@@ -85,7 +85,7 @@ export const RosterTextView = forwardRef<
     return `
     ----------------------------------------
     Created with HH3 List Builder 
-    https://hh3-list-builder.com/
+    https://hirmetrium.github.io/horusheresy-list-builder/
     `;
   };
 

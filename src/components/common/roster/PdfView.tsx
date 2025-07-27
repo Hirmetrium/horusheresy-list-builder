@@ -89,7 +89,7 @@ const PrintablePdf = () => {
                 Some of the units selected in your roster have no registered
                 profile data. If you see this message, please let us know via{" "}
                 <a
-                  href="mailto:support@hh3-list-builder.com?subject=HH3 List Builder - Bug/Correction"
+                  href="mailto:hirmetrium@gmail.com?subject=HH3 List Builder - Bug/Correction"
                   style={{
                     color:
                       themeContext.mode === "dark"
@@ -97,7 +97,7 @@ const PrintablePdf = () => {
                         : theme.palette.secondary.dark,
                   }}
                 >
-                  support@hh3-list-builder.com
+                  hirmetrium@gmail.com
                 </a>
                 .
               </Typography>

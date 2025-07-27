@@ -476,7 +476,7 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
           <Button
             aria-label="logo"
             sx={{ mr: 2 }}
-            href="https://hirmetrium.github.io/"
+            href="https://hirmetrium.github.io/horusheresy-list-builder"
           >
             <img src={logo} alt="Logo" style={{ height: "50px" }} />
             <img

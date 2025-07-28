@@ -10,13 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
     
-      - name: Upload static files as artifact
-        uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: ./static-resources/
-
-      - name: Deploy to GitHub Pages
-        uses: /actions/deploy-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./resources/          
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            source_dir: ./static-resources/
+            destination_dir: ./resources/

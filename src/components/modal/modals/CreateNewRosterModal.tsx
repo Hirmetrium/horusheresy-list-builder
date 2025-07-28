@@ -32,6 +32,9 @@ import { FactionLogo } from "../../common/images/FactionLogo.tsx";
 const armyTypeOrder: Record<ArmyType, number> = {
   Astartes: 1,
   Mechanicum: 22,
+  Daemons: 23,
+  Auxilia: 24,
+  Questoris: 25
 };
 
 const armyLists = Object.values(data)

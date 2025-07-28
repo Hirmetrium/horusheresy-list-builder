@@ -1,9 +1,6 @@
 name: Deploy Assets
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
@@ -17,4 +14,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          local_dir: ./static-resources/
           publish_dir: ./resources/          

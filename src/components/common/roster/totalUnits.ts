@@ -45,12 +45,12 @@ export const getSumOfUnits = (
   );
 
   const sorting: Record<UnitType, number> = {
-      "Crusade Primary Detachment": 1,
-      "Warlord Detachment": 2,
-      "Lord of War Detachment": 3,
-      "Allied Detachment": 4,
-      "Apex Detachment": 5,
-      "Auxillary Detachment": 6,
+      "Primary Detachment": 1,
+      "Apex Detachment": 2,
+      "Auxillary Detachment": 3,
+      "Additional Detachment": 4,
+      "Logistical Benefit": 5,
+      "Allied Detachment": 6,
       "High Command": 7,
       "Command": 8,
       "Retinues": 9,

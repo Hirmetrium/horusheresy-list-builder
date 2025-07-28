@@ -1,15 +1,15 @@
-export type ArmyType = "Astartes" | "Mechanicum" | "Daemons" | "Auxilia" | "Questoris" ;
+export type ArmyType = "Astartes" | "Mechanicum" | "Imperium" | "Questoris" | "Daemons";
 
 /**
  * TODO: regenerate this list after all data is loaded.
  */
 export type UnitType =
-  | "Crusade Primary Detachment"
-  | "Warlord Detachment"
-  | "Lord of War Detachment"
-  | "Logistical Benefit"
+  | "Primary Detachment"
   | "Apex Detachment"
   | "Auxillary Detachment"
+  | "Additional Detachment"
+  | "Logistical Benefit"
+  | "Allied Detachment"
   | "High Command"
   | "Command"
   | "Retinues"
@@ -65,8 +65,8 @@ export type Unit = {
   unit_type: UnitType;
   base_points: number;
   extra_points?: number;
-  min?: number;
-  max?: number;
+  min_squad_size?: number;
+  max_squad_size?: number;
   unique?: boolean;
   warband_size: number;
   options: Option[];

@@ -21,20 +21,28 @@ A temporarily incomplete build is hosted for feedback and design on the githubpa
 
 ## To Do:
 - Finish clean-up of original code-base to make specific to HH:
+  - Fix Static-resources
   - Leader functionality
   - Adapting of heroes/warbands into detachments
   - Fix unit/model/slot calculator function for metadata
   - Fix Warnings
   - Fix special rules displays
   - Fix upversioning/changelog
-  - Fix Options lists to be multi-selection
-  - Fix Options display to not take up so much space (two columns?)
+  - Fix Options:
+	- Lists to be multi-selection
+	- Display to not take up so much space (two columns?)
+	- Fix multi-model / sergeant only weapon choices
 - Builder:
   - Redesign Unit Cards to use minimum and maximum squad quantities when adding units by default
   - Prevent adding multiple units per slot
-  - Fix metadata calculations on units / slots
   - Add profile data and profile cards (significant work, may need parsing with AI, or collaboration with Data guys)
   - Add Validation for detachments
+  - add unit types to unit slots in builder UI
+  - update "warrior" to "slot"
+  - update "hero" to "detachment"
+  - update "warband" to ??
+  - move warband_size into data model so its per detachment
+  - Remove detachment from name and into unit type for cleaner UI
 - Detachments:
   - Design, create and build new data functionality for detachment data object to manage slots across detachments
   - Potentially can update army-list-restrictions on heroes into detachment restrictions (will be necessary for each individual faction/army)
@@ -50,6 +58,9 @@ A temporarily incomplete build is hosted for feedback and design on the githubpa
   - Solar Aux
   - Questoris
   - Legacies
+- Text/Image/PDF display:
+  - Update Warband into hero/detachment
+  - Add unit types to export
 
 ## Feature Highlights:
 - Installable Desktop and Mobile application though PWA. (Available for [Desktop](#desktop-pwa), [Android](#android-pwa) and [iOS](#ios-pwa))

@@ -331,6 +331,7 @@
   },
   "[iron-warriors] crusade-primary-detachment": {
     "valid_warband_units": [
+      "[iron-warriors] warsmith",
       "[iron-warriors] praetor",
       "[iron-warriors] praetor-jump-pack",
       "[iron-warriors] praetor-cataphractii",

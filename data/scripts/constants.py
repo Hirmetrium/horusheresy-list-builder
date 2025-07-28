@@ -2,11 +2,10 @@ warband_sizes = {
 # Here, we define detachments as warbands (legacy holdover)
 # the number of slots in each warband that need to be filled
 # warbands/detachments sub in for heroes of legend, etc. (will see how that works)
-    "Crusade Primary Detachment": 12,
-    "Warlord Detachment": 3,
-    "Lord of War Detachment": 2,
+    "Primary Detachment": 12,
     "Apex Detachment": 5,
     "Auxillary Detachment": 6,
+    "Additional Detachment": 3,
     "Allied Detachment": 6,
     "Logistical Benefit": 1,
     "High Command": 0,

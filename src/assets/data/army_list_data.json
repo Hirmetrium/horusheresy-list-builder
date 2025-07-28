@@ -9,6 +9,16 @@
     ],
     "rule_highlights": []
   },
+  "Dark Angels": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Emperors Children": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
   "Iron Warriors": {
     "additional_rules": [],
     "special_rules": [
@@ -40,12 +50,92 @@
     "special_rules": [],
     "rule_highlights": []
   },
+  "Space Wolves": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Imperial Fists": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Night Lords": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Blood Angels": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Iron Hands": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "World Eaters": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Ultramarines": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Death Guard": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Thousand Sons": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Sons of Horus": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Word Bearers": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Salamanders": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Raven Guard": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Alpha Legion": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
   "Mechanicum Taghmata": {
     "additional_rules": [],
     "special_rules": [],
     "rule_highlights": []
   },
   "Solar Auxilia": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Questoris": {
+    "additional_rules": [],
+    "special_rules": [],
+    "rule_highlights": []
+  },
+  "Daemons of the Ruinstorm": {
     "additional_rules": [],
     "special_rules": [],
     "rule_highlights": []

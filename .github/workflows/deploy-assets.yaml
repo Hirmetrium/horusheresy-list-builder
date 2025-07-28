@@ -14,5 +14,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            source_dir: ./static-resources/
+            publish_dir: ./static-resources/
             destination_dir: ./resources/

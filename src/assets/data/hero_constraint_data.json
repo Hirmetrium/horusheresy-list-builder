@@ -559,5 +559,670 @@
       "[iron-warriors] kharybdis-assault-claw"
     ],
     "extra_profiles": []
+  },
+  "[mechanicum] allied-detachment": {
+    "valid_warband_units": [
+      "[astartes] centurion",
+      "[astartes] centurion-cataphractii",
+      "[astartes] centurion-jump-pack",
+      "[astartes] centurion-tartaros",
+      "[astartes] optae",
+      "[astartes] damocles-command-rhino",
+      "[astartes] librarian",
+      "[astartes] legion-champion",
+      "[astartes] vigilator",
+      "[astartes] esoterist",
+      "[astartes] master-of-signals",
+      "[astartes] praevian",
+      "[astartes] moritat",
+      "[astartes] siege-breaker",
+      "[astartes] overseer",
+      "[astartes] herald",
+      "[astartes] chaplain",
+      "[astartes] master-of-descent",
+      "[astartes] tactical-squad",
+      "[astartes] despoiler-squad",
+      "[astartes] assault-squad",
+      "[astartes] breacher-squad",
+      "[astartes] rhino",
+      "[astartes] drop-pod",
+      "[astartes] termite"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] apprentice-cadre": {
+    "valid_warband_units": [
+      "[mechanicum] tech-priest"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] armoured-fist": {
+    "valid_warband_units": [
+      "[mechanicum] triaros-armoured-conveyer"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] armoured-support": {
+    "valid_warband_units": [
+      "[mechanicum] karacnos-assault-tank",
+      "[mechanicum] krios-battle-tank",
+      "[mechanicum] krios-venator"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] army-vanguard": {
+    "valid_warband_units": [
+      "[mechanicum] domitar-battle-maniple",
+      "[mechanicum] myrmidon-secutor-host",
+      "[mechanicum] myrmidon-destructor-host"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] combat-pioneers": {
+    "valid_warband_units": [
+      "[mechanicum] vorax-attack-maniple"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] combat-retinue": {
+    "valid_warband_units": [
+      "[mechanicum] sycllax-guardian-maniple",
+      "[mechanicum] echidnax-servo-maniple"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] command-maniple": {
+    "valid_warband_units": [
+      "[mechanicum] domitar-battle-maniple",
+      "[mechanicum] castellax-battle-maniple",
+      "[mechanicum] thanatar-siege-maniple"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] crusade-primary-detachment": {
+    "valid_warband_units": [
+      "[mechanicum] archmagos",
+      "[mechanicum] archmagos-abeyant",
+      "[mechanicum] magos",
+      "[mechanicum] magos-abeyant",
+      "[mechanicum] arcuitor-magisterium",
+      "[mechanicum] tech-priest"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] crux-of-judgement": {
+    "valid_warband_units": [
+      "[mechanicum] magos",
+      "[mechanicum] magos-abeyant",
+      "[mechanicum] arcuitor-magisterium"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] first-strike": {
+    "valid_warband_units": [
+      "[mechanicum] vultarax-stratos-squadron"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] heart-of-power": {
+    "valid_warband_units": [
+      "[mechanicum] sycllax-guardian-maniple",
+      "[mechanicum] echidnax-servo-maniple",
+      "[mechanicum] tech-priest"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] heavy-support": {
+    "valid_warband_units": [
+      "[mechanicum] thanatar-siege-maniple",
+      "[mechanicum] armiger-moriax"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] host-of-destruction": {
+    "valid_warband_units": [
+      "[mechanicum] myrmidon-secutor-host",
+      "[mechanicum] myrmidon-destructor-host"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] iron-phalanx": {
+    "valid_warband_units": [
+      "[mechanicum] karacnos-assault-tank",
+      "[mechanicum] krios-battle-tank",
+      "[mechanicum] krios-venator",
+      "[mechanicum] triaros-armoured-conveyer"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] logistical-benefit": {
+    "valid_warband_units": [
+      "[mechanicum] karacnos-assault-tank",
+      "[mechanicum] krios-battle-tank",
+      "[mechanicum] krios-venator",
+      "[mechanicum] thanatar-siege-maniple",
+      "[mechanicum] armiger-moriax",
+      "[mechanicum] triaros-armoured-conveyer"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] lord-of-war": {
+    "valid_warband_units": [
+      "[mechanicum] brass-scorpion",
+      "[mechanicum] kytan-daemon-engine"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] officer-cadre": {
+    "valid_warband_units": [
+      "[mechanicum] magos",
+      "[mechanicum] magos-abeyant",
+      "[mechanicum] arcuitor-magisterium"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] panoply-of-cruelty": {
+    "valid_warband_units": [
+      "[mechanicum] ursarax-cohort"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] shock-assault": {
+    "valid_warband_units": [
+      "[mechanicum] castellax-destructor-maniple",
+      "[mechanicum] ursarax-cohort",
+      "[mechanicum] decimator",
+      "[mechanicum] blood-slaughterer"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] tactical-support": {
+    "valid_warband_units": [
+      "[mechanicum] tech-priest",
+      "[mechanicum] tech-thrall-covenant",
+      "[mechanicum] castellax-battle-maniple",
+      "[mechanicum] thallax-cohort"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] taghmata-cohort": {
+    "valid_warband_units": [
+      "[mechanicum] tech-thrall-covenant",
+      "[mechanicum] castellax-battle-maniple",
+      "[mechanicum] thallax-cohort"
+    ],
+    "extra_profiles": []
+  },
+  "[mechanicum] thallax-command-cohort": {
+    "valid_warband_units": [
+      "[mechanicum] thallax-cohort"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] allied-detachment": {
+    "valid_warband_units": [
+      "[astartes] centurion",
+      "[astartes] centurion-cataphractii",
+      "[astartes] centurion-jump-pack",
+      "[astartes] centurion-tartaros",
+      "[astartes] optae",
+      "[astartes] damocles-command-rhino",
+      "[astartes] librarian",
+      "[astartes] legion-champion",
+      "[astartes] vigilator",
+      "[astartes] esoterist",
+      "[astartes] master-of-signals",
+      "[astartes] praevian",
+      "[astartes] moritat",
+      "[astartes] siege-breaker",
+      "[astartes] overseer",
+      "[astartes] herald",
+      "[astartes] chaplain",
+      "[astartes] master-of-descent",
+      "[astartes] tactical-squad",
+      "[astartes] despoiler-squad",
+      "[astartes] assault-squad",
+      "[astartes] breacher-squad",
+      "[astartes] rhino",
+      "[astartes] drop-pod",
+      "[astartes] termite"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] armour-tercio": {
+    "valid_warband_units": [
+      "[solar-aux] leman-russ-strike-tank",
+      "[solar-aux] leman-russ-assault-tank",
+      "[solar-aux] malcador-heavy-tank"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] armoured-fist": {
+    "valid_warband_units": [
+      "[solar-aux] arvus-lighter",
+      "[solar-aux] dracosan-armoured-transport"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] armoured-support": {
+    "valid_warband_units": [
+      "[solar-aux] leman-russ-strike-tank",
+      "[solar-aux] leman-russ-assault-tank",
+      "[solar-aux] malcador-heavy-tank",
+      "[solar-aux] malcador-infernus-tank",
+      "[solar-aux] valdor-tank-destroyer"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] army-vanguard": {
+    "valid_warband_units": [
+      "[solar-aux] veletaris-storm-section",
+      "[solar-aux] veletaris-vanguard-section"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] artillery-tercio": {
+    "valid_warband_units": [
+      "[solar-aux] basilisk-artillery-tank",
+      "[solar-aux] medusa-artillery-tank",
+      "[solar-aux] rapier-section"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] combat-pioneers": {
+    "valid_warband_units": [
+      "[solar-aux] hermes-light-sentinel-squadron"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] crusade-primary-detachment": {
+    "valid_warband_units": [
+      "[solar-aux] legatine-command-section",
+      "[solar-aux] tactical-command-section",
+      "[solar-aux] line-command-section",
+      "[solar-aux] veletaris-command-section",
+      "[solar-aux] hermes-command-section",
+      "[solar-aux] artillery-command-section",
+      "[solar-aux] armoured-command-section",
+      "[solar-aux] lasrifle-section",
+      "[solar-aux] arvus-lighter"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] first-strike": {
+    "valid_warband_units": [
+      "[solar-aux] primaris-lighting-strike-fighter",
+      "[solar-aux] thunderbolt-heavy-fighter"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] heavy-support": {
+    "valid_warband_units": [
+      "[solar-aux] aethon-heavy-sentinel-squadron"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] infantry-tercio": {
+    "valid_warband_units": [
+      "[solar-aux] lasrifle-section",
+      "[solar-aux] dracosan-armoured-transport",
+      "[solar-aux] hermes-light-sentinel-squadron"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] iron-tercio": {
+    "valid_warband_units": [
+      "[mechanicum] castellax-destructor-maniple",
+      "[mechanicum] tech-priest",
+      "[mechanicum] castellax-battle-maniple",
+      "[mechanicum] thallax-cohort"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] logistical-benefit": {
+    "valid_warband_units": [
+      "[solar-aux] lasrifle-section",
+      "[solar-aux] basilisk-artillery-tank",
+      "[solar-aux] medusa-artillery-tank",
+      "[solar-aux] rapier-section",
+      "[solar-aux] hermes-veletaris-squadron",
+      "[solar-aux] veletaris-storm-section",
+      "[solar-aux] veletaris-vanguard-section",
+      "[solar-aux] hermes-veletaris-squadron",
+      "[solar-aux] dracosan-armoured-transport",
+      "[solar-aux] charonite-ogryn-section"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] lord-of-war": {
+    "valid_warband_units": [
+      "[solar-aux] stormhammer-tank"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] officer-cadre": {
+    "valid_warband_units": [
+      "[solar-aux] tactical-command-section",
+      "[solar-aux] line-command-section",
+      "[solar-aux] veletaris-command-section",
+      "[solar-aux] hermes-command-section",
+      "[solar-aux] artillery-command-section",
+      "[solar-aux] armoured-command-section"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] scout-tercio": {
+    "valid_warband_units": [
+      "[solar-aux] hermes-light-sentinel-squadron",
+      "[solar-aux] aethon-heavy-sentinel-squadron"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] shock-assault": {
+    "valid_warband_units": [
+      "[solar-aux] charonite-ogryn-section"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] tactical-support": {
+    "valid_warband_units": [
+      "[solar-aux] lasrifle-section",
+      "[solar-aux] basilisk-artillery-tank",
+      "[solar-aux] medusa-artillery-tank",
+      "[solar-aux] rapier-section",
+      "[solar-aux] hermes-veletaris-squadron"
+    ],
+    "extra_profiles": []
+  },
+  "[solar-aux] veletaris-tercio": {
+    "valid_warband_units": [
+      "[solar-aux] veletaris-storm-section",
+      "[solar-aux] veletaris-vanguard-section",
+      "[solar-aux] hermes-veletaris-squadron",
+      "[solar-aux] dracosan-armoured-transport"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] allied-detachment": {
+    "valid_warband_units": [
+      "[solar-aux] legatine-command-section"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] apothecarion-delegation": {
+    "valid_warband_units": [
+      "[white-scars] apothecary"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] armoured-fist": {
+    "valid_warband_units": [
+      "[white-scars] rhino",
+      "[white-scars] drop-pod",
+      "[white-scars] termite",
+      "[white-scars] land-raider",
+      "[white-scars] spartan",
+      "[white-scars] dreadnought-drop-pod",
+      "[white-scars] dreadclaw-drop-pod",
+      "[white-scars] kharybdis-assault-claw"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] armoured-support": {
+    "valid_warband_units": [
+      "[white-scars] predator-tank",
+      "[white-scars] sicaran-tank",
+      "[white-scars] sicaran-venator",
+      "[white-scars] kratos-tank",
+      "[white-scars] vindicator-tank",
+      "[white-scars] scorpius-tank",
+      "[white-scars] arquitor-bombard",
+      "[white-scars] hyperios-tank"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] army-vanguard": {
+    "valid_warband_units": [
+      "[white-scars] veteran-tactical-squad",
+      "[white-scars] veteran-assault-squad",
+      "[white-scars] seeker-squad",
+      "[white-scars] golden-keshig"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] chogorian-warband": {
+    "valid_warband_units": [
+      "[white-scars] recon-squad",
+      "[white-scars] sabre",
+      "[white-scars] outrider-squad",
+      "[white-scars] land-raider-explorator",
+      "[white-scars] tarantula-battery",
+      "[white-scars] xiphon-interceptor",
+      "[white-scars] storm-eagle",
+      "[white-scars] fire-raptor",
+      "[white-scars] scimitar-jetbike-squad",
+      "[white-scars] javelin-squad",
+      "[white-scars] land-speeder-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] combat-pioneers": {
+    "valid_warband_units": [
+      "[white-scars] recon-squad",
+      "[white-scars] sabre",
+      "[white-scars] outrider-squad",
+      "[white-scars] land-raider-explorator",
+      "[white-scars] tarantula-battery"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] combat-retinue": {
+    "valid_warband_units": [
+      "[white-scars] praetorian-command-squad",
+      "[white-scars] praetorian-command-squad-jump-packs",
+      "[white-scars] centurion-command-squad",
+      "[white-scars] tartaros-command-squad",
+      "[white-scars] cataphractii-command-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] crusade-primary-detachment": {
+    "valid_warband_units": [
+      "[white-scars] qin-xa",
+      "[white-scars] praetor",
+      "[white-scars] praetor-jump-pack",
+      "[white-scars] praetor-cataphractii",
+      "[white-scars] praetor-tartaros",
+      "[white-scars] praetor-saturnine",
+      "[white-scars] hibou-khan",
+      "[white-scars] stormseer",
+      "[white-scars] centurion",
+      "[white-scars] centurion-cataphractii",
+      "[white-scars] centurion-jump-pack",
+      "[white-scars] centurion-tartaros",
+      "[white-scars] optae",
+      "[white-scars] damocles-command-rhino",
+      "[white-scars] librarian",
+      "[white-scars] legion-champion",
+      "[white-scars] vigilator",
+      "[white-scars] esoterist",
+      "[white-scars] master-of-signals",
+      "[white-scars] praevian",
+      "[white-scars] moritat",
+      "[white-scars] siege-breaker",
+      "[white-scars] overseer",
+      "[white-scars] herald",
+      "[white-scars] chaplain",
+      "[white-scars] master-of-descent",
+      "[white-scars] tactical-squad",
+      "[white-scars] despoiler-squad",
+      "[white-scars] assault-squad",
+      "[white-scars] breacher-squad",
+      "[white-scars] rhino",
+      "[white-scars] drop-pod",
+      "[white-scars] termite"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] first-strike": {
+    "valid_warband_units": [
+      "[white-scars] xiphon-interceptor",
+      "[white-scars] storm-eagle",
+      "[white-scars] fire-raptor",
+      "[white-scars] scimitar-jetbike-squad",
+      "[white-scars] javelin-squad",
+      "[white-scars] land-speeder-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] heavy-support": {
+    "valid_warband_units": [
+      "[white-scars] contemptor-dreadnought",
+      "[white-scars] deredeo-dreadnought",
+      "[white-scars] leviathan-dreadnought",
+      "[white-scars] saturnine-dreadnought"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] logistical-benefit": {
+    "valid_warband_units": [
+      "[white-scars] contemptor-dreadnought",
+      "[white-scars] deredeo-dreadnought",
+      "[white-scars] leviathan-dreadnought",
+      "[white-scars] saturnine-dreadnought"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] lord-of-war": {
+    "valid_warband_units": [
+      "[white-scars] cerberus-tank",
+      "[white-scars] typhon-tank",
+      "[white-scars] glaive-tank",
+      "[white-scars] fellblade-tank",
+      "[white-scars] falchion-tank",
+      "[white-scars] thunderhawk",
+      "[white-scars] stormbird",
+      "[white-scars] mastodon"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] officer-cadre": {
+    "valid_warband_units": [
+      "[white-scars] hibou-khan",
+      "[white-scars] stormseer",
+      "[white-scars] centurion",
+      "[white-scars] centurion-cataphractii",
+      "[white-scars] centurion-jump-pack",
+      "[white-scars] centurion-tartaros",
+      "[white-scars] optae",
+      "[white-scars] damocles-command-rhino",
+      "[white-scars] librarian",
+      "[white-scars] legion-champion",
+      "[white-scars] vigilator",
+      "[white-scars] esoterist",
+      "[white-scars] master-of-signals",
+      "[white-scars] praevian",
+      "[white-scars] moritat",
+      "[white-scars] siege-breaker",
+      "[white-scars] overseer",
+      "[white-scars] herald",
+      "[white-scars] chaplain",
+      "[white-scars] master-of-descent"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] planetfall-speartip": {
+    "valid_warband_units": [
+      "[white-scars] praetorian-command-squad-jump-packs",
+      "[white-scars] veteran-assault-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] recon-demi-company": {
+    "valid_warband_units": [
+      "[white-scars] recon-squad",
+      "[white-scars] xiphon-interceptor",
+      "[white-scars] storm-eagle",
+      "[white-scars] fire-raptor",
+      "[white-scars] scimitar-jetbike-squad",
+      "[white-scars] javelin-squad",
+      "[white-scars] land-speeder-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] shock-assault": {
+    "valid_warband_units": [
+      "[white-scars] cataphractii-terminator-squad",
+      "[white-scars] tartaros-terminator-squad",
+      "[white-scars] saturnine-terminator-squad",
+      "[white-scars] ebon-keshig"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] storm-battery": {
+    "valid_warband_units": [
+      "[white-scars] rapier-battery",
+      "[white-scars] vindicator-tank",
+      "[white-scars] arquitor-bombard"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] tactical-support": {
+    "valid_warband_units": [
+      "[white-scars] tactical-squad",
+      "[white-scars] despoiler-squad",
+      "[white-scars] assault-squad",
+      "[white-scars] breacher-squad",
+      "[white-scars] tactical-support-squad",
+      "[white-scars] heavy-support-squad",
+      "[white-scars] rapier-battery",
+      "[white-scars] apothecary",
+      "[white-scars] techmarine",
+      "[white-scars] deathstorm-drop-pod",
+      "[white-scars] araknae-quad-accelerator-platform",
+      "[white-scars] kyzagan-assault-speeder"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] techmarine-covenant": {
+    "valid_warband_units": [
+      "[white-scars] techmarine"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] veteran-cadre": {
+    "valid_warband_units": [
+      "[white-scars] praetorian-command-squad",
+      "[white-scars] praetorian-command-squad-jump-packs",
+      "[white-scars] centurion-command-squad",
+      "[white-scars] tartaros-command-squad",
+      "[white-scars] cataphractii-command-squad",
+      "[white-scars] veteran-tactical-squad",
+      "[white-scars] veteran-assault-squad",
+      "[white-scars] seeker-squad",
+      "[white-scars] land-raider",
+      "[white-scars] spartan",
+      "[white-scars] dreadnought-drop-pod",
+      "[white-scars] dreadclaw-drop-pod",
+      "[white-scars] kharybdis-assault-claw",
+      "[white-scars] golden-keshig"
+    ],
+    "extra_profiles": []
+  },
+  "[white-scars] warlord": {
+    "valid_warband_units": [
+      "[white-scars] jaghatai-khan",
+      "[white-scars] praetorian-command-squad",
+      "[white-scars] praetorian-command-squad-jump-packs",
+      "[white-scars] centurion-command-squad",
+      "[white-scars] tartaros-command-squad",
+      "[white-scars] cataphractii-command-squad",
+      "[white-scars] land-raider",
+      "[white-scars] spartan",
+      "[white-scars] dreadnought-drop-pod",
+      "[white-scars] dreadclaw-drop-pod",
+      "[white-scars] kharybdis-assault-claw"
+    ],
+    "extra_profiles": []
   }
 }

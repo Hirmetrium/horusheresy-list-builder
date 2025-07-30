@@ -1,7 +1,28 @@
 {
   "[detachment] allied-detachment": {
     "valid_warband_units": [
-      "[solar-aux] legatine-command-section"
+      "[astartes] centurion",
+      "[astartes] centurion-cataphractii",
+      "[astartes] centurion-jump-pack",
+      "[astartes] centurion-tartaros",
+      "[astartes] optae",
+      "[astartes] damocles-command-rhino",
+      "[astartes] librarian",
+      "[astartes] legion-champion",
+      "[astartes] vigilator",
+      "[astartes] esoterist",
+      "[astartes] master-of-signals",
+      "[astartes] praevian",
+      "[astartes] moritat",
+      "[astartes] siege-breaker",
+      "[astartes] overseer",
+      "[astartes] herald",
+      "[astartes] chaplain",
+      "[astartes] master-of-descent",
+      "[astartes] tactical-squad",
+      "[astartes] despoiler-squad",
+      "[astartes] assault-squad",
+      "[astartes] breacher-squad"
     ],
     "extra_profiles": []
   },
@@ -264,7 +285,28 @@
   },
   "[iron-warriors] allied-detachment": {
     "valid_warband_units": [
-      "[solar-aux] legatine-command-section"
+      "[astartes] centurion",
+      "[astartes] centurion-cataphractii",
+      "[astartes] centurion-jump-pack",
+      "[astartes] centurion-tartaros",
+      "[astartes] optae",
+      "[astartes] damocles-command-rhino",
+      "[astartes] librarian",
+      "[astartes] legion-champion",
+      "[astartes] vigilator",
+      "[astartes] esoterist",
+      "[astartes] master-of-signals",
+      "[astartes] praevian",
+      "[astartes] moritat",
+      "[astartes] siege-breaker",
+      "[astartes] overseer",
+      "[astartes] herald",
+      "[astartes] chaplain",
+      "[astartes] master-of-descent",
+      "[astartes] tactical-squad",
+      "[astartes] despoiler-squad",
+      "[astartes] assault-squad",
+      "[astartes] breacher-squad"
     ],
     "extra_profiles": []
   },
@@ -583,10 +625,7 @@
       "[astartes] tactical-squad",
       "[astartes] despoiler-squad",
       "[astartes] assault-squad",
-      "[astartes] breacher-squad",
-      "[astartes] rhino",
-      "[astartes] drop-pod",
-      "[astartes] termite"
+      "[astartes] breacher-squad"
     ],
     "extra_profiles": []
   },
@@ -652,8 +691,6 @@
   },
   "[mechanicum] crux-of-judgement": {
     "valid_warband_units": [
-      "[mechanicum] magos",
-      "[mechanicum] magos-abeyant",
       "[mechanicum] arcuitor-magisterium"
     ],
     "extra_profiles": []
@@ -759,6 +796,61 @@
     ],
     "extra_profiles": []
   },
+  "[questoris] armiger-talon": {
+    "valid_warband_units": [
+      "[questoris] armiger-helverin",
+      "[questoris] armiger-warglaive",
+      "[questoris] armiger-moirax"
+    ],
+    "extra_profiles": []
+  },
+  "[questoris] automata-talon": {
+    "valid_warband_units": [
+      "[mechanicum] domitar-battle-maniple",
+      "[mechanicum] castellax-battle-maniple",
+      "[mechanicum] vorax-attack-maniple",
+      "[mechanicum] vultarax-stratos-squadron"
+    ],
+    "extra_profiles": []
+  },
+  "[questoris] knight-households": {
+    "valid_warband_units": [
+      "[questoris] knight-questoris",
+      "[questoris] knight-magaera",
+      "[questoris] knight-styrix",
+      "[questoris] knight-castigator",
+      "[questoris] knight-acheron",
+      "[questoris] knight-lancer",
+      "[questoris] knight-atrapos",
+      "[questoris] knight-porphyrion",
+      "[questoris] knight-asterius"
+    ],
+    "extra_profiles": []
+  },
+  "[questoris] support-banner": {
+    "valid_warband_units": [
+      "[questoris] knight-questoris",
+      "[questoris] knight-magaera",
+      "[questoris] knight-styrix",
+      "[questoris] knight-castigator",
+      "[questoris] knight-acheron",
+      "[questoris] knight-lancer",
+      "[questoris] knight-atrapos",
+      "[questoris] knight-porphyrion",
+      "[questoris] knight-asterius"
+    ],
+    "extra_profiles": []
+  },
+  "[questoris] yeomanry-mesnie": {
+    "valid_warband_units": [
+      "[solar-aux] lasrifle-section",
+      "[solar-aux] veletaris-storm-section",
+      "[solar-aux] veletaris-vanguard-section",
+      "[solar-aux] hermes-light-sentinel-squadron",
+      "[solar-aux] dracosan-armoured-transport"
+    ],
+    "extra_profiles": []
+  },
   "[solar-aux] allied-detachment": {
     "valid_warband_units": [
       "[astartes] centurion",
@@ -782,10 +874,7 @@
       "[astartes] tactical-squad",
       "[astartes] despoiler-squad",
       "[astartes] assault-squad",
-      "[astartes] breacher-squad",
-      "[astartes] rhino",
-      "[astartes] drop-pod",
-      "[astartes] termite"
+      "[astartes] breacher-squad"
     ],
     "extra_profiles": []
   },
@@ -943,9 +1032,51 @@
     ],
     "extra_profiles": []
   },
+  "[titanicus] lord-of-war": {
+    "valid_warband_units": [
+      "[titanicus] warhound-titan",
+      "[titanicus] reaver-titan",
+      "[titanicus] warbringer-nemesis-titan",
+      "[titanicus] warlord-titan"
+    ],
+    "extra_profiles": []
+  },
+  "[titanicus] titan-ordinal": {
+    "valid_warband_units": [
+      "[titanicus] warhound-titan",
+      "[titanicus] reaver-titan",
+      "[titanicus] warbringer-nemesis-titan",
+      "[titanicus] warlord-titan",
+      "[titanicus] secutarii-axiarch",
+      "[titanicus] secutarii-cohort",
+      "[titanicus] triaros-armoured-conveyor"
+    ],
+    "extra_profiles": []
+  },
   "[white-scars] allied-detachment": {
     "valid_warband_units": [
-      "[solar-aux] legatine-command-section"
+      "[astartes] centurion",
+      "[astartes] centurion-cataphractii",
+      "[astartes] centurion-jump-pack",
+      "[astartes] centurion-tartaros",
+      "[astartes] optae",
+      "[astartes] damocles-command-rhino",
+      "[astartes] librarian",
+      "[astartes] legion-champion",
+      "[astartes] vigilator",
+      "[astartes] esoterist",
+      "[astartes] master-of-signals",
+      "[astartes] praevian",
+      "[astartes] moritat",
+      "[astartes] siege-breaker",
+      "[astartes] overseer",
+      "[astartes] herald",
+      "[astartes] chaplain",
+      "[astartes] master-of-descent",
+      "[astartes] tactical-squad",
+      "[astartes] despoiler-squad",
+      "[astartes] assault-squad",
+      "[astartes] breacher-squad"
     ],
     "extra_profiles": []
   },

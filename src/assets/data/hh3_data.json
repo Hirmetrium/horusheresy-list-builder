@@ -40,7 +40,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[iron-warriors] combat-retinue": {
@@ -54,7 +55,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[iron-warriors] officer-cadre": {
@@ -68,7 +70,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 2,
     "options": []
   },
   "[iron-warriors] hammer-of-olympia": {
@@ -82,6 +85,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
+    "unique": true,
     "warband_size": 5,
     "options": []
   },
@@ -110,7 +114,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 8,
     "options": []
   },
   "[iron-warriors] armoured-support": {
@@ -124,7 +128,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[iron-warriors] combat-pioneers": {
@@ -138,7 +142,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[iron-warriors] daemonic-manifestation": {
@@ -152,7 +156,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[iron-warriors] first-strike": {
@@ -166,7 +170,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[iron-warriors] heavy-support": {
@@ -180,7 +184,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 1,
     "options": []
   },
   "[iron-warriors] planetfall-speartip": {
@@ -194,7 +198,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[iron-warriors] recon-demi-company": {
@@ -208,7 +212,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[iron-warriors] shock-assault": {
@@ -222,7 +226,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[iron-warriors] storm-battery": {
@@ -236,7 +240,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[iron-warriors] tactical-support": {
@@ -250,7 +254,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[iron-warriors] techmarine-covenant": {
@@ -278,7 +282,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[iron-warriors] veteran-cadre": {
@@ -292,7 +296,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[iron-warriors] lord-of-war": {
@@ -306,7 +310,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 3,
+    "warband_size": 2,
     "options": []
   },
   "[iron-warriors] warlord": {
@@ -1667,8 +1671,8 @@
       }
     ]
   },
-  "[questoris] titan-ordinal": {
-    "model_id": "[questoris] titan-ordinal",
+  "[titanicus] titan-ordinal": {
+    "model_id": "[titanicus] titan-ordinal",
     "army_type": "Imperium",
     "army_list": "Legio Titanicus",
     "profile_origin": "Liber Questoris",
@@ -1680,11 +1684,11 @@
     "max_squad_size": 0,
     "unique": true,
     "opt_mandatory": true,
-    "warband_size": 12,
+    "warband_size": 10,
     "options": []
   },
-  "[questoris] lord-of-war": {
-    "model_id": "[questoris] lord-of-war",
+  "[titanicus] lord-of-war": {
+    "model_id": "[titanicus] lord-of-war",
     "army_type": "Imperium",
     "army_list": "Legio Titanicus",
     "profile_origin": "Rulebook",
@@ -1694,11 +1698,11 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 3,
+    "warband_size": 2,
     "options": []
   },
-  "[questoris] allied-detachment": {
-    "model_id": "[questoris] allied-detachment",
+  "[titanicus] allied-detachment": {
+    "model_id": "[titanicus] allied-detachment",
     "army_type": "Imperium",
     "army_list": "Legio Titanicus",
     "profile_origin": "Rulebook",
@@ -1711,8 +1715,8 @@
     "warband_size": 6,
     "options": []
   },
-  "[questoris] secutarii-axiarch": {
-    "model_id": "[questoris] secutarii-axiarch",
+  "[titanicus] secutarii-axiarch": {
+    "model_id": "[titanicus] secutarii-axiarch",
     "army_type": "Imperium",
     "army_list": "Legio Titanicus",
     "profile_origin": "Liber Questoris",
@@ -1725,8 +1729,8 @@
     "warband_size": 0,
     "options": []
   },
-  "[questoris] secutarii-cohort": {
-    "model_id": "[questoris] secutarii-cohort",
+  "[titanicus] secutarii-cohort": {
+    "model_id": "[titanicus] secutarii-cohort",
     "army_type": "Imperium",
     "army_list": "Legio Titanicus",
     "profile_origin": "Liber Questoris",
@@ -1739,8 +1743,8 @@
     "warband_size": 0,
     "options": []
   },
-  "[questoris] triaros-armoured-conveyor": {
-    "model_id": "[questoris] triaros-armoured-conveyor",
+  "[titanicus] triaros-armoured-conveyor": {
+    "model_id": "[titanicus] triaros-armoured-conveyor",
     "army_type": "Imperium",
     "army_list": "Legio Titanicus",
     "profile_origin": "Liber Questoris",
@@ -1753,8 +1757,8 @@
     "warband_size": 0,
     "options": []
   },
-  "[questoris] warlord-titan": {
-    "model_id": "[questoris] warlord-titan",
+  "[titanicus] warlord-titan": {
+    "model_id": "[titanicus] warlord-titan",
     "army_type": "Imperium",
     "army_list": "Legio Titanicus",
     "profile_origin": "Liber Questoris",
@@ -1767,8 +1771,8 @@
     "warband_size": 0,
     "options": []
   },
-  "[questoris] warbringer-nemesis-titan": {
-    "model_id": "[questoris] warbringer-nemesis-titan",
+  "[titanicus] warbringer-nemesis-titan": {
+    "model_id": "[titanicus] warbringer-nemesis-titan",
     "army_type": "Imperium",
     "army_list": "Legio Titanicus",
     "profile_origin": "Liber Questoris",
@@ -1781,8 +1785,8 @@
     "warband_size": 0,
     "options": []
   },
-  "[questoris] reaver-titan": {
-    "model_id": "[questoris] reaver-titan",
+  "[titanicus] reaver-titan": {
+    "model_id": "[titanicus] reaver-titan",
     "army_type": "Imperium",
     "army_list": "Legio Titanicus",
     "profile_origin": "Liber Questoris",
@@ -1795,8 +1799,8 @@
     "warband_size": 0,
     "options": []
   },
-  "[questoris] warhound-titan": {
-    "model_id": "[questoris] warhound-titan",
+  "[titanicus] warhound-titan": {
+    "model_id": "[titanicus] warhound-titan",
     "army_type": "Imperium",
     "army_list": "Legio Titanicus",
     "profile_origin": "Liber Questoris",
@@ -1836,7 +1840,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[detachment] combat-retinue": {
@@ -1850,7 +1855,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[detachment] officer-cadre": {
@@ -1864,7 +1870,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 2,
     "options": []
   },
   "[detachment] apothecarion-delegation": {
@@ -1892,7 +1899,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 8,
     "options": []
   },
   "[detachment] armoured-support": {
@@ -1906,7 +1913,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[detachment] combat-pioneers": {
@@ -1920,7 +1927,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[detachment] daemonic-manifestation": {
@@ -1934,7 +1941,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[detachment] first-strike": {
@@ -1948,7 +1955,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[detachment] heavy-support": {
@@ -1962,7 +1969,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 1,
     "options": []
   },
   "[detachment] planetfall-speartip": {
@@ -1976,7 +1983,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[detachment] recon-demi-company": {
@@ -1990,7 +1997,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[detachment] shock-assault": {
@@ -2004,7 +2011,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[detachment] storm-battery": {
@@ -2018,7 +2025,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[detachment] tactical-support": {
@@ -2032,7 +2039,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[detachment] techmarine-covenant": {
@@ -2060,7 +2067,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[detachment] lord-of-war": {
@@ -2074,7 +2081,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 3,
+    "warband_size": 2,
     "options": []
   },
   "[detachment] warlord": {
@@ -4898,7 +4905,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[mechanicum] combat-retinue": {
@@ -4912,7 +4920,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[mechanicum] command-maniple": {
@@ -4926,7 +4935,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[mechanicum] crux-of-judgement": {
@@ -4940,7 +4950,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[mechanicum] iron-phalanx": {
@@ -4954,7 +4965,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 6,
     "options": []
   },
   "[mechanicum] officer-cadre": {
@@ -4968,7 +4980,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 2,
     "options": []
   },
   "[mechanicum] thallax-command-cohort": {
@@ -4982,7 +4995,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[mechanicum] heart-of-power": {
@@ -4996,7 +5010,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 6,
     "options": []
   },
   "[mechanicum] host-of-destruction": {
@@ -5010,7 +5025,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 4,
     "options": []
   },
   "[mechanicum] panoply-of-cruelty": {
@@ -5024,7 +5040,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[mechanicum] apprentice-cadre": {
@@ -5038,7 +5055,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[mechanicum] armoured-fist": {
@@ -5052,7 +5069,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 8,
     "options": []
   },
   "[mechanicum] armoured-support": {
@@ -5066,7 +5083,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[mechanicum] combat-pioneers": {
@@ -5080,7 +5097,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[mechanicum] first-strike": {
@@ -5094,7 +5111,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[mechanicum] heavy-support": {
@@ -5108,7 +5125,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 1,
     "options": []
   },
   "[mechanicum] shock-assault": {
@@ -5122,7 +5139,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[mechanicum] tactical-support": {
@@ -5136,7 +5153,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[mechanicum] taghmata-cohort": {
@@ -5150,7 +5167,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[mechanicum] lord-of-war": {
@@ -5164,21 +5181,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 3,
-    "options": []
-  },
-  "[mechanicum] warlord": {
-    "model_id": "[mechanicum] warlord",
-    "army_type": "Mechanicum",
-    "army_list": "Mechanicum Taghmata",
-    "profile_origin": "Rulebook",
-    "name": "Warlord Detachment",
-    "unit_type": "Additional Detachment",
-    "base_points": 0.0,
-    "extra_points": 0,
-    "min_squad_size": 0,
-    "max_squad_size": 0,
-    "warband_size": 3,
+    "warband_size": 2,
     "options": []
   },
   "[mechanicum] allied-detachment": {
@@ -5644,7 +5647,7 @@
     "max_squad_size": 0,
     "unique": true,
     "opt_mandatory": true,
-    "warband_size": 12,
+    "warband_size": 4,
     "options": []
   },
   "[questoris] armiger-talon": {
@@ -5658,7 +5661,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 3,
+    "warband_size": 4,
     "options": []
   },
   "[questoris] automata-talon": {
@@ -5672,7 +5675,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 3,
+    "warband_size": 4,
     "options": []
   },
   "[questoris] support-banner": {
@@ -5686,7 +5689,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 3,
+    "warband_size": 2,
     "options": []
   },
   "[questoris] yeomanry-mesnie": {
@@ -5700,7 +5703,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 3,
+    "warband_size": 6,
     "options": []
   },
   "[questoris] armiger-moirax": {
@@ -5898,7 +5901,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[solar-aux] combat-retinue": {
@@ -5912,7 +5916,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[solar-aux] officer-cadre": {
@@ -5926,7 +5931,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 2,
     "options": []
   },
   "[solar-aux] armour-tercio": {
@@ -5940,7 +5946,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[solar-aux] armoured-fist": {
@@ -5954,7 +5960,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 8,
     "options": []
   },
   "[solar-aux] armoured-support": {
@@ -5968,7 +5974,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[solar-aux] artillery-tercio": {
@@ -5982,7 +5988,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[solar-aux] combat-pioneers": {
@@ -5996,7 +6002,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[solar-aux] first-strike": {
@@ -6010,7 +6016,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[solar-aux] heavy-support": {
@@ -6024,7 +6030,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 1,
     "options": []
   },
   "[solar-aux] infantry-tercio": {
@@ -6038,7 +6044,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[solar-aux] iron-tercio": {
@@ -6052,7 +6058,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[solar-aux] scout-tercio": {
@@ -6066,7 +6072,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[solar-aux] shock-assault": {
@@ -6080,7 +6086,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[solar-aux] tactical-support": {
@@ -6094,7 +6100,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[solar-aux] veletaris-tercio": {
@@ -6108,7 +6114,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[solar-aux] lord-of-war": {
@@ -6122,21 +6128,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 3,
-    "options": []
-  },
-  "[solar-aux] warlord": {
-    "model_id": "[solar-aux] warlord",
-    "army_type": "Imperium",
-    "army_list": "Solar Auxilia",
-    "profile_origin": "Rulebook",
-    "name": "Warlord Detachment",
-    "unit_type": "Additional Detachment",
-    "base_points": 0.0,
-    "extra_points": 0,
-    "min_squad_size": 0,
-    "max_squad_size": 0,
-    "warband_size": 3,
+    "warband_size": 2,
     "options": []
   },
   "[solar-aux] allied-detachment": {
@@ -6572,7 +6564,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[white-scars] combat-retinue": {
@@ -6586,7 +6579,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 3,
     "options": []
   },
   "[white-scars] officer-cadre": {
@@ -6600,7 +6594,8 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 5,
+    "unique": true,
+    "warband_size": 2,
     "options": []
   },
   "[white-scars] apothecarion-delegation": {
@@ -6628,7 +6623,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 8,
     "options": []
   },
   "[white-scars] armoured-support": {
@@ -6642,7 +6637,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[white-scars] combat-pioneers": {
@@ -6656,21 +6651,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
-    "options": []
-  },
-  "[white-scars] daemonic-manifestation": {
-    "model_id": "[white-scars] daemonic-manifestation",
-    "army_type": "Astartes",
-    "army_list": "White Scars",
-    "profile_origin": "Liber Astartes",
-    "name": "Daemonic Manifestation",
-    "unit_type": "Auxillary Detachment",
-    "base_points": 0.0,
-    "extra_points": 0,
-    "min_squad_size": 0,
-    "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[white-scars] first-strike": {
@@ -6684,7 +6665,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[white-scars] heavy-support": {
@@ -6698,7 +6679,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 1,
     "options": []
   },
   "[white-scars] planetfall-speartip": {
@@ -6712,7 +6693,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[white-scars] recon-demi-company": {
@@ -6726,7 +6707,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[white-scars] shock-assault": {
@@ -6740,7 +6721,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 2,
     "options": []
   },
   "[white-scars] storm-battery": {
@@ -6754,7 +6735,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[white-scars] tactical-support": {
@@ -6768,7 +6749,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 4,
     "options": []
   },
   "[white-scars] techmarine-covenant": {
@@ -6796,7 +6777,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 6,
+    "warband_size": 3,
     "options": []
   },
   "[white-scars] lord-of-war": {
@@ -6810,7 +6791,7 @@
     "extra_points": 0,
     "min_squad_size": 0,
     "max_squad_size": 0,
-    "warband_size": 3,
+    "warband_size": 2,
     "options": []
   },
   "[white-scars] warlord": {

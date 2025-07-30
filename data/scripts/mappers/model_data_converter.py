@@ -1,16 +1,12 @@
 import pandas
 
-from constants import warband_sizes, unit_type_order
+from constants import unit_type_order
 
 class ModelDataConverter:
 
     def __init__(self, models, options):
         self.__models = models
         self.__options = options
-
-    @staticmethod
-    def __get_warband_size(row):
-        return warband_sizes[row['unit_type']]
 
     @staticmethod
     def __clean_nan_data_fields(data_frame, keep_empty_list: bool = False):
@@ -27,8 +23,6 @@ class ModelDataConverter:
         return self.__convert_to_json_dict()
 
     def __convert_model_data(self):
-        # Applies the warband_size to each unit using their listed heroic tier.
-        self.__models["warband_size"] = self.__models.apply(self.__get_warband_size, axis=1)
         # Removes any entries that have an unknown unit type.
         self.__models["unit_type"] = pandas.Categorical(self.__models.unit_type, categories=unit_type_order)
         # Converter fields from 0/1 to a bool (true/false)

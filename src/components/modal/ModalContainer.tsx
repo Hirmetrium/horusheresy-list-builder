@@ -42,7 +42,7 @@ export const ModalContainer = () => {
                   alignItems: "center",
                   gap: 2,
                 }}
-                className="sabon"
+                className="cabazon"
               >
                 {currentModal.icon} {title || currentModal.title}
               </Typography>

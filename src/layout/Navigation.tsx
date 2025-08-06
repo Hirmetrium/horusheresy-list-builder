@@ -492,7 +492,7 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
         <DrawerHeader>
           <Typography
             variant="h6"
-            className="sabon"
+            className="cabazon"
             sx={{ textAlign: "start" }}
           >
             Menu

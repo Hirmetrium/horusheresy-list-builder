@@ -22,7 +22,7 @@ export const PdfView = () => {
   if (!roster) {
     return (
       <Box sx={{ m: 2 }}>
-        <Typography variant="h4" className="sabon">
+        <Typography variant="h4" className="cabazon">
           Roster not found!
         </Typography>
         <Typography sx={{ mb: 2 }}>

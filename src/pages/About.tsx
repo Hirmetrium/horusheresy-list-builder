@@ -13,7 +13,7 @@ export const About = () => {
     <Container maxWidth="md" sx={{ mt: 2, mb: 5 }}>
       <Stack direction="row" gap={5} flexWrap="wrap">
         <Stack gap={2}>
-          <Typography variant="h4" className="sabon">
+          <Typography variant="h4" className="cabazon">
             About
           </Typography>
           <Typography variant="body1" sx={{ fontSize: "18px" }}>
@@ -44,7 +44,7 @@ export const About = () => {
                                       </Typography>
 
 
-          <Typography variant="h4" className="sabon" sx={{ mb: 2 }}>
+          <Typography variant="h4" className="cabazon" sx={{ mb: 2 }}>
             Features
           </Typography>
           <Typography variant="body1" sx={{ fontSize: "16px" }}>
@@ -104,7 +104,7 @@ export const About = () => {
               </Box>
             </Stack>
           </Typography>
-          <Typography variant="h4" className="sabon">
+          <Typography variant="h4" className="cabazon">
             Roadmap
           </Typography>
           <Typography variant="body1" sx={{ fontSize: "18px" }}>

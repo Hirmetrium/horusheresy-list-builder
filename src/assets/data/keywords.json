@@ -2,27 +2,37 @@
   {
     "name":"[Allegiance]",
     "type":"traits",
-    "description":"This unit is either a Loyalist or a Traitor, and all models in the army must be from the same Allegiance"
+    "description":"When you add this unit to your army, this Trait is replaced with either 'Loyalist' or 'Traitor', based on which Allegiance you have selected for your Army."
+  },
+  {
+    "name":"Loyalist",
+    "type":"traits",
+    "description":"This unit is a Loyalist. It can only be selected in an Army with the appropriate Allegiance."
+  },
+  {
+    "name":"Traitor",
+    "type":"traits",
+    "description":"This unit is a Traitor. It can only be selected in an Army with the appropriate Allegiance."
   },
   {
     "name":"[Legiones Astartes]",
     "type":"traits",
-    "description":"This unit is considered to be of a specific Legion, and all units selected as part of a given Detachment must have the same [Legiones Astartes] Trait."
-  },
-  {
-    "name":"Legiones Astartes (Iron Warrior)",
-    "type":"traits",
-    "description":"This unit is considered to be of the Iron Warriors Legion, and all units selected as part of a given Detachment must have the Iron Warriors Trait."
+    "description":"When you add this Unit to your army, you must select one of the following Faction Traits to replace this with (this replaces all instances of the [Legiones Astartes] Trait on that Unit Profile while it is part of your Army)."
   },
   {
     "name":"Master of the Legion",
     "type":"traits",
-    "description":"Grants an additional reaction."
+    "description":"If an Army's Primary Detachment is from the Legiones Astartes Army List, the Controlling Player gains one additional Reaction Point if that Detachment or a Warlord Detachment from the same Army List includes any Models with the Master of the Legion Trait."
   },
   {
     "name":"Smokescreen",
     "type":"traits",
-    "description":"Grants the Smokescreen reaction."
+    "description":"Grants the 'Smokescreen' reaction."
+  },
+  {
+    "name":"Shield",
+    "type":"traits",
+    "description":"Grants the 'Shieldwall!' reaction."
   },
   {
     "name":"Infantry",
@@ -375,18 +385,88 @@
     "description":"A Unit that includes Models with this Special Rule scores fewer Victory Points for controlling Objectives, but can score Victory Points for destroying enemy Units that hold Objectives."
   },
   {
+    "name":"Aflame (X)",
+    "type":"special_rule",
+    "description":"A Weapon with this Special Rule causes additional modifiers to a Target's Leadership Characteristic"
+  },
+  {
+    "name":"Bitter Duty",
+    "type":"special_rule",
+    "description":"Models with this Special Rule may not join Units that do not also have this Special Rule."
+  },
+  {
+    "name":"Combi",
+    "type":"special_rule",
+    "description":"A Weapon with this Special Rule can fire multiple profiles simultaneously."
+  },
+  {
+    "name":"Firestorm",
+    "type":"special_rule",
+    "description":"A Model with this Special Rule does not have to make Volley Attacks as Snap Shots."
+  },
+  {
+    "name":"Impact Reactive Doors",
+    "type":"special_rule",
+    "description":"A Model with this Special Rule must be deployed with its doors open."
+  },
+  {
     "name":"Implacable Advance",
     "type":"special_rule",
-    "description":"May fire Heavy Weapons without a penality."
+    "description":"Modelss with this Special Rule can make Volley Attacks with other Weapons."
+  },
+  {
+    "name":"Medic (X)",
+    "type":"special_rule",
+    "description":"This Special Rule determines the difficulty of any Recovery Tests made due to other Reactions or Special Rules."
+  },
+  {
+    "name":"Melta (X)",
+    "type":"special_rule",
+    "description":"This Special Rule increases the amount of Damage against Vehicles when Shooting Attacks are made within a specific range."
+  },
+  {
+    "name":"Orbital Assault Vehicle",
+    "type":"special_rule",
+    "description":"A model with this Special Rule must Deep Strike."
   },
   {
     "name":"Overload (X)",
     "type":"special_rule",
-    "description":"With a Weapon that has the Overload (X) Special Rule, there is a chance that a Hit Test may result in a wound to the user."
+    "description":"Weapons with this Special Rule may inflict Hits on the Models making Shooting Attacks with them."
+  },
+  {
+    "name":"Rapid Tracking",
+    "type":"special_rule",
+    "description":"Weapons with this Special Rule are better able to utilise it for intercepting new arrivals on the Battlefield."
+  },
+  {
+    "name":"Shot Selector",
+    "type":"special_rule",
+    "description":"Weapons with this Special Rule gain one optional additional Special Rule when used to attack."
   },
   {
     "name":"Slow and Purposeful",
     "type":"special_rule",
-    "description":null
+    "description":"Models with this Special Rule cannot Pursue fleeing enemy Units."
+  },
+  {
+    "name":"Void Shields (X)",
+    "type":"special_rule",
+    "description":"A Model with this Special Rule ignores Penetrating Hits as long as it still has active void shields."
+  },
+  {
+    "name":"Medic!",
+    "type":"reaction",
+    "description":"This Reaction allows the Reactive Player to make Recovery Tests for a Unit that is the target of a Shooting Attack if the Target Unit has a Medic."
+  },
+  {
+    "name":"Shieldwall!",
+    "type":"reaction",
+    "description":"This Reaction allows the Reactive Player to gain a bonus to the Toughness Characteristic of Models in a Unit targeted by a Shooting Attack or Volley Attack if the majority of those Models have the Shield Trait."
+  },
+  {
+    "name":"Smokescreen",
+    "type":"reaction",
+    "description":"This Reaction allows the Reactive Player to gain Shrouded Damage Mitigation Rolls for a Model with the Smokescreen Trait."
   }
 ]

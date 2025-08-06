@@ -46,7 +46,7 @@ export const RosterGroup: FunctionComponent = () => {
   if (!group) {
     return (
       <Box sx={{ m: 2 }}>
-        <Typography variant="h4" className="sabon">
+        <Typography variant="h4" className="cabazon">
           Roster group not found!
         </Typography>
         <Typography sx={{ mb: 2 }}>
@@ -109,13 +109,13 @@ export const RosterGroup: FunctionComponent = () => {
       <DragDropContext onDragEnd={onDragEnd}>
         <Stack>
           <Stack flexGrow={1} gap={1}>
-            <Typography variant="h4" className="sabon">
+            <Typography variant="h4" className="cabazon">
               My Rosters
             </Typography>
             <Stack direction="row" alignItems="center" sx={{ mt: -2 }}>
               <Typography
                 variant="h6"
-                className="sabon"
+                className="cabazon"
                 color="textSecondary"
               >
                 {group.name}

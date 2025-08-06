@@ -44,14 +44,14 @@ export const RosterInformation: FunctionComponent<RosterInformationProps> = (
             </IconButton>
           )}
           <Box sx={{ textWrap: "wrap" }}>
-            <Typography variant="h5" className="sabon">
+            <Typography variant="h5" className="cabazon">
               {props.roster.name}
             </Typography>
           </Box>
         </Stack>
         <Typography
           variant="subtitle1"
-          className="sabon"
+          className="cabazon"
           sx={{
             color: ({ palette }) => palette.text.secondary,
           }}

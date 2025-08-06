@@ -189,7 +189,7 @@ export const RosterTableView = forwardRef<
       {includeRosterName && (
         <Divider variant="middle">
           <Typography
-            className="sabon"
+            className="cabazon"
             variant={screenshotting ? "h4" : "h5"}
           >
             {roster.name}
@@ -198,7 +198,7 @@ export const RosterTableView = forwardRef<
       )}
       <Divider variant="middle">
         <Typography
-          className="sabon"
+          className="cabazon"
           variant={screenshotting ? (includeRosterName ? "h5" : "h4") : "h6"}
         >
           {roster.armyList}

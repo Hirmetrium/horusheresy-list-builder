@@ -261,7 +261,7 @@ export const CreateNewRosterModal = () => {
         </CustomAlert>
 
         <Divider>
-          <Typography className="sabon">Create a Roster</Typography>
+          <Typography className="cabazon">Create a Roster</Typography>
         </Divider>
 
         <Autocomplete

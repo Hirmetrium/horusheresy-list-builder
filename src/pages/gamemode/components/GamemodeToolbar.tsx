@@ -129,7 +129,7 @@ export const GamemodeToolbar = () => {
         </ButtonGroup>
       </Box>
       <Stack direction="row" gap={2}>
-        <Typography variant="h6" className="sabon">
+        <Typography variant="h6" className="cabazon">
           Casualties:
         </Typography>
         <SquareIconButton

@@ -74,12 +74,13 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
     else onSelect(updatedSingularSelection(option, selected));
   }
 
-  const wargearOptions = options.filter(
-    (option) => option,
-  );
-  const specialUpgrades = options.filter(
-    (option) => option,
-  );
+const wargearOptions = options.filter(
+  (option) => option.type !== "one-hand",
+);
+const specialUpgrades = options.filter(
+  (option) => option.type === "one-hand",
+);
+
   return (
     <FormGroup
       aria-labelledby="wargear-options"

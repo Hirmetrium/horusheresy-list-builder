@@ -59,7 +59,7 @@ export const RosterSummaryModal = () => {
               gap: 2,
               flexGrow: 1,
             }}
-            className="sabon"
+            className="cabazon"
           >
             <Share /> Roster Summary & Sharing
           </Typography>

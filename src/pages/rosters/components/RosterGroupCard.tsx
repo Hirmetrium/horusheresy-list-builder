@@ -87,7 +87,7 @@ export const RosterGroupCard: FunctionComponent<RosterSummaryCardProps> = ({
             </Box>
             <Typography
               variant="h6"
-              className="sabon"
+              className="cabazon"
               sx={{
                 whiteSpace: "nowrap", // Prevent text from wrapping
                 overflow: "hidden", // Hide the overflowing text
@@ -99,7 +99,7 @@ export const RosterGroupCard: FunctionComponent<RosterSummaryCardProps> = ({
             </Typography>
             <Typography
               variant="body2"
-              className="sabon"
+              className="cabazon"
               sx={{
                 whiteSpace: "nowrap", // Prevent text from wrapping
                 overflow: "hidden", // Hide the overflowing text

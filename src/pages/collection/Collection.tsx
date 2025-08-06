@@ -63,7 +63,7 @@ export const Collection = () => {
 
   return (
     <Container maxWidth={false} sx={{ p: 2, mb: 12 }}>
-      <Typography variant="h4" className="sabon" sx={{ mb: 2 }}>
+      <Typography variant="h4" className="cabazon" sx={{ mb: 2 }}>
         My Collection
       </Typography>
 

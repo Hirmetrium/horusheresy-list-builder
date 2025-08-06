@@ -42,7 +42,7 @@ export const RosterSummaryCard: FunctionComponent<RosterSummaryCardProps> = ({
             <center>
               <Typography
                 variant="h6"
-                className="sabon"
+                className="cabazon"
                 sx={{
                   whiteSpace: "nowrap", // Prevent text from wrapping
                   overflow: "hidden", // Hide the overflowing text

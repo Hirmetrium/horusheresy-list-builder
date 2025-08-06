@@ -111,7 +111,7 @@ export const SelectRoster = () => {
         p: 2,
       }}
     >
-      <Typography variant="h4" className="sabon">
+      <Typography variant="h4" className="cabazon">
         Game Mode
       </Typography>
 

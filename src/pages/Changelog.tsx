@@ -5,7 +5,7 @@ import { Changelog as Changes } from "../components/drawer/drawers/Changelog.tsx
 export const Changelog = () => {
   return (
     <Container maxWidth="xl" sx={{ mt: 2, mb: 5 }}>
-      <Typography variant="h4" className="sabon">
+      <Typography variant="h4" className="cabazon">
         Changelog
       </Typography>
       <Changes />

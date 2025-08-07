@@ -21,28 +21,21 @@ A temporarily incomplete build is hosted for feedback and design on the githubpa
 
 ## To Do:
 - Finish clean-up of original code-base to make specific to HH:
-  - Fix Static-resources
-  - Leader functionality
+  - Remove redundant "leader" functionality
+  - Fix Legacy ribbon
   - Adapting of heroes/warbands into detachments
   - Fix unit/model/slot calculator function for metadata
   - Fix Warnings
-  - Fix special rules displays
-  - Fix upversioning/changelog
   - Fix Options:
 	- Lists to be multi-selection
 	- Display to not take up so much space (two columns?)
 	- Fix multi-model / sergeant only weapon choices
-- Builder:
+- Builder / UI:
   - Redesign Unit Cards to use minimum and maximum squad quantities when adding units by default
   - Prevent adding multiple units per slot
   - Add profile data and profile cards (significant work, may need parsing with AI, or collaboration with Data guys)
   - Add Validation for detachments
   - add unit types to unit slots in builder UI
-  - update "warrior" to "slot"
-  - update "hero" to "detachment"
-  - update "warband" to ??
-  - move warband_size into data model so its per detachment
-  - Remove detachment from name and into unit type for cleaner UI
 - Detachments:
   - Design, create and build new data functionality for detachment data object to manage slots across detachments
   - Potentially can update army-list-restrictions on heroes into detachment restrictions (will be necessary for each individual faction/army)
@@ -53,11 +46,10 @@ A temporarily incomplete build is hosted for feedback and design on the githubpa
 - Identify potential improvements to data structure to share generic units across legions to save repeating data entries/multiple entry updates (may not be possible with detachment restriction/data or current model)
 - Add / Design new prime benefit functionality and associated UI
 - Add data for:
-  - Legions
-  - Mech
-  - Solar Aux
-  - Questoris
+  - Remaining Legions
+  - Talons
   - Legacies
+  - Consider how to handle Hereticus (separate army list or part of existing army lists)
 - Text/Image/PDF display:
   - Update Warband into hero/detachment
   - Add unit types to export

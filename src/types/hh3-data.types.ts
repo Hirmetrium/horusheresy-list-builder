@@ -8,7 +8,7 @@ export type UnitType =
   | "Apex Detachment"
   | "Auxillary Detachment"
   | "Additional Detachment"
-  | "Logistical Benefit"
+  | "Prime Advantage"
   | "Allied Detachment"
   | "High Command"
   | "Command"

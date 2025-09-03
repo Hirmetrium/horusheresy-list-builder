@@ -306,8 +306,7 @@
       "[alpha-legion] deredeo-dreadnought",
       "[alpha-legion] leviathan-dreadnought",
       "[alpha-legion] saturnine-dreadnought",
-      "[alpha-legion] castra-ferrum-dreadnought",
-      "[alpha-legion] honoured-telemechrus"
+      "[alpha-legion] castra-ferrum-dreadnought"
     ],
     "extra_profiles": []
   },
@@ -593,7 +592,14 @@
       "[alpha-legion] centurion-command-squad",
       "[alpha-legion] tartaros-command-squad",
       "[alpha-legion] cataphractii-command-squad",
-      "[alpha-legion] saturnine-command-squad"
+      "[alpha-legion] saturnine-command-squad",
+      "[alpha-legion] land-raider",
+      "[alpha-legion] spartan",
+      "[alpha-legion] dreadnought-drop-pod",
+      "[alpha-legion] dreadclaw-drop-pod",
+      "[alpha-legion] kharybdis-assault-claw",
+      "[alpha-legion] land-raider-achilles",
+      "[alpha-legion] caetus-assault-ram"
     ],
     "extra_profiles": []
   },
@@ -1158,7 +1164,14 @@
       "[astartes] centurion-command-squad",
       "[astartes] tartaros-command-squad",
       "[astartes] cataphractii-command-squad",
-      "[astartes] saturnine-command-squad"
+      "[astartes] saturnine-command-squad",
+      "[astartes] land-raider",
+      "[astartes] spartan",
+      "[astartes] dreadnought-drop-pod",
+      "[astartes] dreadclaw-drop-pod",
+      "[astartes] kharybdis-assault-claw",
+      "[astartes] land-raider-achilles",
+      "[astartes] caetus-assault-ram"
     ],
     "extra_profiles": []
   },
@@ -1290,6 +1303,8 @@
   },
   "[blood-angels] army-vanguard": {
     "valid_warband_units": [
+      "[blood-angels] crimson-paladins",
+      "[blood-angels] dawnbreaker-cohort",
       "[blood-angels] veteran-tactical-squad",
       "[blood-angels] veteran-assault-squad",
       "[blood-angels] seeker-squad",
@@ -1312,6 +1327,9 @@
   },
   "[blood-angels] combat-retinue": {
     "valid_warband_units": [
+      "[blood-angels] sanguinary-guard",
+      "[blood-angels] ofanim-court",
+      "[blood-angels] ofanim-court-jump-pack",
       "[blood-angels] augur-command-squad",
       "[blood-angels] praetorian-command-squad",
       "[blood-angels] praetorian-command-squad-jump-packs",
@@ -1326,6 +1344,7 @@
   },
   "[blood-angels] crusade-primary-detachment": {
     "valid_warband_units": [
+      "[blood-angels] raldoron",
       "[blood-angels] praetor",
       "[blood-angels] praetor-jump-pack",
       "[blood-angels] praetor-cataphractii",
@@ -1333,6 +1352,8 @@
       "[blood-angels] praetor-saturnine",
       "[blood-angels] outrider-praetor",
       "[blood-angels] scimitar-praetor",
+      "[blood-angels] dominion-zephon",
+      "[blood-angels] aster-crohne",
       "[blood-angels] centurion",
       "[blood-angels] centurion-jump-pack",
       "[blood-angels] centurion-cataphractii",
@@ -1443,6 +1464,7 @@
   },
   "[blood-angels] heavy-support": {
     "valid_warband_units": [
+      "[blood-angels] contemptor-incaendius-dreadnought",
       "[blood-angels] contemptor-dreadnought",
       "[blood-angels] deredeo-dreadnought",
       "[blood-angels] leviathan-dreadnought",
@@ -1453,6 +1475,9 @@
   },
   "[blood-angels] logistical-benefit": {
     "valid_warband_units": [
+      "[blood-angels] sanguinary-guard",
+      "[blood-angels] ofanim-court",
+      "[blood-angels] ofanim-court-jump-pack",
       "[blood-angels] augur-command-squad",
       "[blood-angels] praetorian-command-squad",
       "[blood-angels] praetorian-command-squad-jump-packs",
@@ -1462,11 +1487,14 @@
       "[blood-angels] tartaros-command-squad",
       "[blood-angels] cataphractii-command-squad",
       "[blood-angels] saturnine-command-squad",
+      "[blood-angels] crimson-paladins",
+      "[blood-angels] dawnbreaker-cohort",
       "[blood-angels] veteran-tactical-squad",
       "[blood-angels] veteran-assault-squad",
       "[blood-angels] seeker-squad",
       "[blood-angels] veteran-breacher-squad",
       "[blood-angels] veteran-heavy-support-squad",
+      "[blood-angels] angels-tears",
       "[blood-angels] cataphractii-terminator-squad",
       "[blood-angels] tartaros-terminator-squad",
       "[blood-angels] saturnine-terminator-squad",
@@ -1485,6 +1513,7 @@
       "[blood-angels] techmarine",
       "[blood-angels] deathstorm-drop-pod",
       "[blood-angels] araknae-quad-accelerator-platform",
+      "[blood-angels] contemptor-incaendius-dreadnought",
       "[blood-angels] contemptor-dreadnought",
       "[blood-angels] deredeo-dreadnought",
       "[blood-angels] leviathan-dreadnought",
@@ -1542,6 +1571,8 @@
   },
   "[blood-angels] officer-cadre": {
     "valid_warband_units": [
+      "[blood-angels] dominion-zephon",
+      "[blood-angels] aster-crohne",
       "[blood-angels] centurion",
       "[blood-angels] centurion-jump-pack",
       "[blood-angels] centurion-cataphractii",
@@ -1645,8 +1676,18 @@
     ],
     "extra_profiles": []
   },
+  "[blood-angels] revelation-host": {
+    "valid_warband_units": [
+      "[blood-angels] assault-squad",
+      "[blood-angels] dawnbreaker-cohort",
+      "[blood-angels] veteran-tactical-squad",
+      "[blood-angels] veteran-assault-squad"
+    ],
+    "extra_profiles": []
+  },
   "[blood-angels] shock-assault": {
     "valid_warband_units": [
+      "[blood-angels] angels-tears",
       "[blood-angels] cataphractii-terminator-squad",
       "[blood-angels] tartaros-terminator-squad",
       "[blood-angels] saturnine-terminator-squad",
@@ -1688,6 +1729,9 @@
   },
   "[blood-angels] veteran-cadre": {
     "valid_warband_units": [
+      "[blood-angels] sanguinary-guard",
+      "[blood-angels] ofanim-court",
+      "[blood-angels] ofanim-court-jump-pack",
       "[blood-angels] augur-command-squad",
       "[blood-angels] praetorian-command-squad",
       "[blood-angels] praetorian-command-squad-jump-packs",
@@ -1697,6 +1741,8 @@
       "[blood-angels] tartaros-command-squad",
       "[blood-angels] cataphractii-command-squad",
       "[blood-angels] saturnine-command-squad",
+      "[blood-angels] crimson-paladins",
+      "[blood-angels] dawnbreaker-cohort",
       "[blood-angels] veteran-tactical-squad",
       "[blood-angels] veteran-assault-squad",
       "[blood-angels] seeker-squad",
@@ -1714,7 +1760,10 @@
   },
   "[blood-angels] warlord": {
     "valid_warband_units": [
-      "[blood-angels] primarch",
+      "[blood-angels] sanguinius",
+      "[blood-angels] sanguinary-guard",
+      "[blood-angels] ofanim-court",
+      "[blood-angels] ofanim-court-jump-pack",
       "[blood-angels] augur-command-squad",
       "[blood-angels] praetorian-command-squad",
       "[blood-angels] praetorian-command-squad-jump-packs",
@@ -1723,7 +1772,14 @@
       "[blood-angels] centurion-command-squad",
       "[blood-angels] tartaros-command-squad",
       "[blood-angels] cataphractii-command-squad",
-      "[blood-angels] saturnine-command-squad"
+      "[blood-angels] saturnine-command-squad",
+      "[blood-angels] land-raider",
+      "[blood-angels] spartan",
+      "[blood-angels] dreadnought-drop-pod",
+      "[blood-angels] dreadclaw-drop-pod",
+      "[blood-angels] kharybdis-assault-claw",
+      "[blood-angels] land-raider-achilles",
+      "[blood-angels] caetus-assault-ram"
     ],
     "extra_profiles": []
   },
@@ -2550,6 +2606,7 @@
   },
   "[death-guard] army-vanguard": {
     "valid_warband_units": [
+      "[death-guard] mortus-poisoner-squad",
       "[death-guard] veteran-tactical-squad",
       "[death-guard] veteran-assault-squad",
       "[death-guard] seeker-squad",
@@ -2572,6 +2629,7 @@
   },
   "[death-guard] combat-retinue": {
     "valid_warband_units": [
+      "[death-guard] deathshroud-terminator-squad",
       "[death-guard] augur-command-squad",
       "[death-guard] praetorian-command-squad",
       "[death-guard] praetorian-command-squad-jump-packs",
@@ -2586,6 +2644,7 @@
   },
   "[death-guard] crusade-primary-detachment": {
     "valid_warband_units": [
+      "[death-guard] calas-typhon",
       "[death-guard] praetor",
       "[death-guard] praetor-jump-pack",
       "[death-guard] praetor-cataphractii",
@@ -2707,13 +2766,13 @@
       "[death-guard] deredeo-dreadnought",
       "[death-guard] leviathan-dreadnought",
       "[death-guard] saturnine-dreadnought",
-      "[death-guard] castra-ferrum-dreadnought",
-      "[death-guard] honoured-telemechrus"
+      "[death-guard] castra-ferrum-dreadnought"
     ],
     "extra_profiles": []
   },
   "[death-guard] logistical-benefit": {
     "valid_warband_units": [
+      "[death-guard] deathshroud-terminator-squad",
       "[death-guard] augur-command-squad",
       "[death-guard] praetorian-command-squad",
       "[death-guard] praetorian-command-squad-jump-packs",
@@ -2723,6 +2782,7 @@
       "[death-guard] tartaros-command-squad",
       "[death-guard] cataphractii-command-squad",
       "[death-guard] saturnine-command-squad",
+      "[death-guard] mortus-poisoner-squad",
       "[death-guard] veteran-tactical-squad",
       "[death-guard] veteran-assault-squad",
       "[death-guard] seeker-squad",
@@ -2894,6 +2954,28 @@
     ],
     "extra_profiles": []
   },
+  "[death-guard] reaping-host": {
+    "valid_warband_units": [
+      "[death-guard] tactical-squad",
+      "[death-guard] despoiler-squad",
+      "[death-guard] breacher-squad",
+      "[death-guard] tactical-support-squad",
+      "[death-guard] heavy-support-squad",
+      "[death-guard] rapier-battery",
+      "[death-guard] apothecary",
+      "[death-guard] techmarine",
+      "[death-guard] deathstorm-drop-pod",
+      "[death-guard] araknae-quad-accelerator-platform",
+      "[death-guard] grave-warden-terminator-squad",
+      "[death-guard] cataphractii-terminator-squad",
+      "[death-guard] tartaros-terminator-squad",
+      "[death-guard] saturnine-terminator-squad",
+      "[death-guard] indomitus-terminator-squad",
+      "[death-guard] mortalis-destroyer-squad",
+      "[death-guard] destroyer-assault-squad"
+    ],
+    "extra_profiles": []
+  },
   "[death-guard] recon-demi-company": {
     "valid_warband_units": [
       "[death-guard] recon-squad",
@@ -2908,6 +2990,7 @@
   },
   "[death-guard] shock-assault": {
     "valid_warband_units": [
+      "[death-guard] grave-warden-terminator-squad",
       "[death-guard] cataphractii-terminator-squad",
       "[death-guard] tartaros-terminator-squad",
       "[death-guard] saturnine-terminator-squad",
@@ -2949,6 +3032,7 @@
   },
   "[death-guard] veteran-cadre": {
     "valid_warband_units": [
+      "[death-guard] deathshroud-terminator-squad",
       "[death-guard] augur-command-squad",
       "[death-guard] praetorian-command-squad",
       "[death-guard] praetorian-command-squad-jump-packs",
@@ -2958,6 +3042,7 @@
       "[death-guard] tartaros-command-squad",
       "[death-guard] cataphractii-command-squad",
       "[death-guard] saturnine-command-squad",
+      "[death-guard] mortus-poisoner-squad",
       "[death-guard] veteran-tactical-squad",
       "[death-guard] veteran-assault-squad",
       "[death-guard] seeker-squad",
@@ -2975,7 +3060,8 @@
   },
   "[death-guard] warlord": {
     "valid_warband_units": [
-      "[death-guard] primarch",
+      "[death-guard] mortarion",
+      "[death-guard] deathshroud-terminator-squad",
       "[death-guard] augur-command-squad",
       "[death-guard] praetorian-command-squad",
       "[death-guard] praetorian-command-squad-jump-packs",
@@ -2984,7 +3070,27 @@
       "[death-guard] centurion-command-squad",
       "[death-guard] tartaros-command-squad",
       "[death-guard] cataphractii-command-squad",
-      "[death-guard] saturnine-command-squad"
+      "[death-guard] saturnine-command-squad",
+      "[death-guard] land-raider",
+      "[death-guard] spartan",
+      "[death-guard] dreadnought-drop-pod",
+      "[death-guard] dreadclaw-drop-pod",
+      "[death-guard] kharybdis-assault-claw",
+      "[death-guard] land-raider-achilles",
+      "[death-guard] caetus-assault-ram"
+    ],
+    "extra_profiles": []
+  },
+  "[divisio-assassinorum] clade-operative": {
+    "valid_warband_units": [
+      "[divisio-assassinorum] clade-operative",
+      "[divisio-assassinorum] vindicare-assassin",
+      "[divisio-assassinorum] eversor-assassin",
+      "[divisio-assassinorum] callidus-assassin",
+      "[divisio-assassinorum] culexus-assassin",
+      "[divisio-assassinorum] adamus-assassin",
+      "[divisio-assassinorum] venenum-assassin",
+      "[divisio-assassinorum] vanus-assassin"
     ],
     "extra_profiles": []
   },
@@ -3841,6 +3947,7 @@
   },
   "[imperial-fists] army-vanguard": {
     "valid_warband_units": [
+      "[imperial-fists] templar-brethren",
       "[imperial-fists] veteran-tactical-squad",
       "[imperial-fists] veteran-assault-squad",
       "[imperial-fists] seeker-squad",
@@ -3863,6 +3970,7 @@
   },
   "[imperial-fists] combat-retinue": {
     "valid_warband_units": [
+      "[imperial-fists] huscarl-terminator-retinue",
       "[imperial-fists] augur-command-squad",
       "[imperial-fists] praetorian-command-squad",
       "[imperial-fists] praetorian-command-squad-jump-packs",
@@ -3877,6 +3985,9 @@
   },
   "[imperial-fists] crusade-primary-detachment": {
     "valid_warband_units": [
+      "[imperial-fists] sigismund",
+      "[imperial-fists] fafnir-rann",
+      "[imperial-fists] evander-garrius",
       "[imperial-fists] praetor",
       "[imperial-fists] praetor-jump-pack",
       "[imperial-fists] praetor-cataphractii",
@@ -3884,6 +3995,8 @@
       "[imperial-fists] praetor-saturnine",
       "[imperial-fists] outrider-praetor",
       "[imperial-fists] scimitar-praetor",
+      "[imperial-fists] camba-diaz",
+      "[imperial-fists] alexis-polux",
       "[imperial-fists] centurion",
       "[imperial-fists] centurion-jump-pack",
       "[imperial-fists] centurion-cataphractii",
@@ -4004,6 +4117,9 @@
   },
   "[imperial-fists] logistical-benefit": {
     "valid_warband_units": [
+      "[imperial-fists] huscarl-terminator-retinue",
+      "[imperial-fists] templar-brethren",
+      "[imperial-fists] phalanx-warder-squad",
       "[imperial-fists] augur-command-squad",
       "[imperial-fists] praetorian-command-squad",
       "[imperial-fists] praetorian-command-squad-jump-packs",
@@ -4079,6 +4195,7 @@
   },
   "[imperial-fists] lord-of-war": {
     "valid_warband_units": [
+      "[imperial-fists] aetos-dios",
       "[imperial-fists] cerberus-tank",
       "[imperial-fists] typhon-tank",
       "[imperial-fists] glaive-tank",
@@ -4093,6 +4210,8 @@
   },
   "[imperial-fists] officer-cadre": {
     "valid_warband_units": [
+      "[imperial-fists] camba-diaz",
+      "[imperial-fists] alexis-polux",
       "[imperial-fists] centurion",
       "[imperial-fists] centurion-jump-pack",
       "[imperial-fists] centurion-cataphractii",
@@ -4198,12 +4317,33 @@
   },
   "[imperial-fists] shock-assault": {
     "valid_warband_units": [
+      "[imperial-fists] phalanx-warder-squad",
       "[imperial-fists] cataphractii-terminator-squad",
       "[imperial-fists] tartaros-terminator-squad",
       "[imperial-fists] saturnine-terminator-squad",
       "[imperial-fists] indomitus-terminator-squad",
       "[imperial-fists] mortalis-destroyer-squad",
       "[imperial-fists] destroyer-assault-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[imperial-fists] siege-gauntlet": {
+    "valid_warband_units": [
+      "[imperial-fists] phalanx-warder-squad",
+      "[imperial-fists] cataphractii-terminator-squad",
+      "[imperial-fists] tartaros-terminator-squad",
+      "[imperial-fists] saturnine-terminator-squad",
+      "[imperial-fists] indomitus-terminator-squad",
+      "[imperial-fists] mortalis-destroyer-squad",
+      "[imperial-fists] destroyer-assault-squad",
+      "[imperial-fists] breacher-squad",
+      "[imperial-fists] tactical-support-squad",
+      "[imperial-fists] heavy-support-squad",
+      "[imperial-fists] rapier-battery",
+      "[imperial-fists] apothecary",
+      "[imperial-fists] techmarine",
+      "[imperial-fists] deathstorm-drop-pod",
+      "[imperial-fists] araknae-quad-accelerator-platform"
     ],
     "extra_profiles": []
   },
@@ -4239,6 +4379,8 @@
   },
   "[imperial-fists] veteran-cadre": {
     "valid_warband_units": [
+      "[imperial-fists] huscarl-terminator-retinue",
+      "[imperial-fists] templar-brethren",
       "[imperial-fists] augur-command-squad",
       "[imperial-fists] praetorian-command-squad",
       "[imperial-fists] praetorian-command-squad-jump-packs",
@@ -4265,7 +4407,8 @@
   },
   "[imperial-fists] warlord": {
     "valid_warband_units": [
-      "[imperial-fists] primarch",
+      "[imperial-fists] rogal-dorn",
+      "[imperial-fists] huscarl-terminator-retinue",
       "[imperial-fists] augur-command-squad",
       "[imperial-fists] praetorian-command-squad",
       "[imperial-fists] praetorian-command-squad-jump-packs",
@@ -4274,7 +4417,14 @@
       "[imperial-fists] centurion-command-squad",
       "[imperial-fists] tartaros-command-squad",
       "[imperial-fists] cataphractii-command-squad",
-      "[imperial-fists] saturnine-command-squad"
+      "[imperial-fists] saturnine-command-squad",
+      "[imperial-fists] land-raider",
+      "[imperial-fists] spartan",
+      "[imperial-fists] dreadnought-drop-pod",
+      "[imperial-fists] dreadclaw-drop-pod",
+      "[imperial-fists] kharybdis-assault-claw",
+      "[imperial-fists] land-raider-achilles",
+      "[imperial-fists] caetus-assault-ram"
     ],
     "extra_profiles": []
   },
@@ -4428,6 +4578,7 @@
   },
   "[iron-hands] combat-retinue": {
     "valid_warband_units": [
+      "[iron-hands] morlock-terminator-squad",
       "[iron-hands] augur-command-squad",
       "[iron-hands] praetorian-command-squad",
       "[iron-hands] praetorian-command-squad-jump-packs",
@@ -4442,6 +4593,9 @@
   },
   "[iron-hands] crusade-primary-detachment": {
     "valid_warband_units": [
+      "[iron-hands] shadrak-meduson",
+      "[iron-hands] iron-father",
+      "[iron-hands] iron-father-artificer",
       "[iron-hands] praetor",
       "[iron-hands] praetor-jump-pack",
       "[iron-hands] praetor-cataphractii",
@@ -4530,6 +4684,7 @@
       "[iron-hands] warmonger-tartaros",
       "[iron-hands] pathfinder",
       "[iron-hands] armistos",
+      "[iron-hands] medusan-immortals-squad",
       "[iron-hands] tactical-squad",
       "[iron-hands] despoiler-squad",
       "[iron-hands] assault-squad",
@@ -4569,6 +4724,9 @@
   },
   "[iron-hands] logistical-benefit": {
     "valid_warband_units": [
+      "[iron-hands] morlock-terminator-squad",
+      "[iron-hands] gorgon-terminator-squad",
+      "[iron-hands] medusan-immortals-squad",
       "[iron-hands] augur-command-squad",
       "[iron-hands] praetorian-command-squad",
       "[iron-hands] praetorian-command-squad-jump-packs",
@@ -4653,6 +4811,31 @@
       "[iron-hands] stormbird",
       "[iron-hands] mastodon",
       "[iron-hands] thunderhawk-transporter"
+    ],
+    "extra_profiles": []
+  },
+  "[iron-hands] medusan-vanguard": {
+    "valid_warband_units": [
+      "[iron-hands] praevian",
+      "[iron-hands] gorgon-terminator-squad",
+      "[iron-hands] cataphractii-terminator-squad",
+      "[iron-hands] tartaros-terminator-squad",
+      "[iron-hands] saturnine-terminator-squad",
+      "[iron-hands] indomitus-terminator-squad",
+      "[iron-hands] mortalis-destroyer-squad",
+      "[iron-hands] destroyer-assault-squad",
+      "[iron-hands] tactical-support-squad",
+      "[iron-hands] heavy-support-squad",
+      "[iron-hands] rapier-battery",
+      "[iron-hands] apothecary",
+      "[iron-hands] techmarine",
+      "[iron-hands] deathstorm-drop-pod",
+      "[iron-hands] araknae-quad-accelerator-platform",
+      "[iron-hands] contemptor-dreadnought",
+      "[iron-hands] deredeo-dreadnought",
+      "[iron-hands] leviathan-dreadnought",
+      "[iron-hands] saturnine-dreadnought",
+      "[iron-hands] castra-ferrum-dreadnought"
     ],
     "extra_profiles": []
   },
@@ -4763,6 +4946,31 @@
   },
   "[iron-hands] shock-assault": {
     "valid_warband_units": [
+      "[iron-hands] gorgon-terminator-squad",
+      "[iron-hands] cataphractii-terminator-squad",
+      "[iron-hands] tartaros-terminator-squad",
+      "[iron-hands] saturnine-terminator-squad",
+      "[iron-hands] indomitus-terminator-squad",
+      "[iron-hands] mortalis-destroyer-squad",
+      "[iron-hands] destroyer-assault-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[iron-hands] spearhead-phalanx": {
+    "valid_warband_units": [
+      "[iron-hands] land-raider",
+      "[iron-hands] spartan",
+      "[iron-hands] predator-tank",
+      "[iron-hands] sicaran-tank",
+      "[iron-hands] sicaran-venator",
+      "[iron-hands] kratos-tank",
+      "[iron-hands] vindicator-tank",
+      "[iron-hands] scorpius-tank",
+      "[iron-hands] arquitor-bombard",
+      "[iron-hands] hyperios-tank",
+      "[iron-hands] basilisk",
+      "[iron-hands] medusa",
+      "[iron-hands] gorgon-terminator-squad",
       "[iron-hands] cataphractii-terminator-squad",
       "[iron-hands] tartaros-terminator-squad",
       "[iron-hands] saturnine-terminator-squad",
@@ -4782,6 +4990,7 @@
   },
   "[iron-hands] tactical-support": {
     "valid_warband_units": [
+      "[iron-hands] medusan-immortals-squad",
       "[iron-hands] tactical-squad",
       "[iron-hands] despoiler-squad",
       "[iron-hands] assault-squad",
@@ -4804,6 +5013,7 @@
   },
   "[iron-hands] veteran-cadre": {
     "valid_warband_units": [
+      "[iron-hands] morlock-terminator-squad",
       "[iron-hands] augur-command-squad",
       "[iron-hands] praetorian-command-squad",
       "[iron-hands] praetorian-command-squad-jump-packs",
@@ -4830,7 +5040,8 @@
   },
   "[iron-hands] warlord": {
     "valid_warband_units": [
-      "[iron-hands] primarch",
+      "[iron-hands] ferrus-manus",
+      "[iron-hands] morlock-terminator-squad",
       "[iron-hands] augur-command-squad",
       "[iron-hands] praetorian-command-squad",
       "[iron-hands] praetorian-command-squad-jump-packs",
@@ -4839,7 +5050,14 @@
       "[iron-hands] centurion-command-squad",
       "[iron-hands] tartaros-command-squad",
       "[iron-hands] cataphractii-command-squad",
-      "[iron-hands] saturnine-command-squad"
+      "[iron-hands] saturnine-command-squad",
+      "[iron-hands] land-raider",
+      "[iron-hands] spartan",
+      "[iron-hands] dreadnought-drop-pod",
+      "[iron-hands] dreadclaw-drop-pod",
+      "[iron-hands] kharybdis-assault-claw",
+      "[iron-hands] land-raider-achilles",
+      "[iron-hands] caetus-assault-ram"
     ],
     "extra_profiles": []
   },
@@ -5212,6 +5430,7 @@
       "[iron-warriors] techmarine",
       "[iron-warriors] deathstorm-drop-pod",
       "[iron-warriors] araknae-quad-accelerator-platform",
+      "[iron-warriors] iron-havocs",
       "[iron-warriors] contemptor-dreadnought",
       "[iron-warriors] deredeo-dreadnought",
       "[iron-warriors] leviathan-dreadnought",
@@ -5791,11 +6010,21 @@
   },
   "[night-lords] army-vanguard": {
     "valid_warband_units": [
+      "[night-lords] contekar-terminator-squad",
       "[night-lords] veteran-tactical-squad",
       "[night-lords] veteran-assault-squad",
       "[night-lords] seeker-squad",
       "[night-lords] veteran-breacher-squad",
       "[night-lords] veteran-heavy-support-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[night-lords] atramentar-hunt": {
+    "valid_warband_units": [
+      "[night-lords] cataphractii-command-squad",
+      "[night-lords] tartaros-command-squad",
+      "[night-lords] cataphractii-terminator-squad",
+      "[night-lords] tartaros-terminator-squad"
     ],
     "extra_profiles": []
   },
@@ -5827,6 +6056,7 @@
   },
   "[night-lords] crusade-primary-detachment": {
     "valid_warband_units": [
+      "[night-lords] sevatar",
       "[night-lords] praetor",
       "[night-lords] praetor-jump-pack",
       "[night-lords] praetor-cataphractii",
@@ -5915,6 +6145,7 @@
       "[night-lords] warmonger-tartaros",
       "[night-lords] pathfinder",
       "[night-lords] armistos",
+      "[night-lords] terror-squad",
       "[night-lords] tactical-squad",
       "[night-lords] despoiler-squad",
       "[night-lords] assault-squad",
@@ -5933,6 +6164,7 @@
   },
   "[night-lords] first-strike": {
     "valid_warband_units": [
+      "[night-lords] night-raptor-squad",
       "[night-lords] xiphon-interceptor",
       "[night-lords] storm-eagle",
       "[night-lords] fire-raptor",
@@ -6148,6 +6380,7 @@
   },
   "[night-lords] shock-assault": {
     "valid_warband_units": [
+      "[night-lords] atramentar-flay-clade",
       "[night-lords] cataphractii-terminator-squad",
       "[night-lords] tartaros-terminator-squad",
       "[night-lords] saturnine-terminator-squad",
@@ -6167,6 +6400,7 @@
   },
   "[night-lords] tactical-support": {
     "valid_warband_units": [
+      "[night-lords] terror-squad",
       "[night-lords] tactical-squad",
       "[night-lords] despoiler-squad",
       "[night-lords] assault-squad",
@@ -6187,6 +6421,19 @@
     ],
     "extra_profiles": []
   },
+  "[night-lords] terror-assault": {
+    "valid_warband_units": [
+      "[night-lords] terror-squad",
+      "[night-lords] night-raptor-squad",
+      "[night-lords] xiphon-interceptor",
+      "[night-lords] storm-eagle",
+      "[night-lords] fire-raptor",
+      "[night-lords] scimitar-jetbike-squad",
+      "[night-lords] javelin-squad",
+      "[night-lords] land-speeder-squad"
+    ],
+    "extra_profiles": []
+  },
   "[night-lords] veteran-cadre": {
     "valid_warband_units": [
       "[night-lords] augur-command-squad",
@@ -6198,6 +6445,7 @@
       "[night-lords] tartaros-command-squad",
       "[night-lords] cataphractii-command-squad",
       "[night-lords] saturnine-command-squad",
+      "[night-lords] contekar-terminator-squad",
       "[night-lords] veteran-tactical-squad",
       "[night-lords] veteran-assault-squad",
       "[night-lords] seeker-squad",
@@ -6215,7 +6463,7 @@
   },
   "[night-lords] warlord": {
     "valid_warband_units": [
-      "[night-lords] primarch",
+      "[night-lords] konrad-curze",
       "[night-lords] augur-command-squad",
       "[night-lords] praetorian-command-squad",
       "[night-lords] praetorian-command-squad-jump-packs",
@@ -6224,7 +6472,14 @@
       "[night-lords] centurion-command-squad",
       "[night-lords] tartaros-command-squad",
       "[night-lords] cataphractii-command-squad",
-      "[night-lords] saturnine-command-squad"
+      "[night-lords] saturnine-command-squad",
+      "[night-lords] land-raider",
+      "[night-lords] spartan",
+      "[night-lords] dreadnought-drop-pod",
+      "[night-lords] dreadclaw-drop-pod",
+      "[night-lords] kharybdis-assault-claw",
+      "[night-lords] land-raider-achilles",
+      "[night-lords] caetus-assault-ram"
     ],
     "extra_profiles": []
   },
@@ -6580,8 +6835,7 @@
       "[raven-guard] deredeo-dreadnought",
       "[raven-guard] leviathan-dreadnought",
       "[raven-guard] saturnine-dreadnought",
-      "[raven-guard] castra-ferrum-dreadnought",
-      "[raven-guard] honoured-telemechrus"
+      "[raven-guard] castra-ferrum-dreadnought"
     ],
     "extra_profiles": []
   },
@@ -6864,7 +7118,14 @@
       "[raven-guard] centurion-command-squad",
       "[raven-guard] tartaros-command-squad",
       "[raven-guard] cataphractii-command-squad",
-      "[raven-guard] saturnine-command-squad"
+      "[raven-guard] saturnine-command-squad",
+      "[raven-guard] land-raider",
+      "[raven-guard] spartan",
+      "[raven-guard] dreadnought-drop-pod",
+      "[raven-guard] dreadclaw-drop-pod",
+      "[raven-guard] kharybdis-assault-claw",
+      "[raven-guard] land-raider-achilles",
+      "[raven-guard] caetus-assault-ram"
     ],
     "extra_profiles": []
   },
@@ -7156,8 +7417,7 @@
       "[salamanders] deredeo-dreadnought",
       "[salamanders] leviathan-dreadnought",
       "[salamanders] saturnine-dreadnought",
-      "[salamanders] castra-ferrum-dreadnought",
-      "[salamanders] honoured-telemechrus"
+      "[salamanders] castra-ferrum-dreadnought"
     ],
     "extra_profiles": []
   },
@@ -7456,7 +7716,14 @@
       "[salamanders] centurion-command-squad",
       "[salamanders] tartaros-command-squad",
       "[salamanders] cataphractii-command-squad",
-      "[salamanders] saturnine-command-squad"
+      "[salamanders] saturnine-command-squad",
+      "[salamanders] land-raider",
+      "[salamanders] spartan",
+      "[salamanders] dreadnought-drop-pod",
+      "[salamanders] dreadclaw-drop-pod",
+      "[salamanders] kharybdis-assault-claw",
+      "[salamanders] land-raider-achilles",
+      "[salamanders] caetus-assault-ram"
     ],
     "extra_profiles": []
   },
@@ -7937,8 +8204,7 @@
       "[sons-of-horus] deredeo-dreadnought",
       "[sons-of-horus] leviathan-dreadnought",
       "[sons-of-horus] saturnine-dreadnought",
-      "[sons-of-horus] castra-ferrum-dreadnought",
-      "[sons-of-horus] honoured-telemechrus"
+      "[sons-of-horus] castra-ferrum-dreadnought"
     ],
     "extra_profiles": []
   },
@@ -8250,7 +8516,14 @@
       "[sons-of-horus] centurion-command-squad",
       "[sons-of-horus] tartaros-command-squad",
       "[sons-of-horus] cataphractii-command-squad",
-      "[sons-of-horus] saturnine-command-squad"
+      "[sons-of-horus] saturnine-command-squad",
+      "[sons-of-horus] land-raider",
+      "[sons-of-horus] spartan",
+      "[sons-of-horus] dreadnought-drop-pod",
+      "[sons-of-horus] dreadclaw-drop-pod",
+      "[sons-of-horus] kharybdis-assault-claw",
+      "[sons-of-horus] land-raider-achilles",
+      "[sons-of-horus] caetus-assault-ram"
     ],
     "extra_profiles": []
   },
@@ -8382,11 +8655,25 @@
   },
   "[space-wolves] army-vanguard": {
     "valid_warband_units": [
+      "[space-wolves] varagyr",
       "[space-wolves] veteran-tactical-squad",
       "[space-wolves] veteran-assault-squad",
       "[space-wolves] seeker-squad",
       "[space-wolves] veteran-breacher-squad",
       "[space-wolves] veteran-heavy-support-squad"
+    ],
+    "extra_profiles": []
+  },
+  "[space-wolves] bloodied-claw": {
+    "valid_warband_units": [
+      "[space-wolves] grey-slayer-pack",
+      "[space-wolves] deathsworn-pack",
+      "[space-wolves] cataphractii-terminator-squad",
+      "[space-wolves] tartaros-terminator-squad",
+      "[space-wolves] saturnine-terminator-squad",
+      "[space-wolves] indomitus-terminator-squad",
+      "[space-wolves] mortalis-destroyer-squad",
+      "[space-wolves] destroyer-assault-squad"
     ],
     "extra_profiles": []
   },
@@ -8404,6 +8691,8 @@
   },
   "[space-wolves] combat-retinue": {
     "valid_warband_units": [
+      "[space-wolves] wolf-kin",
+      "[space-wolves] fenrisian-wolf-pack",
       "[space-wolves] augur-command-squad",
       "[space-wolves] praetorian-command-squad",
       "[space-wolves] praetorian-command-squad-jump-packs",
@@ -8506,6 +8795,7 @@
       "[space-wolves] warmonger-tartaros",
       "[space-wolves] pathfinder",
       "[space-wolves] armistos",
+      "[space-wolves] grey-slayer-pack",
       "[space-wolves] tactical-squad",
       "[space-wolves] despoiler-squad",
       "[space-wolves] assault-squad",
@@ -8739,6 +9029,7 @@
   },
   "[space-wolves] shock-assault": {
     "valid_warband_units": [
+      "[space-wolves] deathsworn-pack",
       "[space-wolves] cataphractii-terminator-squad",
       "[space-wolves] tartaros-terminator-squad",
       "[space-wolves] saturnine-terminator-squad",
@@ -8758,10 +9049,12 @@
   },
   "[space-wolves] tactical-support": {
     "valid_warband_units": [
+      "[space-wolves] grey-slayer-pack",
       "[space-wolves] tactical-squad",
       "[space-wolves] despoiler-squad",
       "[space-wolves] assault-squad",
       "[space-wolves] breacher-squad",
+      "[space-wolves] jorlund-hunter-pack",
       "[space-wolves] tactical-support-squad",
       "[space-wolves] heavy-support-squad",
       "[space-wolves] rapier-battery",
@@ -8780,6 +9073,7 @@
   },
   "[space-wolves] veteran-cadre": {
     "valid_warband_units": [
+      "[space-wolves] varagyr",
       "[space-wolves] augur-command-squad",
       "[space-wolves] praetorian-command-squad",
       "[space-wolves] praetorian-command-squad-jump-packs",
@@ -8806,7 +9100,9 @@
   },
   "[space-wolves] warlord": {
     "valid_warband_units": [
-      "[space-wolves] primarch",
+      "[space-wolves] leman-russ",
+      "[space-wolves] wolf-kin",
+      "[space-wolves] fenrisian-wolf-pack",
       "[space-wolves] augur-command-squad",
       "[space-wolves] praetorian-command-squad",
       "[space-wolves] praetorian-command-squad-jump-packs",
@@ -8815,7 +9111,115 @@
       "[space-wolves] centurion-command-squad",
       "[space-wolves] tartaros-command-squad",
       "[space-wolves] cataphractii-command-squad",
-      "[space-wolves] saturnine-command-squad"
+      "[space-wolves] saturnine-command-squad",
+      "[space-wolves] land-raider",
+      "[space-wolves] spartan",
+      "[space-wolves] dreadnought-drop-pod",
+      "[space-wolves] dreadclaw-drop-pod",
+      "[space-wolves] kharybdis-assault-claw",
+      "[space-wolves] land-raider-achilles",
+      "[space-wolves] caetus-assault-ram"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] allied-detachment": {
+    "valid_warband_units": [
+      "[talons] shield-captain",
+      "[talons] custodian-guard-sodality",
+      "[talons] sentinel-guard-sodality"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] armoured-fist": {
+    "valid_warband_units": [
+      "[talons] coronus-grav-carrier"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] armoured-support": {
+    "valid_warband_units": [
+      "[talons] caladius-grav-tank"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] combat-pioneers": {
+    "valid_warband_units": [
+      "[talons] venatari-sodality"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] crusade-primary-detachment": {
+    "valid_warband_units": [
+      "[talons] tribune",
+      "[talons] shield-captain",
+      "[talons] custodian-guard-sodality",
+      "[talons] sentinel-guard-sodality"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] first-strike": {
+    "valid_warband_units": [
+      "[talons] gyrfalcon-jetbike-sodality",
+      "[talons] pallas-grav-attack"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] heavy-support": {
+    "valid_warband_units": [
+      "[talons] contemptor-achillus-dreadnought",
+      "[talons] contemptor-galatus-dreadnought",
+      "[talons] telemon-heavy-dreadnought"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] logistical-benefit": {
+    "valid_warband_units": [
+      "[talons] coronus-grav-carrier",
+      "[talons] custodian-guard-sodality",
+      "[talons] sentinel-guard-sodality",
+      "[talons] sagittarum-guard-sodality",
+      "[talons] caladius-grav-tank",
+      "[talons] contemptor-achillus-dreadnought",
+      "[talons] contemptor-galatus-dreadnought",
+      "[talons] telemon-heavy-dreadnought",
+      "[talons] venatari-sodality",
+      "[talons] aquilon-terminator-sodality",
+      "[talons] gyrfalcon-jetbike-sodality",
+      "[talons] pallas-grav-attack"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] lord-of-war": {
+    "valid_warband_units": [
+      "[talons] orion-assault-dropship",
+      "[talons] ares-gunship"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] officer-cadre": {
+    "valid_warband_units": [
+      "[talons] shield-captain"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] shock-assault": {
+    "valid_warband_units": [
+      "[talons] aquilon-terminator-sodality"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] tactical-support": {
+    "valid_warband_units": [
+      "[talons] custodian-guard-sodality",
+      "[talons] sentinel-guard-sodality",
+      "[talons] sagittarum-guard-sodality"
+    ],
+    "extra_profiles": []
+  },
+  "[talons] warlord": {
+    "valid_warband_units": [
+      "[talons] constantin-valdor",
+      "[talons] coronus-grav-carrier"
     ],
     "extra_profiles": []
   },
@@ -8947,6 +9351,9 @@
   },
   "[thousand-sons] army-vanguard": {
     "valid_warband_units": [
+      "[thousand-sons] sekhmet-terminator-cabal",
+      "[thousand-sons] khenetai-occult-cabal",
+      "[thousand-sons] numerologist-cabal",
       "[thousand-sons] veteran-tactical-squad",
       "[thousand-sons] veteran-assault-squad",
       "[thousand-sons] seeker-squad",
@@ -8957,6 +9364,7 @@
   },
   "[thousand-sons] combat-pioneers": {
     "valid_warband_units": [
+      "[thousand-sons] ammitara-occult-intercession-cabal",
       "[thousand-sons] recon-squad",
       "[thousand-sons] sabre",
       "[thousand-sons] outrider-squad",
@@ -8983,6 +9391,8 @@
   },
   "[thousand-sons] crusade-primary-detachment": {
     "valid_warband_units": [
+      "[thousand-sons] ahzek-ahriman",
+      "[thousand-sons] magistus-amon",
       "[thousand-sons] praetor",
       "[thousand-sons] praetor-jump-pack",
       "[thousand-sons] praetor-cataphractii",
@@ -8990,6 +9400,7 @@
       "[thousand-sons] praetor-saturnine",
       "[thousand-sons] outrider-praetor",
       "[thousand-sons] scimitar-praetor",
+      "[thousand-sons] prosperine-sorcerer",
       "[thousand-sons] centurion",
       "[thousand-sons] centurion-jump-pack",
       "[thousand-sons] centurion-cataphractii",
@@ -9105,7 +9516,7 @@
       "[thousand-sons] leviathan-dreadnought",
       "[thousand-sons] saturnine-dreadnought",
       "[thousand-sons] castra-ferrum-dreadnought",
-      "[thousand-sons] honoured-telemechrus"
+      "[thousand-sons] contemptor-osiron-dreadnought"
     ],
     "extra_profiles": []
   },
@@ -9120,6 +9531,9 @@
       "[thousand-sons] tartaros-command-squad",
       "[thousand-sons] cataphractii-command-squad",
       "[thousand-sons] saturnine-command-squad",
+      "[thousand-sons] sekhmet-terminator-cabal",
+      "[thousand-sons] khenetai-occult-cabal",
+      "[thousand-sons] numerologist-cabal",
       "[thousand-sons] veteran-tactical-squad",
       "[thousand-sons] veteran-assault-squad",
       "[thousand-sons] seeker-squad",
@@ -9143,6 +9557,7 @@
       "[thousand-sons] techmarine",
       "[thousand-sons] deathstorm-drop-pod",
       "[thousand-sons] araknae-quad-accelerator-platform",
+      "[thousand-sons] contemptor-osiron-dreadnought",
       "[thousand-sons] contemptor-dreadnought",
       "[thousand-sons] deredeo-dreadnought",
       "[thousand-sons] leviathan-dreadnought",
@@ -9158,6 +9573,7 @@
       "[thousand-sons] kharybdis-assault-claw",
       "[thousand-sons] land-raider-achilles",
       "[thousand-sons] caetus-assault-ram",
+      "[thousand-sons] ammitara-occult-intercession-cabal",
       "[thousand-sons] recon-squad",
       "[thousand-sons] sabre",
       "[thousand-sons] outrider-squad",
@@ -9194,12 +9610,20 @@
       "[thousand-sons] thunderhawk",
       "[thousand-sons] stormbird",
       "[thousand-sons] mastodon",
-      "[thousand-sons] thunderhawk-transporter"
+      "[thousand-sons] thunderhawk-transporter",
+      "[thousand-sons] land-raider",
+      "[thousand-sons] spartan",
+      "[thousand-sons] dreadnought-drop-pod",
+      "[thousand-sons] dreadclaw-drop-pod",
+      "[thousand-sons] kharybdis-assault-claw",
+      "[thousand-sons] land-raider-achilles",
+      "[thousand-sons] caetus-assault-ram"
     ],
     "extra_profiles": []
   },
   "[thousand-sons] officer-cadre": {
     "valid_warband_units": [
+      "[thousand-sons] prosperine-sorcerer",
       "[thousand-sons] centurion",
       "[thousand-sons] centurion-jump-pack",
       "[thousand-sons] centurion-cataphractii",
@@ -9291,6 +9715,36 @@
     ],
     "extra_profiles": []
   },
+  "[thousand-sons] prosperine-convocation": {
+    "valid_warband_units": [
+      "[thousand-sons] tactical-squad",
+      "[thousand-sons] despoiler-squad",
+      "[thousand-sons] assault-squad",
+      "[thousand-sons] breacher-squad",
+      "[thousand-sons] xiphon-interceptor",
+      "[thousand-sons] storm-eagle",
+      "[thousand-sons] fire-raptor",
+      "[thousand-sons] scimitar-jetbike-squad",
+      "[thousand-sons] javelin-squad",
+      "[thousand-sons] land-speeder-squad",
+      "[thousand-sons] sekhmet-terminator-cabal",
+      "[thousand-sons] khenetai-occult-cabal",
+      "[thousand-sons] numerologist-cabal",
+      "[thousand-sons] veteran-tactical-squad",
+      "[thousand-sons] veteran-assault-squad",
+      "[thousand-sons] seeker-squad",
+      "[thousand-sons] veteran-breacher-squad",
+      "[thousand-sons] veteran-heavy-support-squad",
+      "[thousand-sons] land-raider",
+      "[thousand-sons] spartan",
+      "[thousand-sons] dreadnought-drop-pod",
+      "[thousand-sons] dreadclaw-drop-pod",
+      "[thousand-sons] kharybdis-assault-claw",
+      "[thousand-sons] land-raider-achilles",
+      "[thousand-sons] caetus-assault-ram"
+    ],
+    "extra_profiles": []
+  },
   "[thousand-sons] recon-demi-company": {
     "valid_warband_units": [
       "[thousand-sons] recon-squad",
@@ -9328,6 +9782,7 @@
       "[thousand-sons] despoiler-squad",
       "[thousand-sons] assault-squad",
       "[thousand-sons] breacher-squad",
+      "[thousand-sons] castellax-achea-automata",
       "[thousand-sons] tactical-support-squad",
       "[thousand-sons] heavy-support-squad",
       "[thousand-sons] rapier-battery",
@@ -9355,6 +9810,9 @@
       "[thousand-sons] tartaros-command-squad",
       "[thousand-sons] cataphractii-command-squad",
       "[thousand-sons] saturnine-command-squad",
+      "[thousand-sons] sekhmet-terminator-cabal",
+      "[thousand-sons] khenetai-occult-cabal",
+      "[thousand-sons] numerologist-cabal",
       "[thousand-sons] veteran-tactical-squad",
       "[thousand-sons] veteran-assault-squad",
       "[thousand-sons] seeker-squad",
@@ -9372,7 +9830,7 @@
   },
   "[thousand-sons] warlord": {
     "valid_warband_units": [
-      "[thousand-sons] primarch",
+      "[thousand-sons] magnus-the-red",
       "[thousand-sons] augur-command-squad",
       "[thousand-sons] praetorian-command-squad",
       "[thousand-sons] praetorian-command-squad-jump-packs",
@@ -9381,7 +9839,14 @@
       "[thousand-sons] centurion-command-squad",
       "[thousand-sons] tartaros-command-squad",
       "[thousand-sons] cataphractii-command-squad",
-      "[thousand-sons] saturnine-command-squad"
+      "[thousand-sons] saturnine-command-squad",
+      "[thousand-sons] land-raider",
+      "[thousand-sons] spartan",
+      "[thousand-sons] dreadnought-drop-pod",
+      "[thousand-sons] dreadclaw-drop-pod",
+      "[thousand-sons] kharybdis-assault-claw",
+      "[thousand-sons] land-raider-achilles",
+      "[thousand-sons] caetus-assault-ram"
     ],
     "extra_profiles": []
   },
@@ -9534,6 +9999,8 @@
   },
   "[ultramarines] army-vanguard": {
     "valid_warband_units": [
+      "[ultramarines] invictarus-suzerain-squad",
+      "[ultramarines] locutarus-storm-squad",
       "[ultramarines] veteran-tactical-squad",
       "[ultramarines] veteran-assault-squad",
       "[ultramarines] seeker-squad",
@@ -9577,6 +10044,7 @@
       "[ultramarines] praetor-saturnine",
       "[ultramarines] outrider-praetor",
       "[ultramarines] scimitar-praetor",
+      "[ultramarines] remus-ventanus",
       "[ultramarines] centurion",
       "[ultramarines] centurion-jump-pack",
       "[ultramarines] centurion-cataphractii",
@@ -9707,11 +10175,16 @@
       "[ultramarines] tartaros-command-squad",
       "[ultramarines] cataphractii-command-squad",
       "[ultramarines] saturnine-command-squad",
+      "[ultramarines] invictarus-suzerain-squad",
+      "[ultramarines] locutarus-storm-squad",
       "[ultramarines] veteran-tactical-squad",
       "[ultramarines] veteran-assault-squad",
       "[ultramarines] seeker-squad",
       "[ultramarines] veteran-breacher-squad",
       "[ultramarines] veteran-heavy-support-squad",
+      "[ultramarines] praetorian-breacher-squad",
+      "[ultramarines] fulmentarus-terminator-squad",
+      "[ultramarines] nemesis-destroyer-squad",
       "[ultramarines] cataphractii-terminator-squad",
       "[ultramarines] tartaros-terminator-squad",
       "[ultramarines] saturnine-terminator-squad",
@@ -9730,6 +10203,7 @@
       "[ultramarines] techmarine",
       "[ultramarines] deathstorm-drop-pod",
       "[ultramarines] araknae-quad-accelerator-platform",
+      "[ultramarines] honoured-telemechrus",
       "[ultramarines] contemptor-dreadnought",
       "[ultramarines] deredeo-dreadnought",
       "[ultramarines] leviathan-dreadnought",
@@ -9787,6 +10261,7 @@
   },
   "[ultramarines] officer-cadre": {
     "valid_warband_units": [
+      "[ultramarines] remus-ventanus",
       "[ultramarines] centurion",
       "[ultramarines] centurion-jump-pack",
       "[ultramarines] centurion-cataphractii",
@@ -9878,6 +10353,29 @@
     ],
     "extra_profiles": []
   },
+  "[ultramarines] primus-demi-company": {
+    "valid_warband_units": [
+      "[ultramarines] optae",
+      "[ultramarines] tactical-squad",
+      "[ultramarines] despoiler-squad",
+      "[ultramarines] assault-squad",
+      "[ultramarines] breacher-squad",
+      "[ultramarines] tactical-support-squad",
+      "[ultramarines] heavy-support-squad",
+      "[ultramarines] rapier-battery",
+      "[ultramarines] apothecary",
+      "[ultramarines] techmarine",
+      "[ultramarines] deathstorm-drop-pod",
+      "[ultramarines] araknae-quad-accelerator-platform",
+      "[ultramarines] xiphon-interceptor",
+      "[ultramarines] storm-eagle",
+      "[ultramarines] fire-raptor",
+      "[ultramarines] scimitar-jetbike-squad",
+      "[ultramarines] javelin-squad",
+      "[ultramarines] land-speeder-squad"
+    ],
+    "extra_profiles": []
+  },
   "[ultramarines] recon-demi-company": {
     "valid_warband_units": [
       "[ultramarines] recon-squad",
@@ -9892,6 +10390,9 @@
   },
   "[ultramarines] shock-assault": {
     "valid_warband_units": [
+      "[ultramarines] praetorian-breacher-squad",
+      "[ultramarines] fulmentarus-terminator-squad",
+      "[ultramarines] nemesis-destroyer-squad",
       "[ultramarines] cataphractii-terminator-squad",
       "[ultramarines] tartaros-terminator-squad",
       "[ultramarines] saturnine-terminator-squad",
@@ -9942,6 +10443,8 @@
       "[ultramarines] tartaros-command-squad",
       "[ultramarines] cataphractii-command-squad",
       "[ultramarines] saturnine-command-squad",
+      "[ultramarines] invictarus-suzerain-squad",
+      "[ultramarines] locutarus-storm-squad",
       "[ultramarines] veteran-tactical-squad",
       "[ultramarines] veteran-assault-squad",
       "[ultramarines] seeker-squad",
@@ -9959,7 +10462,7 @@
   },
   "[ultramarines] warlord": {
     "valid_warband_units": [
-      "[ultramarines] primarch",
+      "[ultramarines] roboute-guilliman",
       "[ultramarines] augur-command-squad",
       "[ultramarines] praetorian-command-squad",
       "[ultramarines] praetorian-command-squad-jump-packs",
@@ -9968,7 +10471,14 @@
       "[ultramarines] centurion-command-squad",
       "[ultramarines] tartaros-command-squad",
       "[ultramarines] cataphractii-command-squad",
-      "[ultramarines] saturnine-command-squad"
+      "[ultramarines] saturnine-command-squad",
+      "[ultramarines] land-raider",
+      "[ultramarines] spartan",
+      "[ultramarines] dreadnought-drop-pod",
+      "[ultramarines] dreadclaw-drop-pod",
+      "[ultramarines] kharybdis-assault-claw",
+      "[ultramarines] land-raider-achilles",
+      "[ultramarines] caetus-assault-ram"
     ],
     "extra_profiles": []
   },
@@ -11543,9 +12053,9 @@
   "[world-eaters] logistical-benefit": {
     "valid_warband_units": [
       "[world-eaters] red-butchers",
+      "[world-eaters] rampager-squad",
       "[world-eaters] red-hand-destroyer-mortalis-squad",
       "[world-eaters] red-hand-destroyer-assault-squad",
-      "[world-eaters] rampager-squad",
       "[world-eaters] augur-command-squad",
       "[world-eaters] praetorian-command-squad",
       "[world-eaters] praetorian-command-squad-jump-packs",
@@ -11827,7 +12337,6 @@
     "valid_warband_units": [
       "[world-eaters] angron",
       "[world-eaters] angron-transfigured",
-      "[world-eaters] phoenix-terminator-squad",
       "[world-eaters] augur-command-squad",
       "[world-eaters] praetorian-command-squad",
       "[world-eaters] praetorian-command-squad-jump-packs",

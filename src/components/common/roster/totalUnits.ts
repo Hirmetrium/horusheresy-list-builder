@@ -49,7 +49,7 @@ export const getSumOfUnits = (
       "Apex Detachment": 2,
       "Auxillary Detachment": 3,
       "Additional Detachment": 4,
-      "Logistical Benefit": 5,
+      "Prime Advantage": 5,
       "Allied Detachment": 6,
       "High Command": 7,
       "Command": 8,

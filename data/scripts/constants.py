@@ -7,7 +7,7 @@ warband_sizes = {
     "Auxillary Detachment": 6,
     "Additional Detachment": 3,
     "Allied Detachment": 6,
-    "Logistical Benefit": 1,
+    "Prime Advantage": 1,
     "High Command": 0,
     "Command": 0,
     "Retinues": 0,

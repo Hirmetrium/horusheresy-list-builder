@@ -163,17 +163,6 @@ export const useWarbandMutations = (rosterId: string, warbandId: string) => {
     openSidebar(DrawerTypes.UNIT_SELECTOR);
   }
 
-  function toggleArmyGeneral(value: boolean) {
-    console.debug(`Toggle army general for ${warbandId}: ${value}`);
-    const updatedRoster: Roster = {
-      ...roster,
-      metadata: {
-        ...roster.metadata,
-        leader: value ? warbandId : null,
-      },
-    };
-    updateRoster(updatedRoster);
-  }
 
   function updateHero(unit: SelectedUnit) {
     console.debug(`Update ${unit.name} (Hero)`);
@@ -319,7 +308,6 @@ export const useWarbandMutations = (rosterId: string, warbandId: string) => {
 
   return {
     handleHeroSelection,
-    toggleArmyGeneral,
     updateHero,
 
     addEmptyUnit,

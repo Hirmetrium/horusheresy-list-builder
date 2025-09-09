@@ -35,11 +35,6 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
   const mutations = useWarbandMutations(armyId, warbandId);
   const { openSidebar, setCurrentModal } = useAppState();
   const { updateBuilderSidebar } = useRosterBuildingState();
-  const isWarbandWithLeader = !!useRosterBuildingState(({ rosters }) =>
-    rosters.find(
-      ({ id, metadata: { leader } }) => id === armyId && leader === warbandId,
-    ),
-  );
 
   function openHeroPicker() {
     console.debug("Open Hero Picker");
@@ -80,8 +75,6 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
             updateUnit={mutations.updateHero}
             openProfileCard={() => openProfileCard(hero)}
             reselect={openHeroPicker}
-            isLeader={isWarbandWithLeader}
-            toggleLeader={mutations.toggleArmyGeneral}
             collapsed={collapsed}
           />
       ) : (

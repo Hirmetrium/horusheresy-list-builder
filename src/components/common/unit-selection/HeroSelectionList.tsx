@@ -5,7 +5,6 @@ import {heroConstraintData, hh3Data} from "../../../assets/data.ts";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { Unit } from "../../../types/hh3-data.types.ts";
 import { UnitSelectionButton } from "./UnitSelectionButton.tsx";
-import { WithRibbon } from "./WithRibbon.tsx";
 import { handleSpecialRestriction } from "./special-hero-selection-rules.ts";
 
 export type HeroSelectionListProps = {
@@ -46,12 +45,11 @@ export const HeroSelectionList: FunctionComponent<HeroSelectionListProps> = ({
           hero.name.toLowerCase().includes(filter.toLowerCase()),
         )
         .map((hero) => (
-          <WithRibbon
+          <UnitSelectionButton
             key={hero.model_id}
-            label="Legacy"
-          >
-            <UnitSelectionButton unit={hero} onClick={() => selectUnit(hero)} />
-          </WithRibbon>
+            unit={hero}
+            onClick={() => selectUnit(hero)}
+          />
         ))}
     </Stack>
   );

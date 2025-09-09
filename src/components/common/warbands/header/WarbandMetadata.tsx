@@ -9,7 +9,7 @@ export type WarbandMetadataProps = {
 };
 
 export const WarbandMetadata: FunctionComponent<WarbandMetadataProps> = ({
-  meta: { num, points, units, maxUnits },
+  meta: { num, points },
 }) => {
   const screen = useScreenSize();
   return (
@@ -27,14 +27,6 @@ export const WarbandMetadata: FunctionComponent<WarbandMetadataProps> = ({
       <Typography color="white">
         Points: <b>{points}</b>
       </Typography>
-      <Typography
-        color={maxUnits !== "-" && units > maxUnits ? "warning" : "white"}
-      >
-        Slots:{" "}
-        <b>
-          {units} / {maxUnits}
-        </b>
-      </Typography>
-    </Stack>
+     </Stack>
   );
 };

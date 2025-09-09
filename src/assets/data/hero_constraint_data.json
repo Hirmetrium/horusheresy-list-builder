@@ -138,7 +138,7 @@
     ],
     "extra_profiles": []
   },
-  "[alpha-legion] combat-pioneers": {
+  "[alpha-legion] combat-pioneer": {
     "valid_warband_units": [
       "[alpha-legion] effrit-disruption-cadre",
       "[alpha-legion] recon-squad",
@@ -739,7 +739,7 @@
     ],
     "extra_profiles": []
   },
-  "[astartes] combat-pioneers": {
+  "[astartes] combat-pioneer": {
     "valid_warband_units": [
       "[astartes] recon-squad",
       "[astartes] sabre",
@@ -868,6 +868,12 @@
   "[astartes] daemonic-manifestation": {
     "valid_warband_units": [
       "[daemons] brute"
+    ],
+    "extra_profiles": []
+  },
+  "[astartes] dreadnought-talon": {
+    "valid_warband_units": [
+      "[astartes] contemptor-dreadnought"
     ],
     "extra_profiles": []
   },
@@ -1313,7 +1319,7 @@
     ],
     "extra_profiles": []
   },
-  "[blood-angels] combat-pioneers": {
+  "[blood-angels] combat-pioneer": {
     "valid_warband_units": [
       "[blood-angels] recon-squad",
       "[blood-angels] sabre",
@@ -1922,7 +1928,7 @@
     ],
     "extra_profiles": []
   },
-  "[dark-angels] combat-pioneers": {
+  "[dark-angels] combat-pioneer": {
     "valid_warband_units": [
       "[dark-angels] recon-squad",
       "[dark-angels] sabre",
@@ -2615,7 +2621,7 @@
     ],
     "extra_profiles": []
   },
-  "[death-guard] combat-pioneers": {
+  "[death-guard] combat-pioneer": {
     "valid_warband_units": [
       "[death-guard] recon-squad",
       "[death-guard] sabre",
@@ -3337,7 +3343,7 @@
     ],
     "extra_profiles": []
   },
-  "[emperors-children] combat-pioneers": {
+  "[emperors-children] combat-pioneer": {
     "valid_warband_units": [
       "[emperors-children] recon-squad",
       "[emperors-children] sabre",
@@ -3955,7 +3961,7 @@
     ],
     "extra_profiles": []
   },
-  "[imperial-fists] combat-pioneers": {
+  "[imperial-fists] combat-pioneer": {
     "valid_warband_units": [
       "[imperial-fists] recon-squad",
       "[imperial-fists] sabre",
@@ -4563,7 +4569,7 @@
     ],
     "extra_profiles": []
   },
-  "[iron-hands] combat-pioneers": {
+  "[iron-hands] combat-pioneer": {
     "valid_warband_units": [
       "[iron-hands] recon-squad",
       "[iron-hands] sabre",
@@ -5197,7 +5203,7 @@
     ],
     "extra_profiles": []
   },
-  "[iron-warriors] combat-pioneers": {
+  "[iron-warriors] combat-pioneer": {
     "valid_warband_units": [
       "[iron-warriors] recon-squad",
       "[iron-warriors] sabre",
@@ -5742,7 +5748,7 @@
     ],
     "extra_profiles": []
   },
-  "[mechanicum] combat-pioneers": {
+  "[mechanicum] combat-pioneer": {
     "valid_warband_units": [
       "[mechanicum] vorax-attack-maniple"
     ],
@@ -6027,7 +6033,7 @@
     ],
     "extra_profiles": []
   },
-  "[night-lords] combat-pioneers": {
+  "[night-lords] combat-pioneer": {
     "valid_warband_units": [
       "[night-lords] recon-squad",
       "[night-lords] sabre",
@@ -6676,7 +6682,7 @@
     ],
     "extra_profiles": []
   },
-  "[raven-guard] combat-pioneers": {
+  "[raven-guard] combat-pioneer": {
     "valid_warband_units": [
       "[raven-guard] recon-squad",
       "[raven-guard] sabre",
@@ -7265,7 +7271,7 @@
     ],
     "extra_profiles": []
   },
-  "[salamanders] combat-pioneers": {
+  "[salamanders] combat-pioneer": {
     "valid_warband_units": [
       "[salamanders] recon-squad",
       "[salamanders] sabre",
@@ -7793,7 +7799,7 @@
     ],
     "extra_profiles": []
   },
-  "[solar-aux] combat-pioneers": {
+  "[solar-aux] combat-pioneer": {
     "valid_warband_units": [
       "[solar-aux] hermes-light-sentinel-squadron"
     ],
@@ -8044,7 +8050,7 @@
     ],
     "extra_profiles": []
   },
-  "[sons-of-horus] combat-pioneers": {
+  "[sons-of-horus] combat-pioneer": {
     "valid_warband_units": [
       "[sons-of-horus] recon-squad",
       "[sons-of-horus] sabre",
@@ -8676,7 +8682,7 @@
     ],
     "extra_profiles": []
   },
-  "[space-wolves] combat-pioneers": {
+  "[space-wolves] combat-pioneer": {
     "valid_warband_units": [
       "[space-wolves] recon-squad",
       "[space-wolves] sabre",
@@ -9141,7 +9147,7 @@
     ],
     "extra_profiles": []
   },
-  "[talons] combat-pioneers": {
+  "[talons] combat-pioneer": {
     "valid_warband_units": [
       "[talons] venatari-sodality"
     ],
@@ -9361,7 +9367,7 @@
     ],
     "extra_profiles": []
   },
-  "[thousand-sons] combat-pioneers": {
+  "[thousand-sons] combat-pioneer": {
     "valid_warband_units": [
       "[thousand-sons] ammitara-occult-intercession-cabal",
       "[thousand-sons] recon-squad",
@@ -10008,7 +10014,7 @@
     ],
     "extra_profiles": []
   },
-  "[ultramarines] combat-pioneers": {
+  "[ultramarines] combat-pioneer": {
     "valid_warband_units": [
       "[ultramarines] recon-squad",
       "[ultramarines] sabre",
@@ -10642,7 +10648,7 @@
     ],
     "extra_profiles": []
   },
-  "[white-scars] combat-pioneers": {
+  "[white-scars] combat-pioneer": {
     "valid_warband_units": [
       "[white-scars] recon-squad",
       "[white-scars] sabre",
@@ -11245,7 +11251,7 @@
     ],
     "extra_profiles": []
   },
-  "[word-bearers] combat-pioneers": {
+  "[word-bearers] combat-pioneer": {
     "valid_warband_units": [
       "[word-bearers] recon-squad",
       "[word-bearers] sabre",
@@ -11894,7 +11900,7 @@
     ],
     "extra_profiles": []
   },
-  "[world-eaters] combat-pioneers": {
+  "[world-eaters] combat-pioneer": {
     "valid_warband_units": [
       "[world-eaters] recon-squad",
       "[world-eaters] sabre",

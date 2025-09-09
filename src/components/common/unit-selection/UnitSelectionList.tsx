@@ -6,7 +6,6 @@ import { heroConstraintData } from "../../../assets/data.ts";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { Unit } from "../../../types/hh3-data.types.ts";
 import { UnitSelectionButton } from "./UnitSelectionButton.tsx";
-import { WithRibbon } from "./WithRibbon.tsx";
 import { handleSpecialRestriction } from "./special-unit-selection-rules.ts";
 
 export type UnitSelectionListProps = {
@@ -36,7 +35,7 @@ export const UnitSelectionList: FunctionComponent<UnitSelectionListProps> = ({
       <TextField
         id="hero-selection-list--name-filter"
         label="Filter"
-        placeholder="Filter heroes by name..."
+        placeholder="Filter units by name..."
         value={filter}
         onChange={(event: ChangeEvent<HTMLInputElement>) => {
           setFilter(event.target.value);
@@ -47,13 +46,11 @@ export const UnitSelectionList: FunctionComponent<UnitSelectionListProps> = ({
           unit.name.toLowerCase().includes(filter.toLowerCase()),
         )
         .map((unit) => (
-          <WithRibbon
+          <UnitSelectionButton
             key={unit.model_id}
-            label="Legacy"
-            hideRibbon={!unit.legacy}
-          >
-            <UnitSelectionButton unit={unit} onClick={() => selectUnit(unit)} />
-          </WithRibbon>
+            unit={unit}
+            onClick={() => selectUnit(unit)}
+          />
         ))}
     </Stack>
   );

@@ -22,6 +22,8 @@ export type UnitSelectionButtonProps = {
     | "name"
     | "profile_origin"
     | "base_points"
+    | "extra_points"
+    | "min_squad_size"  
     | "unit_type"
     | "options"
   >;
@@ -58,7 +60,7 @@ export function UnitSelectionButton({
 
   const points = unit.options
     .filter((o) => o.included)
-    .reduce((a, b) => a + b.points * b.quantity, unit.base_points);
+      .reduce((a, b) => a + b.points * b.quantity, (unit.base_points * unit.min_squad_size) + unit.extra_points);
 
   const handleCardClick = (e) => {
     e.stopPropagation();

@@ -47,8 +47,8 @@ export const useCalculator = () => {
       .map((option) => option.points * option.quantity || 0)
       .reduce((a, b) => a + b, 0);
 
-    const pointsPerUnit = base + optionCost;
-    const pointsTotal = (pointsPerUnit * unit.quantity) + extra_points ;
+      const pointsPerUnit = base;
+      const pointsTotal = (pointsPerUnit * unit.quantity) + extra_points + optionCost;
 
     return {
       ...unit,

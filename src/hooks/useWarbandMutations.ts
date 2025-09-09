@@ -118,7 +118,7 @@ export const useWarbandMutations = (rosterId: string, warbandId: string) => {
       warbands: roster.warbands.map((wb) => {
         const points = unit.options
           .filter((o) => o.included)
-          .reduce((a, b) => a + b.points * b.quantity, unit.base_points);
+          .reduce((a, b) => a + b.points * b.quantity, (unit.base_points * unit.min_squad_size) + unit.extra_points);
         return wb.id === warbandId
           ? {
               ...wb,
@@ -129,7 +129,7 @@ export const useWarbandMutations = (rosterId: string, warbandId: string) => {
                       id: unitId,
                       pointsPerUnit: points,
                       pointsTotal: points,
-                      quantity: 1,
+                      quantity: unit.min_squad_size,
                     }
                   : u,
               ),
@@ -193,13 +193,19 @@ export const useWarbandMutations = (rosterId: string, warbandId: string) => {
 
   function updateUnit(unit: SelectedUnit) {
     console.debug(`Update ${unit.name} (Unit)`);
+    const min = unit.min_squad_size ?? 1;
+    const max = unit.max_squad_size ?? 99;
+    const clampedQuantity = Math.max(min, Math.min(max, unit.quantity));
+
     const updatedRoster: Roster = {
       ...roster,
       warbands: roster.warbands.map((wb) =>
         wb.id === warbandId
           ? {
               ...wb,
-              units: wb.units.map((u) => (u.id === unit.id ? unit : u)),
+              units: wb.units.map((u) =>
+                u.id === unit.id ? { ...unit, quantity: clampedQuantity } : u
+              ),
             }
           : wb,
       ),

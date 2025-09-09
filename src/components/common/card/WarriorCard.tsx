@@ -205,6 +205,8 @@ export const WarriorCard: FunctionComponent<WarriorCardProps> = ({
           updateQuantity={updateQuantity}
           warbandNum={warbandNum}
           index={index}
+          min={unit.min_squad_size ?? 1}
+          max={unit.max_squad_size ?? 99}
           unitName={unit.name}
           collapsed={collapsed}
         />
@@ -268,6 +270,8 @@ export const WarriorCard: FunctionComponent<WarriorCardProps> = ({
             updateQuantity={updateQuantity}
             warbandNum={warbandNum}
             index={index}
+            min={unit.min_squad_size ?? 1}
+            max={unit.max_squad_size ?? 99}
             unitName={unit.name}
             collapsed={collapsed}
           />

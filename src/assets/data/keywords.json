@@ -468,5 +468,10 @@
     "name":"Smokescreen",
     "type":"reaction",
     "description":"This Reaction allows the Reactive Player to gain Shrouded Damage Mitigation Rolls for a Model with the Smokescreen Trait."
+  },
+  {
+    "name":"Clade Operative",
+    "type":"prime_advantage",
+    "description":"Add three slots for Divisio Assassinorum"
   }
 ]

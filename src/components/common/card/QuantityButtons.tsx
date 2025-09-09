@@ -11,6 +11,8 @@ type QuantityButtonsProps = {
   unitName: string;
   warbandNum: number;
   index: number;
+  min?: number;
+  max?: number;
   collapsed?: boolean;
 };
 export const QuantityButtons: FunctionComponent<QuantityButtonsProps> = ({
@@ -19,16 +21,22 @@ export const QuantityButtons: FunctionComponent<QuantityButtonsProps> = ({
   warbandNum,
   index,
   unitName,
+  min,
+  max,
   collapsed,
 }) => {
   const { palette } = useTheme();
 
-  function handleIncrement() {
-    updateQuantity(quantity + 1);
+ function handleIncrement() {
+    if (quantity < max) {
+      updateQuantity(quantity + 1);
+    }
   }
 
   function handleDecrement() {
-    updateQuantity(Math.max(quantity - 1, 1));
+    if (quantity > min) {
+      updateQuantity(quantity - 1);
+    }
   }
 
   return (
@@ -48,7 +56,7 @@ export const QuantityButtons: FunctionComponent<QuantityButtonsProps> = ({
         backgroundColorHover={palette.primary.dark}
         iconPadding="1"
         onClick={handleDecrement}
-        disabled={quantity === 1}
+        disabled={quantity <= min}
         testId={`quantity--decrement--w${warbandNum}-i${index}`}
         testName={`quantity--decrement--${slugify(unitName)}`}
       />
@@ -59,6 +67,7 @@ export const QuantityButtons: FunctionComponent<QuantityButtonsProps> = ({
         backgroundColorHover={palette.primary.dark}
         iconPadding="1"
         onClick={handleIncrement}
+        disabled={quantity >= max}
         testId={`quantity--increment--w${warbandNum}-i${index}`}
         testName={`quantity--increment--${slugify(unitName)}`}
       />

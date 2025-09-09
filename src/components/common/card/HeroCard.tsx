@@ -282,6 +282,8 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
               warbandNum={warbandNum}
               index={index}
               unitName={unit.name}
+              min={unit.min_squad_size ?? 1}
+              max={unit.max_squad_size ?? 99}
               collapsed={collapsed}
             />
           )}
@@ -367,6 +369,8 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
                 updateQuantity={updateQuantity}
                 warbandNum={warbandNum}
                 index={index}
+                min={unit.min_squad_size ?? 1}
+                max={unit.max_squad_size ?? 99}
                 unitName={unit.name}
                 collapsed={collapsed}
               />

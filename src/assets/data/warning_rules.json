@@ -1,4 +1,85 @@
 {
+  "Alpha Legion":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[alpha-legion] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Blood Angels":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[blood-angels] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Dark Angels":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[dark-angels] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Death Guard":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[death-guard] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Emperor's Children":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[emperors-children] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Imperial Fists":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[imperial-fists] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Iron Hands":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[iron-hands] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Iron Warriors":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[iron-warriors] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Legio Titanicus":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[titanicus] titan-ordinal"
+      ],
+      "warning":"This army's primary detachment is the Titan Ordinal Primary Detachment and must be selected."
+    }
+  ],
   "Legiones Astartes":[
     {
       "type":"compulsory",
@@ -45,6 +126,132 @@
         "[astartes] master-of-descent"
       ],
       "warning":"A Command sub-type model is required to select an Auxillary Detachment."
+    }
+  ],
+  "Mechanicum Taghmata":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[mechanicum] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Night Lords":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[night-lords] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Questoris Familia":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[questoris] knight-households"
+      ],
+      "warning":"This army's primary detachment is the Knight Households Primary Detachment and must be selected."
+    }
+  ],
+  "Raven Guard":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[raven-guard] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Salamanders":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[salamanders] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Solar Auxilia":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[solar-aux] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Sons of Horus":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[sons-of-horus] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Space Wolves":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[space-wolves] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Talons of the Emperor":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[talons] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Thousand Sons":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[thousand-sons] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Ultramarines":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[ultramarines] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "White Scars":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[white-scars] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "Word Bearers":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[word-bearers] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
+    }
+  ],
+  "World Eaters":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[world-eaters] crusade-primary-detachment"
+      ],
+      "warning":"This army's primary detachment is the Crusade Primary Detachment and must be selected."
     }
   ]
 }

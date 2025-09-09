@@ -3083,7 +3083,6 @@
   },
   "[divisio-assassinorum] clade-operative": {
     "valid_warband_units": [
-      "[divisio-assassinorum] clade-operative",
       "[divisio-assassinorum] vindicare-assassin",
       "[divisio-assassinorum] eversor-assassin",
       "[divisio-assassinorum] callidus-assassin",

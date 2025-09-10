@@ -1,6 +1,5 @@
 import data from "../assets/data/warning_rules.json";
 import { useUserPreferences } from "../state/preference";
-import { Roster } from "../types/roster.ts";
 import { WarningRule, WarningRules } from "../types/warning-rules.types.ts";
 import { useRosterInformation } from "./useRosterInformation.ts";
 

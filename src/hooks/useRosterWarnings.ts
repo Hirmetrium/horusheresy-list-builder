@@ -1,6 +1,6 @@
 import data from "../assets/data/warning_rules.json";
 import { useUserPreferences } from "../state/preference";
-import { Roster } from "../types/roster.ts";
+import { isSelectedUnit, Roster } from "../types/roster.ts";
 import { WarningRule, WarningRules } from "../types/warning-rules.types.ts";
 import { useRosterInformation } from "./useRosterInformation.ts";
 
@@ -41,7 +41,31 @@ function extraScriptedRosterWarnings(
   if (
     roster.metadata.leader &&
     (!roster.metadata.leaderCompulsory || ignoreCompulsoryArmyGeneral)
-  ) 
+    ) {
+    const heroicTiers = roster.warbands
+      .filter(
+        ({ hero }) => isSelectedUnit(hero) && hero.unit_type.includes("Primary Detachment"),
+      )
+      .map(({ hero }) => hero)
+      .map(({ unit_type }) => unit_type)
+      .filter((t, i, s) => s.findIndex((o) => o === t) === i);
+
+    const leaderTier = roster.warbands.find(
+      (wb) => wb.id === roster.metadata.leader,
+    )?.hero?.unit_type;
+    const leaderTierIndex = heroicTiers.findIndex(
+      (tier) => tier === leaderTier,
+    );
+
+    if (leaderTierIndex === -1) {
+      // warband was deleted... so there actually isn't a leader...
+      warnings.push({
+        warning: `An army list should always have Primary Detachment.`,
+        type: undefined,
+        dependencies: [],
+      });
+    }
+  } 
   
 
   return warnings;

@@ -17,28 +17,26 @@ export const SpecialRules: FunctionComponent<
   if (!armyListMetadata || armyListMetadata.special_rules.length === 0)
     return <></>;
 
-
-
-    return (
-        <RosterInformationSection title="Special rules">
-            <Box component="ul" sx={{ listStyle: "none", pl: 2 }}>
-                {armyListMetadata.special_rules
-                    .map((rule, index) => (
-                        <Box
-                            component="li"
-                            key={index}
-                            sx={{ py: size === "normal" ? 1 : 0 }}
-                        >
-                            )
-                            <Stack gap={1}>
-                                {rule.description.split("\n").map((line, index) => (
-                                    <Typography key={index}>{line}</Typography>
-                                ))}
-                            </Stack>
-                        </Box>
-                    ))}
-            </Box>
-        </RosterInformationSection>
-    );
-
+  return (
+    <RosterInformationSection title="Special rules">
+      <Box component="ul" sx={{ listStyle: "none", pl: 2 }}>
+        {armyListMetadata.special_rules.map((rule, index) => (
+          <Box
+            component="li"
+            key={index}
+            sx={{ py: size === "normal" ? 1 : 0 }}
+          >
+            <Typography>
+              <b>{rule.title}</b>
+            </Typography>
+            <Stack gap={1}>
+              {rule.description.split("\n").map((line, index) => (
+                <Typography key={index}>{line}</Typography>
+              ))}
+            </Stack>
+          </Box>
+        ))}
+      </Box>
+    </RosterInformationSection>
+  );
 };

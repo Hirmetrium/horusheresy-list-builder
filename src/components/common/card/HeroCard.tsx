@@ -218,12 +218,6 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
                 ? `${unit.quantity}x ${unit.name}`
                 : unit.name}
             </Typography>
-            <Typography
-              data-test-id={`unit-card--points--w${warbandNum}-i${index}`}
-              data-test-unit-name={`unit-card--points--${slugify(unit.name)}`}
-            >
-              Points: <b>{unit.pointsTotal}</b>
-            </Typography>
             <Collapse in={!collapsed}>
               <Stack
                 direction="column"
